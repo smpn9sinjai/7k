@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="id">
+ 
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form 7 Kebiasaan Anak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fbfd;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: auto;
+      padding: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1d3557;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .question {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .radio-group, .input-group {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    label {
+      font-weight: 500;
+	  
+    }
+
+    input[type="text"],input[type="password"],input[type="date"], input[type="time"], textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-top: 6px;
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: 600;
+      background-color: #1d3557;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 24px;
+    }
+
+    button:hover {
+      background-color: #16324e;
+    }
+
+    pre {
+      background-color: #eef2f7;
+      padding: 16px;
+      border-radius: 12px;
+      overflow-x: auto;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .radio-group {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+	
+.modal {
+  display: none; /* Tersembunyi awalnya */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}	
+	
+#tabelSiswa {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-family: Arial, sans-serif;
+	  font-size:14px;
+    }
+  #tabelSiswa  th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+     
+    }
+ #tabelSiswa   th {
+      background-color: #e5d8d8;
+    }
+#tabelSiswa tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }	
+	 #tabelSiswa tr:hover {
+      background-color: #f1f1f1;
+      cursor:pointer;
+    }
+	
+	
+#rekapTable {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-family: Arial, sans-serif;
+	  font-size:14px;
+    }
+  #rekapTable  th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+     
+    }
+ #rekapTable   th {
+    position: sticky;
+  top: -1px;
+      background-color: #e5d8d8;
+    }
+#rekapTable tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }	
+	 #rekapTable tr:hover {
+      background-color: #f1f1f1;
+      cursor:pointer;
+    }
+ /* Modal */
+    .modal1 {
+      display: none;
+      position: fixed;
+      z-index: 10;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+    }
+  .modal-content1 {
+  background-color: white;
+  margin: 5px auto;
+  padding: 10px;
+  border: 1px solid #888;
+  border-radius: 6px;
+  width: 98%;
+  
+  /* Sesuaikan tinggi layar */
+  max-height: 97vh; /* 90% dari tinggi viewport */
+  overflow:hidden;
+}
+    .close {
+      color: red;
+      float: right;
+	 
+      font-size: 20px;
+      cursor: pointer;
+    }	
+	#mtabel{margin:0px;padding:0px;overflow-y:scroll;max-height: 90vh}
+	
+@media screen and (max-width: 767px) {
+#mtabel{margin:0px;padding:0px;overflow:scroll;max-height: 90vh}
+}	
+	.nowrap {
+  white-space: nowrap;
+}
+  </style>
+</head>
+<body>
+
+   <div class="container">
+    <!-- FORM LOGIN -->
+    <div id="loginCard" class="card">
+      <h2>Mohon Login Dulu</h2>
+      <label>Username:</label>
+      <input type="text" id="username" placeholder="Masukkan Username"   />
+      <label>Password:</label>
+      <input type="password" id="password" placeholder="Masukkan Password"   />
+      <button onclick="login(this)"> Login</button>
+      <p id="loginError" style="color:red; display:none;">Username atau Password salah!</p>
+    </div>
+
+
+
+ <div id="mainForm" style="margin:0px;padding:0px;display:none;">
+
+
+  <div class="container">
+  <button id="logoutBtn" style="margin-bottom:10px" onclick="logout()"></button>
+     <div style="padding:5px;border-left:6px solid orange;border-right:6px solid orange" class="card">
+	 <img src="7k.png" style="width:100%;border-radius:16px;margin:0px"/>
+	 </div>
+	 <div class="card">
+	<b>Isiliah Form berikut dengan Jujur, tuliskan jawaban berdasarkan keadaan dirimu sendiri yang sebenarnya, tidak perlu malu atau takut menuliskan hal-hal yang belum sempurna.</b>
+	 </div>
+    <form id="kebiasaanForm">
+
+      <!-- Kartu kebiasaan -->
+	  <div class="card">
+  <label for="tanggal_bangun_pagi" class="question">Masukkan tanggal</label>
+  <input type="date" id="tanggal_bangun_pagi" name="tanggal_bangun_pagi" required>
+</div>
+	  
+     <div class="card">
+  <div class="question">1. Bangun Pagi</div>
+  <div class="radio-group">
+    <label>
+      <input type="radio" name="bangun_pagi" value="Ya" onchange="handleBangunPagi(this.value)"> Ya
+    </label>
+    <label>
+      <input type="radio" name="bangun_pagi" value="Tidak" onchange="handleBangunPagi(this.value)"> Tidak
+    </label>
+  </div>
+
+  <!-- Input tambahan jika 'Ya' -->
+  <div id="jam_bangun_pagi" style="margin-top: 10px; display: none;">
+    <label>Jam berapa? <input type="time" name="jam_bangun_pagi"></label>
+  </div>
+
+  <!-- Input tambahan jika 'Tidak' -->
+  <div id="alasan_bangun_pagi" style="margin-top: 10px; display: none;">
+    <label>Alasan tidak bangun pagi: <input type="text" name="alasan_bangun_pagi" placeholder="Masukkan alasan"></label>
+  </div>
+</div>
+
+ <div class="card">
+  <div class="question">2. Beribadah</div>
+  <div class="radio-group">
+    <label><input type="radio" name="beribadah" value="Ya" onchange="handleBeribadah(this.value)"> Ya</label>
+    <label><input type="radio" name="beribadah" value="Tidak" onchange="handleBeribadah(this.value)"> Tidak</label>
+  </div>
+
+  <!-- Checklist sholat -->
+  <div id="sholat_checkboxes" style="display: none; margin-top: 10px;">
+    <label><input type="checkbox" name="sholat" value="Subuh" onchange="toggleAlasan('Subuh')"> Subuh</label>
+    <input type="text" name="alasan_Subuh" placeholder="Alasan jika tidak" style="display: none; margin-left: 10px;"><br>
+
+    <label><input type="checkbox" name="sholat" value="Dzuhur" onchange="toggleAlasan('Dzuhur')"> Dzuhur</label>
+    <input type="text" name="alasan_Dzuhur" placeholder="Alasan jika tidak" style="display: none; margin-left: 10px;"><br>
+
+    <label><input type="checkbox" name="sholat" value="Ashar" onchange="toggleAlasan('Ashar')"> Ashar</label>
+    <input type="text" name="alasan_Ashar" placeholder="Alasan jika tidak" style="display: none; margin-left: 10px;"><br>
+
+    <label><input type="checkbox" name="sholat" value="Maghrib" onchange="toggleAlasan('Maghrib')"> Maghrib</label>
+    <input type="text" name="alasan_Maghrib" placeholder="Alasan jika tidak" style="display: none; margin-left: 10px;"><br>
+
+    <label><input type="checkbox" name="sholat" value="Isya" onchange="toggleAlasan('Isya')"> Isya</label>
+    <input type="text" name="alasan_Isya" placeholder="Alasan jika tidak" style="display: none; margin-left: 10px;">
+  </div>
+
+  <!-- Alasan umum kalau Tidak -->
+  <div id="alasan_beribadah" style="display: none; margin-top: 10px;">
+    <label>Alasan tidak beribadah: <input type="text" name="alasan_beribadah" placeholder="Masukkan alasan"></label>
+  </div>
+</div>
+ 
+
+
+
+     <div class="card">
+  <div class="question">3. Berolahraga</div>
+  <div class="radio-group">
+    <label><input type="radio" name="berolahraga" value="Ya" onchange="handleOlahraga(this.value)"> Ya</label>
+    <label><input type="radio" name="berolahraga" value="Tidak" onchange="handleOlahraga(this.value)"> Tidak</label>
+  </div>
+
+  <!-- Jika Ya -->
+  <div id="form_olahraga" style="margin-top: 10px; display: none;">
+    <label>Jam Mulai: <input type="time" name="jam_mulai_olahraga"></label><br>
+    <label>Jam Selesai: <input type="time" name="jam_selesai_olahraga"></label><br>
+    <label>Jenis Olahraga: <input type="text" name="jenis_olahraga" placeholder="Contoh: Lari, Sepak Bola, Senam"></label>
+  </div>
+
+  <!-- Jika Tidak -->
+  <div id="alasan_olahraga" style="margin-top: 10px; display: none;">
+    <label>Alasan tidak berolahraga: <input type="text" name="alasan_olahraga" placeholder="Masukkan alasan"></label>
+  </div>
+</div>
+
+
+    <div class="card">
+  <div class="question">4. Makan Sehat dan Bergizi</div>
+  <div class="input-group">
+    <label for="menu_makan_sehat">Tuliskan menu makanan sehat:</label><br>
+    <textarea style="margin:0px;name="menu_makan_sehat" id="menu_makan_sehat" rows="3" placeholder="Contoh: Nasi, sayur bayam, ikan, buah pisang..."></textarea>
+  </div>
+</div>
+
+
+      <div class="card">
+  <div class="question">5. Gemar Belajar</div>
+  <div class="input-group">
+    <label for="judul_buku">Judul Buku / Materi yang Dipelajari:</label><br>
+    <input type="text" name="judul_buku" id="judul_buku" placeholder="Contoh: IPA Bab 4 - Sistem Pencernaan">
+	
+<label for="informasi_didapat">Informasi yang Didapat:</label><br>
+    <textarea name="informasi_didapat" id="informasi_didapat" rows="3" placeholder="Contoh: Fungsi organ pencernaan manusia, enzim-enzim pencernaan..."></textarea>
+  </div>
+</div>
+
+
+      <div class="card">
+  <div class="question">6. Bermasyarakat</div>
+  <div class="radio-group">
+    <label><input type="radio" name="bermasyarakat" value="Ya" onchange="handleBermasyarakat(this.value)"> Ya</label>
+    <label><input type="radio" name="bermasyarakat" value="Tidak" onchange="handleBermasyarakat(this.value)"> Tidak</label>
+  </div>
+
+  <!-- Jika Ya -->
+  <div id="bermasyarakat_ya_fields" style="display: none; margin-top: 10px;">
+    <label>Jenis kegiatan bermasyarakat:</label><br>
+    <input type="text" name="kegiatan_bermasyarakat" placeholder="Contoh: Membantu tetangga, kerja bakti, dll"><br><br>
+
+    <label>Perasaan setelah kegiatan:</label><br>
+    <input type="text" name="perasaan_bermasyarakat" placeholder="Contoh: Senang, puas, semangat, dll">
+  </div>
+
+  <!-- Jika Tidak -->
+  <div id="bermasyarakat_tidak_field" style="display: none; margin-top: 10px;">
+    <label>Alasan tidak bermasyarakat:</label><br>
+    <input type="text" name="alasan_bermasyarakat" placeholder="Contoh: Sedang sakit, tidak ada kegiatan, dll">
+  </div>
+</div>
+
+
+      <div class="card">
+  <div class="question">7. Tidur Cepat</div>
+  <div class="radio-group">
+    <label><input type="radio" name="tidur_cepat" value="Ya" onchange="handleTidurCepat(this.value)"> Ya</label>
+    <label><input type="radio" name="tidur_cepat" value="Tidak" onchange="handleTidurCepat(this.value)"> Tidak</label>
+  </div>
+
+  <!-- Jika Ya -->
+  <div id="tidur_cepat_ya_fields" style="display: none; margin-top: 10px;">
+    <label>Jam tidur:</label><br>
+    <input type="time" name="jam_tidur">
+  </div>
+
+  <!-- Jika Tidak -->
+  <div id="tidur_cepat_tidak_field" style="display: none; margin-top: 10px;">
+    <label>Alasan tidak tidur cepat:</label><br>
+    <input type="text" name="alasan_tidur_cepat" placeholder="Contoh: Belum selesai belajar, nonton TV, dll">
+  </div>
+</div>
+
+
+      <button id="kdata" type="submit">Kirim Jawaban</button>
+    </form>
+
+    <pre style="display:none" id="outputJSON"></pre>
+  </div>
+  </div>
+
+
+<div id="loadingModal" class="modal">
+  <div  class="modal-content">
+     <p id="tmodal"></p>
+    <button onclick="closeModal()">Tutup</button>
+  </div>
+</div>
+
+ <div id="mainForm1" style="margin:0px;padding:0px;display:none;">
+ <div class="container">
+  <button id="logoutBtn1" style="margin-bottom:10px" onclick="logout()"></button>
+     <div style="padding:5px;border-left:6px solid orange;border-right:6px solid orange" class="card">
+	 <img src="7k.png" style="width:100%;border-radius:16px;margin:0px"/>
+	 </div>
+	  
+	 <div class="card">
+	
+	<h2>Daftar Siswa Perwalian Anda</h2>
+<table id="tabelSiswa">
+  <thead>
+    <tr>
+	 <th>No</th>
+      <th>NIS</th>
+      <th>Nama</th>
+      <th>JK</th>
+      <th>Kelas</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <!-- Data akan dimasukkan lewat JavaScript -->
+  </tbody>
+</table>
+<div id="lod" style="text-align:center;margin-top:10px" ><i class="fas fa-spinner fa-spin" style="font-size: 35px; margin-right: 10px; color: blue;"></i></div>
+	</div> </div></div>
+	
+	
+	<div id="rekapModal" class="modal1">
+  <div class="modal-content1"  >
+    <span class="close">&times;</span>
+   <center> <b id="pp">Rekap Data Siswa</b></center>
+	<div id="mtabel" >
+    <table id="rekapTable">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Tgl</th>
+		   <th>Bangun Pagi</th>
+          <th>Beribadah</th>
+		   <th>Berolahraga</th>
+          <th>Makan Bergizi</th>
+		   <th>Membaca Buku</th>
+		   
+			 <th>Bermasyarakat</th>
+			  <th>Tidur Cepat</th>
+        </tr>
+      </thead>
+	  
+      <tbody id="rekapBody">
+        <!-- Diisi lewat JS -->
+      </tbody>
+    </table>
+	<br><br><br><br>
+	</div>
+  </div>
+</div>
+	
+	
+
+  <script>
+  
+  function handleBangunPagi(value) {
+    const jamField = document.getElementById('jam_bangun_pagi');
+    const alasanField = document.getElementById('alasan_bangun_pagi');
+	 
+
+    if (value === 'Ya') {
+      jamField.style.display = 'block';
+      alasanField.style.display = 'none';
+    } else if (value === 'Tidak') {
+      jamField.style.display = 'none';
+      alasanField.style.display = 'block';
+    }
+  }
+  function handleBeribadah(value) {
+  const checkboxDiv = document.getElementById('sholat_checkboxes');
+  const alasanDiv = document.getElementById('alasan_beribadah');
+
+  if (value === 'Ya') {
+    checkboxDiv.style.display = 'block';
+    alasanDiv.style.display = 'none';
+
+    // Reset semua alasan dan centang
+    document.querySelectorAll('input[name="sholat"]').forEach(cb => {
+      cb.checked = false;
+      toggleAlasan(cb.value);
+    });
+  } else {
+    checkboxDiv.style.display = 'none';
+    alasanDiv.style.display = 'block';
+  }
+}
+
+function toggleAlasan(sholat) {
+  const cb = document.querySelector(`input[name="sholat"][value="${sholat}"]`);
+  const alasanInput = document.querySelector(`input[name="alasan_${sholat}"]`);
+
+  if (cb.checked) {
+    alasanInput.style.display = 'none';
+    alasanInput.value = ""; // kosongkan
+  } else {
+    alasanInput.style.display = 'inline-block';
+  }
+}
+
+function handleOlahraga(value) {
+  const formYa = document.getElementById('form_olahraga');
+  const formTidak = document.getElementById('alasan_olahraga');
+
+  if (value === 'Ya') {
+    formYa.style.display = 'block';
+    formTidak.style.display = 'none';
+  } else if (value === 'Tidak') {
+    formYa.style.display = 'none';
+    formTidak.style.display = 'block';
+  }
+}
+
+  function handleBermasyarakat(value) {
+    const yaFields = document.getElementById('bermasyarakat_ya_fields');
+    const tidakField = document.getElementById('bermasyarakat_tidak_field');
+
+    if (value === 'Ya') {
+      yaFields.style.display = 'block';
+      tidakField.style.display = 'none';
+    } else if (value === 'Tidak') {
+      yaFields.style.display = 'none';
+      tidakField.style.display = 'block';
+    }
+  }
+  function handleTidurCepat(value) {
+    const yaFields = document.getElementById('tidur_cepat_ya_fields');
+    const tidakField = document.getElementById('tidur_cepat_tidak_field');
+
+    if (value === 'Ya') {
+      yaFields.style.display = 'block';
+      tidakField.style.display = 'none';
+    } else if (value === 'Tidak') {
+      yaFields.style.display = 'none';
+      tidakField.style.display = 'block';
+    }
+  }
+    document.getElementById('kebiasaanForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Cegah reload form
+
+  const form = e.target;
+  const formData = new FormData(form);
+  const result = {};
+
+  const sholatValues = [];
+  form.querySelectorAll('input[name="sholat"]:checked').forEach(cb => {
+    sholatValues.push(cb.value);
+  });
+  result['sholat'] = sholatValues;
+
+  form.querySelectorAll('input, textarea, select').forEach(input => {
+    const { name, type } = input;
+    if (!name || name === 'sholat') return;
+
+    if (type === 'radio') {
+      if (input.checked) result[name] = input.value;
+    } else if (type === 'checkbox') {
+      // Checkbox selain 'sholat'
+      if (!result[name]) result[name] = [];
+      if (input.checked) result[name].push(input.value);
+    } else {
+      result[name] = input.value;
+    }
+  });
+let mn=localStorage.getItem("nama")
+     result.nama=mn;
+	 let mn1=localStorage.getItem("nis")
+	 result.nis=mn1;
+     result.nama=mn;
+    result.kode=2;
+	
+	let mkn=document.getElementById("menu_makan_sehat").value;
+	result.menu_makan_sehat=mkn;
+	send2(result);
+  // Tampilkan di layar
+ // document.getElementById('outputJSON').textContent = JSON.stringify(result, null, 2);
+
+   
+});
+   
+      let errorMsg = document.getElementById("loginError");
+	  var css='';
+function login(ss) {
+ css=ss;
+  let username = document.getElementById("username").value.trim();
+      let password = document.getElementById("password").value.trim();
+	 if (username && password) {
+    ss.innerHTML = '<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Login';
+    ss.disabled=true;
+	  let bb={"kode":1,"username":username,"password":password}
+       send1(bb)
+      // Login sederhana
+      }
+    }
+	function logout() {
+  // Sembunyikan form utama dan tampilkan login kembali
+  document.getElementById("mainForm").style.display = "none";
+   document.getElementById("mainForm1").style.display = "none";
+  document.getElementById("loginCard").style.display = "block";
+  localStorage.removeItem("nama");
+		localStorage.removeItem("nis");
+  // Kosongkan form login
+  document.getElementById("username").value = "";
+  document.getElementById("password").value = "";
+
+  // Kosongkan hasil output JSON jika perlu
+  document.getElementById("outputJSON").textContent = "";
+}
+
+function send1(data){
+  errorMsg.style.display = "none";
+var xhr = new XMLHttpRequest();
+  xhr.open("POST", "https://script.google.com/macros/s/AKfycbxPXVuCRU421T0PNjy-zVwapXoTQZiu7K5TfdV-CJ2a-MOvs7_KOHQR36pvyhxPlQVgtA/exec"); // GANTI LINK
+   
+
+  xhr.onload = function() {
+    if (xhr.status === 200) {  
+	 
+    let bdata=JSON.parse(xhr.responseText); // tampilkan respon dari server
+ 	
+	  if (bdata.kode==7) {  
+	     css.disabled=false;
+		 if(bdata.sbg==1){
+        document.getElementById("loginCard").style.display = "none";
+        document.getElementById("mainForm").style.display = "block";
+		document.getElementById("logoutBtn").innerHTML=`
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <span>Selamat Datang ${bdata.nama}</span>
+    <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Klik disini untuk Logout</a>
+  </div>
+`
+		}
+		  if(bdata.sbg==2){
+        document.getElementById("loginCard").style.display = "none";
+        document.getElementById("mainForm1").style.display = "block";
+		document.getElementById("logoutBtn1").innerHTML=`
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <span>Selamat Datang ${bdata.nama}</span>
+    <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Klik disini untuk Logout</a>
+  </div>
+`
+let bb1={"kode":3,"nama":bdata.nama}
+       send3(bb1)
+	}
+		
+        errorMsg.style.display = "none";
+		localStorage.setItem("nama", bdata.nama);
+		localStorage.setItem("nis", bdata.nis);
+		localStorage.setItem("sbg", bdata.sbg);
+		
+		css.innerHTML = 'Login';
+		
+		
+		
+
+      } else {
+	   localStorage.removeItem("nama");
+		localStorage.removeItem("nis");
+			localStorage.removeItem("sbg");
+        errorMsg.style.display = "block";
+		css.disabled=false;
+		css.innerHTML = 'Login';
+		 css.innerHTML = ' Login';
+		 setTimeout(()=>{errorMsg.style.display = "none";},2000)
+      }
+ 
+    } else {
+	css.disabled=false;
+	css.innerHTML = 'Login';
+      alert("Terjadi kesalahan saat mengirim data.");
+    }
+  };
+  
+  xhr.onerror = function() {
+    alert("Tidak dapat terhubung ke server.");
+  };
+
+  xhr.send(JSON.stringify(data));
+};
+
+if(localStorage.getItem("nama") && localStorage.getItem("nis") && localStorage.getItem("sbg")==1 ){
+let mn=localStorage.getItem("nama")
+document.getElementById("logoutBtn").innerHTML=`
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <span>Selamat Datang ${mn}</span>
+    <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Klik disini untuk Logout</a>
+  </div>
+`
+document.getElementById("loginCard").style.display = "none";
+        document.getElementById("mainForm").style.display = "block";
+}
+
+if(localStorage.getItem("nama") && localStorage.getItem("nis") && localStorage.getItem("sbg")==2 ){
+let mn=localStorage.getItem("nama")
+document.getElementById("logoutBtn1").innerHTML=`
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <span>Selamat Datang ${mn}</span>
+    <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Klik disini untuk Logout</a>
+  </div>
+`
+ let bb={"kode":3,"nama":mn}
+       send3(bb)
+	 
+document.getElementById("loginCard").style.display = "none";
+        document.getElementById("mainForm1").style.display = "block";
+}
+
+
+function send2(data){
+  document.getElementById("kdata").disabled=true;
+ document.getElementById("kdata").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Kirim Jawaban';
+  
+var xhr = new XMLHttpRequest();
+  xhr.open("POST", "https://script.google.com/macros/s/AKfycbxPXVuCRU421T0PNjy-zVwapXoTQZiu7K5TfdV-CJ2a-MOvs7_KOHQR36pvyhxPlQVgtA/exec"); // GANTI LINK
+   
+
+  xhr.onload = function() {
+    if (xhr.status === 200) {  
+	//alert(xhr.responseText)
+	 document.getElementById("loadingModal").style.display = "block";
+	document.getElementById('tmodal').innerHTML="<b>"+xhr.responseText+"</b>"
+    document.getElementById("kdata").innerHTML='Kirim Jawaban';
+     document.getElementById("kdata").disabled=false;
+ 	
+	   }
+	   }
+  
+  xhr.onerror = function() {
+   document.getElementById("kdata").disabled=false;
+   document.getElementById("kdata").innerHTML='Kirim Jawaban';
+    document.getElementById("loadingModal").style.display = "block";
+	document.getElementById('tmodal').innerHTML="<b>Tidak dapat terhubung ke server</b>"
+     
+  };
+
+  xhr.send(JSON.stringify(data));
+};
+function closeModal() {
+  document.getElementById("loadingModal").style.display = "none";
+}
+
+let mn1=localStorage.getItem("nama")
+ 
+ var bdata='';
+
+function send3(data){
+  
+var xhr = new XMLHttpRequest();
+  xhr.open("POST", "https://script.google.com/macros/s/AKfycbxPXVuCRU421T0PNjy-zVwapXoTQZiu7K5TfdV-CJ2a-MOvs7_KOHQR36pvyhxPlQVgtA/exec"); // GANTI LINK
+   
+
+  xhr.onload = function() {
+    if (xhr.status === 200) {  
+	 bdata=JSON.parse(xhr.responseText)
+	 document.getElementById("lod").style.display="none"
+  var tbody = document.getElementById("tabelSiswa").getElementsByTagName("tbody")[0];
+var ct=''
+  for (var i = 0; i < bdata.data1.length; i++) {
+      ct+="<tr><td style='text-align:center'>"+(i+1)+"</td><td style='text-align:center'>"+bdata.data1[i][0]+"</td><td>"+bdata.data1[i][1]+"</td><td style='text-align:center'>"+bdata.data1[i][2]+"</td><td style='text-align:center'>"+bdata.data1[i][3]+"</td></tr>"
+  }
+	tbody.innerHTML=ct; 
+	
+	 const rows = document.querySelectorAll("#tabelSiswa tbody tr");
+
+    for (let i = 0; i < rows.length; i++) {
+      rows[i].addEventListener("click", function () {
+        const nis2 = this.cells[1].textContent; // ambil isi kolom ke-2 (NIS)
+		rekap(nis2)
+        return;
+      });
+    }
+	
+	
+ 	
+	   }
+	   }
+  
+  xhr.onerror = function() {
+   
+    
+     
+  };
+
+  xhr.send(JSON.stringify(data));
+};
+ const modal1 = document.getElementById("rekapModal");
+ const closeBtn = document.querySelector(".close");
+ closeBtn.onclick = function () {
+      modal1.style.display = "none";
+	  document.body.style.overflow = ""
+    };
+function rekap(niss){
+document.body.style.overflow = "hidden"
+ const rekapBody = document.getElementById("rekapBody");
+var ct=''
+var mnn="";
+var cpp=0;
+  for (var i = 1; i < bdata.data2.length; i++) {
+   
+  if (bdata.data2[i][2]==niss){
+  mnn=bdata.data2[i][3]
+  cpp=1;
+      ct+="<tr><td style='text-align:center'>"+(i)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata.data2[i][1]+"</td><td>"+bdata.data2[i][6]+"</td><td style='text-align:center'>"+bdata.data2[i][7]+"</td><td style='text-align:center'>"+bdata.data2[i][8]+"</td><td style='text-align:center'>"+bdata.data2[i][9]+"</td><td style='text-align:center'>"+bdata.data2[i][10]+"</td><td style='text-align:center'>"+bdata.data2[i][11]+"</td><td style='text-align:center'>"+bdata.data2[i][12]+"</td></tr>"
+  }
+  }
+    if(cpp==1){
+	rekapBody.innerHTML=ct; 
+	document.getElementById("pp").innerHTML="Rekap Data Siswa : "+mnn;
+    modal1.style.display = "block";
+   }
+   else{
+    document.getElementById("loadingModal").style.display = "block";
+	document.getElementById('tmodal').innerHTML="<b>Tidak ada data</b>"
+   }
+}
+  </script>
+</body>
+</html>
