@@ -127,6 +127,7 @@ let mn=localStorage.getItem("nama")
       let errorMsg = document.getElementById("loginError");
 	  var css='';
 function login(ss) {
+document.querySelector("#tabelSiswa tbody").innerHTML = '';	
  css=ss;
   let username = document.getElementById("username").value.trim();
       let password = document.getElementById("password").value.trim();
@@ -428,6 +429,7 @@ var cpp=1;
 	   
    
  }
+
 
 
 
