@@ -174,11 +174,11 @@
       font-family: Arial, sans-serif;
 	  font-size:14px;
     }
-  #tabelSiswa  th, td {
-      padding: 10px;
-      border: 1px solid #ccc;
-     
-    }
+ #tabelSiswa th, #tabelSiswa td {
+  padding: 10px;
+  border: none; /* Hilangkan semua border awal */
+  border-bottom: 1px solid #ccc; /* Hanya garis horizontal */
+}
  #tabelSiswa   th {
       background-color: #e5d8d8;
     }
@@ -198,11 +198,11 @@
       font-family: Arial, sans-serif;
 	  font-size:14px;
     }
-  #rekapTable  th, td {
-      padding: 10px;
-      border: 1px solid #ccc;
-     
-    }
+ ##rekapTable  th, ##rekapTable  td {
+  padding: 10px;
+  border: none; /* Hilangkan semua border awal */
+  border-bottom: 1px solid #ccc; /* Hanya garis horizontal */
+}
  #rekapTable   th {
     position: sticky;
   top: -1px;
@@ -270,3 +270,4 @@
 }
 
  
+
