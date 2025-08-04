@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
  
@@ -25,6 +26,24 @@
       margin: auto;
       padding: 5px;
     }
+ .container1 {
+      max-width: 480px;
+      margin: auto;
+      padding: 5px;
+    }
+@media screen and (max-width: 767px) {
+
+.container {
+      max-width: 780px;
+      margin: auto;
+      padding: 5px;
+    }
+	.container1 {
+      max-width: 780px;
+      margin: auto;
+      padding: 5px;
+    }
+}
 
     h2 {
       text-align: center;
@@ -94,7 +113,7 @@
       border-radius: 10px;
       cursor: pointer;
       transition: background 0.3s;
-      margin-top: 24px;
+      margin-top: 0px;
     }
 
     button:hover {
@@ -135,7 +154,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background: white;
-  padding: 20px 30px;
+  padding: 20px 70px;
   border-radius: 10px;
   text-align: center;
   font-weight: bold;
@@ -214,7 +233,7 @@
   overflow:hidden;
 }
     .close {
-      color: red;
+      color: black;
       float: right;
 	 
       font-size: 20px;
@@ -228,13 +247,29 @@
 	.nowrap {
   white-space: nowrap;
 }
+#span{font-size:13px;color:#7d7c7c}
+
+#card {
+ background: linear-gradient(135deg, #f5a939, #ffe0b2); /* Orange ke Peach */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  color: #4e342e; /* cokelat gelap agar kontras */
+  margin: 20px 0;
+  line-height: 1.6;
+  transition: transform 0.3s ease;
+}
+
+ 
   </style>
 </head>
 <body>
 
-   <div class="container">
+   <div style="margin-top:70px" class="container1">
     <!-- FORM LOGIN -->
-    <div id="loginCard" class="card">
+    <div id="loginCard"  class="card">
       <h2>Mohon Login Dulu</h2>
 	    <br>
       <label>Username:</label>
@@ -244,7 +279,7 @@
       <button onclick="login(this)"> Login</button>
       <p id="loginError" style="color:red; display:none;">Username atau Password salah!</p>
     </div>
-
+ </div>
 
 
  <div id="mainForm" style="margin:0px;padding:0px;display:none;">
@@ -255,7 +290,7 @@
      <div style="padding:5px;border-left:6px solid orange;border-right:6px solid orange" class="card">
 	 <img src="7k.png" style="width:100%;border-radius:16px;margin:0px"/>
 	 </div>
-	 <div class="card">
+	 <div class="card" id="card" >
 	<b>Isiliah Form berikut dengan Jujur, tuliskan jawaban berdasarkan keadaan dirimu sendiri yang sebenarnya, tidak perlu malu atau takut menuliskan hal-hal yang belum sempurna.</b>
 	 </div>
     <form id="kebiasaanForm">
@@ -263,11 +298,12 @@
       <!-- Kartu kebiasaan -->
 	  <div class="card">
   <label for="tanggal_bangun_pagi" class="question">Masukkan tanggal</label>
-  <input type="date" id="tanggal_bangun_pagi" name="tanggal_bangun_pagi" required>
+    <input type="date" id="tanggal_bangun_pagi" name="tanggal_bangun_pagi" required>
 </div>
 	  
      <div class="card">
-  <div class="question">1. Bangun Pagi</div>
+  <div class="question">1. Bangun Pagi<br> <span id="span">Bangun sekitar pukul 04.00 s.d. 06.00/merapikan tempat tidur/mandi pagi</span></div>
+ 
   <div class="radio-group">
     <label>
       <input type="radio" name="bangun_pagi" value="Ya" onchange="handleBangunPagi(this.value)"> Ya
@@ -289,7 +325,7 @@
 </div>
 
  <div class="card">
-  <div class="question">2. Beribadah</div>
+  <div class="question">2. Beribadah<br><span id="span">Beribadah sesuai agama dan kepercayaan)</span></div>
   <div class="radio-group">
     <label><input type="radio" name="beribadah" value="Ya" onchange="handleBeribadah(this.value)"> Ya</label>
     <label><input type="radio" name="beribadah" value="Tidak" onchange="handleBeribadah(this.value)"> Tidak</label>
@@ -323,7 +359,7 @@
 
 
      <div class="card">
-  <div class="question">3. Berolahraga</div>
+  <div class="question">3. Berolahraga<br><span id="span">Senam pagi/peregangan tubuh/ jalan kaki/jogging/yoga/atau olahraga lainnya</span></div>
   <div class="radio-group">
     <label><input type="radio" name="berolahraga" value="Ya" onchange="handleOlahraga(this.value)"> Ya</label>
     <label><input type="radio" name="berolahraga" value="Tidak" onchange="handleOlahraga(this.value)"> Tidak</label>
@@ -344,16 +380,16 @@
 
 
     <div class="card">
-  <div class="question">4. Makan Sehat dan Bergizi</div>
+  <div class="question">4. Makan Sehat dan Bergizi<br><span id="span">Makan bergizi seimbang (makanan pokok/lauk pauk/sayur/buah) dan minum air putih</span></div>
   <div class="input-group">
-    <label for="menu_makan_sehat">Tuliskan menu makanan sehat:</label><br>
+    <label for="menu_makan_sehat">Tuliskan menu makanan sehat anda hari ini</label><br>
     <textarea style="margin:0px;name="menu_makan_sehat" id="menu_makan_sehat" rows="3" placeholder="Contoh: Nasi, sayur bayam, ikan, buah pisang..."></textarea>
   </div>
 </div>
 
 
       <div class="card">
-  <div class="question">5. Gemar Belajar</div>
+  <div class="question">5. Gemar Belajar<br><span id="span">Membaca buku atau sumber belajar lainnya minimal 15 menit per hari/menulis catatan harian/berdiskusi ilmiah/observasi lapangan</span></div>
   <div class="input-group">
     <label for="judul_buku">Judul Buku / Materi yang Dipelajari:</label><br>
     <input type="text" name="judul_buku" id="judul_buku" placeholder="Contoh: IPA Bab 4 - Sistem Pencernaan">
@@ -365,7 +401,7 @@
 
 
       <div class="card">
-  <div class="question">6. Bermasyarakat</div>
+  <div class="question">6. Bermasyarakat<br><span id="span">Bermain dengan teman sebaya/membantu orang tua/berdiskusi dengan lingkungan sekitar/bergotong royong/bakti sosial/Menghormati keragaman/Toleransi</span></div>
   <div class="radio-group">
     <label><input type="radio" name="bermasyarakat" value="Ya" onchange="handleBermasyarakat(this.value)"> Ya</label>
     <label><input type="radio" name="bermasyarakat" value="Tidak" onchange="handleBermasyarakat(this.value)"> Tidak</label>
@@ -389,7 +425,7 @@
 
 
       <div class="card">
-  <div class="question">7. Tidur Cepat</div>
+  <div class="question">7. Tidur Cepat<br><span id="span">Tidur sekitar pukul 20.00 s.d. 22.00/aktivitas sebelum tidur (gosok gigi/membersihkan diri)/menyiapkan kebutuhan sekolah</span></div>
   <div class="radio-group">
     <label><input type="radio" name="tidur_cepat" value="Ya" onchange="handleTidurCepat(this.value)"> Ya</label>
     <label><input type="radio" name="tidur_cepat" value="Tidak" onchange="handleTidurCepat(this.value)"> Tidak</label>
@@ -410,6 +446,7 @@
 
 
       <button id="kdata" type="submit">Kirim Jawaban</button>
+	  <br><br><br>
     </form>
 
     <pre style="display:none" id="outputJSON"></pre>
@@ -433,7 +470,7 @@
 	  
 	 <div class="card">
 	
-	<h2>Daftar Siswa Perwalian Anda</h2>
+	<center><h4>Daftar Siswa Perwalian Anda</h4></center>
 <table id="tabelSiswa">
   <thead>
     <tr>
@@ -449,14 +486,14 @@
     <!-- Data akan dimasukkan lewat JavaScript -->
   </tbody>
 </table>
-<div id="lod" style="text-align:center;margin-top:10px" ><i class="fas fa-spinner fa-spin" style="font-size: 35px; margin-right: 10px; color: blue;"></i></div>
+<div id="lod" style="text-align:center;margin-top:10px" ><i class="fas fa-spinner fa-spin" style="font-size: 35px; margin-right: 10px; color: #e5d8d8;"></i></div>
 	</div> </div></div>
 	
 	
 	<div id="rekapModal" class="modal1">
   <div class="modal-content1"  >
-    <span class="close">&times;</span>
-   <center> <b id="pp">Rekap Data Siswa</b></center>
+    <span class="close">&times;</span><br>
+   <center> <b id="pp">Rekap Kegiatan Siswa</b></center>
 	<div id="mtabel" >
     <table id="rekapTable">
       <thead>
@@ -496,7 +533,7 @@
       jamField.style.display = 'block';
       alasanField.style.display = 'none';
     } else if (value === 'Tidak') {
-      jamField.style.display = 'none';
+      jamField.style.display = 'block';
       alasanField.style.display = 'block';
     }
   }
@@ -564,7 +601,7 @@ function handleOlahraga(value) {
       yaFields.style.display = 'block';
       tidakField.style.display = 'none';
     } else if (value === 'Tidak') {
-      yaFields.style.display = 'none';
+      yaFields.style.display = 'block';
       tidakField.style.display = 'block';
     }
   }
@@ -626,6 +663,8 @@ function login(ss) {
       }
     }
 	function logout() {
+	 document.body.style.overflow = "scroll"
+	document.getElementsByClassName("container1")[0].style.marginTop="70px"
   // Sembunyikan form utama dan tampilkan login kembali
   document.getElementById("mainForm").style.display = "none";
    document.getElementById("mainForm1").style.display = "none";
@@ -652,6 +691,7 @@ var xhr = new XMLHttpRequest();
     let bdata=JSON.parse(xhr.responseText); // tampilkan respon dari server
  	
 	  if (bdata.kode==7) {  
+	  document.getElementsByClassName("container1")[0].style.marginTop="0px"
 	     css.disabled=false;
 		 if(bdata.sbg==1){
         document.getElementById("loginCard").style.display = "none";
@@ -712,6 +752,7 @@ let bb1={"kode":3,"nama":bdata.nama}
 };
 
 if(localStorage.getItem("nama") && localStorage.getItem("nis") && localStorage.getItem("sbg")==1 ){
+document.getElementsByClassName("container1")[0].style.marginTop="0px"
 let mn=localStorage.getItem("nama")
 document.getElementById("logoutBtn").innerHTML=`
   <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -724,6 +765,7 @@ document.getElementById("loginCard").style.display = "none";
 }
 
 if(localStorage.getItem("nama") && localStorage.getItem("nis") && localStorage.getItem("sbg")==2 ){
+document.getElementsByClassName("container1")[0].style.marginTop="0px"
 let mn=localStorage.getItem("nama")
 document.getElementById("logoutBtn1").innerHTML=`
   <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -749,6 +791,7 @@ var xhr = new XMLHttpRequest();
 
   xhr.onload = function() {
     if (xhr.status === 200) {  
+	document.getElementsByClassName("container1")[0].style.marginTop="0px"
 	//alert(xhr.responseText)
 	 document.getElementById("loadingModal").style.display = "block";
 	document.getElementById('tmodal').innerHTML="<b>"+xhr.responseText+"</b>"
@@ -838,7 +881,7 @@ var cpp=0;
   }
     if(cpp==1){
 	rekapBody.innerHTML=ct; 
-	document.getElementById("pp").innerHTML="Rekap Data Siswa : "+mnn;
+	document.getElementById("pp").innerHTML="Rekap Kegiatan Siswa : "+mnn;
     modal1.style.display = "block";
    }
    else{
@@ -846,6 +889,8 @@ var cpp=0;
 	document.getElementById('tmodal').innerHTML="<b>Tidak ada data</b>"
    }
 }
+
+ 
   </script>
 </body>
 </html>
