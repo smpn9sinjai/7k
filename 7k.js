@@ -148,6 +148,7 @@ document.querySelector("#tabelSiswa tbody").innerHTML = '';
   document.getElementById("loginCard").style.display = "block";
   localStorage.removeItem("nama");
 		localStorage.removeItem("nis");
+		localStorage.removeItem("sbg");
   // Kosongkan form login
   document.getElementById("username").value = "";
   document.getElementById("password").value = "";
@@ -429,6 +430,7 @@ var cpp=1;
 	   
    
  }
+
 
 
 
