@@ -198,7 +198,7 @@
       font-family: Arial, sans-serif;
 	  font-size:14px;
     }
- ##rekapTable  th, ##rekapTable  td {
+ #rekapTable  th, #rekapTable  td {
   padding: 10px;
   border: none; /* Hilangkan semua border awal */
   border-bottom: 1px solid #ccc; /* Hanya garis horizontal */
@@ -270,4 +270,5 @@
 }
 
  
+
 
