@@ -287,6 +287,7 @@ var xhr = new XMLHttpRequest();
   xhr.send(JSON.stringify(data));
 };
 function closeModal() {
+    document.body.style.overflow = "scroll"	
   document.getElementById("loadingModal").style.display = "none";
 }
 
@@ -427,5 +428,6 @@ var cpp=1;
 	   
    
  }
+
 
 
