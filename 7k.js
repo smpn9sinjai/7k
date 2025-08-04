@@ -297,7 +297,7 @@ let mn1=localStorage.getItem("nama")
  var bdata='';
 
 function send3(data){
-  
+   document.getElementById("lod").style.display="block"
 var xhr = new XMLHttpRequest();
   xhr.open("POST", "https://script.google.com/macros/s/AKfycbxPXVuCRU421T0PNjy-zVwapXoTQZiu7K5TfdV-CJ2a-MOvs7_KOHQR36pvyhxPlQVgtA/exec"); // GANTI LINK
    
@@ -429,6 +429,7 @@ var cpp=1;
 	   
    
  }
+
 
 
 
