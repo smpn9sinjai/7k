@@ -371,7 +371,7 @@ var cpp=0;
      
  
   document.getElementById("kdata2").disabled=true;
- document.getElementById("kdata2").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Kirim Jawaban';
+ document.getElementById("kdata2").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Lihat Daftar Inputan';
   
 var xhr = new XMLHttpRequest();
   xhr.open("POST", "https://script.google.com/macros/s/AKfycbxPXVuCRU421T0PNjy-zVwapXoTQZiu7K5TfdV-CJ2a-MOvs7_KOHQR36pvyhxPlQVgtA/exec"); // GANTI LINK
@@ -427,4 +427,5 @@ var cpp=1;
 	   
    
  }
+
 
