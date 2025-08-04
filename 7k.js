@@ -365,4 +365,66 @@ var cpp=0;
    }
 }
 
+ function sendp(){
+	 let dnis=localStorage.getItem("nis");
+	 let bb2={"kode":4,"nis":dnis}
+     
  
+  document.getElementById("kdata2").disabled=true;
+ document.getElementById("kdata2").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Kirim Jawaban';
+  
+var xhr = new XMLHttpRequest();
+  xhr.open("POST", "https://script.google.com/macros/s/AKfycbxPXVuCRU421T0PNjy-zVwapXoTQZiu7K5TfdV-CJ2a-MOvs7_KOHQR36pvyhxPlQVgtA/exec"); // GANTI LINK
+   
+
+  xhr.onload = function() {
+    if (xhr.status === 200) {  
+	 
+	 document.getElementById("kdata2").disabled=false;
+ document.getElementById("kdata2").innerHTML=' Lihat Daftar Inputan';
+	 var  bdata=JSON.parse(xhr.responseText)
+ 
+	 document.body.style.overflow = "hidden"
+ const rekapBody = document.getElementById("rekapBody");
+var ct=''
+var mnn="";
+var cpp=1;
+  for (var i = 1; i < bdata.length; i++) {
+   
+   
+  mnn=bdata[i][3]
+  cpp=1;
+      ct+="<tr><td style='text-align:center'>"+(i)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata[i][1]+"</td><td>"+bdata[i][6]+"</td><td style='text-align:center'>"+bdata[i][7]+"</td><td style='text-align:center'>"+bdata[i][8]+"</td><td style='text-align:center'>"+bdata[i][9]+"</td><td style='text-align:center'>"+bdata[i][10]+"</td><td style='text-align:center'>"+bdata[i][11]+"</td><td style='text-align:center'>"+bdata[i][12]+"</td></tr>"
+   
+  }
+  
+  
+    if(cpp==1){
+	rekapBody.innerHTML=ct; 
+	document.getElementById("pp").innerHTML="Rekap Kegiatan Siswa : "+mnn;
+    modal1.style.display = "block";
+   }
+   else{
+    document.getElementById("loadingModal").style.display = "block";
+	document.getElementById('tmodal').innerHTML="<b>Tidak ada data</b>"
+   }
+	 
+	 
+ 	
+	   }
+	   }
+  
+  xhr.onerror = function() {
+   document.getElementById("kdata2").disabled=false;
+   document.getElementById("kdata2").innerHTML='Lihat Daftar Inputan';
+    document.getElementById("loadingModal").style.display = "block";
+	document.getElementById('tmodal').innerHTML="<b>Tidak dapat terhubung ke server</b>"
+     
+  };
+
+  xhr.send(JSON.stringify(bb2));
+	   
+	   
+   
+ }
+
