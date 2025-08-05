@@ -305,6 +305,7 @@ var xhr = new XMLHttpRequest();
 
   xhr.onload = function() {
     if (xhr.status === 200) {  
+	     document.getElementById("kdata3").style.display = "block";
 	 bdata=JSON.parse(xhr.responseText)
 	 document.getElementById("lod").style.display="none"
   var tbody = document.getElementById("tabelSiswa").getElementsByTagName("tbody")[0];
@@ -428,10 +429,13 @@ var cpp=1;
  }
 function ref3(){
 document.querySelector("#tabelSiswa tbody").innerHTML = '';			
+ document.getElementById("kdata3").style.display = "none";
 let mn=localStorage.getItem("nama")
 let bb4={"kode":3,"nama":mn}
        send3(bb4)	
+
 }
+
 
 
 
