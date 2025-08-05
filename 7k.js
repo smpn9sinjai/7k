@@ -424,12 +424,14 @@ var cpp=1;
 	document.getElementById('tmodal').innerHTML="<b>Tidak dapat terhubung ke server</b>"
      
   };
-
   xhr.send(JSON.stringify(bb2));
-	   
-	   
-   
  }
+function ref3(){
+document.querySelector("#tabelSiswa tbody").innerHTML = '';			
+let mn=localStorage.getItem("nama")
+let bb4={"kode":3,"nama":mn}
+       send3(bb4)	
+}
 
 
 
