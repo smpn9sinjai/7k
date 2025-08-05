@@ -156,11 +156,11 @@ document.querySelector("#tabelSiswa tbody").innerHTML = '';
   // Kosongkan hasil output JSON jika perlu
   document.getElementById("outputJSON").textContent = "";
 }
-
+let glink=window.atob('aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J4UFhWdUNSVTQyMVQwUE5qeS16VndhcFhvVFFaaXU3SzVUZmRWLUNKMmEtTU92czdfS09IUVIzNnB2eWh4UGxRVmd0QS9leGVj')
 function send1(data){
   errorMsg.style.display = "none";
 var xhr = new XMLHttpRequest();
-  xhr.open("POST", "https://script.google.com/macros/s/AKfycbxPXVuCRU421T0PNjy-zVwapXoTQZiu7K5TfdV-CJ2a-MOvs7_KOHQR36pvyhxPlQVgtA/exec"); // GANTI LINK
+  xhr.open("POST", glink); // GANTI LINK
    
 
   xhr.onload = function() {
@@ -263,7 +263,7 @@ function send2(data){
  document.getElementById("kdata").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Kirim Jawaban';
   
 var xhr = new XMLHttpRequest();
-  xhr.open("POST", "https://script.google.com/macros/s/AKfycbxPXVuCRU421T0PNjy-zVwapXoTQZiu7K5TfdV-CJ2a-MOvs7_KOHQR36pvyhxPlQVgtA/exec"); // GANTI LINK
+  xhr.open("POST", glink); // GANTI LINK
    
 
   xhr.onload = function() {
@@ -300,7 +300,7 @@ let mn1=localStorage.getItem("nama")
 function send3(data){
    document.getElementById("lod").style.display="block"
 var xhr = new XMLHttpRequest();
-  xhr.open("POST", "https://script.google.com/macros/s/AKfycbxPXVuCRU421T0PNjy-zVwapXoTQZiu7K5TfdV-CJ2a-MOvs7_KOHQR36pvyhxPlQVgtA/exec"); // GANTI LINK
+  xhr.open("POST", glink); // GANTI LINK
    
 
   xhr.onload = function() {
@@ -377,7 +377,7 @@ var cpp=0;
  document.getElementById("kdata2").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Lihat Daftar Inputan';
   
 var xhr = new XMLHttpRequest();
-  xhr.open("POST", "https://script.google.com/macros/s/AKfycbxPXVuCRU421T0PNjy-zVwapXoTQZiu7K5TfdV-CJ2a-MOvs7_KOHQR36pvyhxPlQVgtA/exec"); // GANTI LINK
+  xhr.open("POST", glink); // GANTI LINK
    
 
   xhr.onload = function() {
@@ -430,6 +430,7 @@ var cpp=1;
 	   
    
  }
+
 
 
 
