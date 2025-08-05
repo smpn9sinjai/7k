@@ -236,7 +236,7 @@
   width: 98%;
   
   /* Sesuaikan tinggi layar */
-  max-height: 97vh; /* 90% dari tinggi viewport */
+  height: 98vh; /* 90% dari tinggi viewport */
   overflow:hidden;
 }
     .close {
@@ -270,6 +270,7 @@
 }
 
  
+
 
 
 
