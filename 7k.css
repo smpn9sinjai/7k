@@ -194,9 +194,10 @@
 #rekapTable {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
+      margin: 0px;
       font-family: Arial, sans-serif;
 	  font-size:14px;
+	   
     }
  #rekapTable  th, #rekapTable  td {
   padding: 10px;
