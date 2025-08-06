@@ -139,7 +139,9 @@ document.querySelector("#tabelSiswa tbody").innerHTML = '';
       // Login sederhana
       }
     }
+	let isup=0;
 	function logout() {
+		isup=0;
 	 document.body.style.overflow = "scroll"
 	document.getElementsByClassName("container1")[0].style.marginTop="70px"
   // Sembunyikan form utama dan tampilkan login kembali
@@ -156,6 +158,7 @@ document.querySelector("#tabelSiswa tbody").innerHTML = '';
   // Kosongkan hasil output JSON jika perlu
   document.getElementById("outputJSON").textContent = "";
 }
+
 let glink=window.atob('aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J4UFhWdUNSVTQyMVQwUE5qeS16VndhcFhvVFFaaXU3SzVUZmRWLUNKMmEtTU92czdfS09IUVIzNnB2eWh4UGxRVmd0QS9leGVj')
 function send1(data){
   errorMsg.style.display = "none";
@@ -240,6 +243,7 @@ document.getElementById("logoutBtn").innerHTML=`
 `
 document.getElementById("loginCard").style.display = "none";
         document.getElementById("mainForm").style.display = "block";
+		 
 }
 
 if(localStorage.getItem("nama") && localStorage.getItem("nis") && localStorage.getItem("sbg")==2 ){
@@ -268,6 +272,7 @@ var xhr = new XMLHttpRequest();
 
   xhr.onload = function() {
     if (xhr.status === 200) {  
+	   if( xhr.responseText =="Berhasil Disimpan"){isup=0;}
 	document.getElementsByClassName("container1")[0].style.marginTop="0px"
 	//alert(xhr.responseText)
 	 document.getElementById("loadingModal").style.display = "block";
@@ -350,20 +355,22 @@ document.body.style.overflow = "hidden"
 var ct=''
 var mnn="";
 var cpp=0;
+var num=0;
   for (var i = 1; i < bdata.data2.length; i++) {
    
   if (bdata.data2[i][2]==niss){
   mnn=bdata.data2[i][3]
   cpp=1;
+  num++;
      // ct+="<tr><td style='text-align:center'>"+(i)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata.data2[i][1]+"</td><td>"+bdata.data2[i][6]+"</td><td style='text-align:center'>"+bdata.data2[i][7]+"</td><td style='text-align:center'>"+bdata.data2[i][8]+"</td><td style='text-align:center'>"+bdata.data2[i][9]+"</td><td style='text-align:center'>"+bdata.data2[i][10]+"</td><td style='text-align:center'>"+bdata.data2[i][11]+"</td><td style='text-align:center'>"+bdata.data2[i][12]+"</td></tr>"
    let gr = (bdata.data2[i][14] == 0)
   ? `<button class='btn' onclick='verifikasi(this, 2, "${bdata.data2[i][1]}", "${bdata.data2[i][2]}")' style='font-size:13px;padding:5px'>
       <i class='fa-solid fa-user'></i> Verifikasi
      </button>`
-  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 24px'></i></span>`;
+  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>`;
 
-   let ort=(bdata.data2[i][13]==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 24px'></i></span>"
-      ct+="<tr><td style='text-align:center'>"+(i)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata.data2[i][1]+"</td><td>"+bdata.data2[i][6]+"</td><td style='text-align:center'>"+bdata.data2[i][7]+"</td><td style='text-align:center'>"+bdata.data2[i][8]+"</td><td style='text-align:center'>"+bdata.data2[i][9]+"</td><td style='text-align:center'>"+bdata.data2[i][10]+"</td><td style='text-align:center'>"+bdata.data2[i][11]+"</td><td style='text-align:center'>"+bdata.data2[i][12]+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
+   let ort=(bdata.data2[i][13]==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
+      ct+="<tr><td style='text-align:center'>"+num+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata.data2[i][1]+"</td><td>"+bdata.data2[i][6]+"</td><td style='text-align:center'>"+bdata.data2[i][7]+"</td><td style='text-align:center'>"+bdata.data2[i][8]+"</td><td style='text-align:center'>"+bdata.data2[i][9]+"</td><td style='text-align:center'>"+bdata.data2[i][10]+"</td><td style='text-align:center'>"+bdata.data2[i][11]+"</td><td style='text-align:center'>"+bdata.data2[i][12]+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
    
   
   
@@ -380,13 +387,51 @@ var cpp=0;
    }
 }
 
+var  bdata='';
  function sendp(){
-	 let dnis=localStorage.getItem("nis");
-	 let bb2={"kode":4,"nis":dnis}
+	 
+	  let dnis=localStorage.getItem("nis");
+	  let bb2={"kode":4,"nis":dnis}
      
+	 if(isup==1){               var ct='';
+																  var mnn="";
+														var cpp=0;
+														 
+														  for (var i = 0; i < bdata.length; i++) {
+														   
+														   
+														  mnn=bdata[i][3]
+														  cpp=1;
+														   let ort = (bdata[i][13] == 0)
+														  ? `<button class='btn' onclick='verifikasi(this, 1, "${bdata[i][1]}", "${bdata[i][2]}")' style='font-size:13px;padding:5px'>
+															  <i class='fa-solid fa-user'></i> Verifikasi
+															 </button>`
+														  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 24px'></i></span>`;
+
+														   let gr=(bdata[i][14]==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 24px'></i></span>"
+															  ct+="<tr><td style='text-align:center'>"+(i+1)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata[i][1]+"</td><td>"+bdata[i][6]+"</td><td style='text-align:center'>"+bdata[i][7]+"</td><td style='text-align:center'>"+bdata[i][8]+"</td><td style='text-align:center'>"+bdata[i][9]+"</td><td style='text-align:center'>"+bdata[i][10]+"</td><td style='text-align:center'>"+bdata[i][11]+"</td><td style='text-align:center'>"+bdata[i][12]+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
+														   
+														  }
+														 
+														  
+															if(cpp==1){
+															document.body.style.overflow = "hidden"
+															rekapBody.innerHTML=ct; 
+															document.getElementById("pp").innerHTML="Rekap Kegiatan Siswa : "+mnn;
+															modal1.style.display = "block";
+														   }
+														   else{
+															   document.body.style.overflow = "hidden"
+															document.getElementById("loadingModal").style.display = "block";
+															document.getElementById('tmodal').innerHTML="<b>Tidak ada data</b>"
+														   }
+																 return;
+		 
+	 }
+	
  
   document.getElementById("kdata2").disabled=true;
- document.getElementById("kdata2").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Lihat Daftar Inputan';
+  document.getElementById("kdata2").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Lihat Daftar Inputan';
   
 var xhr = new XMLHttpRequest();
   xhr.open("POST", glink); // GANTI LINK
@@ -394,16 +439,17 @@ var xhr = new XMLHttpRequest();
 
   xhr.onload = function() {
     if (xhr.status === 200) {  
-	 
+	 isup=1;
 	 document.getElementById("kdata2").disabled=false;
  document.getElementById("kdata2").innerHTML=' Lihat Daftar Inputan';
-	 var  bdata=JSON.parse(xhr.responseText)
+	  bdata=JSON.parse(xhr.responseText)
  
 	 document.body.style.overflow = "hidden"
  const rekapBody = document.getElementById("rekapBody");
 var ct=''
 var mnn="";
-var cpp=1;
+var cpp=0;
+ 
   for (var i = 0; i < bdata.length; i++) {
    
    
@@ -413,13 +459,13 @@ var cpp=1;
   ? `<button class='btn' onclick='verifikasi(this, 1, "${bdata[i][1]}", "${bdata[i][2]}")' style='font-size:13px;padding:5px'>
       <i class='fa-solid fa-user'></i> Verifikasi
      </button>`
-  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 24px'></i></span>`;
+  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>`;
 
-   let gr=(bdata[i][14]==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 24px'></i></span>"
+   let gr=(bdata[i][14]==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
       ct+="<tr><td style='text-align:center'>"+(i+1)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata[i][1]+"</td><td>"+bdata[i][6]+"</td><td style='text-align:center'>"+bdata[i][7]+"</td><td style='text-align:center'>"+bdata[i][8]+"</td><td style='text-align:center'>"+bdata[i][9]+"</td><td style='text-align:center'>"+bdata[i][10]+"</td><td style='text-align:center'>"+bdata[i][11]+"</td><td style='text-align:center'>"+bdata[i][12]+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
    
   }
-  
+ 
   
     if(cpp==1){
 	rekapBody.innerHTML=ct; 
@@ -455,7 +501,7 @@ let bb4={"kode":3,"nama":mn}
 }
 
 function verifikasi2(button, tipe1,tipe2,tipe3) {
-	alert(tipe1+" "+tipe2+" "+tipe3)
+	 
       const cell = button.parentElement;
 
       // Simpan konten lama
@@ -506,9 +552,9 @@ var xhr = new XMLHttpRequest();
   }
 }  
 		if (gdata.data1 == 1) {
-  for (let i = 1; i < bdata.length; i++) {
+  for (let i = 0; i < bdata.length; i++) {
     if (bdata[i][1] == gdata.data2 && bdata[i][2] == gdata.data3) {
-      bdata[i][14] = 1;
+      bdata[i][13] = 1;
       break;
     }
   }
