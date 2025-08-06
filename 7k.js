@@ -176,7 +176,7 @@ var xhr = new XMLHttpRequest();
         document.getElementById("mainForm").style.display = "block";
 		document.getElementById("logoutBtn").innerHTML=`
   <div style="display: flex; justify-content: space-between; align-items: center;">
-    <span>Selamat Datang ${bdata.nama}</span>
+    <span>Selamat Datang <br> ${bdata.nama}</span>
     <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Klik disini untuk Logout</a>
   </div>
 `
@@ -186,7 +186,7 @@ var xhr = new XMLHttpRequest();
         document.getElementById("mainForm1").style.display = "block";
 		document.getElementById("logoutBtn1").innerHTML=`
   <div style="display: flex; justify-content: space-between; align-items: center;">
-    <span>Selamat Datang ${bdata.nama}</span>
+    <span>Selamat Datang <rb> ${bdata.nama}</span>
     <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Klik disini untuk Logout</a>
   </div>
 `
@@ -234,7 +234,7 @@ document.getElementsByClassName("container1")[0].style.marginTop="0px"
 let mn=localStorage.getItem("nama")
 document.getElementById("logoutBtn").innerHTML=`
   <div style="display: flex; justify-content: space-between; align-items: center;">
-    <span>Selamat Datang ${mn}</span>
+    <span>Selamat Datang <br> ${mn}</span>
     <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Klik disini untuk Logout</a>
   </div>
 `
@@ -247,7 +247,7 @@ document.getElementsByClassName("container1")[0].style.marginTop="0px"
 let mn=localStorage.getItem("nama")
 document.getElementById("logoutBtn1").innerHTML=`
   <div style="display: flex; justify-content: space-between; align-items: center;">
-    <span>Selamat Datang ${mn}</span>
+    <span>Selamat Datang <br> ${mn}</span>
     <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Klik disini untuk Logout</a>
   </div>
 `
@@ -521,5 +521,6 @@ var xhr = new XMLHttpRequest();
   };
   xhr.send(JSON.stringify(bv));
  }
+
 
 
