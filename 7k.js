@@ -257,7 +257,7 @@ document.getElementById("logoutBtn1").innerHTML=`
 document.getElementById("loginCard").style.display = "none";
         document.getElementById("mainForm1").style.display = "block";
 }
-eval(atob('aWYgKHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSAhPT0gIjdrLnNtcG45c2luamFpLnNjaC5pZCIpIHsgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmlubmVySFRNTCA9ICI8Y2VudGVyPjxoMT5Ba3NlcyBkaXRvbGFrPC9oMT48L2NlbnRlcj4iOyB9'))
+//eval(atob('aWYgKHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSAhPT0gIjdrLnNtcG45c2luamFpLnNjaC5pZCIpIHsgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmlubmVySFRNTCA9ICI8Y2VudGVyPjxoMT5Ba3NlcyBkaXRvbGFrPC9oMT48L2NlbnRlcj4iOyB9'))
 function send2(data){
   document.getElementById("kdata").disabled=true;
  document.getElementById("kdata").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Kirim Jawaban';
@@ -355,7 +355,18 @@ var cpp=0;
   if (bdata.data2[i][2]==niss){
   mnn=bdata.data2[i][3]
   cpp=1;
-      ct+="<tr><td style='text-align:center'>"+(i)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata.data2[i][1]+"</td><td>"+bdata.data2[i][6]+"</td><td style='text-align:center'>"+bdata.data2[i][7]+"</td><td style='text-align:center'>"+bdata.data2[i][8]+"</td><td style='text-align:center'>"+bdata.data2[i][9]+"</td><td style='text-align:center'>"+bdata.data2[i][10]+"</td><td style='text-align:center'>"+bdata.data2[i][11]+"</td><td style='text-align:center'>"+bdata.data2[i][12]+"</td></tr>"
+     // ct+="<tr><td style='text-align:center'>"+(i)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata.data2[i][1]+"</td><td>"+bdata.data2[i][6]+"</td><td style='text-align:center'>"+bdata.data2[i][7]+"</td><td style='text-align:center'>"+bdata.data2[i][8]+"</td><td style='text-align:center'>"+bdata.data2[i][9]+"</td><td style='text-align:center'>"+bdata.data2[i][10]+"</td><td style='text-align:center'>"+bdata.data2[i][11]+"</td><td style='text-align:center'>"+bdata.data2[i][12]+"</td></tr>"
+   let gr = (bdata.data2[i][14] == 0)
+  ? `<button class='btn' onclick='verifikasi(this, 2, "${bdata.data2[i][1]}", "${bdata.data2[i][2]}")' style='font-size:13px;padding:5px'>
+      <i class='fa-solid fa-user'></i> Verifikasi
+     </button>`
+  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 24px'></i></span>`;
+
+   let ort=(bdata.data2[i][13]==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 24px'></i></span>"
+      ct+="<tr><td style='text-align:center'>"+(i+1)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata.data2[i][1]+"</td><td>"+bdata.data2[i][6]+"</td><td style='text-align:center'>"+bdata.data2[i][7]+"</td><td style='text-align:center'>"+bdata.data2[i][8]+"</td><td style='text-align:center'>"+bdata.data2[i][9]+"</td><td style='text-align:center'>"+bdata.data2[i][10]+"</td><td style='text-align:center'>"+bdata.data2[i][11]+"</td><td style='text-align:center'>"+bdata.data2[i][12]+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
+   
+  
+  
   }
   }
     if(cpp==1){
@@ -398,7 +409,14 @@ var cpp=1;
    
   mnn=bdata[i][3]
   cpp=1;
-      ct+="<tr><td style='text-align:center'>"+(i+1)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata[i][1]+"</td><td>"+bdata[i][6]+"</td><td style='text-align:center'>"+bdata[i][7]+"</td><td style='text-align:center'>"+bdata[i][8]+"</td><td style='text-align:center'>"+bdata[i][9]+"</td><td style='text-align:center'>"+bdata[i][10]+"</td><td style='text-align:center'>"+bdata[i][11]+"</td><td style='text-align:center'>"+bdata[i][12]+"</td></tr>"
+   let ort = (bdata[i][13] == 0)
+  ? `<button class='btn' onclick='verifikasi(this, 1, "${bdata[i][1]}", "${bdata[i][2]}")' style='font-size:13px;padding:5px'>
+      <i class='fa-solid fa-user'></i> Verifikasi
+     </button>`
+  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 24px'></i></span>`;
+
+   let gr=(bdata[i][14]==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 24px'></i></span>"
+      ct+="<tr><td style='text-align:center'>"+(i+1)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata[i][1]+"</td><td>"+bdata[i][6]+"</td><td style='text-align:center'>"+bdata[i][7]+"</td><td style='text-align:center'>"+bdata[i][8]+"</td><td style='text-align:center'>"+bdata[i][9]+"</td><td style='text-align:center'>"+bdata[i][10]+"</td><td style='text-align:center'>"+bdata[i][11]+"</td><td style='text-align:center'>"+bdata[i][12]+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
    
   }
   
@@ -436,11 +454,71 @@ let bb4={"kode":3,"nama":mn}
 
 }
 
+function verifikasi2(button, tipe1,tipe2,tipe3) {
+	alert(tipe1+" "+tipe2+" "+tipe3)
+      const cell = button.parentElement;
+
+      // Simpan konten lama
+      const originalContent = button.innerHTML;
+      button.disabled = true;
+      button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Memproses...';
+
+      setTimeout(() => {
+        cell.innerHTML = `<span class="success"><i class="fa-solid fa-circle-check" style="font-size: 24px"></i> ${tipe1 === 1 ? '' : ''}</span>`;
+      }, 2000);
+    }
+  
 
 
 
 
 
+function verifikasi(button, tipe1,tipe2,tipe3){
+	 
+	 
+	let bv={"kode":5,"tp1":tipe1,"tp2":tipe2,"tp3":tipe3}
+      const cell = button.parentElement;
 
+      // Simpan konten lama
+      const originalContent = button.innerHTML;
+      button.disabled = true;
+      button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Memproses...'; 
+	 
+var xhr = new XMLHttpRequest();
+  xhr.open("POST", glink); // GANTI LINK
+   
 
+  xhr.onload = function() {
+    if (xhr.status === 200) {  
+	 
+	
+	 
+	   cell.innerHTML = `<span class="success"><i class="fa-solid fa-circle-check" style="font-size: 24px"></i> ${tipe1 === 1 ? '' : ''}</span>`;
+	    var  gdata=JSON.parse(xhr.responseText)
+   
+       
+		if (gdata.data1 == 2) {
+  for (let i = 1; i < bdata.data2.length; i++) {
+    if (bdata.data2[i][1] == gdata.data2 && bdata.data2[i][2] == gdata.data3) {
+      bdata.data2[i][14] = 1;
+      break;
+    }
+  }
+}  
+		if (gdata.data1 == 1) {
+  for (let i = 1; i < bdata.length; i++) {
+    if (bdata[i][1] == gdata.data2 && bdata[i][2] == gdata.data3) {
+      bdata[i][14] = 1;
+      break;
+    }
+  }
+}  	  
+	}
+  }
+	 
+  xhr.onerror = function() {
+    alert('error')
+  };
+  xhr.send(JSON.stringify(bv));
+ }
 
