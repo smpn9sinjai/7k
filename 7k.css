@@ -247,7 +247,7 @@
       font-size: 20px;
       cursor: pointer;
     }	
-	#mtabel{margin:0px;padding:0px;overflow-y:scroll;max-height: 90vh}
+	#mtabel{margin:0px;padding:0px;overflow-y:auto;max-height: 90vh}
 	
 @media screen and (max-width: 767px) {
 #mtabel{margin:0px;padding:0px;overflow:scroll;max-height: 90vh}
@@ -271,6 +271,7 @@
 }
 
  
+
 
 
 
