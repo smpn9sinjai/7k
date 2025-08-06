@@ -177,7 +177,7 @@ var xhr = new XMLHttpRequest();
 		document.getElementById("logoutBtn").innerHTML=`
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <span>Selamat Datang <br> ${bdata.nama}</span>
-    <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Klik disini untuk Logout</a>
+    <a href="#" onclick="logout()" style="color: white; text-decoration: underline;"> Logout</a>
   </div>
 `
 		}
@@ -187,7 +187,7 @@ var xhr = new XMLHttpRequest();
 		document.getElementById("logoutBtn1").innerHTML=`
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <span>Selamat Datang <br> ${bdata.nama}</span>
-    <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Klik disini untuk Logout</a>
+    <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Logout</a>
   </div>
 `
 let bb1={"kode":3,"nama":bdata.nama}
@@ -235,7 +235,7 @@ let mn=localStorage.getItem("nama")
 document.getElementById("logoutBtn").innerHTML=`
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <span>Selamat Datang <br> ${mn}</span>
-    <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Klik disini untuk Logout</a>
+    <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Logout</a>
   </div>
 `
 document.getElementById("loginCard").style.display = "none";
@@ -248,7 +248,7 @@ let mn=localStorage.getItem("nama")
 document.getElementById("logoutBtn1").innerHTML=`
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <span>Selamat Datang <br> ${mn}</span>
-    <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Klik disini untuk Logout</a>
+    <a href="#" onclick="logout()" style="color: white; text-decoration: underline;">Logout</a>
   </div>
 `
  let bb={"kode":3,"nama":mn}
@@ -521,6 +521,7 @@ var xhr = new XMLHttpRequest();
   };
   xhr.send(JSON.stringify(bv));
  }
+
 
 
 
