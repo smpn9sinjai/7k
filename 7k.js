@@ -142,6 +142,7 @@ document.querySelector("#tabelSiswa tbody").innerHTML = '';
 	let isup=0;
 	function logout() {
 		isup=0;
+		document.getElementById("jud").innerText='Daftar Siswa Perwalian Anda'
 	 document.body.style.overflow = "scroll"
 	document.getElementsByClassName("container1")[0].style.marginTop="70px"
   // Sembunyikan form utama dan tampilkan login kembali
@@ -170,7 +171,7 @@ var xhr = new XMLHttpRequest();
     if (xhr.status === 200) {  
 	 
     let bdata=JSON.parse(xhr.responseText); // tampilkan respon dari server
- 	
+  
 	  if (bdata.kode==7) {  
 	  document.getElementsByClassName("container1")[0].style.marginTop="0px"
 	     css.disabled=false;
@@ -184,7 +185,10 @@ var xhr = new XMLHttpRequest();
   </div>
 `
 		}
-		  if(bdata.sbg==2){
+		  if(bdata.sbg==2 || bdata.sbg==3){  
+ 
+	if(bdata.sbg==3){document.getElementById("jud").innerText='Daftar Siswa'}
+	else{document.getElementById("jud").innerText='Daftar Siswa Perwalian Anda'}		  
         document.getElementById("loginCard").style.display = "none";
         document.getElementById("mainForm1").style.display = "block";
 		document.getElementById("logoutBtn1").innerHTML=`
@@ -246,7 +250,7 @@ document.getElementById("loginCard").style.display = "none";
 		 
 }
 
-if(localStorage.getItem("nama") && localStorage.getItem("nis") && localStorage.getItem("sbg")==2 ){
+if(localStorage.getItem("nama") && localStorage.getItem("nis") && ((localStorage.getItem("sbg")==2) || localStorage.getItem("sbg")==3 )){
 document.getElementsByClassName("container1")[0].style.marginTop="0px"
 let mn=localStorage.getItem("nama")
 document.getElementById("logoutBtn1").innerHTML=`
@@ -261,7 +265,7 @@ document.getElementById("logoutBtn1").innerHTML=`
 document.getElementById("loginCard").style.display = "none";
         document.getElementById("mainForm1").style.display = "block";
 }
-eval(atob('aWYgKHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSAhPT0gIjdrLnNtcG45c2luamFpLnNjaC5pZCIpIHsgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmlubmVySFRNTCA9ICI8Y2VudGVyPjxoMT5Ba3NlcyBkaXRvbGFrPC9oMT48L2NlbnRlcj4iOyB9'))
+//eval(atob('aWYgKHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSAhPT0gIjdrLnNtcG45c2luamFpLnNjaC5pZCIpIHsgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmlubmVySFRNTCA9ICI8Y2VudGVyPjxoMT5Ba3NlcyBkaXRvbGFrPC9oMT48L2NlbnRlcj4iOyB9'))
 function send2(data){
   document.getElementById("kdata").disabled=true;
  document.getElementById("kdata").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Kirim Jawaban';
@@ -350,6 +354,7 @@ var ct=''
 	  document.body.style.overflow = ""
     };
 function rekap(niss){
+ let ssbg=localStorage.getItem("sbg");
 document.body.style.overflow = "hidden"
  const rekapBody = document.getElementById("rekapBody");
 var ct=''
@@ -363,11 +368,19 @@ var num=0;
   cpp=1;
   num++;
      // ct+="<tr><td style='text-align:center'>"+(i)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata.data2[i][1]+"</td><td>"+bdata.data2[i][6]+"</td><td style='text-align:center'>"+bdata.data2[i][7]+"</td><td style='text-align:center'>"+bdata.data2[i][8]+"</td><td style='text-align:center'>"+bdata.data2[i][9]+"</td><td style='text-align:center'>"+bdata.data2[i][10]+"</td><td style='text-align:center'>"+bdata.data2[i][11]+"</td><td style='text-align:center'>"+bdata.data2[i][12]+"</td></tr>"
-   let gr = (bdata.data2[i][14] == 0)
+let gr=''; 
+ if (ssbg==2){
+   gr = (bdata.data2[i][14] == 0)
   ? `<button class='btn' onclick='verifikasi(this, 2, "${bdata.data2[i][1]}", "${bdata.data2[i][2]}")' style='font-size:13px;padding:5px'>
       <i class='fa-solid fa-user'></i> Verifikasi
      </button>`
   : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>`;
+  
+  }
+  else {
+	  gr=(bdata.data2[i][14]==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
+	  
+  }
 
    let ort=(bdata.data2[i][13]==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
       ct+="<tr><td style='text-align:center'>"+num+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata.data2[i][1]+"</td><td>"+bdata.data2[i][6]+"</td><td style='text-align:center'>"+bdata.data2[i][7]+"</td><td style='text-align:center'>"+bdata.data2[i][8]+"</td><td style='text-align:center'>"+bdata.data2[i][9]+"</td><td style='text-align:center'>"+bdata.data2[i][10]+"</td><td style='text-align:center'>"+bdata.data2[i][11]+"</td><td style='text-align:center'>"+bdata.data2[i][12]+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
@@ -528,7 +541,7 @@ function verifikasi(button, tipe1,tipe2,tipe3){
       // Simpan konten lama
       const originalContent = button.innerHTML;
       button.disabled = true;
-      button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Memproses...'; 
+      button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> '; 
 	 
 var xhr = new XMLHttpRequest();
   xhr.open("POST", glink); // GANTI LINK
