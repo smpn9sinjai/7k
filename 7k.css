@@ -9,6 +9,14 @@
       color: #333;
       margin: 2px;
       padding: 0px;
+		 background: linear-gradient(
+      135deg,
+      #dbe9f4 0%,   /* biru pastel muda */
+      #fce8e6 25%,  /* pink pastel */
+      #e6f7f1 50%,  /* hijau pastel muda */
+      #fff4e6 75%,  /* krem pastel */
+      #e8eaf6 100%  /* ungu pastel sangat muda */
+    );
     }
 
     .container {
@@ -271,6 +279,7 @@
 }
 
  
+
 
 
 
