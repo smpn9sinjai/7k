@@ -580,6 +580,8 @@ var xhr = new XMLHttpRequest();
   };
   xhr.send(JSON.stringify(bv));
  }
+document.body.style.background = "linear-gradient(135deg, #dbe9f4 0%, #fce8e6 25%, #e6f7f1 50%, #fff4e6 75%, #e8eaf6 100%)";
+document.body.style.backgroundAttachment = "fixed";
 
 
 
