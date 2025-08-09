@@ -1,4 +1,15 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyDKLPbYEEk-KuEvEyZtcdRFtXkb-DcMHA0",
+  authDomain: "datasiswa-e6dbc.firebaseapp.com",
+  databaseURL: "https://datasiswa-e6dbc-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "datasiswa-e6dbc",
+  storageBucket: "datasiswa-e6dbc.firebasestorage.app",
+  messagingSenderId: "252071892087",
+  appId: "1:252071892087:web:f0982af002b6bf92346272"
+};
 
+   firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
   
   function handleBangunPagi(value) {
     const jamField = document.getElementById('jam_bangun_pagi');
@@ -111,6 +122,10 @@ function handleOlahraga(value) {
 let mn=localStorage.getItem("nama")
      result.nama=mn;
 	 let mn1=localStorage.getItem("nis")
+	 let jk=localStorage.getItem("jk")
+	 let kelas=localStorage.getItem("kelas")
+	 result.jk=jk;
+	 result.kelas=kelas;
 	 result.nis=mn1;
      result.nama=mn;
     result.kode=2;
@@ -134,8 +149,8 @@ document.querySelector("#tabelSiswa tbody").innerHTML = '';
 	 if (username && password) {
     ss.innerHTML = '<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Login';
     ss.disabled=true;
-	  let bb={"kode":1,"username":username,"password":password}
-       send1(bb)
+	 
+       send1(username,password)
       // Login sederhana
       }
     }
@@ -152,6 +167,9 @@ document.querySelector("#tabelSiswa tbody").innerHTML = '';
   localStorage.removeItem("nama");
 		localStorage.removeItem("nis");
 		localStorage.removeItem("sbg");
+		localStorage.removeItem("jk");
+		localStorage.removeItem("kelas");
+		
   // Kosongkan form login
   document.getElementById("username").value = "";
   document.getElementById("password").value = "";
@@ -161,58 +179,20 @@ document.querySelector("#tabelSiswa tbody").innerHTML = '';
 }
 
 let glink=window.atob('aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J4UFhWdUNSVTQyMVQwUE5qeS16VndhcFhvVFFaaXU3SzVUZmRWLUNKMmEtTU92czdfS09IUVIzNnB2eWh4UGxRVmd0QS9leGVj')
-function send1(data){
+function send1(user,pass){
   errorMsg.style.display = "none";
-var xhr = new XMLHttpRequest();
-  xhr.open("POST", glink); // GANTI LINK
-   
-
-  xhr.onload = function() {
-    if (xhr.status === 200) {  
-	 
-    let bdata=JSON.parse(xhr.responseText); // tampilkan respon dari server
   
-	  if (bdata.kode==7) {  
-	  document.getElementsByClassName("container1")[0].style.marginTop="0px"
-	     css.disabled=false;
-		 if(bdata.sbg==1){
-        document.getElementById("loginCard").style.display = "none";
-        document.getElementById("mainForm").style.display = "block";
-		document.getElementById("logoutBtn").innerHTML=`
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <span>Selamat Datang <br> ${bdata.nama}</span>
-    <a href="#" onclick="logout()" style="color: white; text-decoration: none;"> Logout</a>
-  </div>
-`
-		}
-		  if(bdata.sbg==2 || bdata.sbg==3){  
- 
-	if(bdata.sbg==3){document.getElementById("jud").innerText='Daftar Siswa'}
-	else{document.getElementById("jud").innerText='Daftar Siswa Perwalian Anda'}		  
-        document.getElementById("loginCard").style.display = "none";
-        document.getElementById("mainForm1").style.display = "block";
-		document.getElementById("logoutBtn1").innerHTML=`
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <span>Selamat Datang <br> ${bdata.nama}</span>
-    <a href="#" onclick="logout()" style="color: white; text-decoration: none;">Logout</a>
-  </div>
-`
-let bb1={"kode":3,"nama":bdata.nama}
-       send3(bb1)
-	}
-		
-        errorMsg.style.display = "none";
-		localStorage.setItem("nama", bdata.nama);
-		localStorage.setItem("nis", bdata.nis);
-		localStorage.setItem("sbg", bdata.sbg);
-		
-		css.innerHTML = 'Login';
-		
-		
-		
+  
+  
 
-      } else {
-	   localStorage.removeItem("nama");
+db.collection("users")
+  .where("nis", "==", user)
+  .where("pass", "==", pass)
+  .get()
+  .then((querySnapshot) => {
+    if (querySnapshot.empty) {
+      console.log("Data tidak ditemukan atau password salah");
+	    localStorage.removeItem("nama");
 		localStorage.removeItem("nis");
 			localStorage.removeItem("sbg");
         errorMsg.style.display = "block";
@@ -220,20 +200,66 @@ let bb1={"kode":3,"nama":bdata.nama}
 		css.innerHTML = 'Login';
 		 css.innerHTML = ' Login';
 		 setTimeout(()=>{errorMsg.style.display = "none";},2000)
-      }
- 
     } else {
-	css.disabled=false;
-	css.innerHTML = 'Login';
-      alert("Terjadi kesalahan saat mengirim data.");
-    }
-  };
-  
-  xhr.onerror = function() {
-    alert("Tidak dapat terhubung ke server.");
-  };
+      querySnapshot.forEach((doc) => {
+        console.log("Nama siswa:", doc.data().nama);
+		
+		
+									  
+								  document.getElementsByClassName("container1")[0].style.marginTop="0px"
+									 css.disabled=false;
+									 if(doc.data().sbg==1){
+									document.getElementById("loginCard").style.display = "none";
+									document.getElementById("mainForm").style.display = "block";
+									document.getElementById("logoutBtn").innerHTML=`
+							  <div style="display: flex; justify-content: space-between; align-items: center;">
+								<span>Selamat Datang <br> ${doc.data().nama}</span>
+								<a href="#" onclick="logout()" style="color: white; text-decoration: none;"> Logout</a>
+							  </div>
+							`
+									}
+									  if(doc.data().sbg==2 || doc.data().sbg==3){  
+							 
+								if(doc.data().sbg==3){document.getElementById("jud").innerText='Daftar Siswa'}
+								else{document.getElementById("jud").innerText='Daftar Siswa Perwalian Anda'}		  
+									document.getElementById("loginCard").style.display = "none";
+									document.getElementById("mainForm1").style.display = "block";
+									document.getElementById("logoutBtn1").innerHTML=`
+							  <div style="display: flex; justify-content: space-between; align-items: center;">
+								<span>Selamat Datang <br> ${doc.data().nama}</span>
+								<a href="#" onclick="logout()" style="color: white; text-decoration: none;">Logout</a>
+							  </div>
+							`
+							 
+								   send3(doc.data().nama,doc.data().sbg)
+								}
+									
+									errorMsg.style.display = "none";
+									localStorage.setItem("nama", doc.data().nama);
+									localStorage.setItem("nis",doc.data().nis);
+									localStorage.setItem("sbg", doc.data().sbg);
+									localStorage.setItem("kelas", doc.data().kelas);
+									localStorage.setItem("jk", doc.data().jk)
+									
+									css.innerHTML = 'Login';
+									
+									
+									
 
-  xhr.send(JSON.stringify(data));
+								  
+		
+		 
+		
+      });
+    }
+  })
+  .catch((error) => {css.disabled=false;
+	css.innerHTML = 'Login';
+    console.error("Error mencari data:", error);
+  });
+
+  
+   
 };
 
 if(localStorage.getItem("nama") && localStorage.getItem("nis") && localStorage.getItem("sbg")==1 ){
@@ -253,49 +279,123 @@ document.getElementById("loginCard").style.display = "none";
 if(localStorage.getItem("nama") && localStorage.getItem("nis") && ((localStorage.getItem("sbg")==2) || localStorage.getItem("sbg")==3 )){
 document.getElementsByClassName("container1")[0].style.marginTop="0px"
 let mn=localStorage.getItem("nama")
+let sb=localStorage.getItem("sbg")
 document.getElementById("logoutBtn1").innerHTML=`
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <span>Selamat Datang <br> ${mn}</span>
     <a href="#" onclick="logout()" style="color: white; text-decoration: none;">Logout</a>
   </div>
 `
- let bb={"kode":3,"nama":mn}
-       send3(bb)
+  
+       send3(mn,sb)
 	 
 document.getElementById("loginCard").style.display = "none";
         document.getElementById("mainForm1").style.display = "block";
 }
-eval(atob('aWYgKHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSAhPT0gIjdrLnNtcG45c2luamFpLnNjaC5pZCIpIHsgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmlubmVySFRNTCA9ICI8Y2VudGVyPjxoMT5Ba3NlcyBkaXRvbGFrPC9oMT48L2NlbnRlcj4iOyB9'))
+//eval(atob('aWYgKHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSAhPT0gIjdrLnNtcG45c2luamFpLnNjaC5pZCIpIHsgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmlubmVySFRNTCA9ICI8Y2VudGVyPjxoMT5Ba3NlcyBkaXRvbGFrPC9oMT48L2NlbnRlcj4iOyB9'))
 function send2(data){
+	
+	
+	 const tanggal = data.tanggal_bangun_pagi;
+  
+   
+	
+  var bagian = tanggal.split("-"); // ["2025", "08", "07"]
+  var tglFormatBaru = bagian[2] + "-" + bagian[1] + "-" + bagian[0];
+
+
+  const nis1 = data.nis;
+   var now = new Date();
+ 
+
+  
+var nama1 = data.nama;
+
+  
+   var jk1 = data.jk;
+   var kls1 = data.kelas;
+    var bangun_pagi1 = (data.bangun_pagi === "Ya") ? 'Ya jam : '+data.jam_bangun_pagi :  'Tidak Jam : '+data.jam_bangun_pagi+' Alasan '+data.alasan_bangun_pagi;
+
+    var ket = '';
+ket += data.alasan_Subuh   ? 'Subuh tidak, alasan: '   + data.alasan_Subuh + '. '   : '';
+ket += data.alasan_Dzuhur  ? 'Dzuhur tidak, alasan: '  + data.alasan_Dzuhur + '. '  : '';
+ket += data.alasan_Ashar   ? 'Ashar tidak, alasan: '   + data.alasan_Ashar + '. '   : '';
+ket += data.alasan_Maghrib ? 'Maghrib tidak, alasan: ' + data.alasan_Maghrib + '. ' : '';
+ket += data.alasan_Isya    ? 'Isya tidak, alasan: '    + data.alasan_Isya + '. '    : '';
+
+
+     var beribadah1 = (data.beribadah === "Ya") ? 'Ya Shalat : '+data.sholat+", "+ket :  'Tidak Alasan : '+data.alasan_beribadah;
+     
+    var berolahraga1 = (data.berolahraga === "Ya") ? 'Ya Jam Mulai : '+data.jam_mulai_olahraga+", Jam Selesai : "+data.jam_selesai_olahraga+' Jenis olahraga '+data.jenis_olahraga :  'Tidak Alasan : '+data.alasan_olahraga;
+
+   var judul_buku1 = (data.judul_buku ) ? "Judul : "+data.judul_buku+", informasi yg didapat : "+data.informasi_didapat : ""
+       
+   var bermasyarakat1 = (data.bermasyarakat === "Ya") ? 'Ya Kegiatan : '+data.kegiatan_bermasyarakat+", Persaaan "+data.perasaan_bermasyarakat : 'Tidak alasan '+data.alasan_bermasyarakat;
+     
+ var tidur_cepat1 = (data.tidur_cepat === "Ya") ? 'Ya Jam tidur : '+data.jam_tidur :  'Tidak Jam tidur :'+data.jam_tidur+'  Alasan : '+data.alasan_tidur_cepat;
+
+   var menu_makan_sehat1 = (data.menu_makan_sehat) ? data.menu_makan_sehat :  '';
+	
+	
   document.getElementById("kdata").disabled=true;
  document.getElementById("kdata").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Kirim Jawaban';
-  
-var xhr = new XMLHttpRequest();
-  xhr.open("POST", glink); // GANTI LINK
-   
-
-  xhr.onload = function() {
-    if (xhr.status === 200) {  
-	   if( xhr.responseText =="Berhasil Disimpan"){isup=0;}
-	document.getElementsByClassName("container1")[0].style.marginTop="0px"
+  	
+	db.collection("datasiswa")
+  .where("tgl", "==",tglFormatBaru )
+  .where("nis", "==", nis1)
+  .get()
+  .then(querySnapshot => {
+    if (!querySnapshot.empty) {
+		  document.getElementsByClassName("container1")[0].style.marginTop="0px"
 	//alert(xhr.responseText)
 	 document.getElementById("loadingModal").style.display = "block";
-	document.getElementById('tmodal').innerHTML="<b>"+xhr.responseText+"</b>"
+	document.getElementById('tmodal').innerHTML="<b>"+"Gagal disimpan data sudah ada"+"</b>"
     document.getElementById("kdata").innerHTML='Kirim Jawaban';
      document.getElementById("kdata").disabled=false;
- 	
-	   }
-	   }
-  
-  xhr.onerror = function() {
-   document.getElementById("kdata").disabled=false;
+      console.log("⚠️ Data sudah ada, tidak disimpan.");
+    } else {
+      db.collection("datasiswa").add({
+          tgl: tglFormatBaru ,
+		  nis: nis1,
+		  nama:nama1,
+		  jk:jk1,
+		  kelas:kls1,
+		  bagunpagi:bangun_pagi1 ,
+		  beribadah:beribadah1,
+		  olahraga:berolahraga1,
+		  makansehat:menu_makan_sehat1,
+		  belajar:judul_buku1 ,
+		  bermasyarakat: bermasyarakat1,
+		  tidurcepat:tidur_cepat1,
+		  ortu:0,
+		  guru:0
+      })
+      .then(() => {
+		  // console.log("Data berhasil ditambahkan dengan ID:", docRef.id);
+       document.getElementsByClassName("container1")[0].style.marginTop="0px"
+	//alert(xhr.responseText)
+	 document.getElementById("loadingModal").style.display = "block";
+	document.getElementById('tmodal').innerHTML="<b>"+"Data behasil di simpan"+"</b>"
+    document.getElementById("kdata").innerHTML='Kirim Jawaban';
+     document.getElementById("kdata").disabled=false;
+        console.log("✅ Data berhasil ditambahkan.");
+      })
+      .catch(error => {
+        console.error("❌ Error menambahkan data:", error);
+		 document.getElementById("kdata").disabled=false;
    document.getElementById("kdata").innerHTML='Kirim Jawaban';
     document.getElementById("loadingModal").style.display = "block";
 	document.getElementById('tmodal').innerHTML="<b>Tidak dapat terhubung ke server</b>"
-     
-  };
+  
+      });
+    }
+  })
+  .catch(error => {
+    console.error("❌ Error mencari data:", error);
+  });
+	
 
-  xhr.send(JSON.stringify(data));
+	 
 };
 function closeModal() {
     document.body.style.overflow = "scroll"	
@@ -306,47 +406,63 @@ let mn1=localStorage.getItem("nama")
  
  var bdata='';
 
-function send3(data){
-   document.getElementById("lod").style.display="block"
-var xhr = new XMLHttpRequest();
-  xhr.open("POST", glink); // GANTI LINK
-   
+function send3(data,sbg) {
+  document.getElementById("lod").style.display = "block";
 
-  xhr.onload = function() {
-    if (xhr.status === 200) {  
-	     document.getElementById("kdata3").style.display = "block";
-	 bdata=JSON.parse(xhr.responseText)
-	 document.getElementById("lod").style.display="none"
-  var tbody = document.getElementById("tabelSiswa").getElementsByTagName("tbody")[0];
-var ct=''
-  for (var i = 0; i < bdata.data1.length; i++) {
-      ct+="<tr><td style='text-align:center'>"+(i+1)+"</td><td style='text-align:center'>"+bdata.data1[i][0]+"</td><td>"+bdata.data1[i][1]+"</td><td style='text-align:center'>"+bdata.data1[i][2]+"</td><td style='text-align:center'>"+bdata.data1[i][3]+"</td></tr>"
-  }
-	tbody.innerHTML=ct; 
-	
-	 const rows = document.querySelectorAll("#tabelSiswa tbody tr");
-
-    for (let i = 0; i < rows.length; i++) {
-      rows[i].addEventListener("click", function () {
-        const nis2 = this.cells[1].textContent; // ambil isi kolom ke-2 (NIS)
-		rekap(nis2)
-        return;
-      });
-    }
-	
-	
- 	
-	   }
-	   }
   
-  xhr.onerror = function() {
-   
-    
-     
-  };
 
-  xhr.send(JSON.stringify(data));
-};
+  let query;
+   
+  if (sbg === "2") {
+    query = db.collection("users").where("wali", "==", data);
+  } else if (sbg === "3") {
+    query = db.collection("users").where("sbg", "==", "1");
+  } else {
+    console.warn("Peran (sbg) tidak dikenali:", sbg);
+    document.getElementById("lod").style.display = "none";
+    return;
+  }
+
+  query.get()
+    .then((querySnapshot) => {
+      if (querySnapshot.empty) {
+        console.log("⚠️ Data tidak ditemukan");
+      } else {
+        document.getElementById("kdata3").style.display = "none";
+        document.getElementById("lod").style.display = "none";
+
+        const tbody = document.querySelector("#tabelSiswa tbody");
+        let ct = "";
+        let nom = 1;
+
+        querySnapshot.forEach((doc) => {
+          let d = doc.data();
+          ct += `<tr>
+            <td style='text-align:center'>${nom++}</td>
+            <td style='text-align:center'>${d.nis}</td>
+            <td>${d.nama}</td>
+            <td style='text-align:center'>${d.jk}</td>
+            <td style='text-align:center'>${d.kelas}</td>
+          </tr>`;
+        });
+
+        tbody.innerHTML = ct;
+
+        // Pasang event listener klik per baris
+        tbody.querySelectorAll("tr").forEach(row => {
+          row.addEventListener("click", function () {
+            const nis2 = this.cells[1].textContent;
+            rekap(nis2);
+          });
+        });
+      }
+    })
+    .catch((error) => {
+      console.error("❌ Error mengambil data:", error);
+      document.getElementById("lod").style.display = "none";
+    });
+}
+
  const modal1 = document.getElementById("rekapModal");
  const closeBtn = document.querySelector(".close");
  closeBtn.onclick = function () {
@@ -361,148 +477,139 @@ var ct=''
 var mnn="";
 var cpp=0;
 var num=0;
-  for (var i = 1; i < bdata.data2.length; i++) {
-   
-  if (bdata.data2[i][2]==niss){
-  mnn=bdata.data2[i][3]
-  cpp=1;
-  num++;
-     // ct+="<tr><td style='text-align:center'>"+(i)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata.data2[i][1]+"</td><td>"+bdata.data2[i][6]+"</td><td style='text-align:center'>"+bdata.data2[i][7]+"</td><td style='text-align:center'>"+bdata.data2[i][8]+"</td><td style='text-align:center'>"+bdata.data2[i][9]+"</td><td style='text-align:center'>"+bdata.data2[i][10]+"</td><td style='text-align:center'>"+bdata.data2[i][11]+"</td><td style='text-align:center'>"+bdata.data2[i][12]+"</td></tr>"
-let gr=''; 
- if (ssbg==2){
-   gr = (bdata.data2[i][14] == 0)
-  ? `<button class='btn' onclick='verifikasi(this, 2, "${bdata.data2[i][1]}", "${bdata.data2[i][2]}")' style='font-size:13px;padding:5px'>
-      <i class='fa-solid fa-user'></i> Verifikasi
-     </button>`
-  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>`;
-  
-  }
-  else {
-	  gr=(bdata.data2[i][14]==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
-	  
-  }
+ 
+db.collection("datasiswa")
+  .where("nis", "==", niss)
+  .get()
+  .then(querySnapshot => {
+    if (querySnapshot.empty) {
+      console.log("⚠️ Tidak ada data dengan nis=2622");
+	  document.getElementById("loadingModal").style.display = "block";
+	document.getElementById('tmodal').innerHTML="<b>Tidak ada data</b>"
+    } else {
+		var nom=1;
+		var mnn='';
+      querySnapshot.forEach(doc => {
+        console.log(`📄 ID: ${doc.id}`, doc.data());
+		mnn=doc.data().nama;
+		let gr=''; 
+					 if (ssbg==2){
+					   gr = (doc.data().guru == 0)
+					  ? `<button class='btn' onclick='verifikasi(this, 2, "${doc.data().tgl}", "${doc.data().nis}")' style='font-size:13px;padding:5px'>
+						  <i class='fa-solid fa-user'></i> Verifikasi
+						 </button>`
+					  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>`;
+					  
+					  }
+					  else {
+						  gr=(doc.data().guru ==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
+						  
+					  }
 
-   let ort=(bdata.data2[i][13]==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
-      ct+="<tr><td style='text-align:center'>"+num+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata.data2[i][1]+"</td><td>"+bdata.data2[i][6]+"</td><td style='text-align:center'>"+bdata.data2[i][7]+"</td><td style='text-align:center'>"+bdata.data2[i][8]+"</td><td style='text-align:center'>"+bdata.data2[i][9]+"</td><td style='text-align:center'>"+bdata.data2[i][10]+"</td><td style='text-align:center'>"+bdata.data2[i][11]+"</td><td style='text-align:center'>"+bdata.data2[i][12]+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
-   
+					   let ort=(doc.data().ortu==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
+						  ct+="<tr><td style='text-align:center'>"+(nom++)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+doc.data().tgl+"</td><td>"+doc.data().bagunpagi+"</td><td style='text-align:center'>"+doc.data().beribadah+"</td><td style='text-align:center'>"+doc.data().olahraga+"</td><td style='text-align:center'>"+doc.data().makansehat+"</td><td style='text-align:center'>"+doc.data().belajar+"</td><td style='text-align:center'>"+doc.data().bermasyarakat+"</td><td style='text-align:center'>"+doc.data().tidurcepat+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
+								   
   
-  
-  }
-  }
-    if(cpp==1){
-	rekapBody.innerHTML=ct; 
+      });
+	  rekapBody.innerHTML=ct; 
 	document.getElementById("pp").innerHTML="Rekap Kegiatan Siswa : "+mnn;
     modal1.style.display = "block";
-   }
-   else{
-    document.getElementById("loadingModal").style.display = "block";
-	document.getElementById('tmodal').innerHTML="<b>Tidak ada data</b>"
-   }
+	  
+    }
+  })
+  .catch(error => {
+	  
+    console.error("❌ Error mencari data:", error);
+  });
+
+
+
+
+   
 }
 
 var  bdata='';
  function sendp(){
 	 
 	  let dnis=localStorage.getItem("nis");
-	  let bb2={"kode":4,"nis":dnis}
-     
-	 if(isup==1){               var ct='';
-																  var mnn="";
-														var cpp=0;
-														 
-														  for (var i = 0; i < bdata.length; i++) {
-														   
-														   
-														  mnn=bdata[i][3]
-														  cpp=1;
-														   let ort = (bdata[i][13] == 0)
-														  ? `<button class='btn' onclick='verifikasi(this, 1, "${bdata[i][1]}", "${bdata[i][2]}")' style='font-size:13px;padding:5px'>
-															  <i class='fa-solid fa-user'></i> Verifikasi
-															 </button>`
-														  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 24px'></i></span>`;
-
-														   let gr=(bdata[i][14]==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 24px'></i></span>"
-															  ct+="<tr><td style='text-align:center'>"+(i+1)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata[i][1]+"</td><td>"+bdata[i][6]+"</td><td style='text-align:center'>"+bdata[i][7]+"</td><td style='text-align:center'>"+bdata[i][8]+"</td><td style='text-align:center'>"+bdata[i][9]+"</td><td style='text-align:center'>"+bdata[i][10]+"</td><td style='text-align:center'>"+bdata[i][11]+"</td><td style='text-align:center'>"+bdata[i][12]+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
-														   
-														  }
-														 
-														  
-															if(cpp==1){
-															document.body.style.overflow = "hidden"
-															rekapBody.innerHTML=ct; 
-															document.getElementById("pp").innerHTML="Rekap Kegiatan Siswa : "+mnn;
-															modal1.style.display = "block";
-														   }
-														   else{
-															   document.body.style.overflow = "hidden"
-															document.getElementById("loadingModal").style.display = "block";
-															document.getElementById('tmodal').innerHTML="<b>Tidak ada data</b>"
-														   }
-																 return;
-		 
-	 }
-	
+	 
+	 
+	 
  
   document.getElementById("kdata2").disabled=true;
   document.getElementById("kdata2").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Lihat Daftar Inputan';
   
-var xhr = new XMLHttpRequest();
-  xhr.open("POST", glink); // GANTI LINK
-   
+  db.collection("datasiswa")
+  .where("nis", "==", dnis)
+  .get()
+  .then(querySnapshot => {
+    if (querySnapshot.empty) {
+		document.getElementById("kdata2").disabled=false;
+      console.log("⚠️ Tidak ada data dengan NIS 2422");
+	  document.getElementById("kdata2").innerHTML='Lihat Daftar Inputan';
+	  document.getElementById("loadingModal").style.display = "block";
+	  document.getElementById('tmodal').innerHTML="<b>Tidak ada data</b>"
+    } else {
+     
+		
+													
+								 
+									 document.getElementById("kdata2").disabled=false;
+								 document.getElementById("kdata2").innerHTML=' Lihat Daftar Inputan';
+									 
+								 
+									 document.body.style.overflow = "hidden"
+								 const rekapBody = document.getElementById("rekapBody");
+								var ct=''
+								var mnn="";
+								var cpp=0;
+								 var nom=1;
+		querySnapshot.forEach(doc => {
+        console.log("📄 ID:", doc.id, "Data:", doc.data()); 
+							 
+								 mnn=doc.data().nama;
+								   
+							 
+								  cpp=1;
+								   let ort = (doc.data().ortu == 0)
+								  ? `<button class='btn' onclick='verifikasi(this, 1, "${doc.data().tgl}", "${doc.data().nis}")' style='font-size:13px;padding:5px'>
+									  <i class='fa-solid fa-user'></i> Verifikasi
+									 </button>`
+								  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>`;
 
-  xhr.onload = function() {
-    if (xhr.status === 200) {  
-	 isup=1;
-	 document.getElementById("kdata2").disabled=false;
- document.getElementById("kdata2").innerHTML=' Lihat Daftar Inputan';
-	  bdata=JSON.parse(xhr.responseText)
- 
-	 document.body.style.overflow = "hidden"
- const rekapBody = document.getElementById("rekapBody");
-var ct=''
-var mnn="";
-var cpp=0;
- 
-  for (var i = 0; i < bdata.length; i++) {
-   
-   
-  mnn=bdata[i][3]
-  cpp=1;
-   let ort = (bdata[i][13] == 0)
-  ? `<button class='btn' onclick='verifikasi(this, 1, "${bdata[i][1]}", "${bdata[i][2]}")' style='font-size:13px;padding:5px'>
-      <i class='fa-solid fa-user'></i> Verifikasi
-     </button>`
-  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>`;
-
-   let gr=(bdata[i][14]==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
-      ct+="<tr><td style='text-align:center'>"+(i+1)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+bdata[i][1]+"</td><td>"+bdata[i][6]+"</td><td style='text-align:center'>"+bdata[i][7]+"</td><td style='text-align:center'>"+bdata[i][8]+"</td><td style='text-align:center'>"+bdata[i][9]+"</td><td style='text-align:center'>"+bdata[i][10]+"</td><td style='text-align:center'>"+bdata[i][11]+"</td><td style='text-align:center'>"+bdata[i][12]+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
-   
-  }
- 
-  
-    if(cpp==1){
-	rekapBody.innerHTML=ct; 
-	document.getElementById("pp").innerHTML="Rekap Kegiatan Siswa : "+mnn;
-    modal1.style.display = "block";
-   }
-   else{
-    document.getElementById("loadingModal").style.display = "block";
-	document.getElementById('tmodal').innerHTML="<b>Tidak ada data</b>"
-   }
-	 
-	 
- 	
-	   }
-	   }
-  
-  xhr.onerror = function() {
-   document.getElementById("kdata2").disabled=false;
+								   let gr=(doc.data().guru==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
+									  ct+="<tr><td style='text-align:center'>"+(nom++)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+doc.data().tgl+"</td><td>"+doc.data().bagunpagi+"</td><td style='text-align:center'>"+doc.data().beribadah+"</td><td style='text-align:center'>"+doc.data().olahraga+"</td><td style='text-align:center'>"+doc.data().makansehat+"</td><td style='text-align:center'>"+doc.data().belajar+"</td><td style='text-align:center'>"+doc.data().bermasyarakat+"</td><td style='text-align:center'>"+doc.data().tidurcepat+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
+								   
+								  
+								 
+								  
+									if(cpp==1){
+									rekapBody.innerHTML=ct; 
+									document.getElementById("pp").innerHTML="Rekap Kegiatan Siswa : "+mnn;
+									modal1.style.display = "block";
+								   }
+								   else{
+									document.getElementById("loadingModal").style.display = "block";
+									document.getElementById('tmodal').innerHTML="<b>Tidak ada data</b>"
+								   }
+									 
+		   
+		   
+      });
+    }
+  })
+  .catch(error => {
+	  document.getElementById("kdata2").disabled=false;
    document.getElementById("kdata2").innerHTML='Lihat Daftar Inputan';
     document.getElementById("loadingModal").style.display = "block";
 	document.getElementById('tmodal').innerHTML="<b>Tidak dapat terhubung ke server</b>"
-     
-  };
-  xhr.send(JSON.stringify(bb2));
+    console.error("❌ Error mengambil data:", error);
+  });
+
+  
+  
+  
+    
  }
 function ref3(){
 document.querySelector("#tabelSiswa tbody").innerHTML = '';			
@@ -542,43 +649,99 @@ function verifikasi(button, tipe1,tipe2,tipe3){
       const originalContent = button.innerHTML;
       button.disabled = true;
       button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> '; 
-	 
-var xhr = new XMLHttpRequest();
-  xhr.open("POST", glink); // GANTI LINK
-   
+	  
+	  
+	  
+	  db.collection("datasiswa")
+	  .where("tgl", "==", tipe2)
+	  .where("nis", "==", tipe3)
+	  .get()
+	  .then(querySnapshot => {
+		if (querySnapshot.empty) {
+		  console.log("⚠️ Data tidak ditemukan");
+		} else {
+		  querySnapshot.forEach(doc => {
+			// Update field ortu menjadi 1
+			
+			if(tipe1==1){
+				
+				       
+						 db.collection("datasiswa")
+						  .where("tgl", "==", tipe2) // filter tgl
+						  .where("nis", "==", tipe3)       // filter nis
+						  .get()
+						  .then((querySnapshot) => {
+							if (querySnapshot.empty) {
+							  console.log("❌ Data tidak ditemukan");
+							  return;
+							}
 
-  xhr.onload = function() {
-    if (xhr.status === 200) {  
-	 
-	
-	 
-	   cell.innerHTML = `<span class="success"><i class="fa-solid fa-circle-check" style="font-size: 24px"></i> ${tipe1 === 1 ? '' : ''}</span>`;
-	    var  gdata=JSON.parse(xhr.responseText)
-   
-       
-		if (gdata.data1 == 2) {
-  for (let i = 1; i < bdata.data2.length; i++) {
-    if (bdata.data2[i][1] == gdata.data2 && bdata.data2[i][2] == gdata.data3) {
-      bdata.data2[i][14] = 1;
-      break;
-    }
-  }
-}  
-		if (gdata.data1 == 1) {
-  for (let i = 0; i < bdata.length; i++) {
-    if (bdata[i][1] == gdata.data2 && bdata[i][2] == gdata.data3) {
-      bdata[i][13] = 1;
-      break;
-    }
-  }
-}  	  
-	}
-  }
-	 
-  xhr.onerror = function() {
-    alert('error')
-  };
-  xhr.send(JSON.stringify(bv));
+							querySnapshot.forEach((doc) => {
+							  db.collection("datasiswa").doc(doc.id).update({
+								ortu: 1
+							  })
+							  .then(() => {
+								   cell.innerHTML = `<span class="success"><i class="fa-solid fa-circle-check" style="font-size: 24px"></i> ${tipe1 === 1 ? '' : ''}</span>`;
+								console.log(`✅ Data dengan ID ${doc.id} berhasil diupdate (guru=1)`);
+							  })
+							  .catch((error) => {
+								console.error("❌ Gagal update data:", error);
+							  });
+							});
+						  })
+						  .catch((error) => {
+							console.error("❌ Error mencari data:", error);
+						  });
+
+			
+			}
+			if(tipe1==2){
+				
+							 db.collection("datasiswa")
+							  .where("tgl", "==", tipe2) // filter tgl
+							  .where("nis", "==", tipe3)       // filter nis
+							  .get()
+							  .then((querySnapshot) => {
+								if (querySnapshot.empty) {
+								  console.log("❌ Data tidak ditemukan");
+								  return;
+								}
+
+								querySnapshot.forEach((doc) => {
+								  db.collection("datasiswa").doc(doc.id).update({
+									guru: 1
+								  })
+								  .then(() => {
+									   cell.innerHTML = `<span class="success"><i class="fa-solid fa-circle-check" style="font-size: 24px"></i> ${tipe1 === 1 ? '' : ''}</span>`;
+									console.log(`✅ Data dengan ID ${doc.id} berhasil diupdate (guru=1)`);
+								  })
+								  .catch((error) => {
+									console.error("❌ Gagal update data:", error);
+								  });
+								});
+							  })
+							  .catch((error) => {
+								console.error("❌ Error mencari data:", error);
+							  });
+
+				
+				
+			}
+			
+			
+			
+			
+		  });
+		}
+	  })
+	  .catch(error => {
+		console.error("❌ Error mencari data:", error);
+	  });
+	  
+	  
+	  
+	  
+ 
  }
 document.body.style.background = "linear-gradient(135deg, #dbe9f4 0%, #fce8e6 25%, #e6f7f1 50%, #fff4e6 75%, #e8eaf6 100%)";
 document.body.style.backgroundAttachment = "fixed";
