@@ -213,7 +213,7 @@ db.collection("users")
 									document.getElementById("mainForm").style.display = "block";
 									document.getElementById("logoutBtn").innerHTML=`
 							  <div style="display: flex; justify-content: space-between; align-items: center;">
-								<span>Selamat Datang <br> ${doc.data().nama}</span>
+								<span>Selamat Datang <br><b> ${doc.data().nama}</b></span>
 								<a href="#" onclick="logout()" style="color: white; text-decoration: none;"> Logout</a>
 							  </div>
 							`
@@ -226,7 +226,7 @@ db.collection("users")
 									document.getElementById("mainForm1").style.display = "block";
 									document.getElementById("logoutBtn1").innerHTML=`
 							  <div style="display: flex; justify-content: space-between; align-items: center;">
-								<span>Selamat Datang <br> ${doc.data().nama}</span>
+								<span>Selamat Datang <br><b> ${doc.data().nama}</b></span>
 								<a href="#" onclick="logout()" style="color: white; text-decoration: none;">Logout</a>
 							  </div>
 							`
@@ -267,7 +267,7 @@ document.getElementsByClassName("container1")[0].style.marginTop="0px"
 let mn=localStorage.getItem("nama")
 document.getElementById("logoutBtn").innerHTML=`
   <div style="display: flex; justify-content: space-between; align-items: center;">
-    <span>Selamat Datang <br> ${mn}</span>
+    <span>Selamat Datang <br><b> ${mn}</b></span>
     <a href="#" onclick="logout()" style="color: white; text-decoration: none;">Logout</a>
   </div>
 `
@@ -282,7 +282,7 @@ let mn=localStorage.getItem("nama")
 let sb=localStorage.getItem("sbg")
 document.getElementById("logoutBtn1").innerHTML=`
   <div style="display: flex; justify-content: space-between; align-items: center;">
-    <span>Selamat Datang <br> ${mn}</span>
+    <span>Selamat Datang <br><b> ${mn}</b></span>
     <a href="#" onclick="logout()" style="color: white; text-decoration: none;">Logout</a>
   </div>
 `
@@ -745,6 +745,7 @@ function verifikasi(button, tipe1,tipe2,tipe3){
  }
 document.body.style.background = "linear-gradient(135deg, #dbe9f4 0%, #fce8e6 25%, #e6f7f1 50%, #fff4e6 75%, #e8eaf6 100%)";
 document.body.style.backgroundAttachment = "fixed";
+
 
 
 
