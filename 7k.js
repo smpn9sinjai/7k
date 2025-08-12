@@ -9,6 +9,7 @@ const firebaseConfig = {
 };
 
    firebase.initializeApp(firebaseConfig);
+   const auth = firebase.auth();
     const db = firebase.firestore();
   
   function handleBangunPagi(value) {
@@ -141,7 +142,7 @@ let mn=localStorage.getItem("nama")
    
       let errorMsg = document.getElementById("loginError");
 	  var css='';
-function login(ss) {
+async function login(ss) {
 document.querySelector("#tabelSiswa tbody").innerHTML = '';	
  css=ss;
   let username = document.getElementById("username").value.trim();
@@ -150,7 +151,26 @@ document.querySelector("#tabelSiswa tbody").innerHTML = '';
     ss.innerHTML = '<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Login';
     ss.disabled=true;
 	 
-       send1(username,password)
+	
+	try {
+    const userCred = await auth.signInWithEmailAndPassword(username+"@gmail.com", password);
+    const uid = userCred.user.uid; // kalau sukses, uid pasti ada
+	 send1(username,password)
+    console.log("✅ Login sukses. UID:", uid);
+} catch (error) {
+	localStorage.removeItem("nama");
+		localStorage.removeItem("nis");
+			localStorage.removeItem("sbg");
+        errorMsg.style.display = "block";
+		css.disabled=false;
+		css.innerHTML = 'Login';
+		 css.innerHTML = ' Login';
+		 setTimeout(()=>{errorMsg.style.display = "none";},2000)
+    console.error("❌ Login gagal:", error.message);
+}
+
+	 
+      
       // Login sederhana
       }
     }
@@ -176,6 +196,15 @@ document.querySelector("#tabelSiswa tbody").innerHTML = '';
 
   // Kosongkan hasil output JSON jika perlu
   document.getElementById("outputJSON").textContent = "";
+  
+  auth.signOut()
+    .then(() => {
+        console.log("✅ Berhasil logout");
+    })
+    .catch((error) => {
+        console.error("❌ Gagal logout:", error);
+    });
+  
 }
 
 let glink=window.atob('aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J4UFhWdUNSVTQyMVQwUE5qeS16VndhcFhvVFFaaXU3SzVUZmRWLUNKMmEtTU92czdfS09IUVIzNnB2eWh4UGxRVmd0QS9leGVj')
@@ -292,7 +321,7 @@ document.getElementById("logoutBtn1").innerHTML=`
 document.getElementById("loginCard").style.display = "none";
         document.getElementById("mainForm1").style.display = "block";
 }
-eval(atob('aWYgKHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSAhPT0gIjdrLnNtcG45c2luamFpLnNjaC5pZCIpIHsgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmlubmVySFRNTCA9ICI8Y2VudGVyPjxoMT5Ba3NlcyBkaXRvbGFrPC9oMT48L2NlbnRlcj4iOyB9'))
+//eval(atob('aWYgKHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSAhPT0gIjdrLnNtcG45c2luamFpLnNjaC5pZCIpIHsgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmlubmVySFRNTCA9ICI8Y2VudGVyPjxoMT5Ba3NlcyBkaXRvbGFrPC9oMT48L2NlbnRlcj4iOyB9'))
 function send2(data){
 	
 	
