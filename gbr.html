@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Upload Gambar ke Firebase Storage + Simpan ke Firestore</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; max-width:880px; margin:2rem auto; padding:1rem; }
+    .card { border:1px solid #e6e6e6; border-radius:10px; padding:1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.03); }
+    label { display:block; margin-top:0.5rem; }
+    img.preview { display:block; max-width:320px; max-height:320px; margin-top:0.5rem; border-radius:8px; }
+    progress { width:100%; height:1rem; }
+    .meta { margin-top:0.75rem; font-size:0.9rem; color:#333; }
+    .hint { font-size:0.85rem; color:#666; }
+    button { margin-top:0.75rem; padding:0.6rem 1rem; border-radius:8px; border:none; background:#2563eb; color:white; cursor:pointer; }
+    button:disabled { opacity:0.6; cursor:not-allowed }
+  </style>
+</head>
+<body>
+  <h1>Upload Gambar ke Firebase Storage + Simpan ke Firestore</h1>
+  <div class="card">
+    <p class="hint">Petunjuk singkat: pilih gambar, lihat preview, lalu klik "Upload". File akan disimpan di Firebase Storage dan URL-nya disimpan di koleksi <code>images</code> di Firestore.</p>
+
+    <label for="file">Pilih gambar</label>
+    <input id="file" type="file" accept="image/*" />
+    <img id="preview" class="preview" alt="Preview" style="display:none;" />
+
+    <div id="meta" class="meta"></div>
+
+    <progress id="progress" value="0" max="100" style="display:none"></progress>
+
+    <div>
+      <button id="uploadBtn" disabled>Upload</button>
+    </div>
+
+    <div id="result" class="meta"></div>
+  </div>
+
+  <!-- Firebase SDK (compat) - mudah dipakai di file HTML tunggal tanpa bundler -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-storage-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script>
+    // ====== GANTI KONFIGURASI FIREBASE DI BAWAH INI DENGAN MILIK PROJECT ANDA ======
+   const firebaseConfig = {
+  apiKey: "AIzaSyDKLPbYEEk-KuEvEyZtcdRFtXkb-DcMHA0",
+  authDomain: "datasiswa-e6dbc.firebaseapp.com",
+  databaseURL: "https://datasiswa-e6dbc-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "datasiswa-e6dbc",
+  storageBucket: "datasiswa-e6dbc.firebasestorage.app",
+  messagingSenderId: "252071892087",
+  appId: "1:252071892087:web:f0982af002b6bf92346272"
+};
+    // ============================================================================
+
+    // Inisialisasi Firebase
+    firebase.initializeApp(firebaseConfig);
+    const storage = firebase.storage();
+    const firestore = firebase.firestore();
+
+    // Elemen UI
+    const fileInput = document.getElementById('file');
+    const previewImg = document.getElementById('preview');
+    const metaDiv = document.getElementById('meta');
+    const uploadBtn = document.getElementById('uploadBtn');
+    const progressEl = document.getElementById('progress');
+    const resultEl = document.getElementById('result');
+
+    let selectedFile = null;
+
+    fileInput.addEventListener('change', (e) => {
+      resultEl.textContent = '';
+      const f = e.target.files && e.target.files[0];
+      if (!f) {
+        selectedFile = null;
+        previewImg.style.display = 'none';
+        uploadBtn.disabled = true;
+        metaDiv.textContent = '';
+        return;
+      }
+
+      if (!f.type.startsWith('image/')) {
+        alert('Silakan pilih file gambar.');
+        fileInput.value = '';
+        return;
+      }
+
+      selectedFile = f;
+      const url = URL.createObjectURL(f);
+      previewImg.src = url;
+      previewImg.style.display = 'block';
+
+      metaDiv.innerHTML = `Nama: <strong>${f.name}</strong> — Ukuran: <strong>${(f.size/1024).toFixed(1)} KB</strong> — Tipe: <strong>${f.type}</strong>`;
+      uploadBtn.disabled = false;
+    });
+
+    uploadBtn.addEventListener('click', async () => {
+      if (!selectedFile) return;
+      uploadBtn.disabled = true;
+      progressEl.style.display = 'block';
+      progressEl.value = 0;
+
+      try {
+        // Buat nama file yang unik untuk mencegah bentrok
+        const timestamp = Date.now();
+        const sanitized = selectedFile.name.replace(/[^a-zA-Z0-9.\-_]/g, '_');
+        const storagePath = `images/${timestamp}_${sanitized}`;
+
+        const storageRef = storage.ref().child(storagePath);
+        const uploadTask = storageRef.put(selectedFile);
+
+        // Listen progress
+        uploadTask.on('state_changed', snapshot => {
+          const percent = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          progressEl.value = percent;
+        }, (error) => {
+          console.error('Upload gagal', error);
+          alert('Upload gagal: ' + error.message);
+          uploadBtn.disabled = false;
+          progressEl.style.display = 'none';
+        }, async () => {
+          // selesai
+          const downloadURL = await uploadTask.snapshot.ref.getDownloadURL();
+
+          // Simpan metadata ke Firestore
+          const doc = {
+            name: selectedFile.name,
+            storagePath: storagePath,
+            url: downloadURL,
+            size: selectedFile.size,
+            contentType: selectedFile.type,
+            createdAt: firebase.firestore.FieldValue.serverTimestamp()
+          };
+
+          const docRef = await firestore.collection('images').add(doc);
+
+          resultEl.innerHTML = `Upload sukses! <br>Dokumen Firestore: <strong>${docRef.id}</strong><br>URL: <a href="${downloadURL}" target="_blank">Lihat gambar</a>`;
+          progressEl.style.display = 'none';
+          uploadBtn.disabled = false;
+          // reset input bila perlu
+          // fileInput.value = '';
+        });
+
+      } catch (err) {
+        console.error(err);
+        alert('Terjadi kesalahan: ' + err.message);
+        uploadBtn.disabled = false;
+        progressEl.style.display = 'none';
+      }
+    });
+  </script>
+
+  <!-- Catatan: untuk produksi, pertimbangkan menambahkan otentikasi (Firebase Auth), validasi sisi server (Security Rules) -->
+  <!-- README singkat:
+       1) Ganti firebaseConfig di atas dengan konfigurasi project Firebase Anda.
+       2) Pastikan Firebase Storage dan Firestore diaktifkan di Firebase Console.
+       3) Atur security rules Storage/Firestore agar sesuai (contoh sementara untuk testing: allow write/read untuk authenticated users saja).
+       4) Jika Anda tidak menggunakan bundler, versi compat seperti pada file ini memudahkan pemakaian di satu file HTML.
+  -->
+</body>
+</html>
