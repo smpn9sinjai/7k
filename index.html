@@ -128,25 +128,72 @@
 </div>
 
 
-    <div class="card">
-  <div class="question">4. Makan Sehat dan Bergizi<br><span id="span">Makan bergizi seimbang (makanan pokok/lauk pauk/sayur/buah) dan minum air putih</span></div>
+   <div class="card">
+  <div class="question">
+    4. Makan Sehat dan Bergizi<br>
+    <span id="span">
+      Makan bergizi seimbang (makanan pokok/lauk pauk/sayur/buah) dan minum air putih
+    </span>
+  </div>
+
   <div class="input-group">
+     
+    <label>
+      <input type="radio" name="makan_sehat" value="Ya" onclick="toggleMenu(true)"> Ya
+    </label>
+    <label>
+      <input type="radio" name="makan_sehat" value="Tidak" onclick="toggleMenu(false)"> Tidak
+    </label>
+  </div>
+
+  <div class="input-group" id="menu-group" style="display:none;">
     <label for="menu_makan_sehat">Tuliskan menu makanan sehat anda hari ini</label>
-    <textarea style="margin:0px;name="menu_makan_sehat" id="menu_makan_sehat" rows="3" placeholder="Contoh: Nasi, sayur bayam, ikan, buah pisang..."></textarea>
+    <textarea name="menu_makan_sehat" id="menu_makan_sehat" rows="3"
+      placeholder="Contoh: Nasi, sayur bayam, ikan, buah pisang..."></textarea>
   </div>
 </div>
 
+<script>
+  function toggleMenu(show) {
+    document.getElementById('menu-group').style.display = show ? 'block' : 'none';
+  }
+</script>
 
-      <div class="card">
-  <div class="question">5. Gemar Belajar<br><span id="span">Membaca buku atau sumber belajar lainnya minimal 15 menit per hari/menulis catatan harian/berdiskusi ilmiah/observasi lapangan</span></div>
+
+ <div class="card">
+  <div class="question">
+    5. Gemar Belajar<br>
+    <span id="span">
+      Membaca buku atau sumber belajar lainnya minimal 15 menit per hari / menulis catatan harian / berdiskusi ilmiah / observasi lapangan
+    </span>
+  </div>
+
   <div class="input-group">
+   
+    <label>
+      <input type="radio" name="gemar_belajar" value="Ya" onclick="toggleBelajar(true)"> Ya
+    </label>
+    <label>
+      <input type="radio" name="gemar_belajar" value="Tidak" onclick="toggleBelajar(false)"> Tidak
+    </label>
+  </div>
+
+  <div class="input-group" id="belajar-group" style="display:none;">
     <label for="judul_buku">Judul Buku / Materi yang Dipelajari:</label><br>
     <input type="text" name="judul_buku" id="judul_buku" placeholder="Contoh: IPA Bab 4 - Sistem Pencernaan">
-	
-<label for="informasi_didapat">Informasi yang Didapat:</label><br>
-    <textarea name="informasi_didapat" id="informasi_didapat" rows="3" placeholder="Contoh: Fungsi organ pencernaan manusia, enzim-enzim pencernaan..."></textarea>
+
+    <label for="informasi_didapat">Informasi yang Didapat:</label><br>
+    <textarea name="informasi_didapat" id="informasi_didapat" rows="3"
+      placeholder="Contoh: Fungsi organ pencernaan manusia, enzim-enzim pencernaan..."></textarea>
   </div>
 </div>
+
+<script>
+  function toggleBelajar(show) {
+    document.getElementById('belajar-group').style.display = show ? 'block' : 'none';
+  }
+</script>
+
 
 
       <div class="card">
@@ -241,9 +288,16 @@
 </table>
 <div id="lod" style="text-align:center;margin-top:10px" ><i class="fas fa-spinner fa-spin" style="font-size: 35px; margin-right: 10px; color: #e5d8d8;"></i></div>
 	</div> </div>
+     
+
 
 	 <center> <button style="width:300px;background: #e5d8d8;display:none" id="kdata3" onclick="ref3()" >Refresh</button></center>
-	  	 
+	  
+	  <center> <button style="width:300px;" id="kdata5"  onclick="rekap33()" >Persentase Perwalian Anda</button></center>
+
+	  <br><br>
+	  <center> <button style="width:300px;display:none" id="kdata4"  onclick="rekapall()" >Persentase Per Kelas</button></center>
+	  	   <br><br>
  <center><span style="font-size:10px">©2025 By Admin UPTD SMPN 9 Sinjai</span></center>
  </div>
 	
@@ -280,6 +334,22 @@
 	</div>
   </div>
 </div>
+
+
+	<div id="rekapModal2" class="modal12">
+  <div class="modal-content12"  >
+    <span class="close1">&times;</span>
+    <div id="rekap" style="margin:0px;padding:5px"><div>
+	
+	<div id="container6">
+<div id="progressList"></div>
+</div>
+	</div>
+  </div>
+</div>
+</div>
+
+
  <script src="7k.js"></script>	
 </body>
 </html>
