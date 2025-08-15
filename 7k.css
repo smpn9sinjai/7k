@@ -331,6 +331,8 @@
   
 }
   
+  
+  
  #progressList {
 	 margin:0px;
 	 padding:0px;
@@ -352,6 +354,12 @@
    
 	 
 }
+@media screen and (max-width: 767px) {
+.progress-container {	width: 350px;}
+}
+
+
+
 .progress-bar {
     position: absolute;
     left: 0;
