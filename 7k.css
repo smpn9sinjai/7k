@@ -398,7 +398,7 @@
 	 
 }
 @media screen and (max-width: 767px) {
-.progress-container {	width: 350px;}
+.progress-container {	width: 330px;}
 }
 
 
@@ -416,3 +416,4 @@
     font-weight: bold;
 }
  
+
