@@ -203,7 +203,7 @@
     }
  #tabelSiswa2 th, #tabelSiswa2 td {
   padding: 10px;
-  border: none; /* Hilangkan semua border awal */
+  border:none; /* Hilangkan semua border awal */
   border-bottom: 1px solid #ccc; /* Hanya garis horizontal */
 }
  #tabelSiswa2   th {
@@ -416,4 +416,3 @@
     font-weight: bold;
 }
  
-
