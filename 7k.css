@@ -191,6 +191,49 @@
     }
 	
 	
+	
+	
+	
+#tabelSiswa2 {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-family: Arial, sans-serif;
+	  font-size:14px;
+    }
+ #tabelSiswa2 th, #tabelSiswa2 td {
+  padding: 10px;
+  border: none; /* Hilangkan semua border awal */
+  border-bottom: 1px solid #ccc; /* Hanya garis horizontal */
+}
+ #tabelSiswa2   th {
+      background-color: #e5d8d8;
+    }
+#tabelSiswa2 tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }	
+	 #tabelSiswa2 tr:hover {
+      background-color: #f1f1f1;
+      cursor:pointer;
+    }
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 #rekapTable {
       width: 100%;
       border-collapse: collapse;
@@ -355,7 +398,7 @@
 	 
 }
 @media screen and (max-width: 767px) {
-.progress-container {	width: 250px;}
+.progress-container {	width: 350px;}
 }
 
 
@@ -373,7 +416,3 @@
     font-weight: bold;
 }
  
-
-
-
-
