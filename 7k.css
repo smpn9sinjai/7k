@@ -172,7 +172,7 @@
       border-collapse: collapse;
       margin-top: 20px;
       font-family: Arial, sans-serif;
-	  font-size:14px;
+	  font-size:16px;
     }
  #tabelSiswa th, #tabelSiswa td {
   padding: 10px;
@@ -453,3 +453,4 @@
       pointer-events: none;
       color: #2196f3;
     }
+
