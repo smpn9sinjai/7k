@@ -13,29 +13,77 @@
 </head>
 <body>
 
-   <div style="margin-top:70px" class="container1">
-    <!-- FORM LOGIN -->
-    <div id="loginCard"  class="card">
-      <h2>Selamat Datang</h2>
-	    <br>
-      <label>Username:</label>
-      <input type="text" id="username" placeholder="Masukkan Username"   />
-      <label>Password:</label>
-      <input type="password" id="password" placeholder="Masukkan Password"   />
-      <button onclick="login(this)"> Login</button>
-    <center> <p id="loginError" style="color:red; display:none;">Username atau Password salah!</p></center>
-	    <br><br>
-	     <center><span style="font-size:10px">©2025 By Admin UPTD SMPN 9 Sinjai</span></center>
-    </div>
-	   
- </div>
+   
+
+
+
+
+ 
+
+<div style="margin-top:70px" class="container1">
+  <!-- FORM LOGIN -->
+  <div id="loginCard" class="card" 
+       style="max-width:400px;margin:auto;padding:25px;
+              border-radius:16px;box-shadow:0 6px 15px rgba(0,0,0,0.15);
+              background:#fff; text-align:left; font-family:Arial, sans-serif;">
+
+    <h2 style="text-align:center; color:#2c3e50;">👋 Selamat Datang</h2>
+    <br>
+
+    <label style="font-weight:bold;"><i class="fas fa-user"></i> Username:</label>
+    <input type="text" id="username" placeholder="Masukkan Username" 
+           style="width:100%; padding:10px; margin:8px 0 15px 0; 
+                  border:1px solid #ccc; border-radius:8px; font-size:14px;">
+
+    <label style="font-weight:bold;"><i class="fas fa-lock"></i> Password:</label>
+    <input type="password" id="password" placeholder="Masukkan Password" 
+           style="width:100%; padding:10px; margin:8px 0 20px 0; 
+                  border:1px solid #ccc; border-radius:8px; font-size:14px;">
+
+    <button onclick="login(this)" 
+           >
+      <i class="fas fa-sign-in-alt"></i> Login
+    </button>
+
+    <center>
+      <p id="loginError" style="color:red; display:none; margin-top:15px;">⚠️ Username atau Password salah!</p>
+    </center>
+
+    <br>
+    <center>
+      <span style="font-size:10px; color:#7f8c8d;">©2025 By Admin UPTD SMPN 9 Sinjai</span>
+    </center>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  <div id="mainForm" style="margin:0px;padding:0px;display:none;">
 
 
   <div class="container">
-  <button id="logoutBtn" style="margin-bottom:10px;background: #1d3557" onclick="logout()"></button>
+  <button id="logoutBtn" style="margin-bottom:10px;background: #1d3557"></button>
      <div style="padding:5px;border-left:6px solid orange;border-right:6px solid orange" class="card">
 	 <img src="7k.png" style="width:100%;border-radius:16px;margin:0px"/>
 	 </div>
@@ -241,7 +289,7 @@
 </div>
 
 
-      <button id="kdata" type="submit">Kirim Jawaban</button>
+      <button id="kdata" type="submit"><i class="fas fa-paper-plane" style="margin-right:7px"></i>   Kirim Jawaban</button>
 	     
 	    
     </form>
@@ -259,7 +307,17 @@
   </div></center><br>
  
  
-	  <center> <button class="g4" style="width:300px;" id="kdata2" onclick="sendp()" >Lihat Data & Verifikasi Ortu/Wali</button></center>
+	  <center>
+	  
+	   <button class="g4" id="kdata2" style="width:350px" onclick="sendp()">
+      <i class="fas fa-user-graduate"></i>
+      <div class="text-block">
+      Lihat Data & Verifikasi Ortu/Wali
+        <span id="val">Validasi data oleh orang tua/wali siswa</span>
+      </div>
+    </button>
+	</center>
+	  
 	  <br><br>
     <center><span style="font-size:10px">©2025 By Admin UPTD SMPN 9 Sinjai</span></center>
     <pre style="display:none" id="outputJSON"></pre>
@@ -270,13 +328,13 @@
 <div id="loadingModal" class="modal">
   <div  class="modal-content">
      <p id="tmodal"></p><br>
-    <button onclick="closeModal()">Tutup</button>
+    <button onclick="closeModal()"> ❌ Tutup</button>
   </div>
 </div>
 
  <div id="mainForm1" style="margin:0px;padding:0px;display:none;">
  <div class="container">
-  <button id="logoutBtn1" style="margin-bottom:10px;background: #1d3557" onclick="logout()"></button>
+  <button id="logoutBtn1" style="margin-bottom:10px;background: #1d3557"></button>
      <div style="padding:5px;border-left:6px solid orange;border-right:6px solid orange" class="card">
 	 <img src="7k.png" style="width:100%;border-radius:16px;margin:0px"/>
 	 </div>
@@ -315,16 +373,47 @@
       <option value="12-2025">Desember 2025</option>
     </select>
   </div></center><br>
-	  <center> <button class="g2" style="width:300px;" id="kdata7"  onclick="rekap_g()" >Verifikasi Data</button></center>
+	 <center>
+    <button class="g2" id="kdata7" onclick="rekap_g()">
+      <i class="fas fa-check-circle" ></i>
+      <div class="text-block">
+        Verifikasi Data
+        <span id="val">Validasi data siswa</span>
+      </div>
+    </button>
+  </center>
 	  <br><br>
-	  <center> <button  class="g3" style="width:300px;" id="kdata5"  onclick="rekap33()" >Persentase Perwalian Anda</button></center>
+	 <center>
+    <button class="g3" id="kdata5" onclick="rekap33()">
+      <i class="fas fa-chalkboard-teacher"></i>
+	   <div class="text-block">
+      Persentase Perwalian Anda
+	  <span id="val">Rekap data siswa wali anda</span>
+	  </div>
+    </button>
+  </center>
 
 	  <br><br>
-	   <center> <button  class="g4" style="width:300px;display:block" id="kdata4"  onclick="rekappresent()" >Persentase Per Kelas</button></center>
-	    <br><br>
+ <center>
+    <button class="g4" id="kdata4" onclick="rekappresent()">
+      <i class="fas fa-users"></i>
+      <div class="text-block">
+        Persentase Per Kelas
+        <span id="val">Rekap data siswa per kelas</span>
+      </div>
+    </button>
+  </center>	  
+	  <br><br>
 		 
-	    <center> <button  class="g5" style="width:300px;display:block" id="kdata6"  onclick="rekappersiswa()" >Persentase Per Siswa</button></center>
-		 
+	    <center>
+    <button class="g5" id="kdata6" onclick="rekappersiswa()">
+      <i class="fas fa-user-graduate"></i>
+      <div class="text-block">
+        Persentase Per Siswa
+        <span id="val">Rekap data tiap siswa</span>
+      </div>
+    </button>
+  </center> 
 	  <center> <button style="width:300px;display:none" id="kdata44"  onclick="rekapall()" >Persentase Per Kelas</button></center>
 	 
 	  	   <br><br>
@@ -378,6 +467,25 @@
   </div>
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
  <script src="7k.js"></script>	
 </body>
