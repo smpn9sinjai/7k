@@ -324,10 +324,10 @@
 	
 	
 	
-	#mtabel{margin:0px;padding:0px;overflow-y:auto;max-height: 90vh}
+	#mtabel{margin:0px;padding:0px;overflow-y:auto;max-height: 83vh}
 	
 @media screen and (max-width: 767px) {
-#mtabel{margin:0px;padding:0px;overflow:scroll;max-height: 90vh}
+#mtabel{margin:0px;padding:0px;overflow:scroll;max-height: 83vh}
 }	
 	.nowrap {
   white-space: nowrap;
