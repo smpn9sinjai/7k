@@ -6,6 +6,11 @@
   <title>Form 7 Kebiasaan Anak</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/id.js"></script>
+   
+   
      <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
@@ -13,20 +18,13 @@
 </head>
 <body>
 
-   
-
-
-
-
- 
-
 <div style="margin-top:70px" class="container1">
   <!-- FORM LOGIN -->
   <div id="loginCard" class="card" 
        style="max-width:400px;margin:auto;padding:25px;
               border-radius:16px;box-shadow:0 6px 15px rgba(0,0,0,0.15);
               background:#fff; text-align:left; font-family:Arial, sans-serif;">
-  <center> <img src="ratukasih.jpg" style="width:300px" /></center>
+   <center> <img src="ratukasih.jpg" style="width:300px" /></center>
     <br>
     <br>
      <br>
@@ -55,27 +53,6 @@
     </center>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -414,6 +391,20 @@
       </div>
     </button>
   </center> 
+  
+   <br><br>
+		 
+	    <center>
+    <button class="g1" id="kdata8" onclick="showpicker()">
+     <i class="fas fa-calendar"></i>
+      <div class="text-block">
+        Persentase Per Tanggal
+        <span id="val">Rekap data siswa pertangal</span>
+      </div>
+    </button>
+  </center> 
+  
+  
 	  <center> <button style="width:300px;display:none" id="kdata44"  onclick="rekapall()" >Persentase Per Kelas</button></center>
 	 
 	  	   <br><br>
