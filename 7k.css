@@ -486,4 +486,24 @@
       opacity: 0.8;
     }
 	
-	 
+ .pesan-box {
+      text-align: center;
+     
+      color: #1d3557;
+    }
+    .pesan-box i {
+      font-size: 70px;
+      margin-bottom: 20px;
+      animation: shake 0.5s;
+    }
+    .pesan-box p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
