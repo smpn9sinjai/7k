@@ -251,9 +251,9 @@
 #rekapTable th:nth-child(1)  {
   position: sticky;
   left: 0;
-  width: 60px;         /* fix lebar NO */
-  min-width: 60px;
-  max-width: 60px;
+  width: 30px;         /* fix lebar NO */
+  min-width: 30px;
+  max-width: 30px;
   background: #e5d8d8;  /* sama dengan header lain */
   z-index: 16;
   box-shadow: 1px 0 0 #ccc;
@@ -261,9 +261,9 @@
 #rekapTable td:nth-child(1)  {
  position: sticky;
   left: 0;
-  width: 60px;         /* fix lebar NO */
-  min-width: 60px;
-  max-width: 60px;
+  width: 30px;         /* fix lebar NO */
+  min-width: 30px;
+  max-width: 30px;
 
   background: #fff;    /* <--- wajib, biar nutup tulisan di belakang */
   z-index: 13;         /* lebih tinggi daripada kolom lain */
@@ -284,7 +284,7 @@
 #rekapTable th:nth-child(2) {
  
   position: sticky;
- left: 60px; 
+ left: 30px; 
   background: #e5d8d8;  /* sama dengan header lain */
   z-index: 16;
   box-shadow: 1px 0 0 #ccc;
@@ -294,7 +294,7 @@
 #rekapTable td:nth-child(2)  {
  
   position: sticky;
- left: 60px; 
+ left: 30px; 
   background: #f1f1f1;  /* sama dengan header lain */
   z-index: 10;
   box-shadow: 1px 0 0 #ccc;
@@ -554,3 +554,4 @@
       75% { transform: translateX(-5px); }
       100% { transform: translateX(0); }
     }
+
