@@ -219,21 +219,6 @@
 
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 #rekapTable {
       width: 100%;
       border-collapse: collapse;
@@ -255,10 +240,72 @@
 #rekapTable tr:nth-child(even) {
       background-color: #f9f9f9;
     }	
+#rekapTable tr:nth-child(odd) {
+  background-color: #ffffff;
+}
 	 #rekapTable tr:hover {
       background-color: #f1f1f1;
       cursor:pointer;
     }
+	
+#rekapTable th:nth-child(1)  {
+  position: sticky;
+  left: 0;
+  width: 60px;         /* fix lebar NO */
+  min-width: 60px;
+  max-width: 60px;
+  background: #e5d8d8;  /* sama dengan header lain */
+  z-index: 16;
+  box-shadow: 1px 0 0 #ccc;
+}	
+#rekapTable td:nth-child(1)  {
+ position: sticky;
+  left: 0;
+  width: 60px;         /* fix lebar NO */
+  min-width: 60px;
+  max-width: 60px;
+
+  background: #fff;    /* <--- wajib, biar nutup tulisan di belakang */
+  z-index: 13;         /* lebih tinggi daripada kolom lain */
+  box-shadow: 1px 0 0 #ccc;
+}	
+ 
+
+#rekapTable tr:nth-child(even) td:nth-child(1) {
+  background-color: #f9f9f9;
+}
+#rekapTable tr:nth-child(odd) td:nth-child(1) {
+  background-color: #ffffff;
+}
+
+
+
+
+#rekapTable th:nth-child(2) {
+ 
+  position: sticky;
+ left: 60px; 
+  background: #e5d8d8;  /* sama dengan header lain */
+  z-index: 16;
+  box-shadow: 1px 0 0 #ccc;
+}	
+
+
+#rekapTable td:nth-child(2)  {
+ 
+  position: sticky;
+ left: 60px; 
+  background: #f1f1f1;  /* sama dengan header lain */
+  z-index: 10;
+  box-shadow: 1px 0 0 #ccc;
+}	
+	#rekapTable tr:nth-child(even) td:nth-child(2) {
+  background-color: #f9f9f9;
+}
+#rekapTable tr:nth-child(odd) td:nth-child(2) {
+  background-color: #ffffff;
+}
+
  /* Modal */
     .modal1 {
       display: none;
