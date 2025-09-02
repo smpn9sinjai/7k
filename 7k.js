@@ -1,1 +1,2811 @@
-const _0x365794=_0x1f1b;(function(_0x243bf2,_0x34b47d){const _0x2b0889=_0x1f1b,_0x49106f=_0x243bf2();while(!![]){try{const _0x3812f4=parseInt(_0x2b0889(0x18b))/0x1+-parseInt(_0x2b0889(0x137))/0x2*(parseInt(_0x2b0889(0x1a6))/0x3)+parseInt(_0x2b0889(0x15b))/0x4*(parseInt(_0x2b0889(0x22a))/0x5)+parseInt(_0x2b0889(0x24a))/0x6+-parseInt(_0x2b0889(0x278))/0x7+parseInt(_0x2b0889(0x1af))/0x8*(parseInt(_0x2b0889(0x267))/0x9)+parseInt(_0x2b0889(0x10a))/0xa*(-parseInt(_0x2b0889(0x261))/0xb);if(_0x3812f4===_0x34b47d)break;else _0x49106f['push'](_0x49106f['shift']());}catch(_0x4dc5db){_0x49106f['push'](_0x49106f['shift']());}}}(_0x3739,0xcb493));function _0x3739(){const _0x54c732=['\x20s.d\x20','</td>','lod','dari\x20','</tr>','length','Makan\x20Sehat','<div\x20style=\x22display:\x20flex;\x20justify-content:\x20space-between;\x20align-items:\x20center;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#1d3557;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x203px\x203px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x20font-family:\x20\x27Segoe\x20UI\x27,\x20sans-serif;\x22>\x0a\x09\x09\x09\x20\x20<span\x20style=\x22font-size:\x2014px;\x20display:flex;\x20align-items:center;\x20gap:8px;\x22>\x0a\x09\x09\x09\x09<i\x20class=\x22fas\x20fa-user-circle\x22\x20style=\x22font-size:22px;\x22></i>\x0a\x09\x09\x09\x09<span>\x0a\x09\x09\x09\x09\x20\x20Selamat\x20Datang\x20<br>\x0a\x09\x09\x09\x09\x20\x20<b\x20style=\x22font-size:\x2012px;\x22>','alasan_Ashar','get','long','onclick','toFixed','from','data','Update\x20gagal:','kdata','kdata2','total','push','Ya\x20Jam\x20Mulai\x20:\x20','\x22,\x20\x22','currentUser','map','</tr></tbody></table>','Ya\x20Shalat\x20:\x20','solid','target','informasi_didapat','12tWrdaQ','prog','Error:','left','Y-m-d','tidurcepat','❌\x20Login\x20gagal:','firestore','email','block','4F81BD','border','\x20<i\x20class=\x22fas\x20fa-sign-in-alt\x22></i>\x20Login','forEach','style','gemar_belajar','7.\x20Tidur\x20Cepat','\x0a\x20\x20<label\x20style=\x22font-weight:600;\x20display:block;\x20margin-bottom:6px;\x20color:#2c3e50;\x22>\x0a\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-calendar-alt\x22\x20style=\x22margin-right:6px;\x20color:#007BFF;\x22></i>\x0a\x20\x20\x20\x20Pilih\x20Rentang\x20Tanggal\x0a\x20\x20</label>\x0a\x20\x20\x0a\x20\x20<input\x20id=\x22tanggal_rentang\x22\x20type=\x22text\x22\x20placeholder=\x22📅\x20Pilih\x20Tanggal...\x22\x20\x0a\x20\x20\x20\x20style=\x22\x0a\x20\x20\x20\x20\x20\x20padding:\x2010px\x2014px;\x0a\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#ccc;\x0a\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20margin:\x205px\x200;\x0a\x20\x20\x20\x20\x20\x20width:\x20250px;\x0a\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20transition:\x20all\x200.3s\x20ease;\x0a\x20\x20\x20\x20\x20\x20box-shadow:\x20inset\x200\x201px\x203px\x20rgba(0,0,0,0.1);\x0a\x20\x20\x20\x20\x22\x0a\x20\x20\x20\x20onfocus=\x22this.style.borderColor=\x27#007BFF\x27;\x20this.style.boxShadow=\x270\x200\x206px\x20rgba(0,123,255,0.5)\x27\x22\x0a\x20\x20\x20\x20onblur=\x22this.style.borderColor=\x27#ccc\x27;\x20this.style.boxShadow=\x27inset\x200\x201px\x203px\x20rgba(0,0,0,0.1)\x27\x22\x0a\x20\x20>\x0a\x20\x20\x0a\x20\x20<p\x20id=\x22hasil_tanggal\x22\x20style=\x22margin-top:10px;\x20color:#555;\x20font-style:italic;\x22></p>\x0a','<tr><td\x20style=\x27text-align:center\x27>','alasan_Maghrib','A3:H3','hasil_tanggal','includes','container1','alasan_Subuh','\x22)\x27\x20style=\x27font-size:13px;padding:5px\x27>\x0a\x09\x09\x09\x09\x09\x09\x20\x20<i\x20class=\x27fa-solid\x20fa-user\x27></i>\x20Verifikasi\x0a\x09\x09\x09\x09\x09\x09\x20</button>','ortu','0px','Tidak\x20Jam\x20:\x20','Beribadah','jam_tidur','</td><td\x20style=\x27text-align:center\x27>','<button\x20disabled\x20class=\x27btn\x27\x20style=\x27font-size:13px;padding:5px;background:#cfd1bd\x27><i\x20class=\x27fa-solid\x20fa-user\x27\x20\x20></i>\x20Verifikasi</button>','bermasyarakat_ya_fields','middle','A3:L3','4jjXjRp','backgroundAttachment','<i\x20class=\x22fas\x20fa-spinner\x20fa-spin\x22\x20style=\x22font-size:\x2025px;\x20margin-right:\x2010px;\x20color:\x20white;\x22></i>Persentase\x20Per\x20kelas','kegiatan_bermasyarakat','<span\x20class=\x22success\x22><i\x20class=\x22fa-solid\x20fa-circle-check\x22\x20style=\x22font-size:\x2020px\x22></i>\x20','❌\x20Error\x20menambahkan\x20data:','addRow','%\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','aWYgKHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSAhPT0gIjdrLnNtcG45c2luamFpLnNjaC5pZCIpIHsgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmlubmVySFRNTCA9ICI8Y2VudGVyPjxoMT5Ba3NlcyBkaXRvbGFrPC9oMT48L2NlbnRlcj4iOyB9','jam_bangun_pagi','display','add','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22label\x22>','Daftar\x20Siswa\x20Perwalian\x20Anda','getItem','<table\x20id=\x22tabelSiswa2\x22\x20style=\x22border-collapse:\x20collapse;\x20width:\x20100%\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th>No</th><th>NIS</th><th>Nama\x20Siswa</th><th>Nama\x20Wali</th><th>Total\x20Input</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','Laporan\x20Persentase\x20Per\x20Kelas\x20\x20UPTD\x20SMPN\x209\x20SINJAI','\x20</p>','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-bar\x22\x20style=\x22width:','perasaan_bermasyarakat','\x0a\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-calendar\x22></i>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20Persentase\x20Per\x20Tanggal\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22val\x22>Rekap\x20data\x20siswa\x20pertangal</span>\x0a\x20\x20\x20\x20\x20\x20</div>','\x20sudah\x20ada\x20</p>\x0a\x20\x20</div>\x20','gpas','sholat','set','error','Bangun\x20Pagi','body','Isya\x20tidak,\x20alasan:\x20','\x20\x20Alasan\x20:\x20','\x20Alasan\x20','eachCell','kdata4','alasan_Dzuhur','tidur_cepat_tidak_field','pattern','beribadah','</p>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x20','Kepala\x20Sekolah','Ya\x20jam\x20:\x20','Bermasyarakat','scroll','<button\x20class=\x27btn\x27\x20onclick=\x27verifikasi(this,\x202,\x20\x22','<h3\x20style=\x22display:none;\x22>Per\x20Kelas</h3>\x0a\x20\x20\x20\x20\x20\x20<table\x20id=\x22tblKelas\x22\x20border=\x221\x22\x20style=\x22border-collapse:collapse;display:none\x22><thead><tr><th>Kelas</th>','kdata3','input[name=\x22sholat\x22][value=\x22','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-bar\x22\x20style=\x22width:','886346OZAZbt','createObjectURL','252071892087','rekapBody','nama','<button\x20class=\x27btn\x27\x20onclick=\x27verifikasi(this,\x201,\x20\x22','<h3\x20style=\x22display:none;\x22>Per\x20Tingkatan</h3>\x0a\x20\x20\x20\x20\x20\x20<table\x20id=\x22tblTingkat\x22\x20border=\x221\x22\x20style=\x22border-collapse:collapse;display:none\x22><thead><tr><th>Tingkatan</th>','Laporan\x20Persentase\x20\x20Siswa\x20\x20UPTD\x20SMPN\x209\x20Sinjai','\x0a\x09<div\x20class=\x22pesan-box\x22>\x0a\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-database\x22></i>\x0a\x20\x20\x20\x20<p>Tidak\x20ada\x20data\x20siswa\x20yang\x20mau\x20di\x20verifikasi\x20bulan\x20','appendChild','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>','createElement','form_olahraga','kdata7','\x22)\x27\x20style=\x27font-size:13px;padding:5px\x27>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x20\x20<i\x20class=\x27fa-solid\x20fa-user\x27></i>\x20Verifikasi\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x20</button>','columns','d\x20M\x20Y','</tbody></table>','\x0a\x09<div\x20class=\x22pesan-box\x22>\x0a\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-database\x22></i>\x0a\x20\x20\x20\x20<p>Data\x20siswa\x20bulan\x20','getRow','atob','%;\x20background:linear-gradient(90deg,\x20#f6d365,\x20#fda085);\x20color:white;\x20border-radius:','collection','kelas','auth','addWorksheet','<tr><td>','806529dpxlxD','<br><button\x20id=\x22downloadXLS\x22\x20style=\x22max-width:250px;margin-left:15px;padding:10px\x2010px;border:none;border-radius:10px;background:green;color:white\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa\x20fa-file-excel\x22></i>\x20Download\x20Excel\x0a\x20\x20\x20\x20\x20\x20</button><br>','%\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>','hidden','❌\x20Data\x20tidak\x20ditemukan','❌\x20Error\x20mencari\x20data:','update','</tbody></table><br>','kdata5','6928DpTDcc','@gmail.com','Mengetahui,','split','❌\x20Gagal\x20update\x20data:','Rekap_Persentase_','removeItem','bagunpagi','<b\x20style=\x22font-size:20px\x22><i\x20class=\x22fa\x20fa-bullhorn\x22></i>\x20Persentase\x20Per\x20Siswa</b>','tpas1','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22margin-top:10px\x22\x20class=\x22label\x22>','jam_selesai_olahraga','input,\x20textarea,\x20select','</tr></thead><tbody><tr><td>Persentase</td>','Ya\x20Jam\x20tidur\x20:\x20','2.\x20Beribadah','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-user-graduate\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Persentase\x20Per\x20Siswa\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22val\x22>Rekap\x20data\x20tiap\x20siswa</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','id-ID','pass','Ya\x20:\x20','menu_makan_sehat',',\x20Persaaan\x20','Workbook','text','</b>\x0a\x09\x09\x09\x09</span>\x0a\x09\x09\x09\x20\x20</span>\x0a\x09\x09\x09\x20\x20\x0a\x09\x09\x09\x20\x20\x0a\x09\x09\x09\x20\x20\x20<a\x20href=\x22#\x22\x20onclick=\x22openPasswordModal()\x22\x20style=\x22color:\x20white;\x20\x0a\x09\x09\x09\x09\x09\x09text-decoration:\x20none;\x20\x0a\x09\x09\x09\x09\x09\x09background:\x20#2a476f;\x0a\x09\x09\x09\x09\x09\x09padding:\x206px\x2014px;\x20\x0a\x09\x09\x09\x09\x09\x09border-radius:\x206px;\x20\x0a\x09\x09\x09\x09\x09\x09font-size:\x2012px;\x20\x0a\x09\x09\x09\x09\x09\x09display:flex;\x20\x0a\x09\x09\x09\x09\x09\x09align-items:center;\x20\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09box-shadow:\x200\x204px\x206px\x20rgba(0,0,0,0.1);\x0a\x09\x09\x09\x09\x09\x09gap:6px;\x0a\x09\x09\x09\x09\x09\x09transition:\x200.3s;\x22>\x0a\x09\x09\x09\x09<i\x20class=\x22fas\x20fa-key\x22></i>\x20GPass\x0a\x09\x09\x09\x20\x20</a>\x0a\x09\x09\x09\x20\x20\x0a\x09\x09\x09\x20\x20\x0a\x09\x09\x09\x20\x20\x0a\x09\x09\x09\x20\x20\x0a\x09\x09\x09\x20\x20\x0a\x09\x09\x09\x20\x20\x0a\x09\x09\x09\x20\x20\x0a\x09\x09\x09\x20\x20<a\x20href=\x22#\x22\x20onclick=\x22logout()\x22\x20style=\x22color:\x20white;\x20\x0a\x09\x09\x09\x09\x09\x09text-decoration:\x20none;\x20\x0a\x09\x09\x09\x09\x09\x09background:\x20#2a476f;\x0a\x09\x09\x09\x09\x09\x09padding:\x206px\x2014px;\x20\x0a\x09\x09\x09\x09\x09\x09border-radius:\x206px;\x20\x0a\x09\x09\x09\x09\x09\x09font-size:\x2012px;\x20\x0a\x09\x09\x09\x09\x09\x09display:flex;\x20\x0a\x09\x09\x09\x09\x09\x09align-items:center;\x20\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09box-shadow:\x200\x204px\x206px\x20rgba(0,0,0,0.1);\x0a\x09\x09\x09\x09\x09\x09gap:6px;\x0a\x09\x09\x09\x09\x09\x09transition:\x200.3s;\x22>\x0a\x09\x09\x09\x09<i\x20class=\x22fas\x20fa-sign-out-alt\x22></i>\x20Logout\x0a\x09\x09\x09\x20\x20</a>\x0a\x09\x09\x09</div>','th,td','\x20|\x20','2-digit','Nama\x20Wali','href','getFullYear','passwordModal','\x20<i\x20class=\x22fas\x20fa-check-circle\x22\x20></i>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20Verifikasi\x20Data\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22val\x22>Validasi\x20data\x20siswa</span>\x0a\x20\x20\x20\x20\x20\x20</div>','linear-gradient(90deg,\x20#43e97b,\x20#38f9d7)','where','<button\x20id=\x22downloadXLS\x22\x20style=\x22max-width:250px;margin:10px;padding:10px;border:none;border-radius:10px;background:green;color:white\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa\x20fa-file-excel\x22></i>\x20Download\x20Excel\x0a\x20\x20\x20\x20\x20\x20</button><br><br><br><br><br>','<i\x20class=\x22fas\x20fa-spinner\x20fa-spin\x22\x20style=\x22font-size:\x2025px;\x20margin-right:\x2010px;\x20color:\x20white;\x22></i>Login','Tidak\x20Alasan\x20:\x20','querySelectorAll','user','</b>\x0a\x09\x09\x09\x09</span>\x0a\x09\x09\x09\x20\x20</span>\x0a\x09\x09\x09\x20\x20\x20<a\x20href=\x22#\x22\x20onclick=\x22openPasswordModal()\x22\x20style=\x22color:\x20white;\x20\x0a\x09\x09\x09\x09\x09\x09text-decoration:\x20none;\x20\x0a\x09\x09\x09\x09\x09\x09background:\x20#2a476f;\x0a\x09\x09\x09\x09\x09\x09padding:\x206px\x2014px;\x20\x0a\x09\x09\x09\x09\x09\x09border-radius:\x206px;\x20\x0a\x09\x09\x09\x09\x09\x09font-size:\x2012px;\x20\x0a\x09\x09\x09\x09\x09\x09display:flex;\x20\x0a\x09\x09\x09\x09\x09\x09align-items:center;\x20\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09box-shadow:\x200\x204px\x206px\x20rgba(0,0,0,0.1);\x0a\x09\x09\x09\x09\x09\x09gap:6px;\x0a\x09\x09\x09\x09\x09\x09transition:\x200.3s;\x22>\x0a\x09\x09\x09\x09<i\x20class=\x22fas\x20fa-key\x22></i>\x20GPass\x0a\x09\x09\x09\x20\x20</a>\x0a\x09\x09\x09\x20\x20<a\x20href=\x22#\x22\x20onclick=\x22logout()\x22\x20style=\x22color:\x20white;\x20\x0a\x09\x09\x09\x09\x09\x09text-decoration:\x20none;\x20\x0a\x09\x09\x09\x09\x09\x09background:\x20#2a476f;\x0a\x09\x09\x09\x09\x09\x09padding:\x206px\x2014px;\x20\x0a\x09\x09\x09\x09\x09\x09border-radius:\x206px;\x20\x0a\x09\x09\x09\x09\x09\x09font-size:\x2012px;\x20\x0a\x09\x09\x09\x09\x09\x09display:flex;\x20\x0a\x09\x09\x09\x09\x09\x09align-items:center;\x20\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09box-shadow:\x200\x204px\x206px\x20rgba(0,0,0,0.1);\x0a\x09\x09\x09\x09\x09\x09gap:6px;\x0a\x09\x09\x09\x09\x09\x09transition:\x200.3s;\x22>\x0a\x09\x09\x09\x09<i\x20class=\x22fas\x20fa-sign-out-alt\x22></i>\x20Logout\x0a\x09\x09\x09\x20\x20</a>\x0a\x09\x09\x09</div>','datasiswa-e6dbc','<i\x20class=\x22fas\x20fa-spinner\x20fa-spin\x22\x20style=\x22font-size:\x2015px;\x20margin-right:\x201px;\x20color:\x20black;\x22></i>\x20','alasan_bermasyarakat','table','application/vnd.openxmlformats-officedocument.spreadsheetml.sheet','selectedIndex','<b\x20style=\x22font-size:20px\x22><i\x20class=\x22fa\x20fa-bullseye\x22></i>\x20Kelas\x20','<span\x20class=\x27success\x27><i\x20class=\x27fa-solid\x20fa-circle-check\x27\x20style=\x27font-size:\x2020px\x27></i></span>','<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>','tanggal_rentang','<span\x20style=\x22background:#007BFF;\x20color:#fff;\x20padding:8px\x2014px;\x20border-radius:8px;\x20font-weight:bold;\x22>\x0a\x20\x20Data\x20siswa\x20tidak\x20ditemukan\x0a</span>','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</thead><tbody>','parentElement','linear-gradient(90deg,\x20#f6d365,\x20#fda085)','</th>','marginTop','alasan_tidur_cepat','nis','Subuh\x20tidak,\x20alasan:\x20','sort','textContent','A2:L2','Tidak\x20ada\x20user\x20login.','</b>','Total\x20Input','Anonim','<b\x20class=\x22g5\x22\x20style=\x22padding:10px;font-size:20px;border-radius:10px;color:white\x22>Rekap\x20Bulan\x20','<br><b\x20style=\x22font-size:20px\x22><i\x20class=\x22fa\x20fa-bullseye\x22></i>\x20Kelas\x20','tidur_cepat_ya_fields','Laporan\x20Persentase\x20Per\x20Siswa\x20\x20UPTD\x20SMPN\x209\x20Sinjai',',\x20Jam\x20Selesai\x20:\x20','Tidak\x20alasan\x20','writeBuffer','loadingModal','%;\x20background:linear-gradient(90deg,\x20#f6d365,\x20#fda085);\x20color:white;border-radius:','tot','TASLIM\x20M.,\x20S.Pd.','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','thin','\x20<i\x20class=\x22fas\x20fa-user-graduate\x22></i>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-block\x22>\x0a\x20\x20\x20\x20\x20\x20Lihat\x20Data\x20&\x20Verifikasi\x20Ortu/Wali\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22val\x22>Validasi\x20data\x20oleh\x20orang\x20tua/wali\x20siswa</span>\x0a\x20\x20\x20\x20\x20\x20</div>','aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J4UFhWdUNSVTQyMVQwUE5qeS16VndhcFhvVFFaaXU3SzVUZmRWLUNKMmEtTU92czdfS09IUVIzNnB2eWh4UGxRVmd0QS9leGVj','berolahraga','newPass','</td></tr>','getMinutes','\x0a\x09\x09\x09\x20<div\x20class=\x22pesan-box\x22>\x0a\x09\x09\x09<i\x20class=\x22fas\x20fa-database\x22></i>\x0a\x09\x09\x09<p>Tidak\x20ada\x20data\x20siswa\x20bulan\x20','</h3>','getElementsByClassName','bulanTahun','<br><div\x20class=\x22g5\x22\x20style=\x22margin-top:3px;padding:5px\x2020px\x205px\x2020px;font-size:18px;border-radius:10px;color:white\x22>Rekap\x20Bulan\x20','oldPass','jud','makan_sehat','signInWithEmailAndPassword','Daftar\x20Siswa','overflow','A2:H2','flex','fullName','xlsx','updatePassword','#tabelSiswa\x20tbody','mergeCells','25px','font','tgl','initializeApp','click','NIS','bangun_pagi','Tidak','Nama\x20Siswa','users','</tr></thead><tbody>','<i\x20class=\x22fas\x20fa-users\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-block\x22>Persentase\x20Per\x20Kelas\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22val\x22>Rekap\x20data\x20siswa\x20per\x20kelas</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>','disabled','number','<button\x20id=\x22downloadXLS\x22\x20style=\x22max-width:250px;margin:10px;padding:10px;border:none;border-radius:10px;background:green;color:white\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa\x20fa-file-excel\x22></i>\x20Download\x20Excel\x0a\x20\x20\x20\x20\x20\x20</button>','</td><td\x20style=\x27text-align:center;width:100px\x27>','empty','join','<span\x20class=\x22success\x22><i\x20class=\x22fa-solid\x20fa-circle-check\x22\x20style=\x22font-size:\x2024px\x22></i>\x20','3020385EmjZCG',';\x20color:','fixed','tpas','Kelas\x20','<br>','Berolahraga','.xlsx','white','NIP\x20197101251992031008','input[name=\x22sholat\x22]:checked','alignment',',\x20informasi\x20yg\x20didapat\x20:\x20','lastRow','Persentase\x20Per\x20Kelas','wali','25px\x200\x200\x2025px','querySelector','fill','<h3\x20style=\x22display:none\x22>Seluruh\x20Siswa</h3>\x0a\x20\x20\x20\x20\x20\x20<table\x20id=\x22tblTotal\x22\x20border=\x221\x22\x20style=\x22border-collapse:collapse;display:none\x22><thead><tr><th>Seluruh\x20Siswa</th>','kdata6','Tabel\x20','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-bar\x22\x20style=\x22width:','tidur_cepat','getElementById','FFFFFFFF','signOut','alasan_olahraga','submit','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','input[name=\x22alasan_','<br><b\x20style=\x22font-size:20px\x22><i\x20class=\x22fa\x20fa-bullhorn\x22></i>\x20Persentase\x20Per\x20Tingkatan</b>','9603960WMSpPJ','#333','bermasyarakat_tidak_field','cells','belajar','tmodal','presentase','inline-block','<b\x20style=\x22font-size:20px\x22><i\x20class=\x22fa\x20fa-bullhorn\x22></i>\x20Persentase\x20Seluruh\x20Siswa</b>','background','range','</td><td>','datasiswa','<br><b\x20style=\x22font-size:20px\x22><i\x20class=\x22fa\x20fa-layer-group\x22></i>\x20Tingkat\x20','A1:H1','FieldValue','\x20Jenis\x20olahraga\x20','none','loginCard','Dzuhur\x20tidak,\x20alasan:\x20','5.\x20Gemar\x20Belajar','sholat_checkboxes','jumlahSiswa','298969finRhQ','tglsort','Laporan\x20Persentase\x20Per\x20Kelas\x20&\x20Per\x20Tingkatan\x20\x20UPTD\x20SMPN\x209\x20SINJAI','progressList','Rekap\x20Bulan\x20','checkbox','5949ZAlKTL','Persentase_Siswa_','.close','%\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','❌\x20Error\x20mengambil\x20data:','reauthenticateWithCredential','linear-gradient(90deg,\x20#ff758c,\x20#ff7eb3)','%\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-user-graduate\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Persentase\x20Per\x20Siswa\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22val\x22>Rekap\x20data\x20tiap\x20siswa</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>','username','logoutBtn','AIzaSyDKLPbYEEk-KuEvEyZtcdRFtXkb-DcMHA0','judul_buku','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22label\x22>','downloadXLS','</div>','<i\x20class=\x22fas\x20fa-spinner\x20fa-spin\x22\x20style=\x22font-size:\x2025px;\x20margin-right:\x2010px;\x20color:\x20white;\x22></i>Kirim\x20Jawaban','1485183OxmpCy','<b>Tidak\x20dapat\x20terhubung\x20ke\x20server</b>','totalHari','bermasyarakat','<i\x20class=\x22fas\x20fa-users\x22></i>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-block\x22>Persentase\x20Per\x20Kelas\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22val\x22>Rekap\x20data\x20siswa\x20per\x20kelas</span>\x0a\x20\x20\x20\x20\x20\x20</div>','1.\x20Bangun\x20Pagi','doc','❌\x20Gagal\x20logout:','outputJSON','<i\x20class=\x22fas\x20fa-spinner\x20fa-spin\x22\x20style=\x22font-size:\x2025px;\x20margin-right:\x2010px;\x20color:\x20orange;\x22></i><br>','numeric','toLocaleDateString','<br><br>','trim','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20>','olahraga','4.\x20Makan\x20Sehat','padStart','<i\x20class=\x22fas\x20fa-paper-plane\x22\x20style=\x22margin-right:7px\x22></i>\x20Kirim\x20Jawaban','<i\x20class=\x22fas\x20fa-spinner\x20fa-spin\x22\x20style=\x22font-size:\x2025px;\x20margin-right:\x2010px;\x20color:\x20white;\x22></i>\x20Mencari\x20data...','3.\x20Berolahraga','mainForm','option[value=\x22','\x20\x20<i\x20class=\x22fas\x20fa-chalkboard-teacher\x22></i>\x0a\x09\x20\x20\x20<div\x20class=\x22text-block\x22>\x0a\x20\x20\x20\x20\x20\x20Persentase\x20Perwalian\x20Anda\x0a\x09\x20\x20<span\x20id=\x22val\x22>Rekap\x20data\x20siswa\x20wali\x20anda</span>\x0a\x09\x20\x20</div>','options','makansehat','Ganti','preventDefault','.close1','%;\x20background:','%</td>','bulan','getDate','\x0a\x09\x20\x20<div\x20class=\x22pesan-box\x22>\x0a\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-database\x22></i>\x0a\x20\x20\x20\x20<p>Tidak\x20ada\x20data\x20siswa\x20bulan\x20','Ya\x20Kegiatan\x20:\x20','Gemar\x20Belajar','<i\x20class=\x22fas\x20fa-paper-plane\x22\x20style=\x22margin-right:7px\x22></i>\x20\x20Kirim\x20Jawaban','mainForm1','exists','download','\x20tidak\x20ditemukan\x20</p>','<i\x20class=\x22fas\x20fa-spinner\x20fa-spin\x22></i>\x20','<td>','getCell','<i\x20class=\x22fas\x20fa-spinner\x20fa-spin\x22\x20style=\x22font-size:\x2025px;\x20margin-right:\x2010px;\x20color:\x20white;\x22></i>\x20Mencari\x20data','checked','alasan_bangun_pagi','<div\x20class=\x22pesan-box\x22>\x0a<i\x20class=\x22fas\x20fa-database\x22></i>\x0a<p>Tidak\x20ada\x20data\x20siswa\x20bulan\x20','6.\x20Bermasyarakat','setItem','<h2>🏫\x20Persentase\x20Per\x20Kelas</h2>','Tanggal\x20Cetak:\x20','datasiswa-e6dbc.firebasestorage.app','logoutBtn1','Tidur\x20Cepat','center','value','</td><td\x20class=\x27nowrap\x27\x20style=\x27text-align:center;width:100px\x27>','rekapModal2','jenis_olahraga','catch','Ya\x20Judul\x20:\x20','</b>\x0a\x09\x09\x09\x09</span>\x0a\x09\x09\x09\x20\x20</span>\x0a\x09\x09\x09\x20\x20\x0a\x09\x09\x09\x20\x20\x20<a\x20href=\x22#\x22\x20onclick=\x22openPasswordModal()\x22\x20style=\x22color:\x20white;\x20\x0a\x09\x09\x09\x09\x09\x09text-decoration:\x20none;\x20\x0a\x09\x09\x09\x09\x09\x09background:\x20#2a476f;\x0a\x09\x09\x09\x09\x09\x09padding:\x206px\x2014px;\x20\x0a\x09\x09\x09\x09\x09\x09border-radius:\x206px;\x20\x0a\x09\x09\x09\x09\x09\x09font-size:\x2012px;\x20\x0a\x09\x09\x09\x09\x09\x09display:flex;\x20\x0a\x09\x09\x09\x09\x09\x09align-items:center;\x20\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09box-shadow:\x200\x204px\x206px\x20rgba(0,0,0,0.1);\x0a\x09\x09\x09\x09\x09\x09gap:6px;\x0a\x09\x09\x09\x09\x09\x09transition:\x200.3s;\x22>\x0a\x09\x09\x09\x09<i\x20class=\x22fas\x20fa-key\x22></i>\x20GPass\x0a\x09\x09\x09\x20\x20</a>\x0a\x09\x09\x09\x20\x20<a\x20href=\x22#\x22\x20onclick=\x22logout()\x22\x20style=\x22color:\x20white;\x20\x0a\x09\x09\x09\x09\x09\x09text-decoration:\x20none;\x20\x0a\x09\x09\x09\x09\x09\x09background:\x20#2a476f;\x0a\x09\x09\x09\x09\x09\x09padding:\x206px\x2014px;\x20\x0a\x09\x09\x09\x09\x09\x09border-radius:\x206px;\x20\x0a\x09\x09\x09\x09\x09\x09font-size:\x2012px;\x20\x0a\x09\x09\x09\x09\x09\x09display:flex;\x20\x0a\x09\x09\x09\x09\x09\x09align-items:center;\x20\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09box-shadow:\x200\x204px\x206px\x20rgba(0,0,0,0.1);\x0a\x09\x09\x09\x09\x09\x09gap:6px;\x0a\x09\x09\x09\x09\x09\x09transition:\x200.3s;\x22>\x0a\x09\x09\x09\x09<i\x20class=\x22fas\x20fa-sign-out-alt\x22></i>\x20Logout\x0a\x09\x09\x09\x20\x20</a>\x0a\x09\x09\x09</div>','guru','sbg','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>','loginError','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20style=\x27text-align:center\x27>','370LTXbPs','getHours','addEventListener','innerHTML','keys','<th>','then','password','kdata8','<b\x20style=\x22font-size:20px\x22><i\x20class=\x22fa\x20fa-bullhorn\x22\x20style=\x22font-size:20px\x22></i>\x20\x20Persentase\x20Perwalian\x20anda</b>','credential','</span>','formatDate','Ashar\x20tidak,\x20alasan:\x20','innerText','<br><b\x20style=\x22font-size:20px\x22><i\x20class=\x22fa\x20fa-bullhorn\x22></i>\x20Persentase\x20Per\x20Kelas</b>'];_0x3739=function(){return _0x54c732;};return _0x3739();}const firebaseConfig={'apiKey':_0x365794(0x272),'authDomain':'datasiswa-e6dbc.firebaseapp.com','databaseURL':'https://datasiswa-e6dbc-default-rtdb.asia-southeast1.firebasedatabase.app','projectId':_0x365794(0x1d8),'storageBucket':_0x365794(0xfa),'messagingSenderId':_0x365794(0x18d),'appId':'1:252071892087:web:f0982af002b6bf92346272'};firebase[_0x365794(0x21a)](firebaseConfig);const auth=firebase['auth'](),db=firebase['firestore']();let today=new Date(),month=String(today['getMonth']()+0x1)['padStart'](0x2,'0'),year=today[_0x365794(0x1cd)](),tglcek=month+'-'+year,blncek='',select=document['getElementById'](_0x365794(0x208));select[_0x365794(0x23b)](_0x365794(0x28e)+tglcek+'\x22]')&&(select[_0x365794(0xfe)]=tglcek,blncek=select[_0x365794(0x290)][select[_0x365794(0x1dd)]][_0x365794(0x1c6)]);let select1=document[_0x365794(0x242)]('bulanTahun1');select1[_0x365794(0x23b)](_0x365794(0x28e)+tglcek+'\x22]')&&(select1[_0x365794(0xfe)]=tglcek,blncek=select1[_0x365794(0x290)][select1['selectedIndex']]['text']);function tampilValue(_0x4335eb){const _0x2eae8f=_0x365794;blncek=_0x4335eb[_0x2eae8f(0x290)][_0x4335eb[_0x2eae8f(0x1dd)]]['text'],tglcek=_0x4335eb[_0x2eae8f(0xfe)];}function handleBangunPagi(_0x402b3b){const _0x27c031=_0x365794,_0x3b9de6=document[_0x27c031(0x242)](_0x27c031(0x165)),_0x47db96=document[_0x27c031(0x242)](_0x27c031(0xf4));if(_0x402b3b==='Ya')_0x3b9de6[_0x27c031(0x145)][_0x27c031(0x166)]='block',_0x47db96[_0x27c031(0x145)][_0x27c031(0x166)]='none';else _0x402b3b===_0x27c031(0x21e)&&(_0x3b9de6[_0x27c031(0x145)][_0x27c031(0x166)]=_0x27c031(0x140),_0x47db96['style']['display']=_0x27c031(0x140));}function handleBeribadah(_0x1c9a33){const _0x2a2128=_0x365794,_0x29b13b=document[_0x2a2128(0x242)](_0x2a2128(0x25f)),_0x1a5ab5=document[_0x2a2128(0x242)]('alasan_beribadah');_0x1c9a33==='Ya'?(_0x29b13b['style'][_0x2a2128(0x166)]=_0x2a2128(0x140),_0x1a5ab5[_0x2a2128(0x145)]['display']=_0x2a2128(0x25b),document[_0x2a2128(0x1d5)]('input[name=\x22sholat\x22]')[_0x2a2128(0x144)](_0xda1c0a=>{const _0x23e769=_0x2a2128;_0xda1c0a[_0x23e769(0xf3)]=![],toggleAlasan(_0xda1c0a[_0x23e769(0xfe)]);})):(_0x29b13b['style']['display']=_0x2a2128(0x25b),_0x1a5ab5[_0x2a2128(0x145)]['display']=_0x2a2128(0x140));}function toggleAlasan(_0x3af224){const _0x430e94=_0x365794,_0x496807=document['querySelector'](_0x430e94(0x189)+_0x3af224+'\x22]'),_0x3cb008=document[_0x430e94(0x23b)](_0x430e94(0x248)+_0x3af224+'\x22]');_0x496807['checked']?(_0x3cb008['style'][_0x430e94(0x166)]='none',_0x3cb008['value']=''):_0x3cb008['style'][_0x430e94(0x166)]=_0x430e94(0x251);}function handleOlahraga(_0x100f96){const _0x1f9c43=_0x365794,_0xe31859=document[_0x1f9c43(0x242)](_0x1f9c43(0x197)),_0x46ebcc=document[_0x1f9c43(0x242)](_0x1f9c43(0x245));if(_0x100f96==='Ya')_0xe31859['style']['display']='block',_0x46ebcc[_0x1f9c43(0x145)][_0x1f9c43(0x166)]=_0x1f9c43(0x25b);else _0x100f96===_0x1f9c43(0x21e)&&(_0xe31859['style'][_0x1f9c43(0x166)]=_0x1f9c43(0x25b),_0x46ebcc[_0x1f9c43(0x145)][_0x1f9c43(0x166)]=_0x1f9c43(0x140));}function handleBermasyarakat(_0x513df1){const _0x1bdcdc=_0x365794,_0x46b211=document[_0x1bdcdc(0x242)](_0x1bdcdc(0x158)),_0x3f4199=document['getElementById'](_0x1bdcdc(0x24c));if(_0x513df1==='Ya')_0x46b211['style'][_0x1bdcdc(0x166)]=_0x1bdcdc(0x140),_0x3f4199[_0x1bdcdc(0x145)][_0x1bdcdc(0x166)]=_0x1bdcdc(0x25b);else _0x513df1===_0x1bdcdc(0x21e)&&(_0x46b211[_0x1bdcdc(0x145)][_0x1bdcdc(0x166)]=_0x1bdcdc(0x25b),_0x3f4199['style'][_0x1bdcdc(0x166)]='block');}function handleTidurCepat(_0x41a236){const _0x1e117b=_0x365794,_0x3df4e8=document['getElementById'](_0x1e117b(0x1f4)),_0x326f64=document['getElementById'](_0x1e117b(0x17e));if(_0x41a236==='Ya')_0x3df4e8[_0x1e117b(0x145)][_0x1e117b(0x166)]=_0x1e117b(0x140),_0x326f64[_0x1e117b(0x145)][_0x1e117b(0x166)]=_0x1e117b(0x25b);else _0x41a236===_0x1e117b(0x21e)&&(_0x3df4e8[_0x1e117b(0x145)][_0x1e117b(0x166)]=_0x1e117b(0x140),_0x326f64[_0x1e117b(0x145)][_0x1e117b(0x166)]='block');}document[_0x365794(0x242)]('kebiasaanForm')[_0x365794(0x10c)](_0x365794(0x246),function(_0x3e8cbe){const _0x12eebc=_0x365794;_0x3e8cbe[_0x12eebc(0x293)]();const _0x5cbe5a=_0x3e8cbe[_0x12eebc(0x135)],_0x36c254=new FormData(_0x5cbe5a),_0x25c3a2={},_0x1db553=[];_0x5cbe5a[_0x12eebc(0x1d5)](_0x12eebc(0x234))[_0x12eebc(0x144)](_0x34637c=>{const _0x36104c=_0x12eebc;_0x1db553['push'](_0x34637c[_0x36104c(0xfe)]);}),_0x25c3a2['sholat']=_0x1db553,_0x5cbe5a[_0x12eebc(0x1d5)](_0x12eebc(0x1bb))[_0x12eebc(0x144)](_0x3e5c7f=>{const _0x218c22=_0x12eebc,{name:_0x33402b,type:_0x261dca}=_0x3e5c7f;if(!_0x33402b||_0x33402b===_0x218c22(0x173))return;if(_0x261dca==='radio'){if(_0x3e5c7f[_0x218c22(0xf3)])_0x25c3a2[_0x33402b]=_0x3e5c7f['value'];}else{if(_0x261dca===_0x218c22(0x266)){if(!_0x25c3a2[_0x33402b])_0x25c3a2[_0x33402b]=[];if(_0x3e5c7f[_0x218c22(0xf3)])_0x25c3a2[_0x33402b][_0x218c22(0x12d)](_0x3e5c7f[_0x218c22(0xfe)]);}else _0x25c3a2[_0x33402b]=_0x3e5c7f[_0x218c22(0xfe)];}});let _0x4439bb=localStorage[_0x12eebc(0x16a)](_0x12eebc(0x18f));_0x25c3a2[_0x12eebc(0x18f)]=_0x4439bb;let _0x1c0fdd=localStorage[_0x12eebc(0x16a)](_0x12eebc(0x1e9)),_0x1554f6=localStorage[_0x12eebc(0x16a)]('jk'),_0xb5222e=localStorage[_0x12eebc(0x16a)](_0x12eebc(0x1a2)),_0xd912a2=localStorage[_0x12eebc(0x16a)](_0x12eebc(0x239));_0x25c3a2['jk']=_0x1554f6,_0x25c3a2[_0x12eebc(0x1a2)]=_0xb5222e,_0x25c3a2[_0x12eebc(0x1e9)]=_0x1c0fdd,_0x25c3a2[_0x12eebc(0x18f)]=_0x4439bb,_0x25c3a2[_0x12eebc(0x239)]=_0xd912a2,_0x25c3a2['kode']=0x2;let _0x3dce79=document[_0x12eebc(0x242)]('menu_makan_sehat')['value'];_0x25c3a2[_0x12eebc(0x1c3)]=_0x3dce79,send2(_0x25c3a2);});let errorMsg=document[_0x365794(0x242)](_0x365794(0x108));var css='';async function login(_0x408d15){const _0x2631a3=_0x365794;document[_0x2631a3(0x23b)](_0x2631a3(0x215))['innerHTML']='',css=_0x408d15;let _0x563abb=document['getElementById'](_0x2631a3(0x270))[_0x2631a3(0xfe)]['trim'](),_0x5b039d=document[_0x2631a3(0x242)](_0x2631a3(0x111))['value'][_0x2631a3(0x285)]();if(_0x563abb&&_0x5b039d){_0x408d15[_0x2631a3(0x10d)]=_0x2631a3(0x1d3),_0x408d15[_0x2631a3(0x223)]=!![];try{const _0x1e1ec0=await auth[_0x2631a3(0x20d)](_0x563abb+_0x2631a3(0x1b0),_0x5b039d),_0x127611=_0x1e1ec0[_0x2631a3(0x1d6)]['uid'];send1(_0x563abb,_0x5b039d);}catch(_0x105b49){localStorage[_0x2631a3(0x1b5)](_0x2631a3(0x18f)),localStorage['removeItem'](_0x2631a3(0x239)),localStorage[_0x2631a3(0x1b5)]('nis'),localStorage[_0x2631a3(0x1b5)](_0x2631a3(0x106)),errorMsg[_0x2631a3(0x145)][_0x2631a3(0x166)]=_0x2631a3(0x140),css[_0x2631a3(0x223)]=![],css[_0x2631a3(0x10d)]=_0x2631a3(0x143),setTimeout(()=>{const _0x2e3f4b=_0x2631a3;errorMsg['style']['display']=_0x2e3f4b(0x25b);},0x7d0),console['error'](_0x2631a3(0x13d),_0x105b49['message']);}}}let isup=0x0;function logout(){const _0x195bff=_0x365794;today=new Date(),month=String(today['getMonth']()+0x1)[_0x195bff(0x289)](0x2,'0'),year=today[_0x195bff(0x1cd)](),tglcek=month+'-'+year,select['querySelector'](_0x195bff(0x28e)+tglcek+'\x22]')&&(select[_0x195bff(0xfe)]=tglcek,blncek=select[_0x195bff(0x290)][select[_0x195bff(0x1dd)]][_0x195bff(0x1c6)]),select1[_0x195bff(0x23b)](_0x195bff(0x28e)+tglcek+'\x22]')&&(select1['value']=tglcek,blncek=select1[_0x195bff(0x290)][select1[_0x195bff(0x1dd)]][_0x195bff(0x1c6)]),isup=0x0,document[_0x195bff(0x242)](_0x195bff(0x20b))[_0x195bff(0x118)]=_0x195bff(0x169),document['body'][_0x195bff(0x145)][_0x195bff(0x20f)]=_0x195bff(0x185),document[_0x195bff(0x207)]('container1')[0x0][_0x195bff(0x145)][_0x195bff(0x1e7)]='70px',document['getElementById'](_0x195bff(0x28d))[_0x195bff(0x145)][_0x195bff(0x166)]=_0x195bff(0x25b),document['getElementById'](_0x195bff(0x29d))[_0x195bff(0x145)]['display']=_0x195bff(0x25b),document[_0x195bff(0x242)](_0x195bff(0x25c))['style']['display']='block',localStorage[_0x195bff(0x1b5)](_0x195bff(0x18f)),localStorage['removeItem'](_0x195bff(0x1e9)),localStorage[_0x195bff(0x1b5)](_0x195bff(0x239)),localStorage[_0x195bff(0x1b5)](_0x195bff(0x106)),localStorage['removeItem']('jk'),localStorage[_0x195bff(0x1b5)](_0x195bff(0x1a2)),document[_0x195bff(0x242)](_0x195bff(0x270))[_0x195bff(0xfe)]='',document[_0x195bff(0x242)](_0x195bff(0x111))['value']='',document['getElementById'](_0x195bff(0x280))[_0x195bff(0x1ec)]='',auth[_0x195bff(0x244)]()[_0x195bff(0x110)](()=>{})[_0x195bff(0x102)](_0x2390f8=>{const _0x55d230=_0x195bff;console['error'](_0x55d230(0x27f),_0x2390f8);});}let glink=window[_0x365794(0x19f)](_0x365794(0x200));function send1(_0x3bc443,_0x4af9a0){const _0x7f4c3=_0x365794;errorMsg[_0x7f4c3(0x145)]['display']=_0x7f4c3(0x25b),db['collection'](_0x7f4c3(0x220))[_0x7f4c3(0x1d1)]('nis','==',_0x3bc443)[_0x7f4c3(0x1d1)](_0x7f4c3(0x1c1),'==',_0x4af9a0)['get']()[_0x7f4c3(0x110)](_0x40cc73=>{const _0x3e340c=_0x7f4c3;_0x40cc73['empty']?(localStorage[_0x3e340c(0x1b5)]('nama'),localStorage[_0x3e340c(0x1b5)]('nis'),localStorage[_0x3e340c(0x1b5)](_0x3e340c(0x106)),errorMsg[_0x3e340c(0x145)][_0x3e340c(0x166)]=_0x3e340c(0x140),css[_0x3e340c(0x223)]=![],css[_0x3e340c(0x10d)]=_0x3e340c(0x143),setTimeout(()=>{const _0x43fa23=_0x3e340c;errorMsg[_0x43fa23(0x145)][_0x43fa23(0x166)]=_0x43fa23(0x25b);},0x7d0)):_0x40cc73[_0x3e340c(0x144)](_0x513538=>{const _0x9d8213=_0x3e340c;document[_0x9d8213(0x207)](_0x9d8213(0x14e))[0x0][_0x9d8213(0x145)]['marginTop']=_0x9d8213(0x152),css[_0x9d8213(0x223)]=![],_0x513538[_0x9d8213(0x128)]()[_0x9d8213(0x106)]==0x1&&(document[_0x9d8213(0x242)](_0x9d8213(0x25c))['style'][_0x9d8213(0x166)]=_0x9d8213(0x25b),document[_0x9d8213(0x242)](_0x9d8213(0x28d))[_0x9d8213(0x145)][_0x9d8213(0x166)]=_0x9d8213(0x140),document[_0x9d8213(0x242)](_0x9d8213(0x271))[_0x9d8213(0x10d)]=_0x9d8213(0x121)+_0x513538[_0x9d8213(0x128)]()[_0x9d8213(0x18f)]+_0x9d8213(0x1c7)),(_0x513538[_0x9d8213(0x128)]()[_0x9d8213(0x106)]==0x2||_0x513538[_0x9d8213(0x128)]()[_0x9d8213(0x106)]==0x3)&&(_0x513538[_0x9d8213(0x128)]()[_0x9d8213(0x106)]==0x3?document[_0x9d8213(0x242)](_0x9d8213(0x20b))[_0x9d8213(0x118)]=_0x9d8213(0x20e):document['getElementById']('jud')[_0x9d8213(0x118)]='Daftar\x20Siswa\x20Perwalian\x20Anda',document['getElementById'](_0x9d8213(0x25c))[_0x9d8213(0x145)]['display']=_0x9d8213(0x25b),document['getElementById'](_0x9d8213(0x29d))[_0x9d8213(0x145)][_0x9d8213(0x166)]=_0x9d8213(0x140),document[_0x9d8213(0x242)](_0x9d8213(0xfb))['innerHTML']='<div\x20style=\x22display:\x20flex;\x20justify-content:\x20space-between;\x20align-items:\x20center;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#1d3557;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x203px\x203px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x20font-family:\x20\x27Segoe\x20UI\x27,\x20sans-serif;\x22>\x0a\x09\x09\x09\x20\x20<span\x20style=\x22font-size:\x2014px;\x20display:flex;\x20align-items:center;\x20gap:8px;\x22>\x0a\x09\x09\x09\x09<i\x20class=\x22fas\x20fa-user-circle\x22\x20style=\x22font-size:22px;\x22></i>\x0a\x09\x09\x09\x09<span>\x0a\x09\x09\x09\x09\x20\x20Selamat\x20Datang\x20<br>\x0a\x09\x09\x09\x09\x20\x20<b\x20style=\x22font-size:\x2012px;\x22>'+_0x513538[_0x9d8213(0x128)]()[_0x9d8213(0x18f)]+_0x9d8213(0x1d7),send3(_0x513538[_0x9d8213(0x128)]()['nama'],_0x513538[_0x9d8213(0x128)]()[_0x9d8213(0x106)])),errorMsg[_0x9d8213(0x145)][_0x9d8213(0x166)]=_0x9d8213(0x25b),localStorage[_0x9d8213(0xf7)](_0x9d8213(0x18f),_0x513538[_0x9d8213(0x128)]()['nama']),localStorage[_0x9d8213(0xf7)](_0x9d8213(0x1e9),_0x513538[_0x9d8213(0x128)]()['nis']),localStorage[_0x9d8213(0xf7)]('sbg',_0x513538[_0x9d8213(0x128)]()['sbg']),localStorage[_0x9d8213(0xf7)](_0x9d8213(0x1a2),_0x513538[_0x9d8213(0x128)]()[_0x9d8213(0x1a2)]),localStorage[_0x9d8213(0xf7)]('jk',_0x513538[_0x9d8213(0x128)]()['jk']),localStorage[_0x9d8213(0xf7)](_0x9d8213(0x239),_0x513538['data']()['wali']),css[_0x9d8213(0x10d)]=_0x9d8213(0x143);});})['catch'](_0x251701=>{const _0x5167e5=_0x7f4c3;css[_0x5167e5(0x223)]=![],css[_0x5167e5(0x10d)]=_0x5167e5(0x143);});};if(localStorage['getItem']('nama')&&localStorage[_0x365794(0x16a)](_0x365794(0x1e9))&&localStorage['getItem']('sbg')==0x1){document[_0x365794(0x207)](_0x365794(0x14e))[0x0]['style'][_0x365794(0x1e7)]='0px';let mn=localStorage['getItem'](_0x365794(0x18f));document['getElementById'](_0x365794(0x271))[_0x365794(0x10d)]=_0x365794(0x121)+mn+_0x365794(0x1d7),document[_0x365794(0x242)]('loginCard')[_0x365794(0x145)]['display']=_0x365794(0x25b),document[_0x365794(0x242)](_0x365794(0x28d))[_0x365794(0x145)][_0x365794(0x166)]=_0x365794(0x140);}if(localStorage['getItem'](_0x365794(0x18f))&&localStorage[_0x365794(0x16a)]('nis')&&(localStorage[_0x365794(0x16a)](_0x365794(0x106))==0x2||localStorage[_0x365794(0x16a)](_0x365794(0x106))==0x3)){document['getElementsByClassName']('container1')[0x0]['style']['marginTop']=_0x365794(0x152);let mn=localStorage[_0x365794(0x16a)]('nama'),sb=localStorage[_0x365794(0x16a)](_0x365794(0x106));document['getElementById']('logoutBtn1')[_0x365794(0x10d)]=_0x365794(0x121)+mn+_0x365794(0x104),send3(mn,sb),document[_0x365794(0x242)](_0x365794(0x25c))[_0x365794(0x145)][_0x365794(0x166)]=_0x365794(0x25b),document[_0x365794(0x242)](_0x365794(0x29d))[_0x365794(0x145)]['display']='block';}eval(atob(_0x365794(0x164)));function send2(_0x4412f6){const _0x4455b0=_0x365794,_0x5da2bf=_0x4412f6['tanggal_bangun_pagi'];var _0x139fee=_0x5da2bf[_0x4455b0(0x1b2)]('-'),_0x4dc0fa=_0x139fee[0x2]+'-'+_0x139fee[0x1]+'-'+_0x139fee[0x0],_0x5819c=_0x139fee[0x0]+'-'+_0x139fee[0x1]+'-'+_0x139fee[0x2];const _0x5985c8=_0x4412f6[_0x4455b0(0x1e9)];let _0x35f590=_0x4dc0fa,_0x14628d=_0x35f590[_0x4455b0(0x1b2)]('-'),_0x232eb4=_0x14628d[0x1]+'-'+_0x14628d[0x2];var _0x26c649=_0x4412f6[_0x4455b0(0x18f)],_0x1f3eb2=_0x4412f6['jk'],_0xa7dff1=_0x4412f6['kelas'],_0x25f28d=_0x4412f6[_0x4455b0(0x21d)]==='Ya'?_0x4455b0(0x183)+_0x4412f6[_0x4455b0(0x165)]:_0x4455b0(0x153)+_0x4412f6[_0x4455b0(0x165)]+_0x4455b0(0x17a)+_0x4412f6[_0x4455b0(0xf4)],_0x3c1c14='';_0x3c1c14+=_0x4412f6[_0x4455b0(0x14f)]?_0x4455b0(0x1ea)+_0x4412f6[_0x4455b0(0x14f)]+'.\x20':'',_0x3c1c14+=_0x4412f6[_0x4455b0(0x17d)]?_0x4455b0(0x25d)+_0x4412f6['alasan_Dzuhur']+'.\x20':'',_0x3c1c14+=_0x4412f6['alasan_Ashar']?_0x4455b0(0x117)+_0x4412f6[_0x4455b0(0x122)]+'.\x20':'',_0x3c1c14+=_0x4412f6[_0x4455b0(0x14a)]?'Maghrib\x20tidak,\x20alasan:\x20'+_0x4412f6[_0x4455b0(0x14a)]+'.\x20':'',_0x3c1c14+=_0x4412f6['alasan_Isya']?_0x4455b0(0x178)+_0x4412f6['alasan_Isya']+'.\x20':'';var _0x45c29c=_0x4412f6[_0x4455b0(0x180)]==='Ya'?_0x4455b0(0x133)+_0x4412f6[_0x4455b0(0x173)]+',\x20'+_0x3c1c14:_0x4455b0(0x1d4)+_0x4412f6['alasan_beribadah'],_0x53fda5=_0x4412f6['berolahraga']==='Ya'?_0x4455b0(0x12e)+_0x4412f6['jam_mulai_olahraga']+_0x4455b0(0x1f6)+_0x4412f6[_0x4455b0(0x1ba)]+_0x4455b0(0x25a)+_0x4412f6[_0x4455b0(0x101)]:_0x4455b0(0x1d4)+_0x4412f6['alasan_olahraga'],_0x4ff3f7=_0x4412f6[_0x4455b0(0x146)]=='Ya'?_0x4455b0(0x103)+_0x4412f6[_0x4455b0(0x273)]+_0x4455b0(0x236)+_0x4412f6[_0x4455b0(0x136)]:'Tidak',_0x5e6e03=_0x4412f6[_0x4455b0(0x27b)]==='Ya'?_0x4455b0(0x29a)+_0x4412f6[_0x4455b0(0x15e)]+_0x4455b0(0x1c4)+_0x4412f6[_0x4455b0(0x16f)]:_0x4455b0(0x1f7)+_0x4412f6[_0x4455b0(0x1da)],_0x227b1a=_0x4412f6[_0x4455b0(0x241)]==='Ya'?_0x4455b0(0x1bd)+_0x4412f6[_0x4455b0(0x155)]:'Tidak\x20Jam\x20tidur\x20:'+_0x4412f6['jam_tidur']+_0x4455b0(0x179)+_0x4412f6[_0x4455b0(0x1e8)],_0x51d2f0=_0x4412f6[_0x4455b0(0x20c)]=='Ya'?_0x4455b0(0x1c2)+_0x4412f6['menu_makan_sehat']:_0x4455b0(0x21e),_0x52e5f6=0x0;let _0x165646=new Date(),_0x114ebd=_0x165646[_0x4455b0(0x1cd)](),_0x1d6b5f=String(_0x165646['getMonth']()+0x1)['padStart'](0x2,'0'),_0x39eb64=String(_0x165646[_0x4455b0(0x298)]())[_0x4455b0(0x289)](0x2,'0'),_0x4cc647=_0x114ebd+'-'+_0x1d6b5f+'-'+_0x39eb64,_0x26000f=String(_0x165646[_0x4455b0(0x10b)]())[_0x4455b0(0x289)](0x2,'0'),_0x53716d=String(_0x165646[_0x4455b0(0x204)]())[_0x4455b0(0x289)](0x2,'0'),_0x2056fe=_0x26000f+':'+_0x53716d;document[_0x4455b0(0x242)]('kdata')[_0x4455b0(0x223)]=!![],document[_0x4455b0(0x242)](_0x4455b0(0x12a))[_0x4455b0(0x10d)]=_0x4455b0(0x277),db['collection']('datasiswa')['where']('tgl','==',_0x4dc0fa)['where'](_0x4455b0(0x1e9),'==',_0x5985c8)[_0x4455b0(0x123)]()[_0x4455b0(0x110)](_0x2ea789=>{const _0x4e265a=_0x4455b0;!_0x2ea789['empty']?(document[_0x4e265a(0x207)](_0x4e265a(0x14e))[0x0]['style'][_0x4e265a(0x1e7)]=_0x4e265a(0x152),document[_0x4e265a(0x242)](_0x4e265a(0x1f9))['style']['display']=_0x4e265a(0x140),document[_0x4e265a(0x242)](_0x4e265a(0x24f))[_0x4e265a(0x10d)]='<div\x20class=\x22pesan-box\x22>\x0a\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-times-circle\x22></i>\x0a\x20\x20\x20\x20<p>Gagal\x20menyimpan,\x20data\x20tanggal\x20'+_0x4dc0fa+_0x4e265a(0x171),document[_0x4e265a(0x177)][_0x4e265a(0x145)][_0x4e265a(0x20f)]=_0x4e265a(0x1a9),document[_0x4e265a(0x242)]('kdata')[_0x4e265a(0x10d)]=_0x4e265a(0x28a),document[_0x4e265a(0x242)](_0x4e265a(0x12a))[_0x4e265a(0x223)]=![]):db[_0x4e265a(0x1a1)](_0x4e265a(0x256))[_0x4e265a(0x167)]({'tgl':_0x4dc0fa,'tglsort':_0x5819c,'bulan':_0x232eb4,'tglinput':_0x4cc647,'jaminput':_0x2056fe,'7k1':_0x4412f6[_0x4e265a(0x21d)]==='Ya'?0x1:0x0,'7k2':_0x4412f6['beribadah']==='Ya'?0x1:0x0,'7k3':_0x4412f6[_0x4e265a(0x201)]==='Ya'?0x1:0x0,'7k4':_0x4412f6[_0x4e265a(0x20c)]=='Ya'?0x1:0x0,'7k5':_0x4412f6['gemar_belajar']=='Ya'?0x1:0x0,'7k6':_0x4412f6['bermasyarakat']==='Ya'?0x1:0x0,'7k7':_0x4412f6[_0x4e265a(0x241)]==='Ya'?0x1:0x0,'nis':_0x5985c8,'nama':_0x26c649,'jk':_0x1f3eb2,'kelas':_0xa7dff1,'wali':_0x4412f6[_0x4e265a(0x239)],'bagunpagi':_0x25f28d,'beribadah':_0x45c29c,'olahraga':_0x53fda5,'makansehat':_0x51d2f0,'belajar':_0x4ff3f7,'bermasyarakat':_0x5e6e03,'tidurcepat':_0x227b1a,'ortu':0x0,'guru':0x0})['then'](()=>{const _0x40c8ad=_0x4e265a;document['getElementsByClassName'](_0x40c8ad(0x14e))[0x0][_0x40c8ad(0x145)][_0x40c8ad(0x1e7)]=_0x40c8ad(0x152),document[_0x40c8ad(0x242)](_0x40c8ad(0x1f9))[_0x40c8ad(0x145)][_0x40c8ad(0x166)]='block',document[_0x40c8ad(0x242)]('tmodal')['innerHTML']='<div\x20class=\x22pesan-box\x22>\x0a\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-circle-check\x22></i>\x0a\x20\x20\x20\x20<p>Data\x20Berhasil\x20disimpan\x20</p>\x0a\x20\x20</div>\x20',document[_0x40c8ad(0x177)][_0x40c8ad(0x145)]['overflow']=_0x40c8ad(0x1a9),document['getElementById'](_0x40c8ad(0x12a))[_0x40c8ad(0x10d)]=_0x40c8ad(0x28a),document[_0x40c8ad(0x242)](_0x40c8ad(0x12a))['disabled']=![],setTimeout(()=>{const _0x3ada02=_0x40c8ad;_0x52e5f6=0x1;if(_0x52e5f6==0x1){let _0x54b50f={'7k1':_0x4412f6[_0x3ada02(0x21d)]==='Ya'?0x1:0x0,'7k2':_0x4412f6[_0x3ada02(0x180)]==='Ya'?0x1:0x0,'7k3':_0x4412f6['berolahraga']==='Ya'?0x1:0x0,'7k4':_0x4412f6['makan_sehat']==='Ya'?0x1:0x0,'7k5':_0x4412f6[_0x3ada02(0x146)]==='Ya'?0x1:0x0,'7k6':_0x4412f6[_0x3ada02(0x27b)]==='Ya'?0x1:0x0,'7k7':_0x4412f6['tidur_cepat']==='Ya'?0x1:0x0},_0x330e5f=_0x4dc0fa,_0x51cfc4=_0x330e5f[_0x3ada02(0x1b2)]('-'),_0x2ce956=_0x51cfc4[0x1]+'-'+_0x51cfc4[0x2];updateKebiasaanBulanan(_0xa7dff1,_0x2ce956,_0x54b50f);}},0xc8);})[_0x4e265a(0x102)](_0x23349c=>{const _0x118d33=_0x4e265a;console['error'](_0x118d33(0x160),_0x23349c),document['getElementById'](_0x118d33(0x12a))['disabled']=![],document['getElementById']('kdata')['innerHTML']=_0x118d33(0x29c),document[_0x118d33(0x242)](_0x118d33(0x1f9))[_0x118d33(0x145)][_0x118d33(0x166)]=_0x118d33(0x140),document[_0x118d33(0x242)](_0x118d33(0x24f))['innerHTML']='<b>Tidak\x20dapat\x20terhubung\x20ke\x20server</b>';});})[_0x4455b0(0x102)](_0x41e357=>{const _0x316e5c=_0x4455b0;document[_0x316e5c(0x242)](_0x316e5c(0x12a))['innerHTML']='<i\x20class=\x22fas\x20fa-paper-plane\x22\x20style=\x22margin-right:7px\x22></i>\x20\x20Kirim\x20Jawaban',console[_0x316e5c(0x175)](_0x316e5c(0x1ab),_0x41e357);});};function closeModal(){const _0x566f3f=_0x365794;document[_0x566f3f(0x177)][_0x566f3f(0x145)][_0x566f3f(0x20f)]=_0x566f3f(0x185),document[_0x566f3f(0x242)](_0x566f3f(0x1f9))[_0x566f3f(0x145)][_0x566f3f(0x166)]='none';}let mn1=localStorage['getItem'](_0x365794(0x18f));var bdata='';function send3(_0x435192,_0x6b56b6){const _0x4a0879=_0x365794;document[_0x4a0879(0x242)](_0x4a0879(0x11c))['style']['display']=_0x4a0879(0x140);let _0x4e1129;if(_0x6b56b6==='2')_0x4e1129=db[_0x4a0879(0x1a1)](_0x4a0879(0x220))[_0x4a0879(0x1d1)]('wali','==',_0x435192);else{if(_0x6b56b6==='3')_0x4e1129=db[_0x4a0879(0x1a1)]('users')[_0x4a0879(0x1d1)](_0x4a0879(0x106),'==','1');else{document[_0x4a0879(0x242)](_0x4a0879(0x11c))[_0x4a0879(0x145)][_0x4a0879(0x166)]='none';return;}}_0x4e1129[_0x4a0879(0x123)]()[_0x4a0879(0x110)](_0x50245e=>{const _0x4a0103=_0x4a0879;if(_0x50245e[_0x4a0103(0x227)])document['getElementById'](_0x4a0103(0x11c))['style']['display']=_0x4a0103(0x25b);else{document['getElementById']('kdata3')[_0x4a0103(0x145)][_0x4a0103(0x166)]=_0x4a0103(0x25b),document['getElementById'](_0x4a0103(0x11c))[_0x4a0103(0x145)]['display']=_0x4a0103(0x25b);const _0x4a31b0=document[_0x4a0103(0x23b)](_0x4a0103(0x215));let _0x2cf9db='',_0x1d0e90=0x1;_0x50245e['forEach'](_0x331499=>{const _0x11e2fe=_0x4a0103;let _0x50eb0d=_0x331499[_0x11e2fe(0x128)]();_0x2cf9db+='<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20style=\x27text-align:center\x27>'+_0x1d0e90++ +_0x11e2fe(0x109)+_0x50eb0d[_0x11e2fe(0x1e9)]+_0x11e2fe(0x286)+_0x50eb0d[_0x11e2fe(0x18f)]+'</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20style=\x27text-align:center\x27>'+_0x50eb0d['jk']+_0x11e2fe(0x109)+_0x50eb0d['kelas']+_0x11e2fe(0x107);}),_0x4a31b0[_0x4a0103(0x10d)]=_0x2cf9db,_0x4a31b0[_0x4a0103(0x1d5)]('tr')[_0x4a0103(0x144)](_0x4c1460=>{const _0x1ace96=_0x4a0103;_0x4c1460[_0x1ace96(0x10c)](_0x1ace96(0x21b),function(){const _0x5f677d=_0x1ace96,_0xa197bd=this[_0x5f677d(0x24d)][0x1]['textContent'],_0x598fbe=this[_0x5f677d(0x24d)][0x1];rekap(_0xa197bd,_0x598fbe);});});}})[_0x4a0879(0x102)](_0x2806ef=>{const _0x17c3dc=_0x4a0879;console[_0x17c3dc(0x175)](_0x17c3dc(0x26b),_0x2806ef),document[_0x17c3dc(0x242)](_0x17c3dc(0x11c))[_0x17c3dc(0x145)][_0x17c3dc(0x166)]=_0x17c3dc(0x25b);});}const modal1=document['getElementById']('rekapModal'),closeBtn=document[_0x365794(0x23b)](_0x365794(0x269));closeBtn[_0x365794(0x125)]=function(){const _0x34d089=_0x365794;modal1[_0x34d089(0x145)][_0x34d089(0x166)]=_0x34d089(0x25b),document[_0x34d089(0x177)][_0x34d089(0x145)][_0x34d089(0x20f)]='';};const modal2=document[_0x365794(0x242)](_0x365794(0x100)),closeBtn1=document[_0x365794(0x23b)](_0x365794(0x294));closeBtn1[_0x365794(0x125)]=function(){const _0x42a959=_0x365794;modal2['style']['display']='none',document[_0x42a959(0x177)][_0x42a959(0x145)][_0x42a959(0x20f)]='';};function rekap(_0x5f3abb,_0x413df0){const _0x9c77de=_0x365794;let _0x1e163b=_0x413df0[_0x9c77de(0x118)];_0x413df0[_0x9c77de(0x10d)]=_0x9c77de(0x1d9)+_0x1e163b;let _0x29d898=localStorage[_0x9c77de(0x16a)](_0x9c77de(0x106));document[_0x9c77de(0x177)][_0x9c77de(0x145)][_0x9c77de(0x20f)]=_0x9c77de(0x1a9);const _0x571ed9=document[_0x9c77de(0x242)]('rekapBody');var _0x28f457='',_0x33c6e3='',_0xd5f93f=0x0,_0x1e5441=0x0;db[_0x9c77de(0x1a1)](_0x9c77de(0x256))['where'](_0x9c77de(0x1e9),'==',_0x5f3abb)[_0x9c77de(0x1d1)](_0x9c77de(0x297),'==',tglcek)[_0x9c77de(0x123)]()[_0x9c77de(0x110)](_0x281ab4=>{const _0x39f657=_0x9c77de;if(_0x281ab4[_0x39f657(0x227)])_0x413df0[_0x39f657(0x10d)]=_0x1e163b,document[_0x39f657(0x242)](_0x39f657(0x1f9))[_0x39f657(0x145)][_0x39f657(0x166)]='block',document[_0x39f657(0x242)]('tmodal')[_0x39f657(0x10d)]=_0x39f657(0x19d)+blncek+_0x39f657(0xee);else{var _0x23bb10=0x1,_0x33fb1f='';_0x281ab4[_0x39f657(0x144)](_0x2dbc13=>{const _0x2d05ee=_0x39f657;_0x33fb1f=_0x2dbc13[_0x2d05ee(0x128)]()['nama'];let _0x1efd6d='';_0x29d898==0x2?_0x1efd6d=_0x2dbc13[_0x2d05ee(0x128)]()[_0x2d05ee(0x105)]==0x0?_0x2d05ee(0x186)+_0x2dbc13[_0x2d05ee(0x128)]()[_0x2d05ee(0x219)]+'\x22,\x20\x22'+_0x2dbc13['data']()[_0x2d05ee(0x1e9)]+'\x22)\x27\x20style=\x27font-size:13px;padding:5px\x27>\x0a\x09\x09\x09\x09\x09\x09\x20\x20<i\x20class=\x27fa-solid\x20fa-user\x27></i>\x20Verifikasi\x0a\x09\x09\x09\x09\x09\x09\x20</button>':'<span\x20class=\x27success\x27><i\x20class=\x27fa-solid\x20fa-circle-check\x27\x20style=\x27font-size:\x2020px\x27></i></span>':_0x1efd6d=_0x2dbc13[_0x2d05ee(0x128)]()[_0x2d05ee(0x105)]==0x0?_0x2d05ee(0x157):_0x2d05ee(0x1df);let _0x1475e5=_0x2dbc13['data']()[_0x2d05ee(0x151)]==0x0?'<button\x20disabled\x20class=\x27btn\x27\x20style=\x27font-size:13px;padding:5px;background:#cfd1bd\x27><i\x20class=\x27fa-solid\x20fa-user\x27\x20\x20></i>\x20Verifikasi</button>':_0x2d05ee(0x1df);_0x28f457+=_0x2d05ee(0x149)+_0x23bb10++ +_0x2d05ee(0xff)+_0x2dbc13[_0x2d05ee(0x128)]()['tgl']+_0x2d05ee(0x255)+_0x2dbc13[_0x2d05ee(0x128)]()[_0x2d05ee(0x1b6)]+_0x2d05ee(0x156)+_0x2dbc13[_0x2d05ee(0x128)]()['beribadah']+'</td><td\x20style=\x27text-align:center\x27>'+_0x2dbc13['data']()['olahraga']+'</td><td\x20style=\x27text-align:center\x27>'+_0x2dbc13['data']()[_0x2d05ee(0x291)]+_0x2d05ee(0x156)+_0x2dbc13[_0x2d05ee(0x128)]()[_0x2d05ee(0x24e)]+_0x2d05ee(0x156)+_0x2dbc13[_0x2d05ee(0x128)]()[_0x2d05ee(0x27b)]+_0x2d05ee(0x156)+_0x2dbc13[_0x2d05ee(0x128)]()['tidurcepat']+_0x2d05ee(0x226)+_0x1475e5+_0x2d05ee(0x226)+_0x1efd6d+_0x2d05ee(0x203);}),_0x413df0[_0x39f657(0x10d)]=_0x1e163b,_0x571ed9['innerHTML']=_0x28f457,sortTableByDate(),document[_0x39f657(0x242)]('pp')['innerHTML']=_0x39f657(0x209)+blncek+_0x39f657(0x1c9)+_0x33fb1f+'</div>',modal1[_0x39f657(0x145)][_0x39f657(0x166)]=_0x39f657(0x140);const _0x45f616={'7k1':_0x39f657(0x27d),'7k2':'2.\x20Beribadah','7k3':_0x39f657(0x28c),'7k4':_0x39f657(0x288),'7k5':_0x39f657(0x25e),'7k6':'6.\x20Bermasyarakat','7k7':_0x39f657(0x147)};let _0x214334={'7k1':0x0,'7k2':0x0,'7k3':0x0,'7k4':0x0,'7k5':0x0,'7k6':0x0,'7k7':0x0},_0x3106a1=0x0;_0x281ab4[_0x39f657(0x144)](_0x4a410f=>{const _0x1b3995=_0x39f657,_0x596b79=_0x4a410f[_0x1b3995(0x128)]();for(let _0x14cf48 in _0x214334){_0x214334[_0x14cf48]+=_0x596b79[_0x14cf48]||0x0;}_0x3106a1++;});var _0xa6c37c='';for(let _0x499caf in _0x214334){let _0x2ed1d5=_0x3106a1>0x0?(_0x214334[_0x499caf]/_0x3106a1*0x64)[_0x39f657(0x126)](0x0):0x0;const _0x1f3c6a=_0x2ed1d5==0x64?'25px':_0x39f657(0x23a);_0xa6c37c+=_0x39f657(0x1b9)+_0x45f616[_0x499caf]+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-bar\x22\x20style=\x22width:'+_0x2ed1d5+'%;\x20background:linear-gradient(90deg,\x20#f6d365,\x20#fda085);\x20color:white;border-radius:'+_0x1f3c6a+_0x39f657(0x1fd)+_0x2ed1d5+_0x39f657(0x26a);}let _0x3b3442=document[_0x39f657(0x242)](_0x39f657(0x138));_0x3b3442[_0x39f657(0x10d)]=_0xa6c37c+_0x39f657(0x284);}})[_0x9c77de(0x102)](_0x2d8e37=>{_0x413df0['innerHTML']=_0x1e163b,console['error']('❌\x20Error\x20mencari\x20data:',_0x2d8e37);});}function rekap_g(){const _0x1754d9=_0x365794;document[_0x1754d9(0x242)](_0x1754d9(0x198))[_0x1754d9(0x10d)]=_0x1754d9(0xf2);let _0x599754=localStorage[_0x1754d9(0x16a)](_0x1754d9(0x106)),_0xd5e81b=localStorage['getItem'](_0x1754d9(0x18f));document['body']['style'][_0x1754d9(0x20f)]=_0x1754d9(0x1a9);const _0x51df43=document[_0x1754d9(0x242)](_0x1754d9(0x18e));var _0x1e699a='',_0x373ee6='',_0x6982f5=0x0,_0x255266=0x0;db[_0x1754d9(0x1a1)](_0x1754d9(0x256))[_0x1754d9(0x1d1)](_0x1754d9(0x239),'==',_0xd5e81b)['where'](_0x1754d9(0x297),'==',tglcek)[_0x1754d9(0x1d1)]('guru','==',0x0)[_0x1754d9(0x123)]()[_0x1754d9(0x110)](_0x22011f=>{const _0x43e287=_0x1754d9;if(_0x22011f[_0x43e287(0x227)])document['getElementById'](_0x43e287(0x198))['innerHTML']='\x20<i\x20class=\x22fas\x20fa-check-circle\x22\x20></i>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20Verifikasi\x20Data\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22val\x22>Validasi\x20data\x20siswa</span>\x0a\x20\x20\x20\x20\x20\x20</div>',document[_0x43e287(0x242)](_0x43e287(0x1f9))['style']['display']=_0x43e287(0x140),document['getElementById'](_0x43e287(0x24f))[_0x43e287(0x10d)]=_0x43e287(0x193)+blncek+'\x20</p>',document[_0x43e287(0x177)]['style'][_0x43e287(0x20f)]=_0x43e287(0x1a9);else{var _0x28808b=0x1,_0x2815e3='';_0x22011f[_0x43e287(0x144)](_0x24b57d=>{const _0x572290=_0x43e287;_0x2815e3=_0x24b57d[_0x572290(0x128)]()[_0x572290(0x18f)];let _0x4a8df9='';_0x599754==0x2?_0x4a8df9=_0x24b57d[_0x572290(0x128)]()[_0x572290(0x105)]==0x0?_0x572290(0x186)+_0x24b57d[_0x572290(0x128)]()[_0x572290(0x219)]+'\x22,\x20\x22'+_0x24b57d[_0x572290(0x128)]()[_0x572290(0x1e9)]+_0x572290(0x150):_0x572290(0x1df):_0x4a8df9=_0x24b57d['data']()[_0x572290(0x105)]==0x0?_0x572290(0x157):'<span\x20class=\x27success\x27><i\x20class=\x27fa-solid\x20fa-circle-check\x27\x20style=\x27font-size:\x2020px\x27></i></span>';let _0x30bbdb=_0x24b57d['data']()['ortu']==0x0?_0x572290(0x157):'<span\x20class=\x27success\x27><i\x20class=\x27fa-solid\x20fa-circle-check\x27\x20style=\x27font-size:\x2020px\x27></i></span>';_0x1e699a+='<tr><td\x20style=\x27text-align:center\x27>'+_0x28808b++ +_0x572290(0xff)+_0x24b57d['data']()[_0x572290(0x219)]+_0x572290(0x22f)+_0x24b57d['data']()['nama']+'</td><td>'+_0x24b57d[_0x572290(0x128)]()['bagunpagi']+'</td><td\x20style=\x27text-align:center\x27>'+_0x24b57d[_0x572290(0x128)]()[_0x572290(0x180)]+'</td><td\x20style=\x27text-align:center\x27>'+_0x24b57d['data']()[_0x572290(0x287)]+_0x572290(0x156)+_0x24b57d[_0x572290(0x128)]()[_0x572290(0x291)]+_0x572290(0x156)+_0x24b57d[_0x572290(0x128)]()[_0x572290(0x24e)]+_0x572290(0x156)+_0x24b57d['data']()[_0x572290(0x27b)]+_0x572290(0x156)+_0x24b57d['data']()[_0x572290(0x13c)]+_0x572290(0x226)+_0x30bbdb+_0x572290(0x226)+_0x4a8df9+_0x572290(0x203);}),document[_0x43e287(0x242)]('kdata7')[_0x43e287(0x10d)]=_0x43e287(0x1cf),_0x51df43[_0x43e287(0x10d)]=_0x1e699a,sortTableByDate(),document[_0x43e287(0x242)]('pp')['innerHTML']='<br><div\x20class=\x22g5\x22\x20style=\x22margin-top:3px;padding:5px\x2018px\x205px\x2020px;font-size:20px;border-radius:10px;color:white\x22>Verifikasi\x20Bulan\x20'+blncek+'</div>',modal1[_0x43e287(0x145)]['display']=_0x43e287(0x140);let _0x552e99=document['getElementById'](_0x43e287(0x138));_0x552e99[_0x43e287(0x10d)]=_0x43e287(0x284);}})[_0x1754d9(0x102)](_0x56845d=>{const _0x554cc7=_0x1754d9;document[_0x554cc7(0x242)]('kdata7')['innerHTML']=_0x554cc7(0x1cf),console[_0x554cc7(0x175)](_0x554cc7(0x1ab),_0x56845d);});}var bdata='';function sendp(){const _0x280224=_0x365794;let _0x288fc0=localStorage[_0x280224(0x16a)]('nis');document[_0x280224(0x242)](_0x280224(0x12b))[_0x280224(0x223)]=!![],document[_0x280224(0x242)]('kdata2')[_0x280224(0x10d)]='<i\x20class=\x22fas\x20fa-spinner\x20fa-spin\x22\x20style=\x22font-size:\x2025px;\x20margin-right:\x2010px;\x20color:\x20white;\x22></i>\x20Mencari\x20data',db['collection']('datasiswa')[_0x280224(0x1d1)](_0x280224(0x1e9),'==',_0x288fc0)['where'](_0x280224(0x297),'==',tglcek)[_0x280224(0x123)]()['then'](_0x508622=>{const _0x18063d=_0x280224;if(_0x508622[_0x18063d(0x227)])document['getElementById'](_0x18063d(0x12b))[_0x18063d(0x223)]=![],document[_0x18063d(0x242)]('kdata2')[_0x18063d(0x10d)]=_0x18063d(0x1ff),document[_0x18063d(0x242)](_0x18063d(0x1f9))[_0x18063d(0x145)][_0x18063d(0x166)]=_0x18063d(0x140),document[_0x18063d(0x242)]('tmodal')['innerHTML']=_0x18063d(0x299)+blncek+'</p>\x0a\x20\x20</div>\x20',document[_0x18063d(0x177)][_0x18063d(0x145)][_0x18063d(0x20f)]=_0x18063d(0x1a9);else{document[_0x18063d(0x242)]('kdata2')[_0x18063d(0x223)]=![],document['getElementById']('kdata2')[_0x18063d(0x10d)]='\x20<i\x20class=\x22fas\x20fa-user-graduate\x22></i>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-block\x22>\x0a\x20\x20\x20\x20\x20\x20Lihat\x20Data\x20&\x20Verifikasi\x20Ortu/Wali\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22val\x22>Validasi\x20data\x20oleh\x20orang\x20tua/wali\x20siswa</span>\x0a\x20\x20\x20\x20\x20\x20</div>',document[_0x18063d(0x177)]['style'][_0x18063d(0x20f)]=_0x18063d(0x1a9);const _0x5b0af4=document[_0x18063d(0x242)]('rekapBody');var _0x42d1b3='',_0x206fea='',_0x41b2e0=0x0,_0x202256=0x1;_0x508622[_0x18063d(0x144)](_0x40b9d5=>{const _0x3f05ee=_0x18063d;_0x206fea=_0x40b9d5[_0x3f05ee(0x128)]()[_0x3f05ee(0x18f)],_0x41b2e0=0x1;let _0x538a38=_0x40b9d5[_0x3f05ee(0x128)]()[_0x3f05ee(0x151)]==0x0?_0x3f05ee(0x190)+_0x40b9d5[_0x3f05ee(0x128)]()[_0x3f05ee(0x219)]+_0x3f05ee(0x12f)+_0x40b9d5[_0x3f05ee(0x128)]()[_0x3f05ee(0x1e9)]+_0x3f05ee(0x199):_0x3f05ee(0x1df),_0x4d3057=_0x40b9d5[_0x3f05ee(0x128)]()[_0x3f05ee(0x105)]==0x0?_0x3f05ee(0x157):_0x3f05ee(0x1df);_0x42d1b3+=_0x3f05ee(0x149)+_0x202256++ +_0x3f05ee(0xff)+_0x40b9d5[_0x3f05ee(0x128)]()[_0x3f05ee(0x219)]+_0x3f05ee(0x255)+_0x40b9d5[_0x3f05ee(0x128)]()['bagunpagi']+_0x3f05ee(0x156)+_0x40b9d5[_0x3f05ee(0x128)]()[_0x3f05ee(0x180)]+_0x3f05ee(0x156)+_0x40b9d5[_0x3f05ee(0x128)]()['olahraga']+_0x3f05ee(0x156)+_0x40b9d5['data']()['makansehat']+_0x3f05ee(0x156)+_0x40b9d5[_0x3f05ee(0x128)]()[_0x3f05ee(0x24e)]+_0x3f05ee(0x156)+_0x40b9d5[_0x3f05ee(0x128)]()[_0x3f05ee(0x27b)]+_0x3f05ee(0x156)+_0x40b9d5[_0x3f05ee(0x128)]()[_0x3f05ee(0x13c)]+_0x3f05ee(0x226)+_0x538a38+'</td><td\x20style=\x27text-align:center;width:100px\x27>'+_0x4d3057+'</td></tr>';});const _0x24d6c1={'7k1':_0x18063d(0x27d),'7k2':_0x18063d(0x1be),'7k3':'3.\x20Berolahraga','7k4':_0x18063d(0x288),'7k5':_0x18063d(0x25e),'7k6':'6.\x20Bermasyarakat','7k7':_0x18063d(0x147)};let _0x1fa584={'7k1':0x0,'7k2':0x0,'7k3':0x0,'7k4':0x0,'7k5':0x0,'7k6':0x0,'7k7':0x0},_0x36a867=0x0;_0x508622[_0x18063d(0x144)](_0x25ff6f=>{const _0x38d1f3=_0x18063d,_0x36b991=_0x25ff6f[_0x38d1f3(0x128)]();for(let _0x45e88e in _0x1fa584){_0x1fa584[_0x45e88e]+=_0x36b991[_0x45e88e]||0x0;}_0x36a867++;});var _0x53aeee='';for(let _0x1bfa38 in _0x1fa584){let _0x4c1ded=_0x36a867>0x0?(_0x1fa584[_0x1bfa38]/_0x36a867*0x64)['toFixed'](0x0):0x0;const _0x40538b=_0x4c1ded==0x64?_0x18063d(0x217):_0x18063d(0x23a);_0x53aeee+=_0x18063d(0x1b9)+_0x24d6c1[_0x1bfa38]+_0x18063d(0x240)+_0x4c1ded+_0x18063d(0x1fa)+_0x40538b+'\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x4c1ded+_0x18063d(0x26a);}_0x41b2e0==0x1?(_0x5b0af4[_0x18063d(0x10d)]=_0x42d1b3,sortTableByDate(),document[_0x18063d(0x242)]('pp')[_0x18063d(0x10d)]=_0x18063d(0x209)+blncek+_0x18063d(0x1c9)+_0x206fea+_0x18063d(0x276),modal1[_0x18063d(0x145)][_0x18063d(0x166)]=_0x18063d(0x140)):(document['getElementById']('loadingModal')[_0x18063d(0x145)]['display']=_0x18063d(0x140),document[_0x18063d(0x242)](_0x18063d(0x24f))[_0x18063d(0x10d)]='\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22pesan-box\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09<i\x20class=\x22fas\x20fa-database\x22></i>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09<p>Tidak\x20ada\x20data\x20siswa\x20bulan\x20'+blncek+_0x18063d(0x181),document[_0x18063d(0x177)][_0x18063d(0x145)][_0x18063d(0x20f)]=_0x18063d(0x1a9));let _0x4f511c=document[_0x18063d(0x242)]('prog');_0x4f511c[_0x18063d(0x10d)]=_0x53aeee+_0x18063d(0x284);}})[_0x280224(0x102)](_0x3f59b5=>{const _0x11af2a=_0x280224;document['getElementById'](_0x11af2a(0x12b))[_0x11af2a(0x223)]=![],document[_0x11af2a(0x242)](_0x11af2a(0x12b))['innerHTML']=_0x11af2a(0x1ff),document[_0x11af2a(0x242)]('loadingModal')[_0x11af2a(0x145)][_0x11af2a(0x166)]=_0x11af2a(0x140),document[_0x11af2a(0x242)](_0x11af2a(0x24f))[_0x11af2a(0x10d)]=_0x11af2a(0x279),console[_0x11af2a(0x175)](_0x11af2a(0x26b),_0x3f59b5);});}function ref3(){const _0xdee218=_0x365794;document[_0xdee218(0x23b)](_0xdee218(0x215))['innerHTML']='',document[_0xdee218(0x242)](_0xdee218(0x188))['style'][_0xdee218(0x166)]='none';let _0xfead67=localStorage[_0xdee218(0x16a)](_0xdee218(0x18f)),_0x1afa19={'kode':0x3,'nama':_0xfead67};send3(_0x1afa19);}function verifikasi2(_0x425c08,_0x16b060,_0x47f972,_0x32b5ac){const _0x180214=_0x365794,_0x31549c=_0x425c08['parentElement'],_0x35bf39=_0x425c08[_0x180214(0x10d)];_0x425c08['disabled']=!![],_0x425c08[_0x180214(0x10d)]='<i\x20class=\x22fas\x20fa-spinner\x20fa-spin\x22></i>\x20Memproses...',setTimeout(()=>{const _0x2de4be=_0x180214;_0x31549c['innerHTML']=_0x2de4be(0x229)+(_0x16b060===0x1?'':'')+'</span>';},0x7d0);}function verifikasi(_0xd5aa83,_0x9a0c05,_0x4b32a0,_0xea2fe9){const _0x5f4d5c=_0x365794;let _0x541750={'kode':0x5,'tp1':_0x9a0c05,'tp2':_0x4b32a0,'tp3':_0xea2fe9};const _0x2b7191=_0xd5aa83[_0x5f4d5c(0x1e4)],_0x505de7=_0xd5aa83[_0x5f4d5c(0x10d)];_0xd5aa83['disabled']=!![],_0xd5aa83[_0x5f4d5c(0x10d)]=_0x5f4d5c(0xef),db[_0x5f4d5c(0x1a1)](_0x5f4d5c(0x256))[_0x5f4d5c(0x1d1)]('tgl','==',_0x4b32a0)[_0x5f4d5c(0x1d1)](_0x5f4d5c(0x1e9),'==',_0xea2fe9)['get']()[_0x5f4d5c(0x110)](_0x588377=>{const _0xdb33c7=_0x5f4d5c;if(_0x588377[_0xdb33c7(0x227)]){}else _0x588377['forEach'](_0x450bdb=>{const _0x25d50d=_0xdb33c7;_0x9a0c05==0x1&&db[_0x25d50d(0x1a1)]('datasiswa')['where'](_0x25d50d(0x219),'==',_0x4b32a0)[_0x25d50d(0x1d1)](_0x25d50d(0x1e9),'==',_0xea2fe9)[_0x25d50d(0x123)]()[_0x25d50d(0x110)](_0x96e5c9=>{const _0x528205=_0x25d50d;if(_0x96e5c9[_0x528205(0x227)]){console['log'](_0x528205(0x1aa));return;}_0x96e5c9[_0x528205(0x144)](_0x5d4706=>{const _0x2da62b=_0x528205;db[_0x2da62b(0x1a1)]('datasiswa')[_0x2da62b(0x27e)](_0x5d4706['id'])[_0x2da62b(0x1ac)]({'ortu':0x1})['then'](()=>{const _0x4f2f27=_0x2da62b;_0x2b7191[_0x4f2f27(0x10d)]=_0x4f2f27(0x15f)+(_0x9a0c05===0x1?'':'')+_0x4f2f27(0x115);})[_0x2da62b(0x102)](_0x5a259c=>{const _0x5a6aa9=_0x2da62b;console[_0x5a6aa9(0x175)](_0x5a6aa9(0x1b3),_0x5a259c);});});})['catch'](_0xc05bad=>{const _0x4f2379=_0x25d50d;console[_0x4f2379(0x175)](_0x4f2379(0x1ab),_0xc05bad);}),_0x9a0c05==0x2&&db[_0x25d50d(0x1a1)](_0x25d50d(0x256))['where'](_0x25d50d(0x219),'==',_0x4b32a0)[_0x25d50d(0x1d1)]('nis','==',_0xea2fe9)[_0x25d50d(0x123)]()[_0x25d50d(0x110)](_0x334ba7=>{if(_0x334ba7['empty'])return;_0x334ba7['forEach'](_0x561113=>{const _0x2d1317=_0x1f1b;db[_0x2d1317(0x1a1)](_0x2d1317(0x256))['doc'](_0x561113['id'])[_0x2d1317(0x1ac)]({'guru':0x1})[_0x2d1317(0x110)](()=>{const _0x2933a0=_0x2d1317;_0x2b7191[_0x2933a0(0x10d)]=_0x2933a0(0x15f)+(_0x9a0c05===0x1?'':'')+'</span>';})[_0x2d1317(0x102)](_0x27cb3e=>{const _0x5b0ad7=_0x2d1317;console['error'](_0x5b0ad7(0x1b3),_0x27cb3e);});});})[_0x25d50d(0x102)](_0x9e31b9=>{const _0x3c36cf=_0x25d50d;console['error'](_0x3c36cf(0x1ab),_0x9e31b9);});});})[_0x5f4d5c(0x102)](_0x44cf05=>{const _0x3ec7d2=_0x5f4d5c;console[_0x3ec7d2(0x175)](_0x3ec7d2(0x1ab),_0x44cf05);});}document[_0x365794(0x177)][_0x365794(0x145)][_0x365794(0x253)]='linear-gradient(135deg,\x20#dbe9f4\x200%,\x20#fce8e6\x2025%,\x20#e6f7f1\x2050%,\x20#fff4e6\x2075%,\x20#e8eaf6\x20100%)',document[_0x365794(0x177)][_0x365794(0x145)][_0x365794(0x15c)]=_0x365794(0x22c);let container=document[_0x365794(0x242)](_0x365794(0x264));container[_0x365794(0x10d)]='';function rekap33(){const _0x27803a=_0x365794;document[_0x27803a(0x242)](_0x27803a(0x1ae))['innerHTML']='<i\x20class=\x22fas\x20fa-spinner\x20fa-spin\x22\x20style=\x22font-size:\x2025px;\x20margin-right:\x2010px;\x20color:\x20white;\x22></i>\x20Mencari\x20data';const _0x5ae5fa={'7k1':_0x27803a(0x27d),'7k2':_0x27803a(0x1be),'7k3':'3.\x20Berolahraga','7k4':_0x27803a(0x288),'7k5':_0x27803a(0x25e),'7k6':'6.\x20Bermasyarakat','7k7':_0x27803a(0x147)},_0x3c6fb9=localStorage['getItem'](_0x27803a(0x18f));db[_0x27803a(0x1a1)](_0x27803a(0x256))['where'](_0x27803a(0x239),'==',_0x3c6fb9)['where'](_0x27803a(0x297),'==',tglcek)['get']()[_0x27803a(0x110)](_0x44671a=>{const _0x3eb1e5=_0x27803a;if(_0x44671a[_0x3eb1e5(0x227)]){document[_0x3eb1e5(0x242)]('kdata5')[_0x3eb1e5(0x10d)]=_0x3eb1e5(0x28f),document[_0x3eb1e5(0x242)]('loadingModal')['style'][_0x3eb1e5(0x166)]='block',document['getElementById']('tmodal')[_0x3eb1e5(0x10d)]=_0x3eb1e5(0x205)+blncek+_0x3eb1e5(0x16d),document[_0x3eb1e5(0x177)][_0x3eb1e5(0x145)]['overflow']='hidden';return;}let _0x2137dd={'7k1':0x0,'7k2':0x0,'7k3':0x0,'7k4':0x0,'7k5':0x0,'7k6':0x0,'7k7':0x0},_0x555a99=0x0;_0x44671a[_0x3eb1e5(0x144)](_0x13e73d=>{const _0x219b22=_0x3eb1e5,_0x57b337=_0x13e73d[_0x219b22(0x128)]();for(let _0x6bdd0d in _0x2137dd){_0x2137dd[_0x6bdd0d]+=_0x57b337[_0x6bdd0d]||0x0;}_0x555a99++;});var _0x2adfbd='';for(let _0x498bc1 in _0x2137dd){let _0x304cc3=_0x555a99>0x0?(_0x2137dd[_0x498bc1]/_0x555a99*0x64)['toFixed'](0x0):0x0;const _0x159e07=_0x304cc3==0x64?_0x3eb1e5(0x217):'25px\x200\x200\x2025px';_0x2adfbd+='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22label\x22>'+_0x5ae5fa[_0x498bc1]+_0x3eb1e5(0x240)+_0x304cc3+_0x3eb1e5(0x1fa)+_0x159e07+_0x3eb1e5(0x1fd)+_0x304cc3+'%\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20';}document[_0x3eb1e5(0x242)]('tp')[_0x3eb1e5(0x10d)]='<b\x20class=\x22g5\x22\x20style=\x22padding:10px;font-size:20px;border-radius:10px;color:white\x22>Rekap\x20Bulan\x20'+blncek+'</b>',container['innerHTML']=_0x3eb1e5(0x113)+_0x2adfbd,document[_0x3eb1e5(0x177)][_0x3eb1e5(0x145)][_0x3eb1e5(0x20f)]=_0x3eb1e5(0x1a9),modal2[_0x3eb1e5(0x145)][_0x3eb1e5(0x166)]=_0x3eb1e5(0x140),document[_0x3eb1e5(0x242)](_0x3eb1e5(0x1ae))[_0x3eb1e5(0x10d)]='\x20\x20<i\x20class=\x22fas\x20fa-chalkboard-teacher\x22></i>\x0a\x09\x20\x20\x20<div\x20class=\x22text-block\x22>\x0a\x20\x20\x20\x20\x20\x20Persentase\x20Perwalian\x20Anda\x0a\x09\x20\x20<span\x20id=\x22val\x22>Rekap\x20data\x20siswa\x20wali\x20anda</span>\x0a\x09\x20\x20</div>';})[_0x27803a(0x102)](_0x54dcc1=>{const _0x209af0=_0x27803a;document['getElementById']('kdata5')[_0x209af0(0x10d)]=_0x209af0(0x28f),console[_0x209af0(0x175)](_0x209af0(0x139),_0x54dcc1);});}function rekapall(){const _0x241039=_0x365794;document[_0x241039(0x242)](_0x241039(0x17c))[_0x241039(0x10d)]=_0x241039(0x15d);const _0x7e0606={'7k1':_0x241039(0x27d),'7k2':_0x241039(0x1be),'7k3':_0x241039(0x28c),'7k4':_0x241039(0x288),'7k5':'5.\x20Gemar\x20Belajar','7k6':_0x241039(0xf6),'7k7':'7.\x20Tidur\x20Cepat'},_0x43efcd=['7A','7B','8A','8B','9A','9B'];db[_0x241039(0x1a1)]('datasiswa')[_0x241039(0x123)]()[_0x241039(0x110)](_0x53e396=>{const _0x130be5=_0x241039;let _0x43bd3a={'7k1':0x0,'7k2':0x0,'7k3':0x0,'7k4':0x0,'7k5':0x0,'7k6':0x0,'7k7':0x0},_0x130a3=0x0,_0x4b8cb1={};_0x43efcd[_0x130be5(0x144)](_0x3d4d77=>{_0x4b8cb1[_0x3d4d77]={'total':{'7k1':0x0,'7k2':0x0,'7k3':0x0,'7k4':0x0,'7k5':0x0,'7k6':0x0,'7k7':0x0},'jumlahSiswa':0x0};}),_0x53e396[_0x130be5(0x144)](_0x54d9cf=>{const _0x53ca99=_0x130be5,_0x3d62d8=_0x54d9cf[_0x53ca99(0x128)](),_0x4e30fb=_0x3d62d8[_0x53ca99(0x1a2)];for(let _0x247bd7 in _0x43bd3a){_0x43bd3a[_0x247bd7]+=_0x3d62d8[_0x247bd7]||0x0;}_0x130a3++;if(_0x43efcd[_0x53ca99(0x14d)](_0x4e30fb)){for(let _0x1f82b4 in _0x4b8cb1[_0x4e30fb]['total']){_0x4b8cb1[_0x4e30fb][_0x53ca99(0x12c)][_0x1f82b4]+=_0x3d62d8[_0x1f82b4]||0x0;}_0x4b8cb1[_0x4e30fb][_0x53ca99(0x260)]++;}});let _0x5bd104='<h2>📊\x20Persentase\x20Keseluruhan\x20Siswa</h2>';for(let _0x1375ba in _0x7e0606){let _0x1be370=_0x130a3>0x0?(_0x43bd3a[_0x1375ba]/_0x130a3*0x64)[_0x130be5(0x126)](0x0):0x0,_0x422c66;if(_0x1be370>=0x4b)_0x422c66=_0x130be5(0x1d0);else{if(_0x1be370>=0x32)_0x422c66='linear-gradient(90deg,\x20#f6d365,\x20#fda085)';else _0x422c66=_0x130be5(0x26d);}let _0x1624e4=_0x1be370>=0x14?_0x130be5(0x232):_0x130be5(0x24b);_0x5bd104+=_0x130be5(0x274)+_0x7e0606[_0x1375ba]+_0x130be5(0x16e)+_0x1be370+_0x130be5(0x295)+_0x422c66+';\x20color:'+_0x1624e4+_0x130be5(0x163)+_0x1be370+_0x130be5(0x162);}_0x5bd104+=_0x130be5(0xf8);for(let _0x13d59b of _0x43efcd){_0x5bd104+='<h3>Kelas\x20'+_0x13d59b+_0x130be5(0x206);for(let _0x120ac6 in _0x7e0606){let _0x31464c=_0x4b8cb1[_0x13d59b][_0x130be5(0x260)],_0x3c4c7d=_0x31464c>0x0?(_0x4b8cb1[_0x13d59b]['total'][_0x120ac6]/_0x31464c*0x64)[_0x130be5(0x126)](0x0):0x0,_0x4cd465;if(_0x3c4c7d>=0x4b)_0x4cd465='linear-gradient(90deg,\x20#43e97b,\x20#38f9d7)';else{if(_0x3c4c7d>=0x32)_0x4cd465=_0x130be5(0x1e5);else _0x4cd465=_0x130be5(0x26d);}let _0x1a2d0c=_0x3c4c7d>=0x14?_0x130be5(0x232):_0x130be5(0x24b);_0x5bd104+=_0x130be5(0x168)+_0x7e0606[_0x120ac6]+_0x130be5(0x240)+_0x3c4c7d+_0x130be5(0x295)+_0x4cd465+_0x130be5(0x22b)+_0x1a2d0c+_0x130be5(0x1fd)+_0x3c4c7d+'%\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20';}}container[_0x130be5(0x10d)]=_0x5bd104,modal2[_0x130be5(0x145)][_0x130be5(0x166)]=_0x130be5(0x140),document['body'][_0x130be5(0x145)][_0x130be5(0x20f)]=_0x130be5(0x1a9),document['getElementById']('kdata4')[_0x130be5(0x10d)]=_0x130be5(0x238);})[_0x241039(0x102)](_0x25b4e4=>{const _0x5ee6a9=_0x241039;document[_0x5ee6a9(0x242)](_0x5ee6a9(0x17c))['innerHTML']=_0x5ee6a9(0x238),console['error'](_0x5ee6a9(0x139),_0x25b4e4);});}function _0x1f1b(_0x824908,_0x14e8df){const _0x3739df=_0x3739();return _0x1f1b=function(_0x1f1b90,_0x25fa7d){_0x1f1b90=_0x1f1b90-0xed;let _0xc10383=_0x3739df[_0x1f1b90];return _0xc10383;},_0x1f1b(_0x824908,_0x14e8df);}function updateKebiasaanBulanan(_0xba1a5c,_0x9a3f6f,_0x5a7aba){const _0x1651d0=_0x365794,_0x4b788d=firebase[_0x1651d0(0x13e)][_0x1651d0(0x259)]['increment'];let _0x3a469c={'tot':_0x4b788d(0x1)};for(let _0x57070a=0x1;_0x57070a<=0x7;_0x57070a++){let _0x3d8f6f='7k'+_0x57070a;if(_0x5a7aba[_0x3d8f6f]===0x1)_0x3a469c[_0x3d8f6f]=_0x4b788d(0x1);}db[_0x1651d0(0x1a1)]('presentase')['doc'](_0xba1a5c)[_0x1651d0(0x1a1)](_0x1651d0(0x297))[_0x1651d0(0x27e)](_0x9a3f6f)[_0x1651d0(0x174)](_0x3a469c,{'merge':!![]})[_0x1651d0(0x110)](()=>{})[_0x1651d0(0x102)](_0x189172=>{const _0x570db7=_0x1651d0;console[_0x570db7(0x175)](_0x570db7(0x129),_0x189172);});}async function rekaptingkat(){const _0x530d1e=_0x365794;var _0x4e6689=tglcek;document[_0x530d1e(0x242)](_0x530d1e(0x17c))[_0x530d1e(0x10d)]=_0x530d1e(0xf2);const _0x7c3d5c={'7k1':'1.\x20Bangun\x20Pagi','7k2':_0x530d1e(0x1be),'7k3':'3.\x20Berolahraga','7k4':_0x530d1e(0x288),'7k5':_0x530d1e(0x25e),'7k6':'6.\x20Bermasyarakat','7k7':_0x530d1e(0x147)},_0x1c1e11={'7k1':_0x530d1e(0x176),'7k2':_0x530d1e(0x154),'7k3':_0x530d1e(0x230),'7k4':_0x530d1e(0x120),'7k5':_0x530d1e(0x29b),'7k6':_0x530d1e(0x184),'7k7':'Tidur\x20Cepat'},_0x2bd239=['7A','7B','8A','8B','9A','9B'],_0x44473b={'VII':['7A','7B'],'VIII':['8A','8B'],'IX':['9A','9B']};let _0x4bbe48={'7k1':0x0,'7k2':0x0,'7k3':0x0,'7k4':0x0,'7k5':0x0,'7k6':0x0,'7k7':0x0},_0x12f242=0x0,_0x48241d={};_0x2bd239[_0x530d1e(0x144)](_0x1a49a6=>{_0x48241d[_0x1a49a6]={'total':{'7k1':0x0,'7k2':0x0,'7k3':0x0,'7k4':0x0,'7k5':0x0,'7k6':0x0,'7k7':0x0},'jumlahSiswa':0x0};});let _0x10f161=0x0;const _0x50e5f0=_0x2bd239['map'](_0x38cd7b=>db[_0x530d1e(0x1a1)](_0x530d1e(0x250))[_0x530d1e(0x27e)](_0x38cd7b)[_0x530d1e(0x1a1)](_0x530d1e(0x297))[_0x530d1e(0x27e)](_0x4e6689)['get']()[_0x530d1e(0x110)](_0x1734be=>{const _0x898600=_0x530d1e;if(_0x1734be[_0x898600(0x29e)]){const _0x459b6d=_0x1734be[_0x898600(0x128)](),_0x132712=_0x459b6d[_0x898600(0x1fb)]||0x0;_0x10f161+=_0x132712,_0x12f242+=_0x132712;for(let _0x1c3b18 in _0x4bbe48){_0x4bbe48[_0x1c3b18]+=_0x459b6d[_0x1c3b18]||0x0,_0x48241d[_0x38cd7b][_0x898600(0x12c)][_0x1c3b18]=_0x459b6d[_0x1c3b18]||0x0;}_0x48241d[_0x38cd7b][_0x898600(0x260)]=_0x132712;}}));Promise['all'](_0x50e5f0)[_0x530d1e(0x110)](()=>{const _0x2fb852=_0x530d1e;let _0x38ebc6=_0x2fb852(0x252);for(let _0x24c878 in _0x7c3d5c){let _0x328093=_0x12f242>0x0?(_0x4bbe48[_0x24c878]/_0x12f242*0x64)[_0x2fb852(0x126)](0x0):0x0;const _0x223940=_0x328093==0x64?_0x2fb852(0x217):_0x2fb852(0x23a);_0x38ebc6+=_0x2fb852(0x274)+_0x7c3d5c[_0x24c878]+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-bar\x22\x20style=\x22width:'+_0x328093+_0x2fb852(0x1a0)+_0x223940+_0x2fb852(0x163)+_0x328093+_0x2fb852(0x1a8);}let _0x20ea28={};for(let _0x1939c4 in _0x44473b){_0x20ea28[_0x1939c4]={'total':{'7k1':0x0,'7k2':0x0,'7k3':0x0,'7k4':0x0,'7k5':0x0,'7k6':0x0,'7k7':0x0},'jumlahSiswa':0x0};for(let _0x1cde33 of _0x44473b[_0x1939c4]){_0x20ea28[_0x1939c4][_0x2fb852(0x260)]+=_0x48241d[_0x1cde33][_0x2fb852(0x260)];for(let _0x5b0b68 in _0x48241d[_0x1cde33][_0x2fb852(0x12c)]){_0x20ea28[_0x1939c4][_0x2fb852(0x12c)][_0x5b0b68]+=_0x48241d[_0x1cde33][_0x2fb852(0x12c)][_0x5b0b68];}}}_0x38ebc6+=_0x2fb852(0x249);for(let _0x11f2f8 in _0x20ea28){_0x38ebc6+=_0x2fb852(0x257)+_0x11f2f8+_0x2fb852(0x1ef);for(let _0x5cdcf9 in _0x7c3d5c){const _0x408331=_0x20ea28[_0x11f2f8][_0x2fb852(0x260)],_0x264947=_0x408331>0x0?(_0x20ea28[_0x11f2f8]['total'][_0x5cdcf9]/_0x408331*0x64)[_0x2fb852(0x126)](0x0):0x0,_0x36fc41=_0x264947==0x64?'25px':_0x2fb852(0x23a);_0x38ebc6+=_0x2fb852(0x168)+_0x7c3d5c[_0x5cdcf9]+_0x2fb852(0x18a)+_0x264947+'%;\x20background:linear-gradient(90deg,\x20#f6d365,\x20#fda085);\x20color:white;\x20border-radius:'+_0x36fc41+_0x2fb852(0x1fd)+_0x264947+_0x2fb852(0x26e);}}_0x38ebc6+=_0x2fb852(0x119);for(let _0x456c1d of _0x2bd239){_0x38ebc6+=_0x2fb852(0x1f3)+_0x456c1d+_0x2fb852(0x1ef);for(let _0x5eabb4 in _0x7c3d5c){const _0xe764be=_0x48241d[_0x456c1d][_0x2fb852(0x260)],_0xbce2e9=_0xe764be>0x0?(_0x48241d[_0x456c1d][_0x2fb852(0x12c)][_0x5eabb4]/_0xe764be*0x64)[_0x2fb852(0x126)](0x0):0x0,_0x34cdaf=_0xbce2e9==0x64?_0x2fb852(0x217):_0x2fb852(0x23a);_0x38ebc6+=_0x2fb852(0x168)+_0x7c3d5c[_0x5eabb4]+_0x2fb852(0x240)+_0xbce2e9+_0x2fb852(0x1a0)+_0x34cdaf+'\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0xbce2e9+_0x2fb852(0x26e);}}let _0x3b19ff='<h3\x20style=\x22display:none\x22>Seluruh\x20Siswa</h3>\x0a\x20\x20\x20\x20\x20\x20<table\x20id=\x22tblTotal\x22\x20border=\x221\x22\x20style=\x22border-collapse:collapse;display:none\x22><thead><tr><th>Seluruh\x20Siswa</th>';for(let _0x14b949 in _0x1c1e11){_0x3b19ff+=_0x2fb852(0x10f)+_0x1c1e11[_0x14b949]+_0x2fb852(0x1e6);}_0x3b19ff+=_0x2fb852(0x1bc);for(let _0x5e2b15 in _0x1c1e11){let _0x34868d=_0x12f242>0x0?(_0x4bbe48[_0x5e2b15]/_0x12f242*0x64)[_0x2fb852(0x126)](0x0):0x0;_0x3b19ff+=_0x2fb852(0xf0)+_0x34868d+'%</td>';}_0x3b19ff+=_0x2fb852(0x132);let _0x51b45d=_0x2fb852(0x191);for(let _0x24f823 in _0x1c1e11){_0x51b45d+=_0x2fb852(0x10f)+_0x1c1e11[_0x24f823]+_0x2fb852(0x1e6);}_0x51b45d+=_0x2fb852(0x221);for(let _0xb44a3d in _0x20ea28){_0x51b45d+='<tr><td>'+_0xb44a3d+_0x2fb852(0x11b);for(let _0x5a56b9 in _0x1c1e11){const _0x1b1f20=_0x20ea28[_0xb44a3d][_0x2fb852(0x260)],_0x294ac9=_0x1b1f20>0x0?(_0x20ea28[_0xb44a3d][_0x2fb852(0x12c)][_0x5a56b9]/_0x1b1f20*0x64)['toFixed'](0x0):0x0;_0x51b45d+=_0x2fb852(0xf0)+_0x294ac9+_0x2fb852(0x296);}_0x51b45d+=_0x2fb852(0x11e);}_0x51b45d+='</tbody></table>';let _0x108a43=_0x2fb852(0x187);for(let _0x4762da in _0x1c1e11){_0x108a43+='<th>'+_0x1c1e11[_0x4762da]+_0x2fb852(0x1e6);}_0x108a43+=_0x2fb852(0x221);for(let _0x523b8f of _0x2bd239){_0x108a43+=_0x2fb852(0x1a5)+_0x523b8f+_0x2fb852(0x11b);for(let _0x3aacd1 in _0x1c1e11){const _0x5e7e27=_0x48241d[_0x523b8f][_0x2fb852(0x260)],_0x19af09=_0x5e7e27>0x0?(_0x48241d[_0x523b8f][_0x2fb852(0x12c)][_0x3aacd1]/_0x5e7e27*0x64)[_0x2fb852(0x126)](0x0):0x0;_0x108a43+='<td>'+_0x19af09+'%</td>';}_0x108a43+=_0x2fb852(0x11e);}_0x108a43+=_0x2fb852(0x19c),document[_0x2fb852(0x242)]('tp')[_0x2fb852(0x10d)]=_0x2fb852(0x1f2)+blncek+_0x2fb852(0x1ef),container[_0x2fb852(0x10d)]=_0x38ebc6+_0x3b19ff+_0x51b45d+_0x108a43+_0x2fb852(0x1a7);if(_0x10f161<=0x0){document[_0x2fb852(0x242)]('kdata4')['innerHTML']=_0x2fb852(0x222),document[_0x2fb852(0x242)](_0x2fb852(0x1f9))['style'][_0x2fb852(0x166)]='block',document[_0x2fb852(0x242)](_0x2fb852(0x24f))[_0x2fb852(0x10d)]=_0x2fb852(0xf5)+blncek+_0x2fb852(0x16d),document[_0x2fb852(0x177)]['style'][_0x2fb852(0x20f)]=_0x2fb852(0x1a9);return;}modal2[_0x2fb852(0x145)]['display']=_0x2fb852(0x140),document[_0x2fb852(0x177)]['style'][_0x2fb852(0x20f)]=_0x2fb852(0x1a9),document[_0x2fb852(0x242)](_0x2fb852(0x17c))['innerHTML']=_0x2fb852(0x27c),document['getElementById'](_0x2fb852(0x275))[_0x2fb852(0x10c)](_0x2fb852(0x21b),async function(){const _0x3ca4f5=_0x2fb852,_0x1d02ce=new ExcelJS['Workbook'](),_0x5abba7=_0x1d02ce[_0x3ca4f5(0x1a4)](_0x3ca4f5(0x265)+blncek);_0x5abba7[_0x3ca4f5(0x19a)]=[{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf}],_0x5abba7['mergeCells'](_0x3ca4f5(0x258));const _0x3b57c9=_0x5abba7[_0x3ca4f5(0xf1)]('A1');_0x3b57c9[_0x3ca4f5(0xfe)]=_0x3ca4f5(0x263),_0x3b57c9['font']={'bold':!![],'size':0xe},_0x3b57c9[_0x3ca4f5(0x235)]={'horizontal':_0x3ca4f5(0xfd),'vertical':_0x3ca4f5(0x159)};const _0x2376df=new Date(),_0x18052f=_0x2376df[_0x3ca4f5(0x283)]('id-ID',{'day':_0x3ca4f5(0x1ca),'month':_0x3ca4f5(0x124),'year':'numeric'});_0x5abba7[_0x3ca4f5(0x216)](_0x3ca4f5(0x210)),_0x5abba7[_0x3ca4f5(0xf1)]('A2')[_0x3ca4f5(0xfe)]=_0x3ca4f5(0x265)+blncek,_0x5abba7[_0x3ca4f5(0xf1)]('A2')[_0x3ca4f5(0x235)]={'horizontal':_0x3ca4f5(0xfd),'vertical':_0x3ca4f5(0x159)},_0x5abba7['getCell']('A2')['font']={'bold':!![],'size':0xe},_0x5abba7[_0x3ca4f5(0x216)](_0x3ca4f5(0x14b)),_0x5abba7[_0x3ca4f5(0xf1)]('A3')[_0x3ca4f5(0xfe)]=_0x3ca4f5(0xf9)+_0x18052f,_0x5abba7[_0x3ca4f5(0xf1)]('A3')['alignment']={'horizontal':_0x3ca4f5(0xfd),'vertical':_0x3ca4f5(0x159)},_0x5abba7[_0x3ca4f5(0xf1)]('A3')[_0x3ca4f5(0x218)]={'italic':!![],'size':0xb};const _0x1e2c27=container[_0x3ca4f5(0x1d5)]('table');let _0x45c16f=0x4;_0x1e2c27[_0x3ca4f5(0x144)]((_0x131933,_0x4e3f4e)=>{const _0x4c2399=_0x3ca4f5,_0x7a44db=_0x131933['previousElementSibling']?.[_0x4c2399(0x118)]||_0x4c2399(0x23f)+(_0x4e3f4e+0x1);_0x5abba7[_0x4c2399(0xf1)]('A'+_0x45c16f)[_0x4c2399(0xfe)]=_0x7a44db,_0x5abba7[_0x4c2399(0xf1)]('A'+_0x45c16f)[_0x4c2399(0x218)]={'bold':!![],'size':0xc},_0x45c16f++;const _0x10a492=_0x131933[_0x4c2399(0x1d5)]('tr');_0x10a492['forEach']((_0x337cf4,_0x3563e4)=>{const _0xdfaca7=_0x4c2399,_0x395ed=_0x337cf4[_0xdfaca7(0x1d5)](_0xdfaca7(0x1c8)),_0xc87044=[];_0x395ed[_0xdfaca7(0x144)](_0x233e1a=>_0xc87044[_0xdfaca7(0x12d)](_0x233e1a['innerText'])),_0x5abba7['addRow'](_0xc87044);const _0x2f492c=_0x5abba7['lastRow'];_0x2f492c[_0xdfaca7(0x17b)](_0x299ac9=>{const _0x479040=_0xdfaca7;_0x299ac9['border']={'top':{'style':'thin'},'left':{'style':'thin'},'bottom':{'style':_0x479040(0x1fe)},'right':{'style':_0x479040(0x1fe)}},_0x299ac9[_0x479040(0x235)]={'vertical':_0x479040(0x159),'horizontal':_0x479040(0xfd)};}),_0x3563e4===0x0&&_0x2f492c[_0xdfaca7(0x17b)](_0x3339e8=>{const _0x48bbf0=_0xdfaca7;_0x3339e8[_0x48bbf0(0x218)]={'bold':!![],'color':{'argb':_0x48bbf0(0x243)}},_0x3339e8[_0x48bbf0(0x23c)]={'type':'pattern','pattern':_0x48bbf0(0x134),'fgColor':{'argb':_0x48bbf0(0x141)}};});}),_0x45c16f=_0x5abba7[_0x4c2399(0x237)][_0x4c2399(0x224)]+0x3,_0x5abba7[_0x4c2399(0x161)]([]);});const _0x324265=_0x5abba7['lastRow'][_0x3ca4f5(0x224)]+0x2;_0x5abba7[_0x3ca4f5(0x216)]('F'+_0x324265+':H'+_0x324265),_0x5abba7['getCell']('F'+_0x324265)[_0x3ca4f5(0xfe)]=_0x3ca4f5(0x1b1),_0x5abba7[_0x3ca4f5(0xf1)]('F'+_0x324265)[_0x3ca4f5(0x235)]={'horizontal':_0x3ca4f5(0xfd)},_0x5abba7[_0x3ca4f5(0x216)]('F'+(_0x324265+0x1)+':H'+(_0x324265+0x1)),_0x5abba7[_0x3ca4f5(0xf1)]('F'+(_0x324265+0x1))[_0x3ca4f5(0xfe)]=_0x3ca4f5(0x182),_0x5abba7[_0x3ca4f5(0xf1)]('F'+(_0x324265+0x1))[_0x3ca4f5(0x235)]={'horizontal':_0x3ca4f5(0xfd)},_0x5abba7[_0x3ca4f5(0x216)]('F'+(_0x324265+0x4)+':H'+(_0x324265+0x4)),_0x5abba7[_0x3ca4f5(0xf1)]('F'+(_0x324265+0x4))['value']=_0x3ca4f5(0x1fc),_0x5abba7[_0x3ca4f5(0xf1)]('F'+(_0x324265+0x4))[_0x3ca4f5(0x218)]={'bold':!![]},_0x5abba7[_0x3ca4f5(0xf1)]('F'+(_0x324265+0x4))[_0x3ca4f5(0x235)]={'horizontal':_0x3ca4f5(0xfd)},_0x5abba7[_0x3ca4f5(0x216)]('F'+(_0x324265+0x5)+':H'+(_0x324265+0x5)),_0x5abba7['getCell']('F'+(_0x324265+0x5))[_0x3ca4f5(0xfe)]=_0x3ca4f5(0x233),_0x5abba7['getCell']('F'+(_0x324265+0x5))[_0x3ca4f5(0x235)]={'horizontal':_0x3ca4f5(0xfd)};const _0x377f90=await _0x1d02ce[_0x3ca4f5(0x213)][_0x3ca4f5(0x1f8)](),_0x751956=new Blob([_0x377f90],{'type':_0x3ca4f5(0x1dc)}),_0x55ae06=document[_0x3ca4f5(0x196)]('a');_0x55ae06[_0x3ca4f5(0x1cc)]=URL['createObjectURL'](_0x751956),_0x55ae06['download']=_0x3ca4f5(0x1b4)+_0x4e6689+_0x3ca4f5(0x231),_0x55ae06[_0x3ca4f5(0x21b)]();});});}async function rekappresent(){const _0x1a6be5=_0x365794;var _0x4a74fe=tglcek;document['getElementById'](_0x1a6be5(0x17c))[_0x1a6be5(0x10d)]=_0x1a6be5(0xf2);const _0x48c882={'7k1':_0x1a6be5(0x27d),'7k2':_0x1a6be5(0x1be),'7k3':_0x1a6be5(0x28c),'7k4':_0x1a6be5(0x288),'7k5':'5.\x20Gemar\x20Belajar','7k6':_0x1a6be5(0xf6),'7k7':'7.\x20Tidur\x20Cepat'},_0x3ad1ba={'7k1':_0x1a6be5(0x176),'7k2':'Beribadah','7k3':_0x1a6be5(0x230),'7k4':_0x1a6be5(0x120),'7k5':_0x1a6be5(0x29b),'7k6':_0x1a6be5(0x184),'7k7':_0x1a6be5(0xfc)},_0x444f65=['7A','7B','8A','8B','9A','9B'];let _0x26109a={'7k1':0x0,'7k2':0x0,'7k3':0x0,'7k4':0x0,'7k5':0x0,'7k6':0x0,'7k7':0x0},_0x366184=0x0,_0x1cc3d9={};_0x444f65[_0x1a6be5(0x144)](_0x4f0f32=>{_0x1cc3d9[_0x4f0f32]={'total':{'7k1':0x0,'7k2':0x0,'7k3':0x0,'7k4':0x0,'7k5':0x0,'7k6':0x0,'7k7':0x0},'jumlahSiswa':0x0};});let _0x875284=0x0;const _0xc3765=_0x444f65[_0x1a6be5(0x131)](_0xd7eaf=>db['collection']('presentase')[_0x1a6be5(0x27e)](_0xd7eaf)[_0x1a6be5(0x1a1)](_0x1a6be5(0x297))[_0x1a6be5(0x27e)](_0x4a74fe)[_0x1a6be5(0x123)]()[_0x1a6be5(0x110)](_0x8559b5=>{const _0x5eea93=_0x1a6be5;if(_0x8559b5[_0x5eea93(0x29e)]){const _0x180021=_0x8559b5[_0x5eea93(0x128)](),_0x4654d5=_0x180021[_0x5eea93(0x1fb)]||0x0;_0x875284+=_0x4654d5,_0x366184+=_0x4654d5;for(let _0x3e226f in _0x26109a){_0x26109a[_0x3e226f]+=_0x180021[_0x3e226f]||0x0,_0x1cc3d9[_0xd7eaf][_0x5eea93(0x12c)][_0x3e226f]=_0x180021[_0x3e226f]||0x0;}_0x1cc3d9[_0xd7eaf][_0x5eea93(0x260)]=_0x4654d5;}}));Promise['all'](_0xc3765)['then'](()=>{const _0x4d2b60=_0x1a6be5;let _0x708999='<b\x20style=\x22font-size:20px\x22><i\x20class=\x22fa\x20fa-bullhorn\x22></i>\x20Persentase\x20Seluruh\x20Siswa</b>';for(let _0x18da00 in _0x48c882){let _0x13059b=_0x366184>0x0?(_0x26109a[_0x18da00]/_0x366184*0x64)[_0x4d2b60(0x126)](0x0):0x0;const _0x1b1f45=_0x13059b==0x64?_0x4d2b60(0x217):_0x4d2b60(0x23a);_0x708999+=_0x4d2b60(0x274)+_0x48c882[_0x18da00]+_0x4d2b60(0x16e)+_0x13059b+_0x4d2b60(0x1a0)+_0x1b1f45+'\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x13059b+'%\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>';}_0x708999+=_0x4d2b60(0x119);for(let _0x32b658 of _0x444f65){_0x708999+=_0x4d2b60(0x1f3)+_0x32b658+_0x4d2b60(0x1ef);for(let _0x3e4756 in _0x48c882){const _0x4f5c36=_0x1cc3d9[_0x32b658]['jumlahSiswa'],_0x2a3bd6=_0x4f5c36>0x0?(_0x1cc3d9[_0x32b658][_0x4d2b60(0x12c)][_0x3e4756]/_0x4f5c36*0x64)[_0x4d2b60(0x126)](0x0):0x0,_0x55d5c3=_0x2a3bd6==0x64?_0x4d2b60(0x217):'25px\x200\x200\x2025px';_0x708999+=_0x4d2b60(0x168)+_0x48c882[_0x3e4756]+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-bar\x22\x20style=\x22width:'+_0x2a3bd6+_0x4d2b60(0x1a0)+_0x55d5c3+_0x4d2b60(0x1fd)+_0x2a3bd6+_0x4d2b60(0x26e);}}let _0x5b5cf6=_0x4d2b60(0x23d);for(let _0x2405a6 in _0x3ad1ba){_0x5b5cf6+=_0x4d2b60(0x10f)+_0x3ad1ba[_0x2405a6]+'</th>';}_0x5b5cf6+='</tr></thead><tbody><tr><td>Persentase</td>';for(let _0x16acc2 in _0x3ad1ba){let _0x13fdad=_0x366184>0x0?(_0x26109a[_0x16acc2]/_0x366184*0x64)[_0x4d2b60(0x126)](0x0):0x0;_0x5b5cf6+='<td>'+_0x13fdad+_0x4d2b60(0x296);}_0x5b5cf6+=_0x4d2b60(0x132);let _0x4d4b7b=_0x4d2b60(0x187);for(let _0x1ec127 in _0x3ad1ba){_0x4d4b7b+=_0x4d2b60(0x10f)+_0x3ad1ba[_0x1ec127]+'</th>';}_0x4d4b7b+='</tr></thead><tbody>';for(let _0x37f684 of _0x444f65){_0x4d4b7b+=_0x4d2b60(0x1a5)+_0x37f684+_0x4d2b60(0x11b);for(let _0x12ab63 in _0x3ad1ba){const _0x5b9bfc=_0x1cc3d9[_0x37f684][_0x4d2b60(0x260)],_0xc074bd=_0x5b9bfc>0x0?(_0x1cc3d9[_0x37f684][_0x4d2b60(0x12c)][_0x12ab63]/_0x5b9bfc*0x64)[_0x4d2b60(0x126)](0x0):0x0;_0x4d4b7b+='<td>'+_0xc074bd+_0x4d2b60(0x296);}_0x4d4b7b+=_0x4d2b60(0x11e);}_0x4d4b7b+='</tbody></table>',document[_0x4d2b60(0x242)]('tp')['innerHTML']=_0x4d2b60(0x1f2)+blncek+_0x4d2b60(0x1ef),container[_0x4d2b60(0x10d)]=_0x708999+_0x5b5cf6+_0x4d4b7b+_0x4d2b60(0x1a7);if(_0x875284<=0x0){document[_0x4d2b60(0x242)](_0x4d2b60(0x17c))[_0x4d2b60(0x10d)]=_0x4d2b60(0x222),document['getElementById'](_0x4d2b60(0x1f9))[_0x4d2b60(0x145)][_0x4d2b60(0x166)]=_0x4d2b60(0x140),document[_0x4d2b60(0x242)]('tmodal')[_0x4d2b60(0x10d)]=_0x4d2b60(0xf5)+blncek+_0x4d2b60(0x16d),document[_0x4d2b60(0x177)]['style'][_0x4d2b60(0x20f)]='hidden';return;}modal2['style'][_0x4d2b60(0x166)]='block',document[_0x4d2b60(0x177)][_0x4d2b60(0x145)][_0x4d2b60(0x20f)]=_0x4d2b60(0x1a9),document[_0x4d2b60(0x242)](_0x4d2b60(0x17c))['innerHTML']='<i\x20class=\x22fas\x20fa-users\x22></i>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-block\x22>Persentase\x20Per\x20Kelas\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22val\x22>Rekap\x20data\x20siswa\x20per\x20kelas</span>\x0a\x20\x20\x20\x20\x20\x20</div>',document[_0x4d2b60(0x242)](_0x4d2b60(0x275))['addEventListener'](_0x4d2b60(0x21b),async function(){const _0x203f0d=_0x4d2b60,_0x370e35=new ExcelJS['Workbook'](),_0x2d18f=_0x370e35['addWorksheet'](_0x203f0d(0x265)+blncek);_0x2d18f[_0x203f0d(0x19a)]=[{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf}],_0x2d18f[_0x203f0d(0x216)](_0x203f0d(0x258));const _0x1d1259=_0x2d18f[_0x203f0d(0xf1)]('A1');_0x1d1259['value']=_0x203f0d(0x16c),_0x1d1259[_0x203f0d(0x218)]={'bold':!![],'size':0xe},_0x1d1259['alignment']={'horizontal':_0x203f0d(0xfd),'vertical':_0x203f0d(0x159)};const _0x109da3=new Date(),_0x1f0725=_0x109da3[_0x203f0d(0x283)](_0x203f0d(0x1c0),{'day':_0x203f0d(0x1ca),'month':_0x203f0d(0x124),'year':_0x203f0d(0x282)});_0x2d18f['mergeCells'](_0x203f0d(0x210)),_0x2d18f[_0x203f0d(0xf1)]('A2')['value']=_0x203f0d(0x265)+blncek,_0x2d18f[_0x203f0d(0xf1)]('A2')[_0x203f0d(0x235)]={'horizontal':_0x203f0d(0xfd),'vertical':_0x203f0d(0x159)},_0x2d18f[_0x203f0d(0xf1)]('A2')[_0x203f0d(0x218)]={'bold':!![],'size':0xe},_0x2d18f[_0x203f0d(0x216)](_0x203f0d(0x14b)),_0x2d18f[_0x203f0d(0xf1)]('A3')[_0x203f0d(0xfe)]=_0x203f0d(0xf9)+_0x1f0725,_0x2d18f['getCell']('A3')['alignment']={'horizontal':_0x203f0d(0xfd),'vertical':'middle'},_0x2d18f[_0x203f0d(0xf1)]('A3')[_0x203f0d(0x218)]={'italic':!![],'size':0xb};const _0x578539=container[_0x203f0d(0x1d5)](_0x203f0d(0x1db));let _0x593afc=0x4;_0x578539[_0x203f0d(0x144)]((_0x2c9f26,_0x163b19)=>{const _0x343597=_0x203f0d,_0x5319fe=_0x2c9f26['previousElementSibling']?.['innerText']||'Tabel\x20'+(_0x163b19+0x1);_0x2d18f[_0x343597(0xf1)]('A'+_0x593afc)[_0x343597(0xfe)]=_0x5319fe,_0x2d18f[_0x343597(0xf1)]('A'+_0x593afc)[_0x343597(0x218)]={'bold':!![],'size':0xc},_0x593afc++;const _0x57e50d=_0x2c9f26[_0x343597(0x1d5)]('tr');_0x57e50d[_0x343597(0x144)]((_0x559aa8,_0x5b83e4)=>{const _0x2ef1d8=_0x343597,_0x38bac6=_0x559aa8[_0x2ef1d8(0x1d5)]('th,td'),_0xe8a803=[];_0x38bac6[_0x2ef1d8(0x144)](_0x541b3e=>_0xe8a803[_0x2ef1d8(0x12d)](_0x541b3e['innerText'])),_0x2d18f['addRow'](_0xe8a803);const _0x1dc8b5=_0x2d18f[_0x2ef1d8(0x237)];_0x1dc8b5[_0x2ef1d8(0x17b)](_0x107e1e=>{const _0x5a74df=_0x2ef1d8;_0x107e1e[_0x5a74df(0x142)]={'top':{'style':_0x5a74df(0x1fe)},'left':{'style':_0x5a74df(0x1fe)},'bottom':{'style':_0x5a74df(0x1fe)},'right':{'style':'thin'}},_0x107e1e['alignment']={'vertical':'middle','horizontal':_0x5a74df(0xfd)};}),_0x5b83e4===0x0&&_0x1dc8b5[_0x2ef1d8(0x17b)](_0x403f74=>{const _0x4f7bf1=_0x2ef1d8;_0x403f74[_0x4f7bf1(0x218)]={'bold':!![],'color':{'argb':_0x4f7bf1(0x243)}},_0x403f74[_0x4f7bf1(0x23c)]={'type':_0x4f7bf1(0x17f),'pattern':_0x4f7bf1(0x134),'fgColor':{'argb':_0x4f7bf1(0x141)}};});}),_0x593afc=_0x2d18f[_0x343597(0x237)][_0x343597(0x224)]+0x3,_0x2d18f[_0x343597(0x161)]([]);});const _0x464fdc=_0x2d18f[_0x203f0d(0x237)]['number']+0x2;_0x2d18f[_0x203f0d(0x216)]('F'+_0x464fdc+':H'+_0x464fdc),_0x2d18f[_0x203f0d(0xf1)]('F'+_0x464fdc)['value']=_0x203f0d(0x1b1),_0x2d18f['getCell']('F'+_0x464fdc)[_0x203f0d(0x235)]={'horizontal':_0x203f0d(0xfd)},_0x2d18f[_0x203f0d(0x216)]('F'+(_0x464fdc+0x1)+':H'+(_0x464fdc+0x1)),_0x2d18f[_0x203f0d(0xf1)]('F'+(_0x464fdc+0x1))[_0x203f0d(0xfe)]=_0x203f0d(0x182),_0x2d18f['getCell']('F'+(_0x464fdc+0x1))['alignment']={'horizontal':_0x203f0d(0xfd)},_0x2d18f[_0x203f0d(0x216)]('F'+(_0x464fdc+0x4)+':H'+(_0x464fdc+0x4)),_0x2d18f[_0x203f0d(0xf1)]('F'+(_0x464fdc+0x4))[_0x203f0d(0xfe)]=_0x203f0d(0x1fc),_0x2d18f[_0x203f0d(0xf1)]('F'+(_0x464fdc+0x4))['font']={'bold':!![]},_0x2d18f[_0x203f0d(0xf1)]('F'+(_0x464fdc+0x4))['alignment']={'horizontal':'center'},_0x2d18f['mergeCells']('F'+(_0x464fdc+0x5)+':H'+(_0x464fdc+0x5)),_0x2d18f[_0x203f0d(0xf1)]('F'+(_0x464fdc+0x5))[_0x203f0d(0xfe)]=_0x203f0d(0x233),_0x2d18f['getCell']('F'+(_0x464fdc+0x5))[_0x203f0d(0x218)]={'bold':![]},_0x2d18f[_0x203f0d(0xf1)]('F'+(_0x464fdc+0x5))['alignment']={'horizontal':'center'};const _0x52db3a=await _0x370e35[_0x203f0d(0x213)][_0x203f0d(0x1f8)](),_0x2d53af=new Blob([_0x52db3a],{'type':'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}),_0x20c8c8=document['createElement']('a');_0x20c8c8[_0x203f0d(0x1cc)]=URL['createObjectURL'](_0x2d53af),_0x20c8c8[_0x203f0d(0xed)]='Rekap_Persentase_'+_0x4a74fe+_0x203f0d(0x231),_0x20c8c8['click']();});});}async function rekappersiswa(_0x5c58f2=tglcek){const _0x1ee79a=_0x365794;document[_0x1ee79a(0x242)](_0x1ee79a(0x23e))[_0x1ee79a(0x10d)]=_0x1ee79a(0x28b);const _0xf3bdf8={'7k1':_0x1ee79a(0x176),'7k2':_0x1ee79a(0x154),'7k3':_0x1ee79a(0x230),'7k4':_0x1ee79a(0x120),'7k5':_0x1ee79a(0x29b),'7k6':_0x1ee79a(0x184),'7k7':_0x1ee79a(0xfc)},_0x136298=['7A','7B','8A','8B','9A','9B'];let _0x11de46={};_0x136298[_0x1ee79a(0x144)](_0x54d60e=>_0x11de46[_0x54d60e]={}),db[_0x1ee79a(0x1a1)](_0x1ee79a(0x256))[_0x1ee79a(0x1d1)](_0x1ee79a(0x297),'==',_0x5c58f2)[_0x1ee79a(0x123)]()['then'](_0x55ad3c=>{const _0x75d534=_0x1ee79a;if(_0x55ad3c['empty']){document[_0x75d534(0x242)](_0x75d534(0x23e))[_0x75d534(0x10d)]=_0x75d534(0x1bf),document[_0x75d534(0x242)]('loadingModal')[_0x75d534(0x145)][_0x75d534(0x166)]='block',document[_0x75d534(0x242)](_0x75d534(0x24f))[_0x75d534(0x10d)]=_0x75d534(0xf5)+blncek+_0x75d534(0x16d),document['body'][_0x75d534(0x145)][_0x75d534(0x20f)]=_0x75d534(0x1a9);return;}_0x55ad3c[_0x75d534(0x144)](_0x122ad2=>{const _0x2e7f86=_0x75d534,_0x100501=_0x122ad2[_0x2e7f86(0x128)](),_0x296137=_0x100501[_0x2e7f86(0x1a2)],_0x325293=_0x100501[_0x2e7f86(0x18f)]||_0x100501[_0x2e7f86(0x212)]||_0x2e7f86(0x1f1),_0x1233ac=_0x100501['nis']||'-',_0x1535d2=_0x100501[_0x2e7f86(0x239)]||'-';if(!_0x136298[_0x2e7f86(0x14d)](_0x296137))return;if(!_0x11de46[_0x296137][_0x325293]){_0x11de46[_0x296137][_0x325293]={'nis':_0x1233ac,'wali':_0x1535d2,'totalHari':0x0};for(let _0x1ea4d9=0x1;_0x1ea4d9<=0x7;_0x1ea4d9++)_0x11de46[_0x296137][_0x325293]['7k'+_0x1ea4d9]=0x0;}_0x11de46[_0x296137][_0x325293]['totalHari']+=0x1;for(let _0x437eaf=0x1;_0x437eaf<=0x7;_0x437eaf++){const _0x4a7a27='7k'+_0x437eaf;_0x11de46[_0x296137][_0x325293][_0x4a7a27]+=_0x100501[_0x4a7a27]?0x1:0x0;}});let _0x2eaa52='<b\x20style=\x22font-size:20px\x22><i\x20class=\x22fa\x20fa-bullhorn\x22></i>\x20Persentase\x20Per\x20Siswa</b>';for(let _0x11ded1 of _0x136298){const _0x1f52af=_0x11de46[_0x11ded1];if(Object[_0x75d534(0x10e)](_0x1f52af)[_0x75d534(0x11f)]===0x0)continue;_0x2eaa52+=_0x75d534(0x1de)+_0x11ded1+_0x75d534(0x1ef),_0x2eaa52+='<table\x20id=\x22tabelSiswa2\x22\x20style=\x22border-collapse:\x20collapse;\x20width:\x20100%\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th>No</th><th>NIS</th><th>Nama\x20Siswa</th><th>Nama\x20Wali</th><th>Total\x20Input</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+Object['values'](_0xf3bdf8)[_0x75d534(0x131)](_0x51e158=>_0x75d534(0x10f)+_0x51e158+_0x75d534(0x1e6))['join']('')+_0x75d534(0x1e3);let _0x9d3e06=0x1;for(let _0xf4990f in _0x1f52af){const _0x34bc77=_0x1f52af[_0xf4990f],_0x3bcd57=[0x1,0x2,0x3,0x4,0x5,0x6,0x7][_0x75d534(0x131)](_0xd61140=>{const _0x243a08=_0x75d534,_0x1d9693='7k'+_0xd61140;return _0x34bc77[_0x243a08(0x27a)]>0x0?(_0x34bc77[_0x1d9693]/_0x34bc77['totalHari']*0x64)[_0x243a08(0x126)](0x0)+'%':'0%';});_0x2eaa52+=_0x75d534(0x1e0)+_0x9d3e06++ +_0x75d534(0x255)+_0x34bc77[_0x75d534(0x1e9)]+_0x75d534(0x255)+_0xf4990f+_0x75d534(0x255)+_0x34bc77[_0x75d534(0x239)]+_0x75d534(0x255)+_0x34bc77[_0x75d534(0x27a)]+_0x75d534(0x247)+_0x3bcd57[_0x75d534(0x131)](_0x112e46=>_0x75d534(0xf0)+_0x112e46+'</td>')[_0x75d534(0x228)]('')+_0x75d534(0x195);}_0x2eaa52+=_0x75d534(0x1ad);}_0x2eaa52+=_0x75d534(0x225),container['innerHTML']=_0x2eaa52,modal2['style'][_0x75d534(0x166)]='block',document[_0x75d534(0x242)]('tp')[_0x75d534(0x10d)]=_0x75d534(0x1f2)+blncek+'</b>',document['body'][_0x75d534(0x145)][_0x75d534(0x20f)]=_0x75d534(0x1a9),document[_0x75d534(0x242)](_0x75d534(0x23e))[_0x75d534(0x10d)]=_0x75d534(0x26f),document[_0x75d534(0x242)](_0x75d534(0x275))[_0x75d534(0x10c)](_0x75d534(0x21b),async()=>{const _0x33b60b=_0x75d534,_0x534692=new ExcelJS['Workbook'](),_0x4d953e=_0x534692['addWorksheet']('Persentase');_0x4d953e[_0x33b60b(0x216)]('A1:L1'),_0x4d953e['getCell']('A1')['value']=_0x33b60b(0x1f5),_0x4d953e[_0x33b60b(0xf1)]('A1')[_0x33b60b(0x218)]={'bold':!![],'size':0xe},_0x4d953e[_0x33b60b(0xf1)]('A1')['alignment']={'horizontal':_0x33b60b(0xfd)},_0x4d953e[_0x33b60b(0x216)](_0x33b60b(0x1ed)),_0x4d953e[_0x33b60b(0xf1)]('A2')[_0x33b60b(0xfe)]=_0x33b60b(0x265)+blncek,_0x4d953e[_0x33b60b(0xf1)]('A2')[_0x33b60b(0x235)]={'horizontal':_0x33b60b(0xfd),'vertical':_0x33b60b(0x159)},_0x4d953e[_0x33b60b(0xf1)]('A2')[_0x33b60b(0x218)]={'bold':!![],'size':0xe};const _0x48e1df=new Date(),_0x4f840f=_0x48e1df[_0x33b60b(0x283)]('id-ID',{'day':'2-digit','month':_0x33b60b(0x124),'year':_0x33b60b(0x282)});_0x4d953e[_0x33b60b(0x216)](_0x33b60b(0x15a)),_0x4d953e[_0x33b60b(0xf1)]('A3')[_0x33b60b(0xfe)]='Tanggal\x20Cetak:\x20'+_0x4f840f,_0x4d953e[_0x33b60b(0xf1)]('A3')[_0x33b60b(0x235)]={'horizontal':_0x33b60b(0xfd),'vertical':'middle'},_0x4d953e[_0x33b60b(0xf1)]('A3')['font']={'italic':!![],'size':0xb};let _0x4016a8=0x4;for(let _0x3708eb of _0x136298){const _0x32225d=_0x11de46[_0x3708eb];if(Object[_0x33b60b(0x10e)](_0x32225d)['length']===0x0)continue;_0x4d953e['addRow']([]),_0x4d953e['mergeCells']('A'+_0x4016a8+':H'+_0x4016a8),_0x4d953e[_0x33b60b(0xf1)]('A'+_0x4016a8)[_0x33b60b(0xfe)]=_0x33b60b(0x22e)+_0x3708eb,_0x4d953e[_0x33b60b(0xf1)]('A'+_0x4016a8)['font']={'bold':!![],'size':0xc},_0x4016a8++;const _0x21937f=['No','NIS',_0x33b60b(0x21f),_0x33b60b(0x1cb),_0x33b60b(0x1f0),...Object['values'](_0xf3bdf8)];_0x4d953e[_0x33b60b(0x161)](_0x21937f);let _0x276c3a=0x1;for(let _0x482728 in _0x32225d){const _0x393333=_0x32225d[_0x482728],_0x370a20=[0x1,0x2,0x3,0x4,0x5,0x6,0x7][_0x33b60b(0x131)](_0x13b46d=>{const _0x41b657=_0x33b60b,_0x4b90fa='7k'+_0x13b46d;return _0x393333['totalHari']>0x0?(_0x393333[_0x4b90fa]/_0x393333[_0x41b657(0x27a)]*0x64)[_0x41b657(0x126)](0x0)+'%':'0%';});_0x4d953e[_0x33b60b(0x161)]([_0x276c3a++,_0x393333[_0x33b60b(0x1e9)],_0x482728,_0x393333['wali'],_0x393333[_0x33b60b(0x27a)],..._0x370a20]);}const _0x6bfd5a=_0x4d953e[_0x33b60b(0x237)]['number'];for(let _0x4f4727=_0x4016a8;_0x4f4727<=_0x6bfd5a;_0x4f4727++){const _0x3b5ad3=_0x4d953e[_0x33b60b(0x19e)](_0x4f4727);[0x3,0x4][_0x33b60b(0x144)](_0x249f6c=>{const _0x24c29d=_0x33b60b,_0x3f5a58=_0x3b5ad3[_0x24c29d(0xf1)](_0x249f6c);_0x3f5a58[_0x24c29d(0x235)]={'horizontal':_0x24c29d(0x13a),'vertical':'middle'},_0x3f5a58['border']={'top':{'style':_0x24c29d(0x1fe)},'left':{'style':_0x24c29d(0x1fe)},'bottom':{'style':_0x24c29d(0x1fe)},'right':{'style':'thin'}};}),_0x3b5ad3[_0x33b60b(0x17b)]({'includeEmpty':!![]},(_0x373899,_0x37a278)=>{const _0x3fc183=_0x33b60b;![0x3,0x4][_0x3fc183(0x14d)](_0x37a278)&&(_0x373899[_0x3fc183(0x235)]={'horizontal':_0x3fc183(0xfd),'vertical':_0x3fc183(0x159)},_0x373899[_0x3fc183(0x142)]={'top':{'style':_0x3fc183(0x1fe)},'left':{'style':_0x3fc183(0x1fe)},'bottom':{'style':_0x3fc183(0x1fe)},'right':{'style':_0x3fc183(0x1fe)}});}),_0x4f4727===_0x4016a8&&_0x3b5ad3[_0x33b60b(0x17b)]({'includeEmpty':!![]},_0x41c37b=>{const _0x4822a9=_0x33b60b;_0x41c37b['font']={'bold':!![],'color':{'argb':_0x4822a9(0x243)}},_0x41c37b[_0x4822a9(0x23c)]={'type':_0x4822a9(0x17f),'pattern':_0x4822a9(0x134),'fgColor':{'argb':_0x4822a9(0x141)}};});}_0x4016a8=_0x6bfd5a+0x2;}_0x4d953e['columns']=[{'width':0x5},{'width':0x8},{'width':0x16},{'width':0x16},{'width':0xe},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf}];const _0x1dc5f9=_0x4d953e[_0x33b60b(0x237)]['number']+0x3;_0x4d953e['mergeCells']('J'+_0x1dc5f9+':L'+_0x1dc5f9),_0x4d953e[_0x33b60b(0xf1)]('J'+_0x1dc5f9)[_0x33b60b(0xfe)]=_0x33b60b(0x1b1),_0x4d953e[_0x33b60b(0xf1)]('J'+_0x1dc5f9)[_0x33b60b(0x235)]={'horizontal':_0x33b60b(0xfd)},_0x4d953e[_0x33b60b(0x216)]('J'+(_0x1dc5f9+0x1)+':L'+(_0x1dc5f9+0x1)),_0x4d953e['getCell']('J'+(_0x1dc5f9+0x1))[_0x33b60b(0xfe)]=_0x33b60b(0x182),_0x4d953e[_0x33b60b(0xf1)]('J'+(_0x1dc5f9+0x1))[_0x33b60b(0x235)]={'horizontal':'center'},_0x4d953e[_0x33b60b(0x216)]('J'+(_0x1dc5f9+0x4)+':L'+(_0x1dc5f9+0x4)),_0x4d953e['getCell']('J'+(_0x1dc5f9+0x4))[_0x33b60b(0xfe)]='TASLIM\x20M.,\x20S.Pd.',_0x4d953e['getCell']('J'+(_0x1dc5f9+0x4))['font']={'bold':!![]},_0x4d953e['getCell']('J'+(_0x1dc5f9+0x4))[_0x33b60b(0x235)]={'horizontal':_0x33b60b(0xfd)},_0x4d953e[_0x33b60b(0x216)]('J'+(_0x1dc5f9+0x5)+':L'+(_0x1dc5f9+0x5)),_0x4d953e[_0x33b60b(0xf1)]('J'+(_0x1dc5f9+0x5))['value']=_0x33b60b(0x233),_0x4d953e[_0x33b60b(0xf1)]('J'+(_0x1dc5f9+0x5))[_0x33b60b(0x218)]={'bold':![]},_0x4d953e['getCell']('J'+(_0x1dc5f9+0x5))[_0x33b60b(0x235)]={'horizontal':'center'};const _0x50f3c9=await _0x534692[_0x33b60b(0x213)][_0x33b60b(0x1f8)](),_0x4965e1=new Blob([_0x50f3c9],{'type':_0x33b60b(0x1dc)}),_0x5c8d67=document[_0x33b60b(0x196)]('a');_0x5c8d67[_0x33b60b(0x1cc)]=URL['createObjectURL'](_0x4965e1),_0x5c8d67['download']=_0x33b60b(0x268)+_0x5c58f2+'.xlsx',_0x5c8d67['click']();});})[_0x1ee79a(0x102)](_0x5afa6=>{const _0x788f00=_0x1ee79a;document[_0x788f00(0x242)](_0x788f00(0x23e))[_0x788f00(0x10d)]=_0x788f00(0x26f),console['error'](_0x5afa6);});}function showpicker(){const _0x616a8e=_0x365794;let _0x5375fc=document['getElementById'](_0x616a8e(0x264));_0x5375fc['innerHTML']='',modal2[_0x616a8e(0x145)]['display']=_0x616a8e(0x140),document[_0x616a8e(0x242)]('tp')[_0x616a8e(0x10d)]=_0x616a8e(0x148),document['body'][_0x616a8e(0x145)][_0x616a8e(0x20f)]=_0x616a8e(0x1a9),document['getElementById'](_0x616a8e(0x112))[_0x616a8e(0x10d)]=_0x616a8e(0x170),date();}let containerg=document[_0x365794(0x242)](_0x365794(0x264));async function rekappertgl(_0x312769,_0xa9000a,_0x433763,_0x28ea04){const _0x5b0641=_0x365794;containerg[_0x5b0641(0x10d)]=_0x5b0641(0x281);const _0x4cc107={'7k1':'Bangun\x20Pagi','7k2':_0x5b0641(0x154),'7k3':'Berolahraga','7k4':_0x5b0641(0x120),'7k5':'Gemar\x20Belajar','7k6':_0x5b0641(0x184),'7k7':_0x5b0641(0xfc)},_0x100b9b=['7A','7B','8A','8B','9A','9B'];let _0x5c233a={};_0x100b9b['forEach'](_0x2a8e6c=>_0x5c233a[_0x2a8e6c]={}),db['collection'](_0x5b0641(0x256))['where'](_0x5b0641(0x262),'>=',_0x312769)[_0x5b0641(0x1d1)](_0x5b0641(0x262),'<=',_0xa9000a)[_0x5b0641(0x123)]()[_0x5b0641(0x110)](_0x5cb003=>{const _0x26c946=_0x5b0641;if(_0x5cb003[_0x26c946(0x227)]){containerg[_0x26c946(0x10d)]=_0x26c946(0x1e2);return;}_0x5cb003[_0x26c946(0x144)](_0x2c485d=>{const _0x1571cb=_0x26c946,_0x599e40=_0x2c485d[_0x1571cb(0x128)](),_0x2097a6=_0x599e40[_0x1571cb(0x1a2)],_0x326eb5=_0x599e40['nama']||_0x599e40[_0x1571cb(0x212)]||_0x1571cb(0x1f1),_0x255289=_0x599e40[_0x1571cb(0x1e9)]||'-',_0x41153b=_0x599e40[_0x1571cb(0x239)]||'-';if(!_0x100b9b['includes'](_0x2097a6))return;if(!_0x5c233a[_0x2097a6][_0x326eb5]){_0x5c233a[_0x2097a6][_0x326eb5]={'nis':_0x255289,'wali':_0x41153b,'totalHari':0x0};for(let _0x34b46b=0x1;_0x34b46b<=0x7;_0x34b46b++)_0x5c233a[_0x2097a6][_0x326eb5]['7k'+_0x34b46b]=0x0;}_0x5c233a[_0x2097a6][_0x326eb5][_0x1571cb(0x27a)]+=0x1;for(let _0x2f10a0=0x1;_0x2f10a0<=0x7;_0x2f10a0++){const _0x15868e='7k'+_0x2f10a0;_0x5c233a[_0x2097a6][_0x326eb5][_0x15868e]+=_0x599e40[_0x15868e]?0x1:0x0;}});let _0x59bc52=_0x26c946(0x1b7);for(let _0x44e36b of _0x100b9b){const _0x39b48c=_0x5c233a[_0x44e36b];if(Object[_0x26c946(0x10e)](_0x39b48c)['length']===0x0)continue;_0x59bc52+=_0x26c946(0x1de)+_0x44e36b+_0x26c946(0x1ef),_0x59bc52+=_0x26c946(0x16b)+Object['values'](_0x4cc107)[_0x26c946(0x131)](_0x5899d1=>_0x26c946(0x10f)+_0x5899d1+_0x26c946(0x1e6))[_0x26c946(0x228)]('')+_0x26c946(0x1e3);let _0x43d30f=0x1;for(let _0x30e0d9 in _0x39b48c){const _0x4b5783=_0x39b48c[_0x30e0d9],_0x2f5d93=[0x1,0x2,0x3,0x4,0x5,0x6,0x7][_0x26c946(0x131)](_0x4f3d5c=>{const _0xa76c64=_0x26c946,_0x931b8e='7k'+_0x4f3d5c;return _0x4b5783['totalHari']>0x0?(_0x4b5783[_0x931b8e]/_0x4b5783['totalHari']*0x64)[_0xa76c64(0x126)](0x0)+'%':'0%';});_0x59bc52+='<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>'+_0x43d30f++ +_0x26c946(0x255)+_0x4b5783[_0x26c946(0x1e9)]+'</td><td>'+_0x30e0d9+_0x26c946(0x255)+_0x4b5783[_0x26c946(0x239)]+'</td><td>'+_0x4b5783[_0x26c946(0x27a)]+'</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x2f5d93[_0x26c946(0x131)](_0x413b5e=>_0x26c946(0xf0)+_0x413b5e+'</td>')[_0x26c946(0x228)]('')+_0x26c946(0x195);}_0x59bc52+=_0x26c946(0x1ad);}_0x59bc52+=_0x26c946(0x1d2),containerg['innerHTML']=_0x59bc52,modal2[_0x26c946(0x145)][_0x26c946(0x166)]=_0x26c946(0x140),document[_0x26c946(0x177)]['style']['overflow']=_0x26c946(0x1a9),document[_0x26c946(0x242)](_0x26c946(0x23e))[_0x26c946(0x10d)]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-user-graduate\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Persentase\x20Per\x20Siswa\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20id=\x22val\x22>Rekap\x20data\x20tiap\x20siswa</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>',document[_0x26c946(0x242)]('downloadXLS')[_0x26c946(0x10c)]('click',async()=>{const _0x51c566=_0x26c946,_0x50bf1b=new ExcelJS[(_0x51c566(0x1c5))](),_0x14764e=_0x50bf1b[_0x51c566(0x1a4)]('Persentase');_0x14764e[_0x51c566(0x216)]('A1:L1'),_0x14764e['getCell']('A1')[_0x51c566(0xfe)]=_0x51c566(0x192),_0x14764e[_0x51c566(0xf1)]('A1')['font']={'bold':!![],'size':0xe},_0x14764e[_0x51c566(0xf1)]('A1')[_0x51c566(0x235)]={'horizontal':'center'},_0x14764e[_0x51c566(0x216)](_0x51c566(0x1ed)),_0x14764e[_0x51c566(0xf1)]('A2')[_0x51c566(0xfe)]=_0x51c566(0x11d)+_0x433763+_0x51c566(0x11a)+_0x28ea04,_0x14764e['getCell']('A2')[_0x51c566(0x235)]={'horizontal':_0x51c566(0xfd),'vertical':_0x51c566(0x159)},_0x14764e['getCell']('A2')[_0x51c566(0x218)]={'bold':!![],'size':0xe};const _0x196820=new Date(),_0x2ec308=_0x196820[_0x51c566(0x283)](_0x51c566(0x1c0),{'day':_0x51c566(0x1ca),'month':_0x51c566(0x124),'year':'numeric'});_0x14764e[_0x51c566(0x216)]('A3:L3'),_0x14764e[_0x51c566(0xf1)]('A3')[_0x51c566(0xfe)]=_0x51c566(0xf9)+_0x2ec308,_0x14764e['getCell']('A3')[_0x51c566(0x235)]={'horizontal':_0x51c566(0xfd),'vertical':_0x51c566(0x159)},_0x14764e[_0x51c566(0xf1)]('A3')[_0x51c566(0x218)]={'italic':!![],'size':0xb};let _0x1a43bb=0x4;for(let _0x14ceea of _0x100b9b){const _0x3aa555=_0x5c233a[_0x14ceea];if(Object[_0x51c566(0x10e)](_0x3aa555)[_0x51c566(0x11f)]===0x0)continue;_0x14764e[_0x51c566(0x161)]([]),_0x14764e['mergeCells']('A'+_0x1a43bb+':H'+_0x1a43bb),_0x14764e[_0x51c566(0xf1)]('A'+_0x1a43bb)[_0x51c566(0xfe)]=_0x51c566(0x22e)+_0x14ceea,_0x14764e[_0x51c566(0xf1)]('A'+_0x1a43bb)['font']={'bold':!![],'size':0xc},_0x1a43bb++;const _0x4c39f9=['No',_0x51c566(0x21c),_0x51c566(0x21f),_0x51c566(0x1cb),_0x51c566(0x1f0),...Object['values'](_0x4cc107)];_0x14764e[_0x51c566(0x161)](_0x4c39f9);let _0x5784b0=0x1;for(let _0x25f580 in _0x3aa555){const _0x4acd2a=_0x3aa555[_0x25f580],_0x892f3e=[0x1,0x2,0x3,0x4,0x5,0x6,0x7][_0x51c566(0x131)](_0x641218=>{const _0x59a1dd=_0x51c566,_0x164b10='7k'+_0x641218;return _0x4acd2a[_0x59a1dd(0x27a)]>0x0?(_0x4acd2a[_0x164b10]/_0x4acd2a[_0x59a1dd(0x27a)]*0x64)['toFixed'](0x0)+'%':'0%';});_0x14764e[_0x51c566(0x161)]([_0x5784b0++,_0x4acd2a[_0x51c566(0x1e9)],_0x25f580,_0x4acd2a[_0x51c566(0x239)],_0x4acd2a[_0x51c566(0x27a)],..._0x892f3e]);}const _0x46ce2d=_0x14764e[_0x51c566(0x237)]['number'];for(let _0x50ba3b=_0x1a43bb;_0x50ba3b<=_0x46ce2d;_0x50ba3b++){const _0x1451b5=_0x14764e['getRow'](_0x50ba3b);[0x3,0x4][_0x51c566(0x144)](_0x28519d=>{const _0x2bc334=_0x51c566,_0x2266fb=_0x1451b5[_0x2bc334(0xf1)](_0x28519d);_0x2266fb[_0x2bc334(0x235)]={'horizontal':'left','vertical':_0x2bc334(0x159)},_0x2266fb['border']={'top':{'style':'thin'},'left':{'style':_0x2bc334(0x1fe)},'bottom':{'style':_0x2bc334(0x1fe)},'right':{'style':_0x2bc334(0x1fe)}};}),_0x1451b5[_0x51c566(0x17b)]({'includeEmpty':!![]},(_0x5e0aa9,_0x929a10)=>{const _0x2509b0=_0x51c566;![0x3,0x4][_0x2509b0(0x14d)](_0x929a10)&&(_0x5e0aa9['alignment']={'horizontal':_0x2509b0(0xfd),'vertical':_0x2509b0(0x159)},_0x5e0aa9[_0x2509b0(0x142)]={'top':{'style':_0x2509b0(0x1fe)},'left':{'style':_0x2509b0(0x1fe)},'bottom':{'style':'thin'},'right':{'style':_0x2509b0(0x1fe)}});}),_0x50ba3b===_0x1a43bb&&_0x1451b5[_0x51c566(0x17b)]({'includeEmpty':!![]},_0x4c52d0=>{const _0x5ebb38=_0x51c566;_0x4c52d0['font']={'bold':!![],'color':{'argb':_0x5ebb38(0x243)}},_0x4c52d0['fill']={'type':_0x5ebb38(0x17f),'pattern':_0x5ebb38(0x134),'fgColor':{'argb':_0x5ebb38(0x141)}};});}_0x1a43bb=_0x46ce2d+0x2;}_0x14764e[_0x51c566(0x19a)]=[{'width':0x5},{'width':0x8},{'width':0x16},{'width':0x16},{'width':0xe},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf},{'width':0xf}];const _0x56e0be=_0x14764e[_0x51c566(0x237)][_0x51c566(0x224)]+0x3;_0x14764e[_0x51c566(0x216)]('J'+_0x56e0be+':L'+_0x56e0be),_0x14764e[_0x51c566(0xf1)]('J'+_0x56e0be)[_0x51c566(0xfe)]=_0x51c566(0x1b1),_0x14764e[_0x51c566(0xf1)]('J'+_0x56e0be)[_0x51c566(0x235)]={'horizontal':_0x51c566(0xfd)},_0x14764e[_0x51c566(0x216)]('J'+(_0x56e0be+0x1)+':L'+(_0x56e0be+0x1)),_0x14764e['getCell']('J'+(_0x56e0be+0x1))[_0x51c566(0xfe)]=_0x51c566(0x182),_0x14764e[_0x51c566(0xf1)]('J'+(_0x56e0be+0x1))['alignment']={'horizontal':_0x51c566(0xfd)},_0x14764e[_0x51c566(0x216)]('J'+(_0x56e0be+0x4)+':L'+(_0x56e0be+0x4)),_0x14764e[_0x51c566(0xf1)]('J'+(_0x56e0be+0x4))[_0x51c566(0xfe)]='TASLIM\x20M.,\x20S.Pd.',_0x14764e[_0x51c566(0xf1)]('J'+(_0x56e0be+0x4))['font']={'bold':!![]},_0x14764e['getCell']('J'+(_0x56e0be+0x4))[_0x51c566(0x235)]={'horizontal':_0x51c566(0xfd)},_0x14764e['mergeCells']('J'+(_0x56e0be+0x5)+':L'+(_0x56e0be+0x5)),_0x14764e['getCell']('J'+(_0x56e0be+0x5))['value']='NIP\x20197101251992031008',_0x14764e['getCell']('J'+(_0x56e0be+0x5))[_0x51c566(0x218)]={'bold':![]},_0x14764e['getCell']('J'+(_0x56e0be+0x5))['alignment']={'horizontal':_0x51c566(0xfd)};const _0x3dafdb=await _0x50bf1b['xlsx'][_0x51c566(0x1f8)](),_0x1ae991=new Blob([_0x3dafdb],{'type':_0x51c566(0x1dc)}),_0x2d0414=document[_0x51c566(0x196)]('a');_0x2d0414[_0x51c566(0x1cc)]=URL[_0x51c566(0x18c)](_0x1ae991),_0x2d0414['download']=_0x51c566(0x268)+bulanTahun+_0x51c566(0x231),_0x2d0414[_0x51c566(0x21b)]();});})[_0x5b0641(0x102)](_0x39b4ff=>{const _0x20a970=_0x5b0641;console[_0x20a970(0x175)](_0x39b4ff);});}function sortTableByDate(){const _0x317ad9=_0x365794;let _0x13b6f8=document['getElementById'](_0x317ad9(0x18e)),_0x9c0bbd=Array[_0x317ad9(0x127)](_0x13b6f8['querySelectorAll']('tr'));_0x9c0bbd[_0x317ad9(0x1eb)]((_0x4a26c3,_0x5937f9)=>{const _0x3bc3b6=_0x317ad9;let _0x49511d=_0x4a26c3[_0x3bc3b6(0x24d)][0x1]['innerText'][_0x3bc3b6(0x285)](),_0x13eba3=_0x5937f9['cells'][0x1]['innerText'][_0x3bc3b6(0x285)](),[_0x42b7d1,_0x18ac56,_0x4bc642]=_0x49511d[_0x3bc3b6(0x1b2)]('-')[_0x3bc3b6(0x131)](Number),[_0x475cd3,_0x1463aa,_0x5ea857]=_0x13eba3[_0x3bc3b6(0x1b2)]('-')[_0x3bc3b6(0x131)](Number),_0xe0d12=new Date(_0x4bc642,_0x18ac56-0x1,_0x42b7d1),_0x5e49f6=new Date(_0x5ea857,_0x1463aa-0x1,_0x475cd3);return _0xe0d12-_0x5e49f6;}),_0x13b6f8[_0x317ad9(0x10d)]='',_0x9c0bbd[_0x317ad9(0x144)]((_0x3b5299,_0x34c7c2)=>{const _0x2f081c=_0x317ad9;_0x3b5299['cells'][0x0][_0x2f081c(0x118)]=_0x34c7c2+0x1,_0x13b6f8[_0x2f081c(0x194)](_0x3b5299);});}function date(){const _0x2367c8=_0x365794,_0x3a8ed4=document[_0x2367c8(0x242)](_0x2367c8(0x1e1)),_0x3f64c9=document[_0x2367c8(0x242)](_0x2367c8(0x14c)),_0x4caff7=new Date(),_0x53708b=_0x4caff7,_0x449d1d=flatpickr(_0x3a8ed4,{'mode':_0x2367c8(0x254),'dateFormat':_0x2367c8(0x19b),'locale':'id','defaultDate':[_0x4caff7,_0x53708b],'onChange':function(_0x27f7d5,_0x19fa37,_0x2a3696){const _0x4dd61a=_0x2367c8;if(_0x27f7d5['length']===0x2){const _0x4f2c48=_0x2a3696[_0x4dd61a(0x116)](_0x27f7d5[0x0],_0x4dd61a(0x13b)),_0x1595d6=_0x2a3696[_0x4dd61a(0x116)](_0x27f7d5[0x1],_0x4dd61a(0x13b)),_0x17081f=_0x2a3696[_0x4dd61a(0x116)](_0x27f7d5[0x0],'d\x20F\x20Y'),_0x4ffcb5=_0x2a3696[_0x4dd61a(0x116)](_0x27f7d5[0x1],'d\x20F\x20Y');rekappertgl(_0x4f2c48,_0x1595d6,_0x17081f,_0x4ffcb5);}else{}}});}function gantipasword(_0x3b5aee){const _0x209611=_0x365794;document[_0x209611(0x242)](_0x209611(0x22d))[_0x209611(0x145)][_0x209611(0x166)]=_0x209611(0x25b),_0x3b5aee[_0x209611(0x145)][_0x209611(0x166)]='block',document[_0x209611(0x242)](_0x209611(0x1b8))[_0x209611(0x145)][_0x209611(0x166)]=_0x209611(0x25b);const _0x3841d3=document[_0x209611(0x242)](_0x209611(0x20a))[_0x209611(0xfe)],_0x3142d3=document[_0x209611(0x242)]('newPass')['value'];if(!_0x3841d3||!_0x3142d3)return;if(_0x3841d3==_0x3142d3)return;_0x3b5aee['disabled']=!![],_0x3b5aee[_0x209611(0x10d)]='<i\x20class=\x22fas\x20fa-spinner\x20fa-spin\x22\x20style=\x22font-size:\x2025px;\x20margin-right:\x2010px;\x20color:\x20white;\x22></i>\x20Proses...';let _0x78091e=localStorage[_0x209611(0x16a)](_0x209611(0x1e9));const _0x3f5719=firebase[_0x209611(0x1a3)]()[_0x209611(0x130)];if(!_0x3f5719){alert(_0x209611(0x1ee));return;}const _0x4f5260=firebase[_0x209611(0x1a3)]['EmailAuthProvider'][_0x209611(0x114)](_0x3f5719[_0x209611(0x13f)],_0x3841d3);_0x3f5719[_0x209611(0x26c)](_0x4f5260)['then'](()=>{const _0x5a4060=_0x209611;return _0x3f5719[_0x5a4060(0x214)](_0x3142d3);})['then'](()=>{const _0x5e999a=_0x209611;return firebase['firestore']()[_0x5e999a(0x1a1)](_0x5e999a(0x220))['doc'](_0x78091e)['update']({'pass':_0x3142d3});})[_0x209611(0x110)](()=>{const _0x339122=_0x209611;_0x3b5aee[_0x339122(0x223)]=![],document['getElementById'](_0x339122(0x1b8))[_0x339122(0x145)]['display']=_0x339122(0x140),document[_0x339122(0x242)](_0x339122(0x1b8))['innerHTML']='✔️\x20Password\x20Berhasil\x20di\x20ganti<br><span\x20style=\x22color:black\x22>\x20'+_0x3142d3+_0x339122(0x115),_0x3b5aee[_0x339122(0x145)][_0x339122(0x166)]=_0x339122(0x25b);})[_0x209611(0x102)](_0x3ea660=>{const _0x461022=_0x209611;_0x3b5aee[_0x461022(0x10d)]=_0x461022(0x292),document[_0x461022(0x242)](_0x461022(0x22d))[_0x461022(0x145)][_0x461022(0x166)]=_0x461022(0x140),setTimeout(()=>{const _0x4f24b8=_0x461022;_0x3b5aee[_0x4f24b8(0x223)]=![],document[_0x4f24b8(0x242)](_0x4f24b8(0x22d))[_0x4f24b8(0x145)]['display']=_0x4f24b8(0x25b);},0xbb8);});}function openPasswordModal(){const _0x4e73ea=_0x365794;document[_0x4e73ea(0x242)](_0x4e73ea(0x172))[_0x4e73ea(0x223)]=![],document[_0x4e73ea(0x242)](_0x4e73ea(0x172))['style']['display']='block',document['getElementById']('tpas')['style'][_0x4e73ea(0x166)]=_0x4e73ea(0x25b),document[_0x4e73ea(0x242)]('tpas1')[_0x4e73ea(0x145)][_0x4e73ea(0x166)]=_0x4e73ea(0x25b),document[_0x4e73ea(0x177)]['style'][_0x4e73ea(0x20f)]=_0x4e73ea(0x1a9),document['getElementById'](_0x4e73ea(0x1ce))['style']['display']=_0x4e73ea(0x211),document[_0x4e73ea(0x242)](_0x4e73ea(0x20a))[_0x4e73ea(0xfe)]='',document[_0x4e73ea(0x242)](_0x4e73ea(0x202))[_0x4e73ea(0xfe)]='';}function closePasswordModal(){const _0x24ad0d=_0x365794;document['body']['style'][_0x24ad0d(0x20f)]='scroll',document[_0x24ad0d(0x242)](_0x24ad0d(0x1ce))['style'][_0x24ad0d(0x166)]=_0x24ad0d(0x25b),document[_0x24ad0d(0x242)](_0x24ad0d(0x172))[_0x24ad0d(0x145)][_0x24ad0d(0x166)]=_0x24ad0d(0x140),document[_0x24ad0d(0x242)](_0x24ad0d(0x172))[_0x24ad0d(0x10d)]=_0x24ad0d(0x292);}
+const firebaseConfig = {
+  apiKey: "AIzaSyDKLPbYEEk-KuEvEyZtcdRFtXkb-DcMHA0",
+  authDomain: "datasiswa-e6dbc.firebaseapp.com",
+  databaseURL: "https://datasiswa-e6dbc-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "datasiswa-e6dbc",
+  storageBucket: "datasiswa-e6dbc.firebasestorage.app",
+  messagingSenderId: "252071892087",
+  appId: "1:252071892087:web:f0982af002b6bf92346272"
+};
+
+   firebase.initializeApp(firebaseConfig);
+   const auth = firebase.auth();
+    const db = firebase.firestore();
+  
+  
+  let today = new Date();
+  let month = String(today.getMonth() + 1).padStart(2, '0'); // bulan (01–12)
+  let year = today.getFullYear(); // tahun
+  let tglcek = `${month}-${year}`;
+  let blncek=''
+  // Set selected di dropdown
+  let select = document.getElementById("bulanTahun");
+  if (select.querySelector(`option[value="${tglcek}"]`)) {
+    select.value = tglcek;
+	blncek= select.options[select.selectedIndex].text;
+  }
+  
+   let select1 = document.getElementById("bulanTahun1");
+  if (select1.querySelector(`option[value="${tglcek}"]`)) {
+    select1.value = tglcek;
+	blncek= select1.options[select1.selectedIndex].text;
+  }
+  
+  
+  
+  function tampilValue(select) {
+	blncek=select.options[select.selectedIndex].text;
+	 
+  tglcek=select.value;
+  
+}
+  
+  function isWebView() {
+  const ua = navigator.userAgent || navigator.vendor || window.opera;
+  // Deteksi WebView di Android
+  const isAndroidWebView = /\bwv\b/.test(ua) || /Android.*Version\/\d+\.\d+/.test(ua);
+  alert(ua)
+  return isAndroidWebView ;
+}
+
+if (isWebView()) {
+  console.log("Aplikasi ini dibuka dari WebView");
+} else {
+  console.log("Aplikasi ini dibuka dari browser biasa");
+}
+
+  
+  
+  function handleBangunPagi(value) {
+    const jamField = document.getElementById('jam_bangun_pagi');
+    const alasanField = document.getElementById('alasan_bangun_pagi');
+	 
+
+    if (value === 'Ya') {
+      jamField.style.display = 'block';
+      alasanField.style.display = 'none';
+    } else if (value === 'Tidak') {
+      jamField.style.display = 'block';
+      alasanField.style.display = 'block';
+    }
+  }
+  function handleBeribadah(value) {
+  const checkboxDiv = document.getElementById('sholat_checkboxes');
+  const alasanDiv = document.getElementById('alasan_beribadah');
+
+  if (value === 'Ya') {
+    checkboxDiv.style.display = 'block';
+    alasanDiv.style.display = 'none';
+
+    // Reset semua alasan dan centang
+    document.querySelectorAll('input[name="sholat"]').forEach(cb => {
+      cb.checked = false;
+      toggleAlasan(cb.value);
+    });
+  } else {
+    checkboxDiv.style.display = 'none';
+    alasanDiv.style.display = 'block';
+  }
+}
+
+function toggleAlasan(sholat) {
+  const cb = document.querySelector(`input[name="sholat"][value="${sholat}"]`);
+  const alasanInput = document.querySelector(`input[name="alasan_${sholat}"]`);
+
+  if (cb.checked) {
+    alasanInput.style.display = 'none';
+    alasanInput.value = ""; // kosongkan
+  } else {
+    alasanInput.style.display = 'inline-block';
+  }
+}
+
+function handleOlahraga(value) {
+  const formYa = document.getElementById('form_olahraga');
+  const formTidak = document.getElementById('alasan_olahraga');
+
+  if (value === 'Ya') {
+    formYa.style.display = 'block';
+    formTidak.style.display = 'none';
+  } else if (value === 'Tidak') {
+    formYa.style.display = 'none';
+    formTidak.style.display = 'block';
+  }
+}
+
+  function handleBermasyarakat(value) {
+    const yaFields = document.getElementById('bermasyarakat_ya_fields');
+    const tidakField = document.getElementById('bermasyarakat_tidak_field');
+
+    if (value === 'Ya') {
+      yaFields.style.display = 'block';
+      tidakField.style.display = 'none';
+    } else if (value === 'Tidak') {
+      yaFields.style.display = 'none';
+      tidakField.style.display = 'block';
+    }
+  }
+  function handleTidurCepat(value) {
+    const yaFields = document.getElementById('tidur_cepat_ya_fields');
+    const tidakField = document.getElementById('tidur_cepat_tidak_field');
+
+    if (value === 'Ya') {
+      yaFields.style.display = 'block';
+      tidakField.style.display = 'none';
+    } else if (value === 'Tidak') {
+      yaFields.style.display = 'block';
+      tidakField.style.display = 'block';
+    }
+  }
+    document.getElementById('kebiasaanForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Cegah reload form
+
+  const form = e.target;
+  const formData = new FormData(form);
+  const result = {};
+
+  const sholatValues = [];
+  form.querySelectorAll('input[name="sholat"]:checked').forEach(cb => {
+    sholatValues.push(cb.value);
+  });
+  result['sholat'] = sholatValues;
+
+  form.querySelectorAll('input, textarea, select').forEach(input => {
+    const { name, type } = input;
+    if (!name || name === 'sholat') return;
+
+    if (type === 'radio') {
+      if (input.checked) result[name] = input.value;
+    } else if (type === 'checkbox') {
+      // Checkbox selain 'sholat'
+      if (!result[name]) result[name] = [];
+      if (input.checked) result[name].push(input.value);
+    } else {
+      result[name] = input.value;
+    }
+  });
+let mn=localStorage.getItem("nama")
+     result.nama=mn;
+	 let mn1=localStorage.getItem("nis")
+	 let jk=localStorage.getItem("jk")
+	 let kelas=localStorage.getItem("kelas")
+	 let wali1=localStorage.getItem("wali")
+	 result.jk=jk;
+	 result.kelas=kelas;
+	 result.nis=mn1;
+     result.nama=mn;
+	 result.wali=wali1;
+    result.kode=2;
+	
+	let mkn=document.getElementById("menu_makan_sehat").value;
+	result.menu_makan_sehat=mkn;
+	send2(result);
+  // Tampilkan di layar
+ // document.getElementById('outputJSON').textContent = JSON.stringify(result, null, 2);
+//console.log(JSON.stringify(result, null, 2))
+   
+});
+   
+      let errorMsg = document.getElementById("loginError");
+	  var css='';
+async function login(ss) {
+document.querySelector("#tabelSiswa tbody").innerHTML = '';	
+ css=ss;
+  let username = document.getElementById("username").value.trim();
+      let password = document.getElementById("password").value.trim();
+	 if (username && password) {
+    ss.innerHTML = '<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Login';
+    ss.disabled=true;
+	 
+	
+	try {
+    const userCred = await auth.signInWithEmailAndPassword(username+"@gmail.com", password);
+    const uid = userCred.user.uid; // kalau sukses, uid pasti ada
+	 send1(username,password)
+    //console.log("✅ Login sukses. UID:", uid);
+} catch (error) {
+	localStorage.removeItem("nama");
+	localStorage.removeItem("wali");
+		localStorage.removeItem("nis");
+			localStorage.removeItem("sbg");
+        errorMsg.style.display = "block";
+		css.disabled=false;
+		css.innerHTML = ' <i class="fas fa-sign-in-alt"></i> Login';
+		 setTimeout(()=>{errorMsg.style.display = "none";},2000)
+    console.error("❌ Login gagal:", error.message);
+}
+
+	 
+      
+      // Login sederhana
+      }
+    }
+	let isup=0;
+	function logout() {
+		
+		
+		
+   today = new Date();
+   month = String(today.getMonth() + 1).padStart(2, '0'); // bulan (01–12)
+   year = today.getFullYear(); // tahun
+    tglcek = `${month}-${year}`;
+
+  // Set selected di dropdown
+  
+  if (select.querySelector(`option[value="${tglcek}"]`)) {
+    select.value = tglcek;
+	blncek= select.options[select.selectedIndex].text;
+  }
+  
+   
+  if (select1.querySelector(`option[value="${tglcek}"]`)) {
+    select1.value = tglcek;
+	blncek= select1.options[select1.selectedIndex].text;
+  }
+  		
+		isup=0;
+		document.getElementById("jud").innerText='Daftar Siswa Perwalian Anda'
+	 document.body.style.overflow = "scroll"
+	document.getElementsByClassName("container1")[0].style.marginTop="70px"
+  // Sembunyikan form utama dan tampilkan login kembali
+  document.getElementById("mainForm").style.display = "none";
+   document.getElementById("mainForm1").style.display = "none";
+  document.getElementById("loginCard").style.display = "block";
+  localStorage.removeItem("nama");
+		localStorage.removeItem("nis");
+		localStorage.removeItem("wali");
+		localStorage.removeItem("sbg");
+		localStorage.removeItem("jk");
+		localStorage.removeItem("kelas");
+		
+  // Kosongkan form login
+  document.getElementById("username").value = "";
+  document.getElementById("password").value = "";
+
+  // Kosongkan hasil output JSON jika perlu
+  document.getElementById("outputJSON").textContent = "";
+  
+  auth.signOut()
+    .then(() => {
+       // console.log("✅ Berhasil logout");
+    })
+    .catch((error) => {
+        console.error("❌ Gagal logout:", error);
+    });
+  
+}
+
+let glink=window.atob('aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J4UFhWdUNSVTQyMVQwUE5qeS16VndhcFhvVFFaaXU3SzVUZmRWLUNKMmEtTU92czdfS09IUVIzNnB2eWh4UGxRVmd0QS9leGVj')
+function send1(user,pass){
+  errorMsg.style.display = "none";
+   
+db.collection("users")
+  .where("nis", "==", user)
+  .where("pass", "==", pass)
+  .get()
+  .then((querySnapshot) => {
+    if (querySnapshot.empty) {
+     // console.log("Data tidak ditemukan atau password salah");
+	    localStorage.removeItem("nama");
+		localStorage.removeItem("nis");
+			localStorage.removeItem("sbg");
+        errorMsg.style.display = "block";
+		css.disabled=false;
+		css.innerHTML = ' <i class="fas fa-sign-in-alt"></i> Login';
+		 
+		 setTimeout(()=>{errorMsg.style.display = "none";},2000)
+    } else {
+      querySnapshot.forEach((doc) => {
+       // console.log("Nama siswa:", doc.data().nama);
+		
+		
+									  
+								  document.getElementsByClassName("container1")[0].style.marginTop="0px"
+									 css.disabled=false;
+									 if(doc.data().sbg==1){
+									document.getElementById("loginCard").style.display = "none";
+									document.getElementById("mainForm").style.display = "block";
+									document.getElementById("logoutBtn").innerHTML=`<div style="display: flex; justify-content: space-between; align-items: center; 
+            background: #1d3557;
+            padding: 3px 3px; 
+            border-radius: 10px; 
+            color: white; font-family: 'Segoe UI', sans-serif;">
+			  <span style="font-size: 14px; display:flex; align-items:center; gap:8px;">
+				<i class="fas fa-user-circle" style="font-size:22px;"></i>
+				<span>
+				  Selamat Datang <br>
+				  <b style="font-size: 12px;">${doc.data().nama}</b>
+				</span>
+			  </span>
+			  
+			  
+			   <a href="#" onclick="openPasswordModal()" style="color: white; 
+						text-decoration: none; 
+						background: #2a476f;
+						padding: 6px 14px; 
+						border-radius: 6px; 
+						font-size: 12px; 
+						display:flex; 
+						align-items:center; 
+									box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+						gap:6px;
+						transition: 0.3s;">
+				<i class="fas fa-key"></i> GPass
+			  </a>
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  <a href="#" onclick="logout()" style="color: white; 
+						text-decoration: none; 
+						background: #2a476f;
+						padding: 6px 14px; 
+						border-radius: 6px; 
+						font-size: 12px; 
+						display:flex; 
+						align-items:center; 
+									box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+						gap:6px;
+						transition: 0.3s;">
+				<i class="fas fa-sign-out-alt"></i> Logout
+			  </a>
+			</div>`
+							
+									}
+									  if(doc.data().sbg==2 || doc.data().sbg==3){  
+							 
+								if(doc.data().sbg==3){document.getElementById("jud").innerText='Daftar Siswa'}
+								else{document.getElementById("jud").innerText='Daftar Siswa Perwalian Anda'}		  
+									document.getElementById("loginCard").style.display = "none";
+									document.getElementById("mainForm1").style.display = "block";
+									 document.getElementById("logoutBtn1").innerHTML=`<div style="display: flex; justify-content: space-between; align-items: center; 
+            background: #1d3557;
+            padding: 3px 3px; 
+            border-radius: 10px; 
+            color: white; font-family: 'Segoe UI', sans-serif;">
+			  <span style="font-size: 14px; display:flex; align-items:center; gap:8px;">
+				<i class="fas fa-user-circle" style="font-size:22px;"></i>
+				<span>
+				  Selamat Datang <br>
+				  <b style="font-size: 12px;">${doc.data().nama}</b>
+				</span>
+			  </span>
+			   <a href="#" onclick="openPasswordModal()" style="color: white; 
+						text-decoration: none; 
+						background: #2a476f;
+						padding: 6px 14px; 
+						border-radius: 6px; 
+						font-size: 12px; 
+						display:flex; 
+						align-items:center; 
+									box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+						gap:6px;
+						transition: 0.3s;">
+				<i class="fas fa-key"></i> GPass
+			  </a>
+			  <a href="#" onclick="logout()" style="color: white; 
+						text-decoration: none; 
+						background: #2a476f;
+						padding: 6px 14px; 
+						border-radius: 6px; 
+						font-size: 12px; 
+						display:flex; 
+						align-items:center; 
+									box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+						gap:6px;
+						transition: 0.3s;">
+				<i class="fas fa-sign-out-alt"></i> Logout
+			  </a>
+			</div>`
+							 
+								   send3(doc.data().nama,doc.data().sbg)
+								}
+									
+									errorMsg.style.display = "none";
+									localStorage.setItem("nama", doc.data().nama);
+									localStorage.setItem("nis",doc.data().nis);
+									localStorage.setItem("sbg", doc.data().sbg);
+									localStorage.setItem("kelas", doc.data().kelas);
+									localStorage.setItem("jk", doc.data().jk)
+									localStorage.setItem("wali", doc.data().wali)
+								 
+									
+									css.innerHTML = ' <i class="fas fa-sign-in-alt"></i> Login';
+									
+									
+									
+
+								  
+		
+		 
+		
+      });
+    }
+  })
+  .catch((error) => {css.disabled=false;
+	css.innerHTML = ' <i class="fas fa-sign-in-alt"></i> Login';
+   // console.error("Error mencari data:", error);
+  });
+
+  
+   
+};
+
+if(localStorage.getItem("nama") && localStorage.getItem("nis") && localStorage.getItem("sbg")==1 ){
+document.getElementsByClassName("container1")[0].style.marginTop="0px"
+let mn=localStorage.getItem("nama")
+document.getElementById("logoutBtn").innerHTML=`<div style="display: flex; justify-content: space-between; align-items: center; 
+            background: #1d3557;
+            padding: 3px 3px; 
+            border-radius: 10px; 
+            color: white; font-family: 'Segoe UI', sans-serif;">
+			  <span style="font-size: 14px; display:flex; align-items:center; gap:8px;">
+				<i class="fas fa-user-circle" style="font-size:22px;"></i>
+				<span>
+				  Selamat Datang <br>
+				  <b style="font-size: 12px;">${mn}</b>
+				</span>
+			  </span>
+			   <a href="#" onclick="openPasswordModal()" style="color: white; 
+						text-decoration: none; 
+						background: #2a476f;
+						padding: 6px 14px; 
+						border-radius: 6px; 
+						font-size: 12px; 
+						display:flex; 
+						align-items:center; 
+									box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+						gap:6px;
+						transition: 0.3s;">
+				<i class="fas fa-key"></i> GPass
+			  </a>
+			  <a href="#" onclick="logout()" style="color: white; 
+						text-decoration: none; 
+						background: #2a476f;
+						padding: 6px 14px; 
+						border-radius: 6px; 
+						font-size: 12px; 
+						display:flex; 
+						align-items:center; 
+									box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+						gap:6px;
+						transition: 0.3s;">
+				<i class="fas fa-sign-out-alt"></i> Logout
+			  </a>
+			</div>`
+document.getElementById("loginCard").style.display = "none";
+        document.getElementById("mainForm").style.display = "block";
+		 
+}
+
+if(localStorage.getItem("nama") && localStorage.getItem("nis") && ((localStorage.getItem("sbg")==2) || localStorage.getItem("sbg")==3 )){
+document.getElementsByClassName("container1")[0].style.marginTop="0px"
+let mn=localStorage.getItem("nama")
+let sb=localStorage.getItem("sbg")
+ document.getElementById("logoutBtn1").innerHTML=`<div style="display: flex; justify-content: space-between; align-items: center; 
+            background: #1d3557;
+            padding: 3px 3px; 
+            border-radius: 10px; 
+            color: white; font-family: 'Segoe UI', sans-serif;">
+			  <span style="font-size: 14px; display:flex; align-items:center; gap:8px;">
+				<i class="fas fa-user-circle" style="font-size:22px;"></i>
+				<span>
+				  Selamat Datang <br>
+				  <b style="font-size: 12px;">${mn}</b>
+				</span>
+			  </span>
+			  
+			   <a href="#" onclick="openPasswordModal()" style="color: white; 
+						text-decoration: none; 
+						background: #2a476f;
+						padding: 6px 14px; 
+						border-radius: 6px; 
+						font-size: 12px; 
+						display:flex; 
+						align-items:center; 
+									box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+						gap:6px;
+						transition: 0.3s;">
+				<i class="fas fa-key"></i> GPass
+			  </a>
+			  <a href="#" onclick="logout()" style="color: white; 
+						text-decoration: none; 
+						background: #2a476f;
+						padding: 6px 14px; 
+						border-radius: 6px; 
+						font-size: 12px; 
+						display:flex; 
+						align-items:center; 
+									box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+						gap:6px;
+						transition: 0.3s;">
+				<i class="fas fa-sign-out-alt"></i> Logout
+			  </a>
+			</div>`
+  
+       send3(mn,sb)
+	 
+document.getElementById("loginCard").style.display = "none";
+        document.getElementById("mainForm1").style.display = "block";
+}
+//eval(atob('aWYgKHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSAhPT0gIjdrLnNtcG45c2luamFpLnNjaC5pZCIpIHsgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmlubmVySFRNTCA9ICI8Y2VudGVyPjxoMT5Ba3NlcyBkaXRvbGFrPC9oMT48L2NlbnRlcj4iOyB9'))
+function send2(data){
+	
+	
+	 const tanggal = data.tanggal_bangun_pagi;
+  
+   
+	
+  var bagian = tanggal.split("-"); // ["2025", "08", "07"]
+  var tglFormatBaru = bagian[2] + "-" + bagian[1] + "-" + bagian[0];
+   var tglFormatBaru2 = bagian[0] + "-" + bagian[1] + "-" + bagian[2];
+
+
+  const nis1 = data.nis;
+ 
+ 
+
+
+                        let tgl6 = tglFormatBaru; // misal "01-08-2025"
+						let parts6 = tgl6.split("-");
+						let bulanTahun6 = `${parts6[1]}-${parts6[2]}`;
+
+  
+var nama1 = data.nama;
+
+  
+   var jk1 = data.jk;
+   var kls1 = data.kelas;
+    var bangun_pagi1 = (data.bangun_pagi === "Ya") ? 'Ya jam : '+data.jam_bangun_pagi :  'Tidak Jam : '+data.jam_bangun_pagi+' Alasan '+data.alasan_bangun_pagi;
+
+    var ket = '';
+ket += data.alasan_Subuh   ? 'Subuh tidak, alasan: '   + data.alasan_Subuh + '. '   : '';
+ket += data.alasan_Dzuhur  ? 'Dzuhur tidak, alasan: '  + data.alasan_Dzuhur + '. '  : '';
+ket += data.alasan_Ashar   ? 'Ashar tidak, alasan: '   + data.alasan_Ashar + '. '   : '';
+ket += data.alasan_Maghrib ? 'Maghrib tidak, alasan: ' + data.alasan_Maghrib + '. ' : '';
+ket += data.alasan_Isya    ? 'Isya tidak, alasan: '    + data.alasan_Isya + '. '    : '';
+
+
+     var beribadah1 = (data.beribadah === "Ya") ? 'Ya Shalat : '+data.sholat+", "+ket :  'Tidak Alasan : '+data.alasan_beribadah;
+     
+    var berolahraga1 = (data.berolahraga === "Ya") ? 'Ya Jam Mulai : '+data.jam_mulai_olahraga+", Jam Selesai : "+data.jam_selesai_olahraga+' Jenis olahraga '+data.jenis_olahraga :  'Tidak Alasan : '+data.alasan_olahraga;
+
+   var judul_buku1 = (data.gemar_belajar == "Ya")  ? "Ya Judul : "+data.judul_buku+", informasi yg didapat : "+data.informasi_didapat : "Tidak"
+       
+   var bermasyarakat1 = (data.bermasyarakat === "Ya") ? 'Ya Kegiatan : '+data.kegiatan_bermasyarakat+", Persaaan "+data.perasaan_bermasyarakat : 'Tidak alasan '+data.alasan_bermasyarakat;
+     
+ var tidur_cepat1 = (data.tidur_cepat === "Ya") ? 'Ya Jam tidur : '+data.jam_tidur :  'Tidak Jam tidur :'+data.jam_tidur+'  Alasan : '+data.alasan_tidur_cepat;
+
+   var menu_makan_sehat1 = (data.makan_sehat == "Ya") ? 'Ya : '+data.menu_makan_sehat :  'Tidak';
+var gagal=0;	
+
+
+
+
+
+let now = new Date();
+
+    // Format YYYY-MM-DD
+    let tahun = now.getFullYear();
+    let bulan = String(now.getMonth() + 1).padStart(2, '0'); 
+    let tanggal2 = String(now.getDate()).padStart(2, '0'); 
+    let tglFormat = `${tahun}-${bulan}-${tanggal2}`;
+
+    // Format HH:MM
+    let jam = String(now.getHours()).padStart(2, '0');
+    let menit = String(now.getMinutes()).padStart(2, '0');
+    let jamFormat = `${jam}:${menit}`;
+  
+	
+  document.getElementById("kdata").disabled=true;
+ document.getElementById("kdata").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Kirim Jawaban';
+  	
+	db.collection("datasiswa")
+  .where("tgl", "==",tglFormatBaru )
+  .where("nis", "==", nis1)
+  .get()
+  .then(querySnapshot => {
+    if (!querySnapshot.empty) {
+		  document.getElementsByClassName("container1")[0].style.marginTop="0px"
+	//alert(xhr.responseText)
+	 document.getElementById("loadingModal").style.display = "block";
+	document.getElementById('tmodal').innerHTML=`<div class="pesan-box">
+    <i class="fas fa-times-circle"></i>
+    <p>Gagal menyimpan, data tanggal ${tglFormatBaru} sudah ada </p>
+  </div> `
+  document.body.style.overflow = "hidden"
+    document.getElementById("kdata").innerHTML='<i class="fas fa-paper-plane" style="margin-right:7px"></i> Kirim Jawaban';
+     document.getElementById("kdata").disabled=false;
+    //  console.log("⚠️ Data sudah ada, tidak disimpan.");
+    } else {
+      db.collection("datasiswa").add({
+          tgl: tglFormatBaru ,
+		  tglsort: tglFormatBaru2,
+		  bulan:bulanTahun6,
+		  tglinput:tglFormat,
+		  jaminput:jamFormat,
+		  "7k1": (data.bangun_pagi === "Ya") ? 1:0,
+		  "7k2": (data.beribadah === "Ya") ? 1:0,
+		  "7k3": (data.berolahraga === "Ya") ? 1:0,
+		  "7k4":  (data.makan_sehat == "Ya") ? 1:0,
+		  "7k5":  (data.gemar_belajar == "Ya") ? 1:0,
+		  "7k6":  (data.bermasyarakat === "Ya") ?  1:0,
+		  "7k7":  (data.tidur_cepat === "Ya") ?  1:0,
+		  nis: nis1,
+		  nama:nama1,
+		  jk:jk1,
+		  kelas:kls1,
+		  wali:data.wali,
+		  bagunpagi:bangun_pagi1 ,
+		  beribadah:beribadah1,
+		  olahraga:berolahraga1,
+		  makansehat:menu_makan_sehat1,
+		  belajar:judul_buku1 ,
+		  bermasyarakat: bermasyarakat1,
+		  tidurcepat:tidur_cepat1,
+		  ortu:0,
+		  guru:0
+      })
+      .then(() => {
+		 
+	  
+		  // console.log("Data berhasil ditambahkan dengan ID:", docRef.id);
+       document.getElementsByClassName("container1")[0].style.marginTop="0px"
+	//alert(xhr.responseText)
+	 document.getElementById("loadingModal").style.display = "block";
+	document.getElementById('tmodal').innerHTML=`<div class="pesan-box">
+    <i class="fas fa-circle-check"></i>
+    <p>Data Berhasil disimpan </p>
+  </div> `
+  document.body.style.overflow = "hidden"
+    document.getElementById("kdata").innerHTML='<i class="fas fa-paper-plane" style="margin-right:7px"></i> Kirim Jawaban';
+     document.getElementById("kdata").disabled=false;
+      //  console.log("✅ Data berhasil ditambahkan.");
+		
+	setTimeout(()=>{
+		
+			  gagal=1;
+		 
+		 if (gagal==1){
+	 
+	 let datasiswa77 = {
+					  "7k1": (data.bangun_pagi === "Ya") ? 1 : 0,
+					  "7k2": (data.beribadah === "Ya") ? 1 : 0,
+					  "7k3": (data.berolahraga === "Ya") ? 1 : 0,
+					  "7k4": (data.makan_sehat === "Ya") ? 1 : 0,
+					  "7k5": (data.gemar_belajar === "Ya") ? 1 : 0,
+					  "7k6": (data.bermasyarakat === "Ya") ? 1 : 0,
+					  "7k7": (data.tidur_cepat === "Ya") ? 1 : 0,
+					}
+
+						let tgl = tglFormatBaru; // misal "01-08-2025"
+						let parts = tgl.split("-");
+						let bulanTahun = `${parts[1]}-${parts[2]}`;
+
+						// Panggil fungsi update
+					updateKebiasaanBulanan(kls1, bulanTahun, datasiswa77);
+		
+		
+}
+		 
+		
+		
+		
+		
+		
+		
+		
+		
+	},200)	
+		
+      })
+      .catch(error => {
+        console.error("❌ Error menambahkan data:", error);
+		 document.getElementById("kdata").disabled=false;
+   document.getElementById("kdata").innerHTML='<i class="fas fa-paper-plane" style="margin-right:7px"></i>  Kirim Jawaban';
+    document.getElementById("loadingModal").style.display = "block";
+	document.getElementById('tmodal').innerHTML="<b>Tidak dapat terhubung ke server</b>"
+  
+      });
+    }
+  })
+  .catch(error => {
+	   document.getElementById("kdata").innerHTML='<i class="fas fa-paper-plane" style="margin-right:7px"></i>  Kirim Jawaban';
+    console.error("❌ Error mencari data:", error);
+  });
+	
+ 
+	 
+};
+function closeModal() {
+    document.body.style.overflow = "scroll"	
+  document.getElementById("loadingModal").style.display = "none";
+}
+
+let mn1=localStorage.getItem("nama")
+ 
+ var bdata='';
+
+function send3(data,sbg) {
+ 
+  document.getElementById("lod").style.display = "block";
+
+  
+
+  let query;
+   
+  if (sbg === "2") {
+    query = db.collection("users").where("wali", "==", data);
+  } else if (sbg === "3") {
+    query = db.collection("users").where("sbg", "==", "1");
+  } else {
+   // console.warn("Peran (sbg) tidak dikenali:", sbg);
+    document.getElementById("lod").style.display = "none";
+    return;
+  }
+
+  query.get()
+    .then((querySnapshot) => {
+      if (querySnapshot.empty) {
+	   document.getElementById("lod").style.display = "none";
+     //   console.log("⚠️ Data tidak ditemukan");
+      } else {
+        document.getElementById("kdata3").style.display = "none";
+        document.getElementById("lod").style.display = "none";
+
+        const tbody = document.querySelector("#tabelSiswa tbody");
+        let ct = "";
+        let nom = 1;
+
+        querySnapshot.forEach((doc) => {
+          let d = doc.data();
+          ct += `<tr>
+            <td style='text-align:center'>${nom++}</td>
+            <td style='text-align:center'>${d.nis}</td>
+            <td >${d.nama}</td>
+            <td style='text-align:center'>${d.jk}</td>
+            <td style='text-align:center'>${d.kelas}</td>
+          </tr>`;
+        });
+
+        tbody.innerHTML = ct;
+
+        // Pasang event listener klik per baris
+        tbody.querySelectorAll("tr").forEach(row => {
+          row.addEventListener("click", function () {
+            const nis2 = this.cells[1].textContent;
+			 const cell2 = this.cells[1]
+            rekap(nis2,cell2);
+          });
+        });
+      }
+    })
+    .catch((error) => {
+      console.error("❌ Error mengambil data:", error);
+      document.getElementById("lod").style.display = "none";
+    });
+}
+
+ const modal1 = document.getElementById("rekapModal");
+ const closeBtn = document.querySelector(".close");
+ closeBtn.onclick = function () {
+      modal1.style.display = "none";
+	  document.body.style.overflow = ""
+    };
+	const modal2 = document.getElementById("rekapModal2");
+const closeBtn1 = document.querySelector(".close1");
+ closeBtn1.onclick = function () {
+      modal2.style.display = "none";
+	  document.body.style.overflow = ""
+    };
+function rekap(niss,gar){
+	let gg=gar.innerText;
+	 gar.innerHTML=`<i class="fas fa-spinner fa-spin" style="font-size: 15px; margin-right: 1px; color: black;"></i> ${gg}`
+ let ssbg=localStorage.getItem("sbg");
+document.body.style.overflow = "hidden"
+ const rekapBody = document.getElementById("rekapBody");
+var ct=''
+var mnn="";
+var cpp=0;
+var num=0;
+ 
+db.collection("datasiswa")
+  .where("nis", "==", niss)
+  .where("bulan", "==", tglcek)
+  .get()
+  .then(querySnapshot => {
+    if (querySnapshot.empty) {
+     // console.log("⚠️ Tidak ada data dengan nis=2622");
+	 gar.innerHTML=gg;
+	  document.getElementById("loadingModal").style.display = "block";
+	document.getElementById('tmodal').innerHTML=`
+	<div class="pesan-box">
+    <i class="fas fa-database"></i>
+    <p>Data siswa bulan ${blncek} tidak ditemukan </p>`
+ 
+    } else {
+		var nom=1;
+		var mnn='';
+      querySnapshot.forEach(doc => {
+       // console.log(`📄 ID: ${doc.id}`, doc.data());
+		mnn=doc.data().nama;
+		let gr=''; 
+					 if (ssbg==2){
+					   gr = (doc.data().guru == 0)
+					  ? `<button class='btn' onclick='verifikasi(this, 2, "${doc.data().tgl}", "${doc.data().nis}")' style='font-size:13px;padding:5px'>
+						  <i class='fa-solid fa-user'></i> Verifikasi
+						 </button>`
+					  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>`;
+					  
+					  }
+					  else {
+						  gr=(doc.data().guru ==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
+						  
+					  }
+
+					   let ort=(doc.data().ortu==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
+						  ct+="<tr><td style='text-align:center'>"+(nom++)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+doc.data().tgl+"</td><td>"+doc.data().bagunpagi+"</td><td style='text-align:center'>"+doc.data().beribadah+"</td><td style='text-align:center'>"+doc.data().olahraga+"</td><td style='text-align:center'>"+doc.data().makansehat+"</td><td style='text-align:center'>"+doc.data().belajar+"</td><td style='text-align:center'>"+doc.data().bermasyarakat+"</td><td style='text-align:center'>"+doc.data().tidurcepat+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
+								   
+  
+      });
+	  gar.innerHTML=gg;
+	  rekapBody.innerHTML=ct; 
+	  sortTableByDate()
+	document.getElementById("pp").innerHTML=`<br><div class="g5" style="margin-top:3px;padding:5px 20px 5px 20px;font-size:18px;border-radius:10px;color:white">Rekap Bulan ${blncek} | ${mnn}</div>`;
+    modal1.style.display = "block";
+	  
+	 
+	  const kebiasaanNames = {
+    "7k1": "1. Bangun Pagi",
+    "7k2": "2. Beribadah",
+    "7k3": "3. Berolahraga",
+    "7k4": "4. Makan Sehat",
+    "7k5": "5. Gemar Belajar",
+    "7k6": "6. Bermasyarakat",
+    "7k7": "7. Tidur Cepat"
+  };	
+	    let totalK = { "7k1": 0, "7k2": 0, "7k3": 0, "7k4": 0, "7k5": 0, "7k6": 0, "7k7": 0 };
+      let jumlahSiswa = 0;
+
+      querySnapshot.forEach(doc => {
+        const data = doc.data();
+        for (let k in totalK) {
+          totalK[k] += data[k] || 0;
+        }
+        jumlahSiswa++;
+      });
+
+     
+       var gabh="";
+      for (let k in totalK) {
+        let persen = jumlahSiswa > 0 ? ((totalK[k] / jumlahSiswa) * 100).toFixed(0) : 0;
+
+        const radius = persen == 100 ? "25px" : "25px 0 0 25px";
+        
+
+       gabh+= `
+          <div class="progress-item">
+            <div style="margin-top:10px" class="label">${kebiasaanNames[k]}</div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width:${persen}%; background:linear-gradient(90deg, #f6d365, #fda085); color:white;border-radius:${radius}">
+                ${persen}%
+              </div>
+            </div>
+          </div>
+        `;
+	  }
+	  
+	
+	 
+	 let mmk=document.getElementById("prog")
+	     mmk.innerHTML=gabh+'<br><br>'
+	  
+	  
+	 
+    }
+  })
+  .catch(error => {
+	  gar.innerHTML=gg;
+    console.error("❌ Error mencari data:", error);
+  });
+
+
+
+
+   
+}
+
+
+function rekap_g(){
+	 
+	 
+  document.getElementById("kdata7").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i> Mencari data';
+  
+ let ssbg=localStorage.getItem("sbg");
+ let nms=localStorage.getItem("nama");
+document.body.style.overflow = "hidden"
+ const rekapBody = document.getElementById("rekapBody");
+var ct=''
+var mnn="";
+var cpp=0;
+var num=0;
+ 
+db.collection("datasiswa")
+  .where("wali", "==", nms)
+  .where("bulan", "==", tglcek)
+  .where("guru", "==", 0)
+  .get()
+  .then(querySnapshot => {
+    if (querySnapshot.empty) {
+     // console.log("⚠️ Tidak ada data dengan nis=2622");
+	   document.getElementById("kdata7").innerHTML=` <i class="fas fa-check-circle" ></i>
+      <div class="text-block">
+        Verifikasi Data
+        <span id="val">Validasi data siswa</span>
+      </div>`
+	  document.getElementById("loadingModal").style.display = "block";
+	 
+	document.getElementById('tmodal').innerHTML=`
+	<div class="pesan-box">
+    <i class="fas fa-database"></i>
+    <p>Tidak ada data siswa yang mau di verifikasi bulan ${blncek} </p>`;
+	document.body.style.overflow = "hidden"
+    } else {
+		var nom=1;
+		var mnn='';
+      querySnapshot.forEach(doc => {
+       // console.log(`📄 ID: ${doc.id}`, doc.data());
+		mnn=doc.data().nama;
+		let gr=''; 
+					 if (ssbg==2){
+					   gr = (doc.data().guru == 0)
+					  ? `<button class='btn' onclick='verifikasi(this, 2, "${doc.data().tgl}", "${doc.data().nis}")' style='font-size:13px;padding:5px'>
+						  <i class='fa-solid fa-user'></i> Verifikasi
+						 </button>`
+					  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>`;
+					  
+					  }
+					  else {
+						  gr=(doc.data().guru ==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
+						  
+					  }
+
+					   let ort=(doc.data().ortu==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
+						  ct+="<tr><td style='text-align:center'>"+(nom++)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+doc.data().tgl+"<br>"+doc.data().nama+"</td><td>"+doc.data().bagunpagi+"</td><td style='text-align:center'>"+doc.data().beribadah+"</td><td style='text-align:center'>"+doc.data().olahraga+"</td><td style='text-align:center'>"+doc.data().makansehat+"</td><td style='text-align:center'>"+doc.data().belajar+"</td><td style='text-align:center'>"+doc.data().bermasyarakat+"</td><td style='text-align:center'>"+doc.data().tidurcepat+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
+								   
+  
+      });
+	  document.getElementById("kdata7").innerHTML=` <i class="fas fa-check-circle" ></i>
+      <div class="text-block">
+        Verifikasi Data
+        <span id="val">Validasi data siswa</span>
+      </div>`
+	  rekapBody.innerHTML=ct; 
+	  sortTableByDate();
+	  document.getElementById("pp").innerHTML=`<br><div class="g5" style="margin-top:3px;padding:5px 18px 5px 20px;font-size:20px;border-radius:10px;color:white">Verifikasi Bulan ${blncek}</div>`;
+      modal1.style.display = "block";
+	   let mmk=document.getElementById("prog")
+	     mmk.innerHTML='<br><br>'
+    }
+  })
+  .catch(error => {
+	   document.getElementById("kdata7").innerHTML=` <i class="fas fa-check-circle" ></i>
+      <div class="text-block">
+        Verifikasi Data
+        <span id="val">Validasi data siswa</span>
+      </div>`
+    console.error("❌ Error mencari data:", error);
+  });
+
+
+
+
+   
+}
+
+
+var  bdata='';
+ function sendp(){
+	 
+	  let dnis=localStorage.getItem("nis");
+	 
+	 
+	 
+ 
+  document.getElementById("kdata2").disabled=true;
+  document.getElementById("kdata2").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i> Mencari data';
+  
+  db.collection("datasiswa")
+  .where("nis", "==", dnis)
+  .where("bulan", "==", tglcek)
+  .get()
+  .then(querySnapshot => {
+    if (querySnapshot.empty) {
+		document.getElementById("kdata2").disabled=false;
+    //  console.log("⚠️ Tidak ada data dengan NIS 2422");
+	  document.getElementById("kdata2").innerHTML=` <i class="fas fa-user-graduate"></i>
+      <div class="text-block">
+      Lihat Data & Verifikasi Ortu/Wali
+        <span id="val">Validasi data oleh orang tua/wali siswa</span>
+      </div>`
+	  document.getElementById("loadingModal").style.display = "block";
+	  document.getElementById('tmodal').innerHTML=`
+	  <div class="pesan-box">
+    <i class="fas fa-database"></i>
+    <p>Tidak ada data siswa bulan ${blncek}</p>
+  </div> `;
+  document.body.style.overflow = "hidden"
+    } else {
+     
+		
+													
+								 
+									 document.getElementById("kdata2").disabled=false;
+								 document.getElementById("kdata2").innerHTML=` <i class="fas fa-user-graduate"></i>
+      <div class="text-block">
+      Lihat Data & Verifikasi Ortu/Wali
+        <span id="val">Validasi data oleh orang tua/wali siswa</span>
+      </div>`
+									 
+								 
+									 document.body.style.overflow = "hidden"
+								 const rekapBody = document.getElementById("rekapBody");
+								var ct=''
+								var mnn="";
+								var cpp=0;
+								 var nom=1;
+		querySnapshot.forEach(doc => {
+       // console.log("📄 ID:", doc.id, "Data:", doc.data()); 
+							 
+								 mnn=doc.data().nama;
+								   
+							 
+								  cpp=1;
+								   let ort = (doc.data().ortu == 0)
+								  ? `<button class='btn' onclick='verifikasi(this, 1, "${doc.data().tgl}", "${doc.data().nis}")' style='font-size:13px;padding:5px'>
+									  <i class='fa-solid fa-user'></i> Verifikasi
+									 </button>`
+								  : `<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>`;
+
+								   let gr=(doc.data().guru==0) ? "<button disabled class='btn' style='font-size:13px;padding:5px;background:#cfd1bd'><i class='fa-solid fa-user'  ></i> Verifikasi</button>" : "<span class='success'><i class='fa-solid fa-circle-check' style='font-size: 20px'></i></span>"
+									  ct+="<tr><td style='text-align:center'>"+(nom++)+"</td><td class='nowrap' style='text-align:center;width:100px'>"+doc.data().tgl+"</td><td>"+doc.data().bagunpagi+"</td><td style='text-align:center'>"+doc.data().beribadah+"</td><td style='text-align:center'>"+doc.data().olahraga+"</td><td style='text-align:center'>"+doc.data().makansehat+"</td><td style='text-align:center'>"+doc.data().belajar+"</td><td style='text-align:center'>"+doc.data().bermasyarakat+"</td><td style='text-align:center'>"+doc.data().tidurcepat+"</td><td style='text-align:center;width:100px'>"+ort+"</td><td style='text-align:center;width:100px'>"+gr+"</td></tr>"
+							 	
+		   
+		   
+      });
+	  
+	    	
+		
+	  
+	  const kebiasaanNames = {
+    "7k1": "1. Bangun Pagi",
+    "7k2": "2. Beribadah",
+    "7k3": "3. Berolahraga",
+    "7k4": "4. Makan Sehat",
+    "7k5": "5. Gemar Belajar",
+    "7k6": "6. Bermasyarakat",
+    "7k7": "7. Tidur Cepat"
+  };	
+	    let totalK = { "7k1": 0, "7k2": 0, "7k3": 0, "7k4": 0, "7k5": 0, "7k6": 0, "7k7": 0 };
+      let jumlahSiswa = 0;
+
+      querySnapshot.forEach(doc => {
+        const data = doc.data();
+        for (let k in totalK) {
+          totalK[k] += data[k] || 0;
+        }
+        jumlahSiswa++;
+      });
+
+     
+       var gabh="";
+      for (let k in totalK) {
+        let persen = jumlahSiswa > 0 ? ((totalK[k] / jumlahSiswa) * 100).toFixed(0) : 0;
+
+        const radius = persen == 100 ? "25px" : "25px 0 0 25px";
+        
+ 
+       gabh+= `
+          <div class="progress-item">
+            <div style="margin-top:10px" class="label">${kebiasaanNames[k]}</div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width:${persen}%; background:linear-gradient(90deg, #f6d365, #fda085); color:white;border-radius:${radius}">
+                ${persen}%
+              </div>
+            </div>
+          </div>
+        `;
+	  }
+	  
+	  
+	   if(cpp==1){
+										 
+									rekapBody.innerHTML=ct; 
+									sortTableByDate();
+									document.getElementById("pp").innerHTML=`<br><div class="g5" style="margin-top:3px;padding:5px 20px 5px 20px;font-size:18px;border-radius:10px;color:white">Rekap Bulan ${blncek} | ${mnn}</div>`;
+									modal1.style.display = "block";
+								   }
+								   else{
+									document.getElementById("loadingModal").style.display = "block";
+									document.getElementById('tmodal').innerHTML=`
+									<div class="pesan-box">
+									<i class="fas fa-database"></i>
+									<p>Tidak ada data siswa bulan ${blncek}</p>
+									 `;
+									 document.body.style.overflow = "hidden";
+								   }
+	
+	 
+	 let mmk=document.getElementById("prog")
+	     mmk.innerHTML=gabh+'<br><br>'
+		
+    }
+  })
+  .catch(error => {
+	  document.getElementById("kdata2").disabled=false;
+   document.getElementById("kdata2").innerHTML=` <i class="fas fa-user-graduate"></i>
+      <div class="text-block">
+      Lihat Data & Verifikasi Ortu/Wali
+        <span id="val">Validasi data oleh orang tua/wali siswa</span>
+      </div>`
+    document.getElementById("loadingModal").style.display = "block";
+	document.getElementById('tmodal').innerHTML="<b>Tidak dapat terhubung ke server</b>"
+    console.error("❌ Error mengambil data:", error);
+  });
+
+  
+  
+  
+    
+ }
+function ref3(){
+document.querySelector("#tabelSiswa tbody").innerHTML = '';			
+ document.getElementById("kdata3").style.display = "none";
+let mn=localStorage.getItem("nama")
+let bb4={"kode":3,"nama":mn}
+       send3(bb4)	
+
+}
+
+function verifikasi2(button, tipe1,tipe2,tipe3) {
+	 
+      const cell = button.parentElement;
+
+      // Simpan konten lama
+      const originalContent = button.innerHTML;
+      button.disabled = true;
+      button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Memproses...';
+
+      setTimeout(() => {
+        cell.innerHTML = `<span class="success"><i class="fa-solid fa-circle-check" style="font-size: 24px"></i> ${tipe1 === 1 ? '' : ''}</span>`;
+      }, 2000);
+    }
+  
+
+
+
+
+
+function verifikasi(button, tipe1,tipe2,tipe3){
+	 
+	 
+	let bv={"kode":5,"tp1":tipe1,"tp2":tipe2,"tp3":tipe3}
+      const cell = button.parentElement;
+
+      // Simpan konten lama
+      const originalContent = button.innerHTML;
+      button.disabled = true;
+      button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> '; 
+	  
+	  
+	  
+	  db.collection("datasiswa")
+	  .where("tgl", "==", tipe2)
+	  .where("nis", "==", tipe3)
+	  .get()
+	  .then(querySnapshot => {
+		if (querySnapshot.empty) {
+		//  console.log("⚠️ Data tidak ditemukan");
+		} else {
+		  querySnapshot.forEach(doc => {
+			// Update field ortu menjadi 1
+			
+			if(tipe1==1){
+				
+				       
+						 db.collection("datasiswa")
+						  .where("tgl", "==", tipe2) // filter tgl
+						  .where("nis", "==", tipe3)       // filter nis
+						  .get()
+						  .then((querySnapshot) => {
+							if (querySnapshot.empty) {
+							  console.log("❌ Data tidak ditemukan");
+							  return;
+							}
+
+							querySnapshot.forEach((doc) => {
+							  db.collection("datasiswa").doc(doc.id).update({
+								ortu: 1
+							  })
+							  .then(() => {
+								   cell.innerHTML = `<span class="success"><i class="fa-solid fa-circle-check" style="font-size: 20px"></i> ${tipe1 === 1 ? '' : ''}</span>`;
+							//	console.log(`✅ Data dengan ID ${doc.id} berhasil diupdate (guru=1)`);
+							  })
+							  .catch((error) => {
+								console.error("❌ Gagal update data:", error);
+							  });
+							});
+						  })
+						  .catch((error) => {
+							console.error("❌ Error mencari data:", error);
+						  });
+
+			
+			}
+			if(tipe1==2){
+				
+							 db.collection("datasiswa")
+							  .where("tgl", "==", tipe2) // filter tgl
+							  .where("nis", "==", tipe3)       // filter nis
+							  .get()
+							  .then((querySnapshot) => {
+								if (querySnapshot.empty) {
+								//  console.log("❌ Data tidak ditemukan");
+								  return;
+								}
+
+								querySnapshot.forEach((doc) => {
+								  db.collection("datasiswa").doc(doc.id).update({
+									guru: 1
+								  })
+								  .then(() => {
+									   cell.innerHTML = `<span class="success"><i class="fa-solid fa-circle-check" style="font-size: 20px"></i> ${tipe1 === 1 ? '' : ''}</span>`;
+								//	console.log(`✅ Data dengan ID ${doc.id} berhasil diupdate (guru=1)`);
+								  })
+								  .catch((error) => {
+									console.error("❌ Gagal update data:", error);
+								  });
+								});
+							  })
+							  .catch((error) => {
+								console.error("❌ Error mencari data:", error);
+							  });
+
+				
+				
+			}
+			
+			
+			
+			
+		  });
+		}
+	  })
+	  .catch(error => {
+		console.error("❌ Error mencari data:", error);
+	  });
+	  
+	  
+	  
+	  
+ 
+ }
+document.body.style.background = "linear-gradient(135deg, #dbe9f4 0%, #fce8e6 25%, #e6f7f1 50%, #fff4e6 75%, #e8eaf6 100%)";
+document.body.style.backgroundAttachment = "fixed";
+
+
+ let container = document.getElementById("progressList");
+      container.innerHTML = "";
+function rekap33(){
+	 document.getElementById("kdata5").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i> Mencari data';
+	 
+ 
+const kebiasaanNames = {
+    "7k1": "1. Bangun Pagi",
+    "7k2": "2. Beribadah",
+    "7k3": "3. Berolahraga",
+    "7k4": "4. Makan Sehat",
+    "7k5": "5. Gemar Belajar",
+    "7k6": "6. Bermasyarakat",
+    "7k7": "7. Tidur Cepat"
+  };	
+	
+ const waliTarget =localStorage.getItem("nama");
+ 
+  db.collection("datasiswa")
+    .where("wali", "==", waliTarget)
+	.where("bulan", "==", tglcek)
+    .get()
+    .then(snapshot => {
+		 if (snapshot.empty){
+			 document.getElementById("kdata5").innerHTML=`  <i class="fas fa-chalkboard-teacher"></i>
+	   <div class="text-block">
+      Persentase Perwalian Anda
+	  <span id="val">Rekap data siswa wali anda</span>
+	  </div>`
+			 document.getElementById("loadingModal").style.display = "block";
+	         document.getElementById('tmodal').innerHTML=`
+			 <div class="pesan-box">
+			<i class="fas fa-database"></i>
+			<p>Tidak ada data siswa bulan ${blncek} </p>`; 		
+			document.body.style.overflow = "hidden"
+             return;			 
+		 }
+		 
+      let totalK = { "7k1": 0, "7k2": 0, "7k3": 0, "7k4": 0, "7k5": 0, "7k6": 0, "7k7": 0 };
+      let jumlahSiswa = 0;
+
+      snapshot.forEach(doc => {
+        const data = doc.data();
+        for (let k in totalK) {
+          totalK[k] += data[k] || 0;
+        }
+        jumlahSiswa++;
+      });
+
+     
+       var gabh="";
+      for (let k in totalK) {
+        let persen = jumlahSiswa > 0 ? ((totalK[k] / jumlahSiswa) * 100).toFixed(0) : 0;
+
+        const radius = persen == 100 ? "25px" : "25px 0 0 25px";
+        
+
+       gabh+= `
+          <div class="progress-item">
+            <div class="label">${kebiasaanNames[k]}</div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width:${persen}%; background:linear-gradient(90deg, #f6d365, #fda085); color:white;border-radius:${radius}">
+                ${persen}%
+              </div>
+            </div>
+          </div>
+        `;
+      }
+	    document.getElementById("tp").innerHTML=`<b class="g5" style="padding:10px;font-size:20px;border-radius:10px;color:white">Rekap Bulan ${blncek}</b>`
+	    container.innerHTML=`<b style="font-size:20px"><i class="fa fa-bullhorn" style="font-size:20px"></i>  Persentase Perwalian anda</b>`+gabh;
+	    document.body.style.overflow = "hidden"
+	   modal2.style.display = "block";
+	   document.getElementById("kdata5").innerHTML=`  <i class="fas fa-chalkboard-teacher"></i>
+	   <div class="text-block">
+      Persentase Perwalian Anda
+	  <span id="val">Rekap data siswa wali anda</span>
+	  </div>`
+    })
+    .catch(error => {
+		document.getElementById("kdata5").innerHTML=`  <i class="fas fa-chalkboard-teacher"></i>
+	   <div class="text-block">
+      Persentase Perwalian Anda
+	  <span id="val">Rekap data siswa wali anda</span>
+	  </div>`
+	 
+      console.error("Error:", error);
+    });
+}
+
+
+
+function rekapall(){
+	document.getElementById("kdata4").innerHTML='<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i>Persentase Per kelas';
+
+	const kebiasaanNames = {
+  "7k1": "1. Bangun Pagi",
+  "7k2": "2. Beribadah",
+  "7k3": "3. Berolahraga",
+  "7k4": "4. Makan Sehat",
+  "7k5": "5. Gemar Belajar",
+  "7k6": "6. Bermasyarakat",
+  "7k7": "7. Tidur Cepat"
+};
+
+
+const kelasList = ["7A", "7B", "8A", "8B", "9A", "9B"];
+
+db.collection("datasiswa")
+  .get()
+  .then(snapshot => {
+    let totalSekolah = { "7k1": 0, "7k2": 0, "7k3": 0, "7k4": 0, "7k5": 0, "7k6": 0, "7k7": 0 };
+    let jumlahSekolah = 0;
+
+    let dataKelas = {};
+    kelasList.forEach(kelas => {
+      dataKelas[kelas] = {
+        total: { "7k1": 0, "7k2": 0, "7k3": 0, "7k4": 0, "7k5": 0, "7k6": 0, "7k7": 0 },
+        jumlahSiswa: 0
+      };
+    });
+
+    // Hitung total & per kelas
+    snapshot.forEach(doc => {
+      const data = doc.data();
+      const kelas = data.kelas; // Pastikan ada field 'kelas' di Firestore
+
+      // Total keseluruhan
+      for (let k in totalSekolah) {
+        totalSekolah[k] += data[k] || 0;
+      }
+      jumlahSekolah++;
+
+      // Per kelas
+      if (kelasList.includes(kelas)) {
+        for (let k in dataKelas[kelas].total) {
+          dataKelas[kelas].total[k] += data[k] || 0;
+        }
+        dataKelas[kelas].jumlahSiswa++;
+      }
+    });
+
+    let output = "<h2>📊 Persentase Keseluruhan Siswa</h2>";
+    for (let k in kebiasaanNames) {
+      let persen = jumlahSekolah > 0 ? ((totalSekolah[k] / jumlahSekolah) * 100).toFixed(0) : 0;
+
+      let gradient;
+      if (persen >= 75) gradient = "linear-gradient(90deg, #43e97b, #38f9d7)";
+      else if (persen >= 50) gradient = "linear-gradient(90deg, #f6d365, #fda085)";
+      else gradient = "linear-gradient(90deg, #ff758c, #ff7eb3)";
+
+      let textColor = persen >= 20 ? "white" : "#333";
+
+      output += `
+        <div class="progress-item">
+          <div class="label">${kebiasaanNames[k]}</div>
+          <div class="progress-container">
+            <div class="progress-bar" style="width:${persen}%; background:${gradient}; color:${textColor}">
+              ${persen}%
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // Detail per kelas
+    output += "<h2>🏫 Persentase Per Kelas</h2>";
+    for (let kelas of kelasList) {
+      output += `<h3>Kelas ${kelas}</h3>`;
+      for (let k in kebiasaanNames) {
+        let jumlah = dataKelas[kelas].jumlahSiswa;
+        let persen = jumlah > 0 ? ((dataKelas[kelas].total[k] / jumlah) * 100).toFixed(0) : 0;
+
+        let gradient;
+        if (persen >= 75) gradient = "linear-gradient(90deg, #43e97b, #38f9d7)";
+        else if (persen >= 50) gradient = "linear-gradient(90deg, #f6d365, #fda085)";
+        else gradient = "linear-gradient(90deg, #ff758c, #ff7eb3)";
+
+        let textColor = persen >= 20 ? "white" : "#333";
+
+        output += `
+          <div class="progress-item">
+            <div class="label">${kebiasaanNames[k]}</div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width:${persen}%; background:${gradient}; color:${textColor}">
+                ${persen}%
+              </div>
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    container.innerHTML = output;
+    modal2.style.display = "block";
+    document.body.style.overflow = "hidden";
+	  document.getElementById("kdata4").innerHTML='Persentase Per Kelas';
+  })
+  .catch(error => {
+	  document.getElementById("kdata4").innerHTML='Persentase Per Kelas';
+    console.error("Error:", error);
+  });
+}
+
+function updateKebiasaanBulanan(kelas, bulan, datasiswa) {
+	//alert(kelas+" "+bulan+" "+datasiswa)
+  const increment = firebase.firestore.FieldValue.increment;
+  let updates = { tot: increment(1) };
+
+  for (let i = 1; i <= 7; i++) {
+    let key = `7k${i}`;
+    if (datasiswa[key] === 1) updates[key] = increment(1);
+  }
+
+  db.collection("presentase")
+    .doc(kelas)
+    .collection("bulan")
+    .doc(bulan)
+    .set(updates, { merge: true })
+    .then(() => {
+    //  console.log("Update kebiasaan berhasil!");
+    })
+    .catch((err) => {
+      console.error("Update gagal:", err);
+    });
+}
+
+
+//pertingakatan
+async function rekaptingkat() {
+  var bulanTahun = tglcek;
+
+  document.getElementById("kdata4").innerHTML =
+    '<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i> Mencari data';
+
+  const kebiasaanNames = {
+    "7k1": "1. Bangun Pagi",
+    "7k2": "2. Beribadah",
+    "7k3": "3. Berolahraga",
+    "7k4": "4. Makan Sehat",
+    "7k5": "5. Gemar Belajar",
+    "7k6": "6. Bermasyarakat",
+    "7k7": "7. Tidur Cepat"
+  };
+  const kebiasaanNames1 = {
+    "7k1": "Bangun Pagi",
+    "7k2": "Beribadah",
+    "7k3": "Berolahraga",
+    "7k4": "Makan Sehat",
+    "7k5": "Gemar Belajar",
+    "7k6": "Bermasyarakat",
+    "7k7": "Tidur Cepat"
+  };
+
+  const kelasList = ["7A", "7B", "8A", "8B", "9A", "9B"];
+  const tingkatList = {
+    "VII": ["7A", "7B"],
+    "VIII": ["8A", "8B"],
+    "IX": ["9A", "9B"]
+  };
+
+  let totalSekolah = { "7k1": 0, "7k2": 0, "7k3": 0, "7k4": 0, "7k5": 0, "7k6": 0, "7k7": 0 };
+  let jumlahSekolah = 0;
+  let dataKelas = {};
+  kelasList.forEach(kelas => {
+    dataKelas[kelas] = { total: { "7k1": 0, "7k2": 0, "7k3": 0, "7k4": 0, "7k5": 0, "7k6": 0, "7k7": 0 }, jumlahSiswa: 0 };
+  });
+  let cektot = 0;
+
+  const promises = kelasList.map(kelas =>
+    db.collection("presentase").doc(kelas).collection("bulan").doc(bulanTahun).get()
+      .then(doc => {
+        if (doc.exists) {
+          const data = doc.data();
+          const jumlah = data.tot || 0;
+          cektot += jumlah;
+          jumlahSekolah += jumlah;
+          for (let k in totalSekolah) {
+            totalSekolah[k] += data[k] || 0;
+            dataKelas[kelas].total[k] = data[k] || 0;
+          }
+          dataKelas[kelas].jumlahSiswa = jumlah;
+        }
+      })
+  );
+
+  Promise.all(promises).then(() => {
+    let output = `<b style="font-size:20px"><i class="fa fa-bullhorn"></i> Persentase Seluruh Siswa</b>`;
+
+    // === Progress bar total sekolah ===
+    for (let k in kebiasaanNames) {
+      let persen = jumlahSekolah > 0 ? ((totalSekolah[k] / jumlahSekolah) * 100).toFixed(0) : 0;
+      const radius = persen == 100 ? "25px" : "25px 0 0 25px";
+      output += `
+        <div class="progress-item">
+          <div class="label">${kebiasaanNames[k]}</div>
+          <div class="progress-container">
+            <div class="progress-bar" style="width:${persen}%; background:linear-gradient(90deg, #f6d365, #fda085); color:white; border-radius:${radius}">
+              ${persen}%
+            </div>
+          </div>
+        </div>`;
+    }
+
+    // === Rekap per tingkatan ===
+    let dataTingkat = {};
+    for (let tingkat in tingkatList) {
+      dataTingkat[tingkat] = { total: { "7k1": 0, "7k2": 0, "7k3": 0, "7k4": 0, "7k5": 0, "7k6": 0, "7k7": 0 }, jumlahSiswa: 0 };
+      for (let kelas of tingkatList[tingkat]) {
+        dataTingkat[tingkat].jumlahSiswa += dataKelas[kelas].jumlahSiswa;
+        for (let k in dataKelas[kelas].total) {
+          dataTingkat[tingkat].total[k] += dataKelas[kelas].total[k];
+        }
+      }
+    }
+
+    output += '<br><b style="font-size:20px"><i class="fa fa-bullhorn"></i> Persentase Per Tingkatan</b>';
+    for (let tingkat in dataTingkat) {
+      output += `<br><b style="font-size:20px"><i class="fa fa-layer-group"></i> Tingkat ${tingkat}</b>`;
+      for (let k in kebiasaanNames) {
+        const jumlah = dataTingkat[tingkat].jumlahSiswa;
+        const persen = jumlah > 0 ? ((dataTingkat[tingkat].total[k] / jumlah) * 100).toFixed(0) : 0;
+        const radius = persen == 100 ? "25px" : "25px 0 0 25px";
+        output += `
+          <div class="progress-item">
+            <div class="label">${kebiasaanNames[k]}</div>
+            <div class="progress-container">
+             <div class="progress-bar" style="width:${persen}%; background:linear-gradient(90deg, #f6d365, #fda085); color:white; border-radius:${radius}">
+                ${persen}%
+              </div>
+            </div>
+          </div>`;
+      }
+    }
+
+    // === Rekap per kelas ===
+    output += '<br><b style="font-size:20px"><i class="fa fa-bullhorn"></i> Persentase Per Kelas</b>';
+    for (let kelas of kelasList) {
+      output += `<br><b style="font-size:20px"><i class="fa fa-bullseye"></i> Kelas ${kelas}</b>`;
+      for (let k in kebiasaanNames) {
+        const jumlah = dataKelas[kelas].jumlahSiswa;
+        const persen = jumlah > 0 ? ((dataKelas[kelas].total[k] / jumlah) * 100).toFixed(0) : 0;
+        const radius = persen == 100 ? "25px" : "25px 0 0 25px";
+        output += `
+          <div class="progress-item">
+            <div class="label">${kebiasaanNames[k]}</div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width:${persen}%; background:linear-gradient(90deg, #f6d365, #fda085); color:white; border-radius:${radius}">
+                ${persen}%
+              </div>
+            </div>
+          </div>`;
+      }
+    }
+
+    // === Tabel total sekolah ===
+    let tabelTotal = `<h3 style="display:none">Seluruh Siswa</h3>
+      <table id="tblTotal" border="1" style="border-collapse:collapse;display:none"><thead><tr><th>Seluruh Siswa</th>`;
+    for (let k in kebiasaanNames1) {
+      tabelTotal += `<th>${kebiasaanNames1[k]}</th>`;
+    }
+    tabelTotal += `</tr></thead><tbody><tr><td>Persentase</td>`;
+    for (let k in kebiasaanNames1) {
+      let persen = jumlahSekolah > 0 ? ((totalSekolah[k] / jumlahSekolah) * 100).toFixed(0) : 0;
+      tabelTotal += `<td>${persen}%</td>`;
+    }
+    tabelTotal += `</tr></tbody></table>`;
+
+    // === Tabel per tingkatan ===
+    let tabelTingkat = `<h3 style="display:none;">Per Tingkatan</h3>
+      <table id="tblTingkat" border="1" style="border-collapse:collapse;display:none"><thead><tr><th>Tingkatan</th>`;
+    for (let k in kebiasaanNames1) {
+      tabelTingkat += `<th>${kebiasaanNames1[k]}</th>`;
+    }
+    tabelTingkat += `</tr></thead><tbody>`;
+    for (let tingkat in dataTingkat) {
+      tabelTingkat += `<tr><td>${tingkat}</td>`;
+      for (let k in kebiasaanNames1) {
+        const jumlah = dataTingkat[tingkat].jumlahSiswa;
+        const persen = jumlah > 0 ? ((dataTingkat[tingkat].total[k] / jumlah) * 100).toFixed(0) : 0;
+        tabelTingkat += `<td>${persen}%</td>`;
+      }
+      tabelTingkat += `</tr>`;
+    }
+    tabelTingkat += `</tbody></table>`;
+
+    // === Tabel per kelas ===
+    let tabelKelas = `<h3 style="display:none;">Per Kelas</h3>
+      <table id="tblKelas" border="1" style="border-collapse:collapse;display:none"><thead><tr><th>Kelas</th>`;
+    for (let k in kebiasaanNames1) {
+      tabelKelas += `<th>${kebiasaanNames1[k]}</th>`;
+    }
+    tabelKelas += `</tr></thead><tbody>`;
+    for (let kelas of kelasList) {
+      tabelKelas += `<tr><td>${kelas}</td>`;
+      for (let k in kebiasaanNames1) {
+        const jumlah = dataKelas[kelas].jumlahSiswa;
+        const persen = jumlah > 0 ? ((dataKelas[kelas].total[k] / jumlah) * 100).toFixed(0) : 0;
+        tabelKelas += `<td>${persen}%</td>`;
+      }
+      tabelKelas += `</tr>`;
+    }
+    tabelKelas += `</tbody></table>`;
+
+    document.getElementById("tp").innerHTML =
+      `<b class="g5" style="padding:10px;font-size:20px;border-radius:10px;color:white">Rekap Bulan ${blncek}</b>`;
+
+    container.innerHTML = output + tabelTotal + tabelTingkat + tabelKelas +
+      `<br><button id="downloadXLS" style="max-width:250px;margin-left:15px;padding:10px 10px;border:none;border-radius:10px;background:green;color:white">
+        <i class="fa fa-file-excel"></i> Download Excel
+      </button><br>`;
+
+    if (cektot <= 0) {
+      document.getElementById("kdata4").innerHTML = `<i class="fas fa-users"></i>
+        <div class="text-block">Persentase Per Kelas
+          <span id="val">Rekap data siswa per kelas</span>
+        </div>`;
+      document.getElementById("loadingModal").style.display = "block";
+      document.getElementById('tmodal').innerHTML = `<div class="pesan-box">
+<i class="fas fa-database"></i>
+<p>Tidak ada data siswa bulan ${blncek} </p>`;
+      document.body.style.overflow = "hidden"
+      return;
+    }
+
+    modal2.style.display = "block";
+    document.body.style.overflow = "hidden";
+    document.getElementById("kdata4").innerHTML = `<i class="fas fa-users"></i>
+      <div class="text-block">Persentase Per Kelas
+        <span id="val">Rekap data siswa per kelas</span>
+      </div>`;
+
+    // === ExcelJS Export ===
+    document.getElementById("downloadXLS").addEventListener("click", async function () {
+      const workbook = new ExcelJS.Workbook();
+      const sheet = workbook.addWorksheet(`Rekap Bulan ${blncek}`);
+
+      sheet.columns = [
+        { width: 15 }, { width: 15 }, { width: 15 }, { width: 15 },
+        { width: 15 }, { width: 15 }, { width: 15 }, { width: 15 }
+      ];
+
+      // Judul
+      sheet.mergeCells('A1:H1');
+      const titleCell = sheet.getCell('A1');
+      titleCell.value = `Laporan Persentase Per Kelas & Per Tingkatan  UPTD SMPN 9 SINJAI`;
+      titleCell.font = { bold: true, size: 14 };
+      titleCell.alignment = { horizontal: 'center', vertical: 'middle' };
+
+      // Tanggal
+      const today = new Date();
+      const formattedDate = today.toLocaleDateString('id-ID', { day: '2-digit', month: 'long', year: 'numeric' });
+      sheet.mergeCells('A2:H2');
+      sheet.getCell('A2').value = `Rekap Bulan ${blncek}`;
+      sheet.getCell('A2').alignment = { horizontal: 'center', vertical: 'middle' };
+      sheet.getCell('A2').font = { bold: true, size: 14 };
+
+      sheet.mergeCells('A3:H3');
+      sheet.getCell('A3').value = `Tanggal Cetak: ${formattedDate}`;
+      sheet.getCell('A3').alignment = { horizontal: 'center', vertical: 'middle' };
+      sheet.getCell('A3').font = { italic: true, size: 11 };
+
+      // Ambil tabel dari halaman (Total, Tingkat, Kelas)
+      const tables = container.querySelectorAll("table");
+      let startRow = 4;
+      tables.forEach((tbl, tIndex) => {
+        const title = tbl.previousElementSibling?.innerText || `Tabel ${tIndex+1}`;
+        sheet.getCell(`A${startRow}`).value = title;
+        sheet.getCell(`A${startRow}`).font = { bold: true, size: 12 };
+        startRow++;
+
+        const rows = tbl.querySelectorAll("tr");
+        rows.forEach((row, rIndex) => {
+          const cells = row.querySelectorAll("th,td");
+          const dataRow = [];
+          cells.forEach(cell => dataRow.push(cell.innerText));
+          sheet.addRow(dataRow);
+
+          const excelRow = sheet.lastRow;
+          excelRow.eachCell((cell) => {
+            cell.border = { top:{style:'thin'},left:{style:'thin'},bottom:{style:'thin'},right:{style:'thin'} };
+            cell.alignment = { vertical: 'middle', horizontal: 'center' };
+          });
+
+          if (rIndex === 0) {
+            excelRow.eachCell((cell) => {
+              cell.font = { bold: true, color: { argb: 'FFFFFFFF' } };
+              cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: '4F81BD' } };
+            });
+          }
+        });
+
+        startRow = sheet.lastRow.number + 3;
+        sheet.addRow([]);
+      });
+
+      // tanda tangan
+      const lastRow = sheet.lastRow.number + 2;
+      sheet.mergeCells(`F${lastRow}:H${lastRow}`);
+      sheet.getCell(`F${lastRow}`).value = "Mengetahui,";
+      sheet.getCell(`F${lastRow}`).alignment = { horizontal: 'center' };
+
+      sheet.mergeCells(`F${lastRow+1}:H${lastRow+1}`);
+      sheet.getCell(`F${lastRow+1}`).value = "Kepala Sekolah";
+      sheet.getCell(`F${lastRow+1}`).alignment = { horizontal: 'center' };
+
+      sheet.mergeCells(`F${lastRow+4}:H${lastRow+4}`);
+      sheet.getCell(`F${lastRow+4}`).value = "TASLIM M., S.Pd.";
+      sheet.getCell(`F${lastRow+4}`).font = { bold: true };
+      sheet.getCell(`F${lastRow+4}`).alignment = { horizontal: 'center' };
+
+      sheet.mergeCells(`F${lastRow+5}:H${lastRow+5}`);
+      sheet.getCell(`F${lastRow+5}`).value = "NIP 197101251992031008";
+      sheet.getCell(`F${lastRow+5}`).alignment = { horizontal: 'center' };
+
+      const buffer = await workbook.xlsx.writeBuffer();
+      const blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = `Rekap_Persentase_${bulanTahun}.xlsx`;
+      link.click();
+    });
+
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  async function rekappresent() {
+  var bulanTahun = tglcek;
+ 
+  document.getElementById("kdata4").innerHTML =
+    '<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i> Mencari data';
+
+  const kebiasaanNames = {
+    "7k1": "1. Bangun Pagi",
+    "7k2": "2. Beribadah",
+    "7k3": "3. Berolahraga",
+    "7k4": "4. Makan Sehat",
+    "7k5": "5. Gemar Belajar",
+    "7k6": "6. Bermasyarakat",
+    "7k7": "7. Tidur Cepat"
+  };
+  const kebiasaanNames1 = {
+    "7k1": "Bangun Pagi",
+    "7k2": "Beribadah",
+    "7k3": "Berolahraga",
+    "7k4": "Makan Sehat",
+    "7k5": "Gemar Belajar",
+    "7k6": "Bermasyarakat",
+    "7k7": "Tidur Cepat"
+  };
+  const kelasList = ["7A", "7B", "8A", "8B", "9A", "9B"];
+
+  let totalSekolah = { "7k1": 0, "7k2": 0, "7k3": 0, "7k4": 0, "7k5": 0, "7k6": 0, "7k7": 0 };
+  let jumlahSekolah = 0;
+  let dataKelas = {};
+  kelasList.forEach(kelas => {
+    dataKelas[kelas] = { total: { "7k1": 0, "7k2": 0, "7k3": 0, "7k4": 0, "7k5": 0, "7k6": 0, "7k7": 0 }, jumlahSiswa: 0 };
+  });
+  let cektot = 0;
+
+  const promises = kelasList.map(kelas =>
+    db.collection("presentase").doc(kelas).collection("bulan").doc(bulanTahun).get()
+      .then(doc => {
+        if (doc.exists) {
+          const data = doc.data();
+          const jumlah = data.tot || 0;
+          cektot += jumlah;
+          jumlahSekolah += jumlah;
+          for (let k in totalSekolah) {
+            totalSekolah[k] += data[k] || 0;
+            dataKelas[kelas].total[k] = data[k] || 0;
+          }
+          dataKelas[kelas].jumlahSiswa = jumlah;
+        }
+      })
+  );
+
+  Promise.all(promises).then(() => {
+    let output = `<b style="font-size:20px"><i class="fa fa-bullhorn"></i> Persentase Seluruh Siswa</b>`;
+
+    // progress bar total sekolah
+    for (let k in kebiasaanNames) {
+      let persen = jumlahSekolah > 0 ? ((totalSekolah[k] / jumlahSekolah) * 100).toFixed(0) : 0;
+      const radius = persen == 100 ? "25px" : "25px 0 0 25px";
+      output += `
+        <div class="progress-item">
+          <div class="label">${kebiasaanNames[k]}</div>
+          <div class="progress-container">
+            <div class="progress-bar" style="width:${persen}%; background:linear-gradient(90deg, #f6d365, #fda085); color:white; border-radius:${radius}">
+              ${persen}%
+            </div>
+          </div>
+        </div>`;
+    }
+
+    // per kelas
+    output += '<br><b style="font-size:20px"><i class="fa fa-bullhorn"></i> Persentase Per Kelas</b>';
+    for (let kelas of kelasList) {
+      output += `<br><b style="font-size:20px"><i class="fa fa-bullseye"></i> Kelas ${kelas}</b>`;
+      for (let k in kebiasaanNames) {
+        const jumlah = dataKelas[kelas].jumlahSiswa;
+        const persen = jumlah > 0 ? ((dataKelas[kelas].total[k] / jumlah) * 100).toFixed(0) : 0;
+        const radius = persen == 100 ? "25px" : "25px 0 0 25px";
+        output += `
+          <div class="progress-item">
+            <div class="label">${kebiasaanNames[k]}</div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width:${persen}%; background:linear-gradient(90deg, #f6d365, #fda085); color:white; border-radius:${radius}">
+                ${persen}%
+              </div>
+            </div>
+          </div>`;
+      }
+    }
+
+    // tabel 1 total sekolah
+    let tabelTotal = `<h3 style="display:none">Seluruh Siswa</h3>
+      <table id="tblTotal" border="1" style="border-collapse:collapse;display:none"><thead><tr><th>Seluruh Siswa</th>`;
+    for (let k in kebiasaanNames1) {
+      tabelTotal += `<th>${kebiasaanNames1[k]}</th>`;
+    }
+    tabelTotal += `</tr></thead><tbody><tr><td>Persentase</td>`;
+    for (let k in kebiasaanNames1) {
+      let persen = jumlahSekolah > 0 ? ((totalSekolah[k] / jumlahSekolah) * 100).toFixed(0) : 0;
+      tabelTotal += `<td>${persen}%</td>`;
+    }
+    tabelTotal += `</tr></tbody></table>`;
+
+    // tabel 2 per kelas
+    let tabelKelas = `<h3 style="display:none;">Per Kelas</h3>
+      <table id="tblKelas" border="1" style="border-collapse:collapse;display:none"><thead><tr><th>Kelas</th>`;
+    for (let k in kebiasaanNames1) {
+      tabelKelas += `<th>${kebiasaanNames1[k]}</th>`;
+    }
+    tabelKelas += `</tr></thead><tbody>`;
+    for (let kelas of kelasList) {
+      tabelKelas += `<tr><td>${kelas}</td>`;
+      for (let k in kebiasaanNames1) {
+        const jumlah = dataKelas[kelas].jumlahSiswa;
+        const persen = jumlah > 0 ? ((dataKelas[kelas].total[k] / jumlah) * 100).toFixed(0) : 0;
+        tabelKelas += `<td>${persen}%</td>`;
+      }
+      tabelKelas += `</tr>`;
+    }
+    tabelKelas += `</tbody></table>`;
+
+    document.getElementById("tp").innerHTML =
+      `<b class="g5" style="padding:10px;font-size:20px;border-radius:10px;color:white">Rekap Bulan ${blncek}</b>`;
+
+    container.innerHTML = output + tabelTotal + tabelKelas +
+      `<br><button id="downloadXLS" style="max-width:250px;margin-left:15px;padding:10px 10px;border:none;border-radius:10px;background:green;color:white">
+        <i class="fa fa-file-excel"></i> Download Excel
+      </button><br>`;
+
+    if (cektot <= 0) {
+      document.getElementById("kdata4").innerHTML = `<i class="fas fa-users"></i>
+        <div class="text-block">Persentase Per Kelas
+          <span id="val">Rekap data siswa per kelas</span>
+        </div>`;
+      document.getElementById("loadingModal").style.display = "block";
+      document.getElementById('tmodal').innerHTML = `<div class="pesan-box">
+<i class="fas fa-database"></i>
+<p>Tidak ada data siswa bulan ${blncek} </p>`;
+document.body.style.overflow = "hidden"
+      return;
+    }
+
+    modal2.style.display = "block";
+    document.body.style.overflow = "hidden";
+    document.getElementById("kdata4").innerHTML = `<i class="fas fa-users"></i>
+      <div class="text-block">Persentase Per Kelas
+        <span id="val">Rekap data siswa per kelas</span>
+      </div>`;
+
+    // === ExcelJS Export ===
+     // === ExcelJS Export ===
+document.getElementById("downloadXLS").addEventListener("click", async function () {
+  const workbook = new ExcelJS.Workbook();
+  const sheet = workbook.addWorksheet(`Rekap Bulan ${blncek}`);
+
+sheet.columns = [
+  { width: 15 },   // Kolom A
+  { width: 15 },  // Kolom B
+  { width: 15 },  // Kolom C
+  { width: 15 },  // Kolom D
+  { width: 15 },  // Kolom E
+  { width: 15 },  // Kolom F
+  { width: 15 },  // Kolom G
+  { width: 15 }   // Kolom H
+];
+  // Judul
+  sheet.mergeCells('A1:H1');
+  const titleCell = sheet.getCell('A1');
+  titleCell.value = `Laporan Persentase Per Kelas  UPTD SMPN 9 SINJAI`;
+  titleCell.font = { bold: true, size: 14 };
+  titleCell.alignment = { horizontal: 'center', vertical: 'middle' };
+
+  // Tanggal
+  const today = new Date();
+  const formattedDate = today.toLocaleDateString('id-ID', { day: '2-digit', month: 'long', year: 'numeric' });
+  sheet.mergeCells('A2:H2');
+  sheet.getCell('A2').value = `Rekap Bulan ${blncek}`;
+  sheet.getCell('A2').alignment = { horizontal: 'center', vertical: 'middle' };
+  sheet.getCell('A2').font = { bold: true, size: 14 };
+
+ sheet.mergeCells('A3:H3');
+  sheet.getCell('A3').value = `Tanggal Cetak: ${formattedDate}`;
+  sheet.getCell('A3').alignment = { horizontal: 'center', vertical: 'middle' };
+  sheet.getCell('A3').font = { italic: true, size: 11 };
+
+  // Ambil tabel dari halaman
+  const tables = container.querySelectorAll("table");
+  let startRow = 4;
+  tables.forEach((tbl, tIndex) => {
+    const title = tbl.previousElementSibling?.innerText || `Tabel ${tIndex+1}`;
+    sheet.getCell(`A${startRow}`).value = title;
+    sheet.getCell(`A${startRow}`).font = { bold: true, size: 12 };
+    startRow++;
+
+    const rows = tbl.querySelectorAll("tr");
+    rows.forEach((row, rIndex) => {
+      const cells = row.querySelectorAll("th,td");
+      const dataRow = [];
+      cells.forEach(cell => dataRow.push(cell.innerText));
+      sheet.addRow(dataRow);
+
+      // === Tambahkan border di semua cell (header & data) ===
+      const excelRow = sheet.lastRow;
+      excelRow.eachCell((cell) => {
+        cell.border = {
+          top: { style: 'thin' },
+          left: { style: 'thin' },
+          bottom: { style: 'thin' },
+          right: { style: 'thin' }
+        };
+        cell.alignment = { vertical: 'middle', horizontal: 'center' };
+      });
+
+      // Styling header khusus (baris pertama tabel)
+      if (rIndex === 0) {
+        excelRow.eachCell((cell) => {
+          cell.font = { bold: true, color: { argb: 'FFFFFFFF' } };
+          cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: '4F81BD' } };
+        });
+      }
+    });
+
+    startRow = sheet.lastRow.number + 3;
+    sheet.addRow([]);
+  });
+
+  // tanda tangan
+  const lastRow = sheet.lastRow.number + 2;
+  sheet.mergeCells(`F${lastRow}:H${lastRow}`);
+  sheet.getCell(`F${lastRow}`).value = "Mengetahui,";
+  sheet.getCell(`F${lastRow}`).alignment = { horizontal: 'center' };
+
+  sheet.mergeCells(`F${lastRow+1}:H${lastRow+1}`);
+  sheet.getCell(`F${lastRow+1}`).value = "Kepala Sekolah";
+  sheet.getCell(`F${lastRow+1}`).alignment = { horizontal: 'center' };
+
+  sheet.mergeCells(`F${lastRow+4}:H${lastRow+4}`);
+  sheet.getCell(`F${lastRow+4}`).value = "TASLIM M., S.Pd.";
+  sheet.getCell(`F${lastRow+4}`).font = { bold: true };
+  sheet.getCell(`F${lastRow+4}`).alignment = { horizontal: 'center' };
+  
+  sheet.mergeCells(`F${lastRow+5}:H${lastRow+5}`);
+  sheet.getCell(`F${lastRow+5}`).value = "NIP 197101251992031008";
+  sheet.getCell(`F${lastRow+5}`).font = { bold: false };
+  sheet.getCell(`F${lastRow+5}`).alignment = { horizontal: 'center' };
+
+  // Freeze header (judul tetap di atas)
+  //sheet.views = [{ state: 'frozen', ySplit: 3 }];
+
+  // Download file
+  const buffer = await workbook.xlsx.writeBuffer();
+  const blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = `Rekap_Persentase_${bulanTahun}.xlsx`;
+  link.click();
+});
+
+  });
+}
+
+
+ 
+async function rekappersiswa(bulanTahun = tglcek) {
+  document.getElementById("kdata6").innerHTML =
+    '<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i> Mencari data...';
+
+  const kebiasaanNames = {
+    "7k1": "Bangun Pagi",
+    "7k2": "Beribadah",
+    "7k3": "Berolahraga",
+    "7k4": "Makan Sehat",
+    "7k5": "Gemar Belajar",
+    "7k6": "Bermasyarakat",
+    "7k7": "Tidur Cepat"
+  };
+
+  const kelasList = ["7A", "7B", "8A", "8B", "9A", "9B"];
+  let dataKelas = {};
+  kelasList.forEach(k => (dataKelas[k] = {}));
+
+  db.collection("datasiswa")
+    .where("bulan", "==", bulanTahun)
+    .get()
+    .then(snapshot => {
+      if (snapshot.empty) {
+        document.getElementById("kdata6").innerHTML = `
+          <i class="fas fa-user-graduate"></i>
+          <div class="text-block">
+            Persentase Per Siswa
+            <span id="val">Rekap data tiap siswa</span>
+          </div>`;
+        document.getElementById("loadingModal").style.display = "block";
+        document.getElementById("tmodal").innerHTML = `<div class="pesan-box">
+<i class="fas fa-database"></i>
+<p>Tidak ada data siswa bulan ${blncek} </p>`;
+document.body.style.overflow = "hidden"
+        return;
+      }
+
+      snapshot.forEach(doc => {
+        const data = doc.data();
+        const kelas = data.kelas;
+        const nama = data.nama || data.fullName || "Anonim";
+        const nis = data.nis || "-";
+        const wali = data.wali || "-";
+        if (!kelasList.includes(kelas)) return;
+
+        if (!dataKelas[kelas][nama]) {
+          dataKelas[kelas][nama] = { nis, wali, totalHari: 0 };
+          for (let i = 1; i <= 7; i++) dataKelas[kelas][nama][`7k${i}`] = 0;
+        }
+
+        dataKelas[kelas][nama].totalHari += 1;
+        for (let i = 1; i <= 7; i++) {
+          const key = `7k${i}`;
+          dataKelas[kelas][nama][key] += data[key] ? 1 : 0;
+        }
+      });
+
+      // === Tampilkan tabel di modal
+      let output = `<b style="font-size:20px"><i class="fa fa-bullhorn"></i> Persentase Per Siswa</b>`;
+      for (let kelas of kelasList) {
+        const siswaObj = dataKelas[kelas];
+        if (Object.keys(siswaObj).length === 0) continue;
+
+        output += `<b style="font-size:20px"><i class="fa fa-bullseye"></i> Kelas ${kelas}</b>`;
+        output += `<table id="tabelSiswa2" style="border-collapse: collapse; width: 100%">
+          <thead>
+            <tr>
+              <th>No</th><th>NIS</th><th>Nama Siswa</th><th>Nama Wali</th><th>Total Input</th>
+              ${Object.values(kebiasaanNames).map(n => `<th>${n}</th>`).join("")}
+            </tr>
+          </thead><tbody>`;
+
+        let no = 1;
+        for (let nama in siswaObj) {
+          const s = siswaObj[nama];
+          const persenArr = [1,2,3,4,5,6,7].map(i => {
+            const key = `7k${i}`;
+            return s.totalHari > 0 ? ((s[key] / s.totalHari) * 100).toFixed(0) + "%" : "0%";
+          });
+          output += `<tr>
+            <td>${no++}</td><td>${s.nis}</td><td>${nama}</td><td>${s.wali}</td><td>${s.totalHari}</td>
+            ${persenArr.map(p => `<td>${p}</td>`).join("")}
+          </tr>`;
+        }
+        output += `</tbody></table><br>`;
+      }
+
+      output += `<button id="downloadXLS" style="max-width:250px;margin:10px;padding:10px;border:none;border-radius:10px;background:green;color:white">
+        <i class="fa fa-file-excel"></i> Download Excel
+      </button>`;
+
+      container.innerHTML = output;
+      modal2.style.display = "block";
+	   document.getElementById("tp").innerHTML =
+      `<b class="g5" style="padding:10px;font-size:20px;border-radius:10px;color:white">Rekap Bulan ${blncek}</b>`;
+      document.body.style.overflow = "hidden";
+      document.getElementById("kdata6").innerHTML = `
+        <i class="fas fa-user-graduate"></i>
+        <div class="text-block">
+          Persentase Per Siswa
+          <span id="val">Rekap data tiap siswa</span>
+        </div>`;
+
+      // === Download Excel pakai ExcelJS
+      document.getElementById("downloadXLS").addEventListener("click", async () => {
+        const workbook = new ExcelJS.Workbook();
+        const sheet = workbook.addWorksheet("Persentase");
+
+        // Judul
+        sheet.mergeCells("A1:L1");
+        sheet.getCell("A1").value = `Laporan Persentase Per Siswa  UPTD SMPN 9 Sinjai`;
+        sheet.getCell("A1").font = { bold: true, size: 14 };
+        sheet.getCell("A1").alignment = { horizontal: "center" };
+
+
+ sheet.mergeCells('A2:L2');
+  sheet.getCell('A2').value = `Rekap Bulan ${blncek}`;
+  sheet.getCell('A2').alignment = { horizontal: 'center', vertical: 'middle' };
+  sheet.getCell('A2').font = { bold: true, size: 14 };
+ 
+        // Tanggal
+        const today = new Date();
+        const formattedDate = today.toLocaleDateString("id-ID",{ day: '2-digit', month: 'long', year: 'numeric'});
+        sheet.mergeCells("A3:L3");
+        sheet.getCell("A3").value = `Tanggal Cetak: ${formattedDate}`;
+        sheet.getCell("A3").alignment = { horizontal: "center", vertical: "middle" };
+        sheet.getCell("A3").font = { italic: true, size: 11 };
+
+        let rowStart = 4;
+
+        // Loop tiap kelas
+        for (let kelas of kelasList) {
+          const siswaObj = dataKelas[kelas];
+          if (Object.keys(siswaObj).length === 0) continue;
+
+          sheet.addRow([]);
+          sheet.mergeCells(`A${rowStart}:H${rowStart}`);
+          sheet.getCell(`A${rowStart}`).value = `Kelas ${kelas}`;
+          sheet.getCell(`A${rowStart}`).font = { bold: true, size: 12 };
+          rowStart++;
+
+          const header = ["No","NIS","Nama Siswa","Nama Wali","Total Input", ...Object.values(kebiasaanNames)];
+          sheet.addRow(header);
+
+          let no = 1;
+          for (let nama in siswaObj) {
+            const s = siswaObj[nama];
+            const persenArr = [1,2,3,4,5,6,7].map(i => {
+              const key = `7k${i}`;
+              return s.totalHari > 0 ? ((s[key] / s.totalHari) * 100).toFixed(0)+"%" : "0%";
+            });
+            sheet.addRow([no++, s.nis, nama, s.wali, s.totalHari, ...persenArr]);
+          }
+
+          // Styling tabel
+          const lastRow = sheet.lastRow.number;
+         for (let r = rowStart; r <= lastRow; r++) {
+  const row = sheet.getRow(r);
+
+  // Kolom C (3) dan D (4) rata kiri
+  [3, 4].forEach(col => {
+    const cell = row.getCell(col);
+    cell.alignment = { horizontal: "left", vertical: "middle" };
+    cell.border = { 
+      top: { style: 'thin' }, 
+      left: { style: 'thin' }, 
+      bottom: { style: 'thin' }, 
+      right: { style: 'thin' } 
+    };
+  });
+
+  // Kolom lain default center
+  row.eachCell({ includeEmpty: true }, (cell, colNumber) => {
+    if (![3,4].includes(colNumber)) {
+      cell.alignment = { horizontal: "center", vertical: "middle" };
+      cell.border = { 
+        top: { style: 'thin' }, 
+        left: { style: 'thin' }, 
+        bottom: { style: 'thin' }, 
+        right: { style: 'thin' } 
+      };
+    }
+  });
+
+  // Styling baris header
+  if (r === rowStart) {
+    row.eachCell({ includeEmpty: true }, (cell) => {
+      cell.font = { bold: true, color: { argb: "FFFFFFFF" } };
+      cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: "4F81BD" } };
+    });
+  }
+}
+
+          rowStart = lastRow+2;
+        }
+
+         sheet.columns = [
+  { width: 5 },   // Kolom A
+  { width: 8 },  // Kolom B
+  { width: 22 },  // Kolom C
+  { width: 22 },  // Kolom D
+  { width: 14 },  // Kolom F
+  { width: 15 },  // Kolom G
+  { width: 15 },  // Kolom H
+  { width: 15 },   // Kolom I
+  { width: 15 },   // Kolom J
+  { width: 15 },   // Kolom K
+  { width: 15 },  // Kolom L
+  { width: 15 }   // Kolom L
+];
+        // Tanda tangan
+        const ttdRow = sheet.lastRow.number + 3;
+        sheet.mergeCells(`J${ttdRow}:L${ttdRow}`);
+        sheet.getCell(`J${ttdRow}`).value = "Mengetahui,";
+        sheet.getCell(`J${ttdRow}`).alignment = { horizontal:"center" };
+        sheet.mergeCells(`J${ttdRow+1}:L${ttdRow+1}`);
+        sheet.getCell(`J${ttdRow+1}`).value = "Kepala Sekolah";
+        sheet.getCell(`J${ttdRow+1}`).alignment = { horizontal:"center" };
+        sheet.mergeCells(`J${ttdRow+4}:L${ttdRow+4}`);
+        sheet.getCell(`J${ttdRow+4}`).value = "TASLIM M., S.Pd.";
+        sheet.getCell(`J${ttdRow+4}`).font = { bold:true };
+        sheet.getCell(`J${ttdRow+4}`).alignment = { horizontal:"center" };
+		 sheet.mergeCells(`J${ttdRow+5}:L${ttdRow+5}`);
+		  sheet.getCell(`J${ttdRow+5}`).value = "NIP 197101251992031008";
+		  sheet.getCell(`J${ttdRow+5}`).font = { bold: false };
+		  sheet.getCell(`J${ttdRow+5}`).alignment = { horizontal: 'center' };
+
+        // Download
+        const buffer = await workbook.xlsx.writeBuffer();
+        const blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = `Persentase_Siswa_${bulanTahun}.xlsx`;
+        link.click();
+      });
+    })
+    .catch(err => {
+      document.getElementById("kdata6").innerHTML = `
+        <i class="fas fa-user-graduate"></i>
+        <div class="text-block">
+          Persentase Per Siswa
+          <span id="val">Rekap data tiap siswa</span>
+        </div>`;
+      console.error(err);
+    });
+}
+ 
+
+function showpicker(){
+	 
+	let container = document.getElementById("progressList");
+      container.innerHTML = "";
+	 modal2.style.display = "block";
+	   document.getElementById("tp").innerHTML = `
+  <label style="font-weight:600; display:block; margin-bottom:6px; color:#2c3e50;">
+    <i class="fas fa-calendar-alt" style="margin-right:6px; color:#007BFF;"></i>
+    Pilih Rentang Tanggal
+  </label>
+  
+  <input id="tanggal_rentang" type="text" placeholder="📅 Pilih Tanggal..." 
+    style="
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 5px 0;
+      width: 250px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    "
+    onfocus="this.style.borderColor='#007BFF'; this.style.boxShadow='0 0 6px rgba(0,123,255,0.5)'"
+    onblur="this.style.borderColor='#ccc'; this.style.boxShadow='inset 0 1px 3px rgba(0,0,0,0.1)'"
+  >
+  
+  <p id="hasil_tanggal" style="margin-top:10px; color:#555; font-style:italic;"></p>
+`;
+
+      document.body.style.overflow = "hidden";
+      document.getElementById("kdata8").innerHTML = `
+       <i class="fas fa-calendar"></i>
+      <div class="text-block">
+        Persentase Per Tanggal
+        <span id="val">Rekap data siswa pertangal</span>
+      </div>`;
+  date();
+	
+}
+ let containerg = document.getElementById("progressList");
+ async function rekappertgl(tgl1b,tgl2b,tb1,tb2) {
+  containerg.innerHTML =`<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: orange;"></i><br>`;
+  
+  const kebiasaanNames = {
+    "7k1": "Bangun Pagi",
+    "7k2": "Beribadah",
+    "7k3": "Berolahraga",
+    "7k4": "Makan Sehat",
+    "7k5": "Gemar Belajar",
+    "7k6": "Bermasyarakat",
+    "7k7": "Tidur Cepat"
+  };
+
+  const kelasList = ["7A", "7B", "8A", "8B", "9A", "9B"];
+  let dataKelas = {};
+  kelasList.forEach(k => (dataKelas[k] = {}));
+
+  db.collection("datasiswa")
+    .where("tglsort", ">=", tgl1b)
+	 .where("tglsort", "<=", tgl2b)
+    .get()
+    .then(snapshot => {
+      if (snapshot.empty) {
+        
+      containerg.innerHTML = `<span style="background:#007BFF; color:#fff; padding:8px 14px; border-radius:8px; font-weight:bold;">
+  Data siswa tidak ditemukan
+</span>`
+
+        
+        return;
+      }
+
+      snapshot.forEach(doc => {
+        const data = doc.data();
+        const kelas = data.kelas;
+        const nama = data.nama || data.fullName || "Anonim";
+        const nis = data.nis || "-";
+        const wali = data.wali || "-";
+        if (!kelasList.includes(kelas)) return;
+
+        if (!dataKelas[kelas][nama]) {
+          dataKelas[kelas][nama] = { nis, wali, totalHari: 0 };
+          for (let i = 1; i <= 7; i++) dataKelas[kelas][nama][`7k${i}`] = 0;
+        }
+
+        dataKelas[kelas][nama].totalHari += 1;
+        for (let i = 1; i <= 7; i++) {
+          const key = `7k${i}`;
+          dataKelas[kelas][nama][key] += data[key] ? 1 : 0;
+        }
+      });
+
+      // === Tampilkan tabel di modal
+      let output = `<b style="font-size:20px"><i class="fa fa-bullhorn"></i> Persentase Per Siswa</b>`;
+      for (let kelas of kelasList) {
+        const siswaObj = dataKelas[kelas];
+        if (Object.keys(siswaObj).length === 0) continue;
+
+        output += `<b style="font-size:20px"><i class="fa fa-bullseye"></i> Kelas ${kelas}</b>`;
+        output += `<table id="tabelSiswa2" style="border-collapse: collapse; width: 100%">
+          <thead>
+            <tr>
+              <th>No</th><th>NIS</th><th>Nama Siswa</th><th>Nama Wali</th><th>Total Input</th>
+              ${Object.values(kebiasaanNames).map(n => `<th>${n}</th>`).join("")}
+            </tr>
+          </thead><tbody>`;
+
+        let no = 1;
+        for (let nama in siswaObj) {
+          const s = siswaObj[nama];
+          const persenArr = [1,2,3,4,5,6,7].map(i => {
+            const key = `7k${i}`;
+            return s.totalHari > 0 ? ((s[key] / s.totalHari) * 100).toFixed(0) + "%" : "0%";
+          });
+          output += `<tr>
+            <td>${no++}</td><td>${s.nis}</td><td>${nama}</td><td>${s.wali}</td><td>${s.totalHari}</td>
+            ${persenArr.map(p => `<td>${p}</td>`).join("")}
+          </tr>`;
+        }
+        output += `</tbody></table><br>`;
+      }
+ 
+      output += `<button id="downloadXLS" style="max-width:250px;margin:10px;padding:10px;border:none;border-radius:10px;background:green;color:white">
+        <i class="fa fa-file-excel"></i> Download Excel
+      </button><br><br><br><br><br>`;
+
+      containerg.innerHTML = output;
+      modal2.style.display = "block";
+      document.body.style.overflow = "hidden";
+      document.getElementById("kdata6").innerHTML = `
+        <i class="fas fa-user-graduate"></i>
+        <div class="text-block">
+          Persentase Per Siswa
+          <span id="val">Rekap data tiap siswa</span>
+        </div>`;
+
+      // === Download Excel pakai ExcelJS
+      document.getElementById("downloadXLS").addEventListener("click", async () => {
+        const workbook = new ExcelJS.Workbook();
+        const sheet = workbook.addWorksheet("Persentase");
+
+        // Judul
+        sheet.mergeCells("A1:L1");
+        sheet.getCell("A1").value = `Laporan Persentase  Siswa  UPTD SMPN 9 Sinjai`;
+        sheet.getCell("A1").font = { bold: true, size: 14 };
+        sheet.getCell("A1").alignment = { horizontal: "center" };
+
+
+ sheet.mergeCells('A2:L2');
+  sheet.getCell('A2').value = `dari ${tb1} s.d ${tb2}`;
+  sheet.getCell('A2').alignment = { horizontal: 'center', vertical: 'middle' };
+  sheet.getCell('A2').font = { bold: true, size: 14 };
+ 
+        // Tanggal
+        const today = new Date();
+        const formattedDate = today.toLocaleDateString("id-ID",{ day: '2-digit', month: 'long', year: 'numeric'});
+        sheet.mergeCells("A3:L3");
+        sheet.getCell("A3").value = `Tanggal Cetak: ${formattedDate}`;
+        sheet.getCell("A3").alignment = { horizontal: "center", vertical: "middle" };
+        sheet.getCell("A3").font = { italic: true, size: 11 };
+
+        let rowStart = 4;
+
+        // Loop tiap kelas
+        for (let kelas of kelasList) {
+          const siswaObj = dataKelas[kelas];
+          if (Object.keys(siswaObj).length === 0) continue;
+
+          sheet.addRow([]);
+          sheet.mergeCells(`A${rowStart}:H${rowStart}`);
+          sheet.getCell(`A${rowStart}`).value = `Kelas ${kelas}`;
+          sheet.getCell(`A${rowStart}`).font = { bold: true, size: 12 };
+          rowStart++;
+
+          const header = ["No","NIS","Nama Siswa","Nama Wali","Total Input", ...Object.values(kebiasaanNames)];
+          sheet.addRow(header);
+
+          let no = 1;
+          for (let nama in siswaObj) {
+            const s = siswaObj[nama];
+            const persenArr = [1,2,3,4,5,6,7].map(i => {
+              const key = `7k${i}`;
+              return s.totalHari > 0 ? ((s[key] / s.totalHari) * 100).toFixed(0)+"%" : "0%";
+            });
+            sheet.addRow([no++, s.nis, nama, s.wali, s.totalHari, ...persenArr]);
+          }
+
+          // Styling tabel
+          const lastRow = sheet.lastRow.number;
+         for (let r = rowStart; r <= lastRow; r++) {
+  const row = sheet.getRow(r);
+
+  // Kolom C (3) dan D (4) rata kiri
+  [3, 4].forEach(col => {
+    const cell = row.getCell(col);
+    cell.alignment = { horizontal: "left", vertical: "middle" };
+    cell.border = { 
+      top: { style: 'thin' }, 
+      left: { style: 'thin' }, 
+      bottom: { style: 'thin' }, 
+      right: { style: 'thin' } 
+    };
+  });
+
+  // Kolom lain default center
+  row.eachCell({ includeEmpty: true }, (cell, colNumber) => {
+    if (![3,4].includes(colNumber)) {
+      cell.alignment = { horizontal: "center", vertical: "middle" };
+      cell.border = { 
+        top: { style: 'thin' }, 
+        left: { style: 'thin' }, 
+        bottom: { style: 'thin' }, 
+        right: { style: 'thin' } 
+      };
+    }
+  });
+
+  // Styling baris header
+  if (r === rowStart) {
+    row.eachCell({ includeEmpty: true }, (cell) => {
+      cell.font = { bold: true, color: { argb: "FFFFFFFF" } };
+      cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: "4F81BD" } };
+    });
+  }
+}
+
+          rowStart = lastRow+2;
+        }
+
+         sheet.columns = [
+  { width: 5 },   // Kolom A
+  { width: 8 },  // Kolom B
+  { width: 22 },  // Kolom C
+  { width: 22 },  // Kolom D
+  { width: 14 },  // Kolom F
+  { width: 15 },  // Kolom G
+  { width: 15 },  // Kolom H
+  { width: 15 },   // Kolom I
+  { width: 15 },   // Kolom J
+  { width: 15 },   // Kolom K
+  { width: 15 },  // Kolom L
+  { width: 15 }   // Kolom L
+];
+        // Tanda tangan
+        const ttdRow = sheet.lastRow.number + 3;
+        sheet.mergeCells(`J${ttdRow}:L${ttdRow}`);
+        sheet.getCell(`J${ttdRow}`).value = "Mengetahui,";
+        sheet.getCell(`J${ttdRow}`).alignment = { horizontal:"center" };
+        sheet.mergeCells(`J${ttdRow+1}:L${ttdRow+1}`);
+        sheet.getCell(`J${ttdRow+1}`).value = "Kepala Sekolah";
+        sheet.getCell(`J${ttdRow+1}`).alignment = { horizontal:"center" };
+        sheet.mergeCells(`J${ttdRow+4}:L${ttdRow+4}`);
+        sheet.getCell(`J${ttdRow+4}`).value = "TASLIM M., S.Pd.";
+        sheet.getCell(`J${ttdRow+4}`).font = { bold:true };
+        sheet.getCell(`J${ttdRow+4}`).alignment = { horizontal:"center" };
+		 sheet.mergeCells(`J${ttdRow+5}:L${ttdRow+5}`);
+		  sheet.getCell(`J${ttdRow+5}`).value = "NIP 197101251992031008";
+		  sheet.getCell(`J${ttdRow+5}`).font = { bold: false };
+		  sheet.getCell(`J${ttdRow+5}`).alignment = { horizontal: 'center' };
+
+        // Download
+        const buffer = await workbook.xlsx.writeBuffer();
+        const blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = `Persentase_Siswa_${bulanTahun}.xlsx`;
+        link.click();
+      });
+    })
+    .catch(err => {
+     
+      console.error(err);
+    });
+}
+
+function sortTableByDate() {
+  let tbody = document.getElementById("rekapBody");
+  let rows = Array.from(tbody.querySelectorAll("tr"));
+
+  // urutkan berdasarkan kolom tanggal (kolom ke-2 = index 1)
+  rows.sort((a, b) => {
+    let tglA = a.cells[1].innerText.trim();
+    let tglB = b.cells[1].innerText.trim();
+
+    // parsing "DD-MM-YYYY"
+    let [dA, mA, yA] = tglA.split("-").map(Number);
+    let [dB, mB, yB] = tglB.split("-").map(Number);
+
+    let dateA = new Date(yA, mA - 1, dA);
+    let dateB = new Date(yB, mB - 1, dB);
+
+    return dateA - dateB; // ascending
+  });
+
+  // kosongkan tbody, masukkan kembali dengan nomor baru
+  tbody.innerHTML = "";
+  rows.forEach((row, i) => {
+    row.cells[0].innerText = i + 1; // kolom pertama diisi ulang (No)
+    tbody.appendChild(row);
+  });
+}
+
+
+
+function date(){
+ const tanggalInput = document.getElementById('tanggal_rentang');
+    const hasilParagraph = document.getElementById('hasil_tanggal');
+  
+    // Mendapatkan tanggal hari ini
+    const today = new Date();
+    // Mendapatkan tanggal 1 minggu ke depan
+    const nextWeek = today //new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
+
+    const fp = flatpickr(tanggalInput, {
+      mode: 'range',
+      dateFormat: 'd M Y',
+      locale: 'id',
+      // Mengisi rentang tanggal secara otomatis saat inisialisasi
+      defaultDate: [today, nextWeek],
+      onChange: function(selectedDates, dateStr, instance) {
+        if (selectedDates.length === 2) {
+          const tgl11 = instance.formatDate(selectedDates[0], 'Y-m-d');
+          const tgl22= instance.formatDate(selectedDates[1], 'Y-m-d');
+		   const tb1 = instance.formatDate(selectedDates[0], 'd F Y');
+          const tb2 = instance.formatDate(selectedDates[1], 'd F Y');
+         //hasilParagraph.textContent = `Anda memilih tanggal dari ${tanggalMulai} sampai ${tanggalAkhir}.`;
+		 rekappertgl(tgl11,tgl22,tb1,tb2)
+        } else {
+        //  hasilParagraph.textContent = 'Pilih rentang tanggal.';
+        }
+      }
+    });
+ 
+	
+}
+
+
+function gantipasword(ag) {
+	 document.getElementById("tpas").style.display="none"
+	  ag.style.display="block";
+	document.getElementById("tpas1").style.display="none"
+const oldPass1 = document.getElementById("oldPass").value;
+const newPass1 = document.getElementById("newPass").value;
+if (!oldPass1 || !newPass1) {
+   
+  return; // hentikan fungsi
+}
+
+if (oldPass1 == newPass1) {
+   
+  return; // hentikan fungsi
+}
+
+ag.disabled = true;
+  ag.innerHTML = '<i class="fas fa-spinner fa-spin" style="font-size: 25px; margin-right: 10px; color: white;"></i> Proses...';
+ 
+	 let mn12=localStorage.getItem("nis")
+ const user1   = firebase.auth().currentUser;
+
+ 
+ 
+  if (!user1) {
+    alert("Tidak ada user login.");
+    return;
+  }
+
+  const credential = firebase.auth.EmailAuthProvider.credential(
+    user1.email,
+    oldPass1
+  );
+
+  // Re-authenticate dulu
+  user1.reauthenticateWithCredential(credential).then(() => {
+    // Jika sukses, update password di Authentication
+    return user1.updatePassword(newPass1);
+  }).then(() => {
+    // Setelah password di Auth berhasil diubah, update juga di Firestore
+    return firebase.firestore()
+      .collection("users")
+      .doc(mn12) // ganti sesuai id dokumen user yg sedang login
+      .update({
+        pass: newPass1
+      });
+  }).then(() => {
+	  
+	   ag.disabled = false
+   document.getElementById("tpas1").style.display="block"
+   document.getElementById("tpas1").innerHTML=`✔️ Password Berhasil di ganti<br><span style="color:black"> ${newPass1}</span>`
+        ag.style.display="none";
+    
+  }).catch((error) => {
+	
+	   ag.innerHTML ='Ganti';
+   document.getElementById("tpas").style.display="block"
+   setTimeout(()=>{  ag.disabled = false;document.getElementById("tpas").style.display="none"},3000)
+  });
+}
+
+
+  // Buka modal
+ 
+  function openPasswordModal() {
+	   document.getElementById("gpas").disabled=false;
+	  document.getElementById("gpas").style.display = "block";
+	   document.getElementById("tpas").style.display="none"
+	  
+	document.getElementById("tpas1").style.display="none"
+	  	 document.body.style.overflow = "hidden"
+    document.getElementById("passwordModal").style.display = "flex";
+	
+	document.getElementById("oldPass").value="";
+document.getElementById("newPass").value="";
+  }
+
+  // Tutup modal
+  function closePasswordModal() {
+	  	 document.body.style.overflow = "scroll"
+    document.getElementById("passwordModal").style.display = "none";
+	document.getElementById("gpas").style.display = "block";
+	document.getElementById("gpas").innerHTML="Ganti";
+  }
