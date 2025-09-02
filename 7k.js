@@ -43,7 +43,7 @@ const firebaseConfig = {
   function isWebView() {
   const ua = navigator.userAgent || navigator.vendor || window.opera;
   // Deteksi WebView di Android
-  const isAndroidWebView = /\wv\b/.test(ua) || /Android.*Version\/\d+\.\d+/.test(ua);
+  const isAndroidWebView = /\bwv\b/.test(ua) || /Android.*Version\/\d+\.\d+/.test(ua);
   alert(ua)
   return isAndroidWebView ;
 }
@@ -51,7 +51,7 @@ const firebaseConfig = {
 if (isWebView()) {
   alert("Aplikasi ini dibuka dari WebView");
 } else {
- alert("Aplikasi ini dibuka dari browser biasa");
+  alert("Aplikasi ini dibuka dari browser biasa");
 }
 
   
