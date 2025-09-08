@@ -2675,9 +2675,9 @@ function showpicker(){
         link.click();
 		}
 		else{
-			let lss=`Persentase_Siswa_${bulanTahun}.xlsx`;
-			const base64 = btoa(String.fromCharCode(...new Uint8Array(buffer)));
-            Android.saveExcel(base64, lss);
+			 let jss=`Persentase_Siswa_${bulanTahun}.xlsx`;
+				const base64 = btoa(String.fromCharCode(...new Uint8Array(buffer)));
+				Android.saveExcel(base64, jss);		 
 		}
       });
     })
