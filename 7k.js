@@ -2379,11 +2379,18 @@ document.body.style.overflow = "hidden"
 
         // Download
         const buffer = await workbook.xlsx.writeBuffer();
+		 if(webv==0){
         const blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
         const link = document.createElement("a");
         link.href = URL.createObjectURL(blob);
         link.download = `Persentase_Siswa_${bulanTahun}.xlsx`;
         link.click();
+		 }
+		 else {
+		         let jss=`Persentase_Siswa_${bulanTahun}.xlsx`;
+				const base64 = btoa(String.fromCharCode(...new Uint8Array(buffer)));
+				Android.saveExcel(base64, jss);		  
+	  }
       });
     })
     .catch(err => {
@@ -2660,11 +2667,18 @@ function showpicker(){
 
         // Download
         const buffer = await workbook.xlsx.writeBuffer();
+		if(webv==0){
         const blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
         const link = document.createElement("a");
         link.href = URL.createObjectURL(blob);
         link.download = `Persentase_Siswa_${bulanTahun}.xlsx`;
         link.click();
+		}
+		else{
+			let lss=`Persentase_Siswa_${bulanTahun}.xlsx`;
+			const base64 = btoa(String.fromCharCode(...new Uint8Array(buffer)));
+            Android.saveExcel(base64, lss);
+		}
       });
     })
     .catch(err => {
