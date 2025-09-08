@@ -1824,7 +1824,7 @@ async function rekaptingkat() {
 	  else {
 		         let jss=`Rekap_Persentase_${bulanTahun}.xlsx`;
 				const base64 = btoa(String.fromCharCode(...new Uint8Array(buffer)));
-				Android.saveExcel(base64, "rekap_Siswa.xlsx");		  
+				Android.saveExcel(base64, jss);		  
 	  }
 	  
     });
