@@ -2671,11 +2671,11 @@ function showpicker(){
         const blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
         const link = document.createElement("a");
         link.href = URL.createObjectURL(blob);
-        link.download = `Persentase_Siswa_${bulanTahun}.xlsx`;
+        link.download = `Persentase_Siswa_${tgl1b} s.d ${tgl2b}.xlsx`;
         link.click();
 		}
 		else{
-			 let jss=`Persentase_Siswa_${bulanTahun}.xlsx`;
+			 let jss=`Persentase_Siswa_${tgl1b} s.d ${tgl2b}.xlsx`;
 				const base64 = btoa(String.fromCharCode(...new Uint8Array(buffer)));
 				Android.saveExcel(base64, jss);		 
 		}
